@@ -1,0 +1,5475 @@
+{
+ "version": 2,
+ "fps": 30,
+ "size": [
+  1920,
+  1080
+ ],
+ "note": "The film's shot list, cut by the AI director (city/tools/nanjing/director.py) on the narration: each shot covers the lines in `vo` (research/vo/VO_SCRIPT_final.json) at their times in audio/vo/vo_timeline.json; the shots add up to the mix to the frame. Cameras are anchored on places / events (places.json, timeline.json): re-run the script after those change; do not hand-edit. Extra fields beyond FILM_CONTRACT.md: vo, film_start (seconds into the film), section, see_zh (what the frame shows), evidence (the events in frame with their evidence labels), anchors, step_of (a stepped time-lapse), no_words. Story time UTC+8.",
+ "generated": "2026-11-10T15:37Z",
+ "frame": "real",
+ "look": {
+  "night_exposure": 3.0,
+  "brightness": 1.0
+ },
+ "total_seconds": 605.6669,
+ "mix_seconds": 605.672,
+ "shots": [
+  {
+   "id": "s01",
+   "start": "1937-12-12T21:00:00+08:00",
+   "end": "1937-12-12T21:12:00+08:00",
+   "seconds": 22.6,
+   "cam": [
+    {
+     "at": 0,
+     "x": -3573.8,
+     "z": -4278.5,
+     "dist": 220,
+     "az": 70,
+     "el": 13
+    },
+    {
+     "at": 0.17,
+     "x": -3933.8,
+     "z": -4388.5,
+     "dist": 520,
+     "az": 72,
+     "el": 22
+    },
+    {
+     "at": 0.45,
+     "x": -5007.6,
+     "z": -4346.8,
+     "dist": 900,
+     "az": 82,
+     "el": 26
+    },
+    {
+     "at": 0.72,
+     "x": -3833.8,
+     "z": -4438.5,
+     "dist": 1700,
+     "az": 62,
+     "el": 32
+    },
+    {
+     "at": 1,
+     "x": -3433.8,
+     "z": -4088.5,
+     "dist": 2600,
+     "az": 52,
+     "el": 34
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月12日",
+    "time": "21:00",
+    "place_zh": "挹江门",
+    "place_en": "Yijiang Gate"
+   },
+   "vo": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+   ],
+   "film_start": 0.0,
+   "events": [
+    "ev-1212-retreat-main",
+    "ev-1212-yijiang-crush",
+    "ev-1212-crossing"
+   ],
+   "why": "脚本：第 0 帧就是缩略图，第一帧已经在动。城墙组 11-10 12:45Z 的实测：800 米以上挹江门只是一个亮点、拱门读不出来，320 米 22 度读得出（框、三道拱、两边的墙）；时间线：中山北路在门前是东西向，机位顺着路（方位 64-85）看，人群是一条通向门洞的带子。L01-L05 是同一个念头，一个不停的长镜头（22.6 秒），不拆成两镜，免得在切点上停一下。",
+   "section": "cold",
+   "see_zh": "片子第 0 帧 = 封面：夜，月亮在西南。（11-10 比了四个机位：320 米 22 度太高、门太小，260 米 16 度人群被切，220 米 13 度人群、城门、城墙、后面的火最满：`x_covA.png`。）机位在挹江门东面约 220 米、13 度俯角，顺着中山北路向西看进城门：路上密密的人流像一条地毯挤向只开一半的门洞，门洞后面是墙外下关江边的火。镜头先抬起、转向江面（L02 “从上面看”：江边挤满了人、没有船；L03 对岸），再一路拉高拉远到约 2600 米（L04、L05）。",
+   "evidence": [
+    {
+     "id": "ev-1212-retreat-main",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京保卫战（从中山东路通往下关的马路挤满了人，宋希濂回忆）",
+      "英文维基 Battle of Nanking",
+      "Durdin, NYT 1937-12-08 (经英文维基)"
+     ],
+     "notes": "卡车、火炮、公共汽车、马车、指挥车混在人流里；街上丢满枪支、军服、鞋和钢盔（Durdin）。人数不详（守军总数 7.4 万-15 万，各说）。"
+    },
+    {
+     "id": "ev-1212-yijiang-crush",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking",
+      "中文维基 南京保卫战",
+      "ja 挹江門事件"
+     ],
+     "notes": "守门第 36 师督战队未接到撤退令，向人群开枪；约 21:00 一辆坦克冲向督战队，压死多人后被手榴弹炸毁；谢承瑞 13 日凌晨在此被挤倒踩死。城墙上有人用衣服、毯子结绳缒城。"
+    },
+    {
+     "id": "ev-1212-crossing",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking",
+      "中文维基 南京保卫战"
+     ],
+     "notes": "渡船极少，超载船沉没，木筏、门板、澡盆很少渡过；13 日下午日舰封江、从两岸向渡江者开枪。第 36 师约 3000 人 13 日晨到浦口，未渡者过半。江宽约 1.1 km（今），英文维基称约 2 km。船数：旁白 L02“几乎没有船”、L36“几条小船”：画 12 条（含门板木筏，推测；旧稿 36 条，对三万人太多）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "晴（推测）；夜里接近冰点（帕奈号幸存者）；傍晚紫金山大火、下关起火"
+   },
+   "anchors": [
+    "p:g-yijiang",
+    "p:g-yijiang",
+    "p:lm-zhongshan-wharf",
+    "p:g-yijiang",
+    "p:g-yijiang"
+   ]
+  },
+  {
+   "id": "s02",
+   "start": "1937-12-12T21:12:00+08:00",
+   "end": "1937-12-12T21:20:00+08:00",
+   "seconds": 15.5667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -3333.8,
+     "z": -3838.5,
+     "dist": 4900,
+     "az": 225,
+     "el": 24
+    },
+    {
+     "at": 1,
+     "x": -3213.8,
+     "z": -3718.5,
+     "dist": 4800,
+     "az": 222,
+     "el": 24.5
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月12日",
+    "time": "21:12",
+    "place_zh": "南京城",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L06",
+    "L07",
+    "L08"
+   ],
+   "film_start": 22.6,
+   "events": [
+    "ev-1212-retreat-main"
+   ],
+   "why": "“城明天就破”“杀了至少六个星期”：脚本要“火圈里又小又黑的城”。全城只有西北（下关、交通部）和东北（紫金山）有火，相距 11 公里：从南往北看（北在上）两处火进不了同一画面，所以这一镜破例从西北往东南看（北不在上），火在前景，城在后面。",
+   "section": "cold",
+   "see_zh": "夜里的全城，从下关西北的江面上空（约 2000 米）向东南看：近处下关码头区在烧，中间交通部的火，后面黑着的城，左上远处紫金山的山火，月光。镜头几乎不动。",
+   "evidence": [
+    {
+     "id": "ev-1212-retreat-main",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京保卫战（从中山东路通往下关的马路挤满了人，宋希濂回忆）",
+      "英文维基 Battle of Nanking",
+      "Durdin, NYT 1937-12-08 (经英文维基)"
+     ],
+     "notes": "卡车、火炮、公共汽车、马车、指挥车混在人流里；街上丢满枪支、军服、鞋和钢盔（Durdin）。人数不详（守军总数 7.4 万-15 万，各说）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "晴（推测）；夜里接近冰点（帕奈号幸存者）；傍晚紫金山大火、下关起火"
+   },
+   "anchors": [
+    "p:g-yijiang",
+    "p:g-yijiang"
+   ]
+  },
+  {
+   "id": "s03",
+   "start": "1937-12-12T21:20:00+08:00",
+   "end": "1937-12-12T06:00:00+08:00",
+   "seconds": 4.0333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -3213.8,
+     "z": -3718.5,
+     "dist": 4800,
+     "az": 222,
+     "el": 24.5
+    },
+    {
+     "at": 1,
+     "x": -3153.8,
+     "z": -3658.5,
+     "dist": 4800,
+     "az": 220,
+     "el": 25
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月12日",
+    "time": "21:20",
+    "place_zh": "南京城",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L09"
+   ],
+   "film_start": 38.167,
+   "events": [],
+   "why": "脚本 L09：片名 + 倒带。倒带只倒 15 小时（一天之内，一次天黑变天亮，不闪），日期块在片名卡下面本来就藏着，下一镜直接从 12 月 1 日日出开始。",
+   "section": "cold",
+   "see_zh": "片名卡（半透明压暗）下，时间倒着跑：人流退回街上、火缩回去、夜退回白天（12 日 21:20 倒到 06:00）。",
+   "evidence": [],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "晴（推测）；夜里接近冰点（帕奈号幸存者）；傍晚紫金山大火、下关起火"
+   },
+   "anchors": [
+    "p:g-yijiang",
+    "p:g-yijiang"
+   ],
+   "hud": {
+    "off": true
+   },
+   "cards": [
+    {
+     "kind": "title",
+     "from": 0
+    }
+   ],
+   "no_words": true
+  },
+  {
+   "id": "s04",
+   "start": "1937-12-01T07:00:00+08:00",
+   "end": "1937-12-01T07:25:00+08:00",
+   "seconds": 7.3333,
+   "cam": [
+    {
+     "at": 0,
+     "x": 277.2,
+     "z": -12.5,
+     "dist": 3900,
+     "az": -38,
+     "el": 31
+    },
+    {
+     "at": 1,
+     "x": 558.9,
+     "z": 2594.0,
+     "dist": 2500,
+     "az": -22,
+     "el": 33
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月1日",
+    "time": "07:00",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L10"
+   ],
+   "film_start": 42.2,
+   "events": [
+    "ev-1201-zone-inflow-s",
+    "ev-1201-zone-inflow-e"
+   ],
+   "why": "L10 交代整座城（11 天前）。上一版 L10-L11 是一个 19 秒的长降；现在 L11 单独给一个中景（见下一镜），所以这一镜只负责“全城、日出”。",
+   "section": "before",
+   "see_zh": "日出：约 2000-2500 米高的全城（玄武湖、紫金山在右上，长江在左上），晨光从东南斜照，烟囱的炊烟；镜头缓缓降向城南。",
+   "evidence": [
+    {
+     "id": "ev-1201-zone-inflow-s",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone（12-01 市长马超俊令留城市民迁入安全区）",
+      "英文维基 John Rabe",
+      "FRUS 1937 vol III doc 853（12-06 成千上万难民涌入）"
+     ],
+     "notes": "12-01 起迁入，12-06 起大量涌入；12-13 时区内约 20-25 万人。路线为推测（沿城南主街北上）。"
+    },
+    {
+     "id": "ev-1201-zone-inflow-e",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "FRUS 1937 vol III doc 853"
+     ],
+     "notes": "同上；路线推测。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "没有逐日记载；按魏特琳 1-06「多数日子有阳光、雨雪很少」默认晴、冷、干，太阳低、阴影长、夜里到冰点"
+   },
+   "anchors": [
+    "p:sq-xinjiekou",
+    "p:d-fuzimiao"
+   ]
+  },
+  {
+   "id": "s05",
+   "start": "1937-12-01T07:30:00+08:00",
+   "end": "1937-12-01T07:55:00+08:00",
+   "seconds": 11.9667,
+   "cam": [
+    {
+     "at": 0,
+     "x": 358.9,
+     "z": 2874.0,
+     "dist": 700,
+     "az": -8,
+     "el": 28
+    },
+    {
+     "at": 1,
+     "x": 418.9,
+     "z": 2734.0,
+     "dist": 380,
+     "az": -4,
+     "el": 24
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月1日",
+    "time": "07:30",
+    "place_zh": "城南",
+    "place_en": "South city"
+   },
+   "vo": [
+    "L11"
+   ],
+   "film_start": 49.533,
+   "events": [
+    "ev-1201-zone-inflow-s1",
+    "ev-1201-zone-inflow-e1",
+    "ev-1201-zone-inflow-s"
+   ],
+   "why": "L11 “一百多万人，走了一半多”：中景，屋顶、巷子、河都在画面里，人流是小点一串串。",
+   "section": "before",
+   "see_zh": "约 600→350 米，城南夫子庙、门东的街巷（内秦淮河、老城的屋顶）：人比平常少，有人背着包袱往西（安全区）走。",
+   "evidence": [
+    {
+     "id": "ev-1201-zone-inflow-s1",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone（12-01 市长马超俊令留城市民迁入安全区）"
+     ],
+     "notes": "旁白 L10/L11（12-01 07:00-07:30）要“带包袱的人流往西穿过城区”“很多店关了门、几辆黄包车”。主流 ev-1201-zone-inflow-s 的人数从 12-01 的 0.3 % 起慢慢涨到 12-08 峰值，清晨画面上几乎没人，所以第一天另给一条小流（高峰 12-01 11:00，次日清晨收掉）；人数推测。"
+    },
+    {
+     "id": "ev-1201-zone-inflow-e1",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone（12-01 市长马超俊令留城市民迁入安全区）"
+     ],
+     "notes": "同上（L10 点名 ev-1201-zone-inflow-e）；人数推测。"
+    },
+    {
+     "id": "ev-1201-zone-inflow-s",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone（12-01 市长马超俊令留城市民迁入安全区）",
+      "英文维基 John Rabe",
+      "FRUS 1937 vol III doc 853（12-06 成千上万难民涌入）"
+     ],
+     "notes": "12-01 起迁入，12-06 起大量涌入；12-13 时区内约 20-25 万人。路线为推测（沿城南主街北上）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "没有逐日记载；按魏特琳 1-06「多数日子有阳光、雨雪很少」默认晴、冷、干，太阳低、阴影长、夜里到冰点"
+   },
+   "anchors": [
+    "p:d-fuzimiao",
+    "p:d-fuzimiao"
+   ]
+  },
+  {
+   "id": "s06",
+   "start": "1937-12-01T10:00:00+08:00",
+   "end": "1937-12-01T12:00:00+08:00",
+   "seconds": 10.8333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -319.3,
+     "z": 4095.7,
+     "dist": 480,
+     "az": 0,
+     "el": 24
+    },
+    {
+     "at": 1,
+     "x": -279.3,
+     "z": 4035.7,
+     "dist": 340,
+     "az": 14,
+     "el": 22
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月1日",
+    "time": "10:00",
+    "place_zh": "中华门",
+    "place_en": "Zhonghua Gate"
+   },
+   "vo": [
+    "L12"
+   ],
+   "film_start": 61.5,
+   "events": [
+    "ev-1201-wall-garrison"
+   ],
+   "why": "“蒋介石决定守城，唐生智誓与城共存亡”：画面给守城的样子，守军在墙上。中华门以后还来两次（12 日的坦克、坍墙），都用这个朝向。",
+   "section": "before",
+   "see_zh": "中华门，从南往北看（480→340 米）：近处岗上挖工事的人，中间护城河、桥、城楼和城墙上布防的守军，远处城南老城。",
+   "evidence": [
+    {
+     "id": "ev-1201-wall-garrison",
+     "label": "推测",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking（复廓线、城墙守备）",
+      "中文维基 南京保卫战"
+     ],
+     "notes": "旁白 L13 要「城墙上的小人、布炮」：城墙顶不让人走，所以画在城墙内侧一条 30 m 宽的带上（推测：守军驻在墙根的营房和炮位）。兵力推测。高峰放在 12-01 12:00（L12 在 12-01 10:00；人群模块只有三角形斜坡），之后随窗口慢慢减少。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "没有逐日记载；按魏特琳 1-06「多数日子有阳光、雨雪很少」默认晴、冷、干，太阳低、阴影长、夜里到冰点"
+   },
+   "anchors": [
+    "p:g-zhonghua",
+    "p:g-zhonghua"
+   ]
+  },
+  {
+   "id": "s07",
+   "start": "1937-12-06T09:00:00+08:00",
+   "end": "1937-12-06T09:35:00+08:00",
+   "seconds": 14.6,
+   "cam": [
+    {
+     "at": 0,
+     "x": -3633.8,
+     "z": -4288.5,
+     "dist": 380,
+     "az": 52,
+     "el": 22
+    },
+    {
+     "at": 0.55,
+     "x": -3383.8,
+     "z": -4088.5,
+     "dist": 1100,
+     "az": 48,
+     "el": 30
+    },
+    {
+     "at": 1,
+     "x": -3133.8,
+     "z": -3838.5,
+     "dist": 2300,
+     "az": 45,
+     "el": 33
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月6日",
+    "time": "09:00",
+    "place_zh": "挹江门",
+    "place_en": "Yijiang Gate"
+   },
+   "vo": [
+    "L14",
+    "L15"
+   ],
+   "film_start": 72.333,
+   "events": [
+    "ev-1206-gate-yijiang",
+    "ev-1201-leave-flow"
+   ],
+   "why": "L14 城门封死，只留几处窄道（挹江门是其中之一）；L15“墙把军队关在里面”：用开场那座门，观众已经认得它。只拍一座门（脚本要的逐门快切做不出好镜头：每门 2 秒太碎）。",
+   "section": "before",
+   "see_zh": "挹江门近景（和开场同一个门）：两边门洞封死，只剩中间一道；镜头拉高拉远，看见西北一段城墙和墙外去下关码头的路。",
+   "evidence": [
+    {
+     "id": "ev-1206-gate-yijiang",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking（By December 6，约 6 m 厚）",
+      "ja 挹江門事件（重要的门留窄道）"
+     ],
+     "notes": "旁白 L14 一个门一个门地看；与 ev-1206-gates-sealed（中华门）同一支堵门队，各门一小队（人数、日期推测 12-04 至 12-06）。"
+    },
+    {
+     "id": "ev-1201-leave-flow",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Population of Nanjing（马超俊 11-23 信）",
+      "中文维基 南京保卫战（人口由约 100 万降到 30 余万）"
+     ],
+     "notes": "旁白 L21：一条细流出挹江门去渡口，一条大得多的流进安全区。与 ev-1201-leave-city（渡江）连成一线。12-09 唐生智令船只统一管制、禁止私自渡江。人数与路线推测。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "没有逐日记载；按魏特琳 1-06「多数日子有阳光、雨雪很少」默认晴、冷、干，太阳低、阴影长、夜里到冰点"
+   },
+   "anchors": [
+    "p:g-yijiang",
+    "p:g-yijiang",
+    "p:g-yijiang"
+   ]
+  },
+  {
+   "id": "s08",
+   "start": "1937-12-06T12:00:00+08:00",
+   "end": "1937-12-06T14:00:00+08:00",
+   "seconds": 7.8,
+   "cam": [
+    {
+     "at": 0,
+     "x": -454.0,
+     "z": 245.7,
+     "dist": 1000,
+     "az": 0,
+     "el": 36
+    },
+    {
+     "at": 1,
+     "x": -454.0,
+     "z": -4.3,
+     "dist": 1500,
+     "az": 4,
+     "el": 38
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月6日",
+    "time": "12:00",
+    "place_zh": "安全区",
+    "place_en": "Safety Zone"
+   },
+   "vo": [
+    "L16"
+   ],
+   "film_start": 86.933,
+   "events": [
+    "ev-1201-zone-crowd-a"
+   ],
+   "why": "L16 外国人划出安全区。界旗 3 米从 1-2 公里看不见，所以画面靠界线（片子渲染区 07:16Z 的 `hud.outline`）和人。",
+   "section": "before",
+   "see_zh": "约 800-1200 米高，安全区东南角（中山路、汉中路口一带）：白底红十字的界旗一面面立起来，角上铺着标志布，背着包袱的人往里走；安全区的边界线（HUD 画的细线）从镜头外围住这一片。",
+   "evidence": [
+    {
+     "id": "ev-1201-zone-crowd-a",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "英文维基 John Rabe",
+      "Swarthmore Nanking Virtual Database"
+     ],
+     "notes": "12-01 管辖权移交国际委员会；12-06 委员会插红十字圈旗划界；12-08 金陵女院收首批 300 人。人数逐日增加（本段显示用 6 万，推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "没有逐日记载；按魏特琳 1-06「多数日子有阳光、雨雪很少」默认晴、冷、干，太阳低、阴影长、夜里到冰点"
+   },
+   "anchors": [
+    "p:zone",
+    "p:zone"
+   ],
+   "hud": {
+    "outline": "safety_zone"
+   }
+  },
+  {
+   "id": "s09",
+   "start": "1937-12-07T13:30:00+08:00",
+   "end": "1937-12-08T01:30:00+08:00",
+   "seconds": 16.0,
+   "cam": [
+    {
+     "at": 0,
+     "x": 5250.0,
+     "z": 1300.0,
+     "dist": 1100,
+     "az": -50,
+     "el": 28
+    },
+    {
+     "at": 1,
+     "x": 5300.0,
+     "z": 1350.0,
+     "dist": 1350,
+     "az": -45,
+     "el": 30
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月7日",
+    "time": "13:30",
+    "place_zh": "中山门外",
+    "place_en": "Outside Zhongshan Gate"
+   },
+   "vo": [
+    "L18",
+    "L19",
+    "L20"
+   ],
+   "film_start": 94.733,
+   "events": [],
+   "why": "L18 蒋离开（没有飞机模型，画面只给城东机场一带），L19 焦土，L20 夜里城外一圈火。故事 12 小时（约 45 分钟/秒）。火组 13:20Z：焦土区的火 70% 在头两天点着，夜里是橙色的光和斜着的烟，白天是顺风倾斜的黑烟柱（机位在侧面或迎风才看得见烟柱立着）。",
+   "section": "before",
+   "see_zh": "中山门外孝陵卫一带约 1100-1350 米，从西南往东北看（紫金山在上方）：下午的城东（蒋介石 7 日清晨飞走，飞机画面里没有），17:00 起城外的官邸、村子一处处烧起来，入夜火光一片，城里黑着、完好。",
+   "evidence": [],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "没有逐日记载；按魏特琳 1-06「多数日子有阳光、雨雪很少」默认晴、冷、干，太阳低、阴影长、夜里到冰点"
+   },
+   "anchors": [
+    [
+     5250,
+     1300
+    ],
+    [
+     5300,
+     1350
+    ]
+   ]
+  },
+  {
+   "id": "s10",
+   "start": "1937-12-08T11:30:00+08:00",
+   "end": "1937-12-08T12:30:00+08:00",
+   "seconds": 12.2,
+   "cam": [
+    {
+     "at": 0,
+     "x": -110.0,
+     "z": 900.0,
+     "dist": 420,
+     "az": 0,
+     "el": 30
+    },
+    {
+     "at": 1,
+     "x": -250.0,
+     "z": 300.0,
+     "dist": 900,
+     "az": 6,
+     "el": 36
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月8日",
+    "time": "11:30",
+    "place_zh": "安全区",
+    "place_en": "Safety Zone"
+   },
+   "vo": [
+    "L22",
+    "L23"
+   ],
+   "film_start": 110.733,
+   "events": [
+    "ev-1208-zone-crowd-b",
+    "ev-1201-zone-inflow-s",
+    "ev-1201-zone-inflow-e",
+    "ev-1201-zone-inflow-n"
+   ],
+   "why": "L22 当时清点 20-25 万人还在城里；L23“地图上的一条线能保住他们吗？”：升高看见安全区的边（HUD 的细线）。",
+   "section": "before",
+   "see_zh": "约 420→900 米，中正路（今中山南路）往北看：人流顺着街涌进安全区的东南角，路两边是店面、池塘；镜头升高转向，安全区的边界线画在地上。",
+   "evidence": [
+    {
+     "id": "ev-1208-zone-crowd-b",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking（12-08 唐生智要求平民迁入安全区）",
+      "Swarthmore"
+     ],
+     "notes": "到 12-13 区内约 25 万人：房子住满，其余睡在草坪、壕沟、防空洞和街上（Swarthmore）。"
+    },
+    {
+     "id": "ev-1201-zone-inflow-s",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone（12-01 市长马超俊令留城市民迁入安全区）",
+      "英文维基 John Rabe",
+      "FRUS 1937 vol III doc 853（12-06 成千上万难民涌入）"
+     ],
+     "notes": "12-01 起迁入，12-06 起大量涌入；12-13 时区内约 20-25 万人。路线为推测（沿城南主街北上）。"
+    },
+    {
+     "id": "ev-1201-zone-inflow-e",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "FRUS 1937 vol III doc 853"
+     ],
+     "notes": "同上；路线推测。"
+    },
+    {
+     "id": "ev-1201-zone-inflow-n",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "Yale Forster 相册图注 0005（珞珈路 25 号住的是从下关来的难民）",
+      "英文维基 Nanking Safety Zone"
+     ],
+     "notes": "下关难民进区有图注为证；日期与路线推测（12-06 前城门已封堵，只留窄道）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "核实",
+    "note": "冷，有阳光，无雨无雪；城外焦土烟（烟由火区画，天空不加）"
+   },
+   "anchors": [
+    [
+     -110,
+     900
+    ],
+    [
+     -250,
+     300
+    ]
+   ],
+   "hud": {
+    "outline": "safety_zone"
+   }
+  },
+  {
+   "id": "s11",
+   "start": "1937-12-09T11:30:00+08:00",
+   "end": "1937-12-09T13:30:00+08:00",
+   "seconds": 4.0333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -319.3,
+     "z": 4295.7,
+     "dist": 1500,
+     "az": 0,
+     "el": 32
+    },
+    {
+     "at": 1,
+     "x": -419.3,
+     "z": 4245.7,
+     "dist": 1300,
+     "az": 3,
+     "el": 32
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月9日",
+    "time": "11:30",
+    "place_zh": "中华门上空",
+    "place_en": "Over Zhonghua Gate"
+   },
+   "vo": [
+    "L24"
+   ],
+   "film_start": 122.933,
+   "events": [
+    "ev-1209-zhonghua-bombing"
+   ],
+   "why": "L24 脚本要“劝降传单”（一架飞机、白色小点）：时间线里 ev-1209-leaflets 只是一条说明（info），没有飞机可画，所以改拍同一天时间线里真有飞机的事：12-09 中华门空袭（ev-1209-zhonghua-bombing，planes12，09:18-14:42；时间线 12:55Z 的导演表：近景 11:30、远景 12:00 最好）。这句无旁白，没有字和画面冲突；HUD 钟点是 11:30-13:30，不是脚本写的傍晚 16:30（日期对）。推测：传单的飞机没画。",
+   "section": "before",
+   "see_zh": "无旁白：12 月 9 日中午，一群日本飞机（12 架）从南面飞过中华门上空投弹，烟柱升起（约 1300-1500 米，向北看）。",
+   "evidence": [
+    {
+     "id": "ev-1209-zhonghua-bombing",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测"
+     },
+     "sources": [
+      "中文维基 南京保卫战（12-09 第三飞行团密集轰炸中华门）"
+     ],
+     "notes": "钟点推测。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "城外焦土烟；能见度好"
+   },
+   "anchors": [
+    "p:g-zhonghua",
+    "p:g-zhonghua"
+   ],
+   "no_words": true
+  },
+  {
+   "id": "s12",
+   "start": "1937-12-10T12:30:00+08:00",
+   "end": "1937-12-10T15:20:00+08:00",
+   "seconds": 8.2667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -420.0,
+     "z": 5480.0,
+     "dist": 850,
+     "az": 185,
+     "el": 24
+    },
+    {
+     "at": 1,
+     "x": -260.0,
+     "z": 5320.0,
+     "dist": 720,
+     "az": 190,
+     "el": 22
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月10日",
+    "time": "12:30",
+    "place_zh": "雨花台",
+    "place_en": "Yuhuatai"
+   },
+   "vo": [
+    "L25"
+   ],
+   "film_start": 126.967,
+   "events": [
+    "ev-1210-yuhuatai-shelling",
+    "ev-1209-guanghua-guns"
+   ],
+   "why": "L25 总攻。上一版从南面看（机位在雨花台背后，前景全是田，城小得看不见）；现在从城墙一侧向南看雨花台（北不在上，破例），岗在画面中间，烟和闪光在岗上。L26 单独成镜（光华门缺口）。",
+   "section": "before",
+   "see_zh": "约 850→720 米，从中华门外向南看雨花台岗：炮火、炮弹炸起的烟柱、枪口的闪光；15:06 起总攻。",
+   "evidence": [
+    {
+     "id": "ev-1210-yuhuatai-shelling",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "place": "推测"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking",
+      "中文维基 南京保卫战"
+     ],
+     "notes": "炮击有出处；落点范围推测。"
+    },
+    {
+     "id": "ev-1209-guanghua-guns",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking（两门山炮）",
+      "japanese_army verify（推断为四一式山炮）"
+     ],
+     "notes": null
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "核实",
+    "note": "能见度好：紫金山后看得见两只日军飞艇或观测气球；前后两天飞机几乎不停在头顶"
+   },
+   "anchors": [
+    [
+     -420,
+     5480
+    ],
+    [
+     -260,
+     5320
+    ]
+   ]
+  },
+  {
+   "id": "s13",
+   "start": "1937-12-10T17:26:00+08:00",
+   "end": "1937-12-10T17:34:00+08:00",
+   "seconds": 4.0,
+   "cam": [
+    {
+     "at": 0,
+     "x": 2842.0,
+     "z": 2989.0,
+     "dist": 600,
+     "az": -35,
+     "el": 28
+    },
+    {
+     "at": 1,
+     "x": 2872.0,
+     "z": 2969.0,
+     "dist": 420,
+     "az": -32,
+     "el": 25
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月10日",
+    "time": "17:26",
+    "place_zh": "光华门",
+    "place_en": "Guanghua Gate"
+   },
+   "vo": [
+    "L26"
+   ],
+   "film_start": 135.233,
+   "events": [
+    "ev-1210-guanghua-breach",
+    "ev-1209-guanghua-guns"
+   ],
+   "why": "L26 一天一夜的仗压缩：缺口是这一镜的主角（时间线 12-10 17:30）。",
+   "section": "before",
+   "see_zh": "无旁白：约 600→420 米，光华门从西南往东北看：炮击，黄昏（17:30）城墙炸开缺口。",
+   "evidence": [
+    {
+     "id": "ev-1210-guanghua-breach",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "place": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking",
+      "中文维基 光华门",
+      "日文维基 南京攻略戦"
+     ],
+     "notes": "12-10 17:00 前后日军工兵炸开门侧城墙，两个中队冲入、插旗，被压在缺口里（一个中队 88 人损失 80 人）；守军用集束手榴弹、汽油桶反击。12-13 02:00 第 87 师撤走。"
+    },
+    {
+     "id": "ev-1209-guanghua-guns",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking（两门山炮）",
+      "japanese_army verify（推断为四一式山炮）"
+     ],
+     "notes": null
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "核实",
+    "note": "能见度好：紫金山后看得见两只日军飞艇或观测气球；前后两天飞机几乎不停在头顶"
+   },
+   "anchors": [
+    "p:g-guanghua",
+    "p:g-guanghua"
+   ],
+   "no_words": true
+  },
+  {
+   "id": "s14",
+   "start": "1937-12-11T12:00:00+08:00",
+   "end": "1937-12-11T18:00:00+08:00",
+   "seconds": 11.6667,
+   "cam": [
+    {
+     "at": 0,
+     "x": 558.9,
+     "z": 2594.0,
+     "dist": 3000,
+     "az": 0,
+     "el": 31
+    },
+    {
+     "at": 1,
+     "x": 558.9,
+     "z": 2494.0,
+     "dist": 3300,
+     "az": 5,
+     "el": 31
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月11日",
+    "time": "12:00",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L27",
+    "L28"
+   ],
+   "film_start": 139.233,
+   "events": [
+    "ev-1211-tang-order"
+   ],
+   "why": "L27 撤退令电话传到，L28 唐要蒋亲自下令、当晚电报到：画面给城被压在战线里的样子。",
+   "section": "before",
+   "see_zh": "约 2000-2500 米看城南：城外的焦土火和战线的烟压在城墙边；天黑下来，往北的路上还没有动静。",
+   "evidence": [
+    {
+     "id": "ev-1211-tang-order",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "place": "推测"
+     },
+     "sources": [
+      "中文维基 南京保卫战",
+      "英文维基 Battle of Nanking"
+     ],
+     "notes": "顾祝同电话转达；唐生智当晚开始组织撤退方案。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.15,
+    "evidence": "推测",
+    "note": "清晨中华门外有雾（Kojima 1984 经英文维基，具体哪天早上未定），白天晴"
+   },
+   "anchors": [
+    "p:d-fuzimiao",
+    "p:d-fuzimiao"
+   ]
+  },
+  {
+   "id": "s15",
+   "start": "1937-12-12T12:08:00+08:00",
+   "end": "1937-12-12T12:16:00+08:00",
+   "seconds": 4.0333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -339.3,
+     "z": 4125.7,
+     "dist": 330,
+     "az": 28,
+     "el": 20
+    },
+    {
+     "at": 1,
+     "x": -359.3,
+     "z": 4055.7,
+     "dist": 260,
+     "az": 20,
+     "el": 18
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月12日",
+    "time": "12:08",
+    "place_zh": "中华门",
+    "place_en": "Zhonghua Gate"
+   },
+   "vo": [
+    "L29"
+   ],
+   "film_start": 150.9,
+   "events": [
+    "ev-1212-zhonghua-tankettes",
+    "ev-1212-zhonghua-shelling",
+    "ev-1212-zhonghua-fall"
+   ],
+   "why": "时间线 12:55Z：12 日 12:10 朝日新闻的照片（7 辆以上九四式、车头朝墙）= 核实；停在桥南头是推测。小人 3.1 米的坦克从 330 米看是一个暗块，所以近。5.5 小时压在 4 秒里（约 1.4 小时/秒）。",
+   "section": "before",
+   "see_zh": "无旁白：中午到傍晚，中华门（同 L12 的朝向，近）：路上日军的九四式轻装甲车一排停在桥头、鼻子对着墙，炮击，傍晚城墙塌出缺口。",
+   "evidence": [
+    {
+     "id": "ev-1212-zhonghua-tankettes",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "朝日新闻《支那事变写真全集》（中）1938 年，照片说明“中华门爆破的瞬间，1937 年 12 月 12 日午后 0 时 10 分”（Wikimedia Commons Attacking_the_Gate_of_China02，PD-Japan-oldphoto）",
+      "英文维基 Battle of Nanking（12-12 上午野炮和坦克火力轰击中华门；中午 6 名日军乘小船渡护城河被机枪打死；17:00 更多日军渡河、城墙被打塌；入夜前占门）",
+      "ja.wikipedia 九四式軽装甲車（1937-12 有两个独立轻装甲车中队参加南京作战：第 2 中队藤田、第 6 中队井上；图注：九四式攻击中华门）"
+     ],
+     "notes": "refs 区照片核对（research/refs/photo_refs.md Z7）：照片里墙脚的街上是一列九四式（照片里看得到 7 辆以上，车鼻朝着城门，天线挂旗），墙上“誓復國仇”“仁”，右边券门，说明写 12:10。照片说明和日军序列（japanese_army.json ja-tankette-type94：九四式 3.4 吨、2 人乘员、长 3.08 m）合得上，所以画：7 辆停在门外大街，朝门；步兵 40 人（车组 14 + 随行步兵，推测）。模型里人群模块目前只会把 vehicles.tanks 画成八九式（5.7 m），九四式（3.1 m）要它读 tank_model: tankette（FILM_CONTRACT 11-10 请求）。路线（推测）：从门外南面 390 m 的路上开来，12:00 前停在护城河桥的南头 (-326, 4098)、车头朝门，一直停到 17:00（人群模块的纵队走到路尽头就停成一圈）。位置没有照抄照片（车停在墙脚）：桥长 90 m、桥面只有 12 m 宽，墙脚只有一条窄的河岸和城墙缺口的碎砖堆，停车圈会把车压到碎砖堆上（试过：一辆斜插在堆里），所以放在桥南头的平地上，离门洞约 100 m（推测）。另：12:10 的“爆破”与 17:00 的城墙坍塌是两件事（wall.json 把 11:00 当 中华门西侧缺口时间没有出处）。"
+    },
+    {
+     "id": "ev-1212-zhonghua-shelling",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking",
+      "日文维基 南京攻略戦"
+     ],
+     "notes": "约 17:00 一段城墙坍塌；中午 6 名日军乘船渡护城河时被机枪打死；12:20 第 47 联队占中华门西侧一角。"
+    },
+    {
+     "id": "ev-1212-zhonghua-fall",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "place": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking",
+      "日文维基 南京攻略戦"
+     ],
+     "notes": "入夜前日军占城门，12-12 至 13 夜第 6、114 师团完全占领。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "晴（推测）；夜里接近冰点（帕奈号幸存者）；傍晚紫金山大火、下关起火"
+   },
+   "anchors": [
+    "p:g-zhonghua",
+    "p:g-zhonghua"
+   ],
+   "no_words": true
+  },
+  {
+   "id": "s16",
+   "start": "1937-12-12T17:00:00+08:00",
+   "end": "1937-12-12T18:00:00+08:00",
+   "seconds": 11.3333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -94.4,
+     "z": -1469.8,
+     "dist": 1200,
+     "az": 0,
+     "el": 36
+    },
+    {
+     "at": 1,
+     "x": -595.0,
+     "z": -1919.0,
+     "dist": 1400,
+     "az": 12,
+     "el": 34
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月12日",
+    "time": "17:00",
+    "place_zh": "中山路—中山北路",
+    "place_en": "Zhongshan Road to Zhongshan North Road"
+   },
+   "vo": [
+    "L30",
+    "L31"
+   ],
+   "film_start": 154.933,
+   "events": [
+    "ev-1212-final-meeting",
+    "ev-1212-tang-leaves",
+    "ev-1212-retreat-main"
+   ],
+   "why": "L30 17:00 唐下令突围；L31 部队涌向挹江门。上一版是一个升起北移的 15 秒镜；现在 L29 单独成镜（中华门近景），这一镜只管“撤”。",
+   "section": "night",
+   "see_zh": "约 1200-1400 米，鼓楼北：傍晚日落（17:01），唐的几辆车离开公馆；入夜，人流从城南、城东沿中山路、中山北路往西北涌向挹江门。",
+   "evidence": [
+    {
+     "id": "ev-1212-final-meeting",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "place": "推测"
+     },
+     "sources": [
+      "中文维基 南京保卫战",
+      "英文维基 Battle of Nanking"
+     ],
+     "notes": "会议约二十分钟；17:30 各部在混乱中开始突围，多数涌向下关江边。唐公馆位置推测。"
+    },
+    {
+     "id": "ev-1212-tang-leaves",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京保卫战",
+      "中文维基 南京大屠杀（摘要）"
+     ],
+     "notes": "旁白 L30：几辆车离开一座围墙里的宅子。会议约 17:20 结束，约 20:30 从煤炭港乘小火轮过江（ev-1212-tang-crosses）；路线与行程钟点推测，唐公馆位置未核实，不立标。"
+    },
+    {
+     "id": "ev-1212-retreat-main",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京保卫战（从中山东路通往下关的马路挤满了人，宋希濂回忆）",
+      "英文维基 Battle of Nanking",
+      "Durdin, NYT 1937-12-08 (经英文维基)"
+     ],
+     "notes": "卡车、火炮、公共汽车、马车、指挥车混在人流里；街上丢满枪支、军服、鞋和钢盔（Durdin）。人数不详（守军总数 7.4 万-15 万，各说）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "晴（推测）；夜里接近冰点（帕奈号幸存者）；傍晚紫金山大火、下关起火"
+   },
+   "anchors": [
+    "p:sq-gulou",
+    "p:st-zhongshan-n"
+   ]
+  },
+  {
+   "id": "s17",
+   "start": "1937-12-12T20:38:00+08:00",
+   "end": "1937-12-12T21:08:00+08:00",
+   "seconds": 14.7,
+   "cam": [
+    {
+     "at": 0,
+     "x": -3613.8,
+     "z": -4288.5,
+     "dist": 330,
+     "az": 66,
+     "el": 20
+    },
+    {
+     "at": 1,
+     "x": -3633.8,
+     "z": -4288.5,
+     "dist": 200,
+     "az": 72,
+     "el": 18
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月12日",
+    "time": "20:38",
+    "place_zh": "挹江门",
+    "place_en": "Yijiang Gate"
+   },
+   "vo": [
+    "L32",
+    "L33",
+    "L34"
+   ],
+   "film_start": 166.267,
+   "events": [
+    "ev-1212-retreat-main",
+    "ev-1212-yijiang-crush"
+   ],
+   "why": "L32 回到开场画面；L33 城上守军向人群开枪；L34 数百人被挤死踩死（不近看，不画细节，不拍脸：机位在 18-20 度俯角、200 米外）。",
+   "section": "night",
+   "see_zh": "回到开场机位（同一位置同一朝向，更近），故事早一小时：人群在半开的门洞前越挤越紧，速度慢到几乎不动。镜头极慢地推近到 200 米。",
+   "evidence": [
+    {
+     "id": "ev-1212-retreat-main",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京保卫战（从中山东路通往下关的马路挤满了人，宋希濂回忆）",
+      "英文维基 Battle of Nanking",
+      "Durdin, NYT 1937-12-08 (经英文维基)"
+     ],
+     "notes": "卡车、火炮、公共汽车、马车、指挥车混在人流里；街上丢满枪支、军服、鞋和钢盔（Durdin）。人数不详（守军总数 7.4 万-15 万，各说）。"
+    },
+    {
+     "id": "ev-1212-yijiang-crush",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking",
+      "中文维基 南京保卫战",
+      "ja 挹江門事件"
+     ],
+     "notes": "守门第 36 师督战队未接到撤退令，向人群开枪；约 21:00 一辆坦克冲向督战队，压死多人后被手榴弹炸毁；谢承瑞 13 日凌晨在此被挤倒踩死。城墙上有人用衣服、毯子结绳缒城。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "晴（推测）；夜里接近冰点（帕奈号幸存者）；傍晚紫金山大火、下关起火"
+   },
+   "anchors": [
+    "p:g-yijiang",
+    "p:g-yijiang"
+   ]
+  },
+  {
+   "id": "s18",
+   "start": "1937-12-12T21:30:00+08:00",
+   "end": "1937-12-12T22:00:00+08:00",
+   "seconds": 3.6333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -4765.7,
+     "z": -6401.3,
+     "dist": 340,
+     "az": 20,
+     "el": 22
+    },
+    {
+     "at": 1,
+     "x": -4937.8,
+     "z": -6411.9,
+     "dist": 320,
+     "az": 22,
+     "el": 21
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月12日",
+    "time": "21:30",
+    "place_zh": "煤炭港江面",
+    "place_en": "The river off Meitan"
+   },
+   "vo": [
+    "L35"
+   ],
+   "film_start": 180.967,
+   "events": [
+    "ev-1212-tang-crosses"
+   ],
+   "why": "L35 唐生智当夜过江（杜丁说约 20:00 离开，宋希濂说参谋部 21 点前后过江：时间取 21:30 起）。",
+   "section": "night",
+   "see_zh": "夜：煤炭港外江面上一条小汽船离岸向对岸去，尾迹拖在黑水上。",
+   "evidence": [
+    {
+     "id": "ev-1212-tang-crosses",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（摘要）",
+      "中文维基 南京保卫战（约九时长官部人员渡江完毕）"
+     ],
+     "notes": "随后第 74 军一部约 5000 人、第 36 师也从煤炭港过江。航线终点按 1945 图的北岸（老江口一带）画到岸边，旧稿停在江心。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "晴（推测）；夜里接近冰点（帕奈号幸存者）；傍晚紫金山大火、下关起火"
+   },
+   "anchors": [
+    "e:ev-1212-tang-crosses@0.4",
+    "e:ev-1212-tang-crosses@0.5"
+   ]
+  },
+  {
+   "id": "s19",
+   "start": "1937-12-12T22:00:00+08:00",
+   "end": "1937-12-12T22:30:00+08:00",
+   "seconds": 13.0667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -5267.6,
+     "z": -4386.8,
+     "dist": 270,
+     "az": 60,
+     "el": 13
+    },
+    {
+     "at": 1,
+     "x": -5277.6,
+     "z": -4396.8,
+     "dist": 170,
+     "az": 62,
+     "el": 10
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月12日",
+    "time": "22:00",
+    "place_zh": "下关江边",
+    "place_en": "Xiaguan riverfront"
+   },
+   "vo": [
+    "L36",
+    "L37"
+   ],
+   "film_start": 184.6,
+   "events": [
+    "ev-1212-crossing"
+   ],
+   "why": "L36 大渡船被唐调走了；L37 渡江还是躲进平民里（原脚本“一帧 400 米”）。11-10 实测：中山码头 160 米 12 度能读（人群、候船楼、着火的栈桥）。",
+   "section": "night",
+   "see_zh": "夜，中山码头旁的江岸（约 300→170 米，12 度）：候船楼前岸上挤满了人，旁边的栈桥在烧，只有几条小船；筏子一只只推下水。",
+   "evidence": [
+    {
+     "id": "ev-1212-crossing",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking",
+      "中文维基 南京保卫战"
+     ],
+     "notes": "渡船极少，超载船沉没，木筏、门板、澡盆很少渡过；13 日下午日舰封江、从两岸向渡江者开枪。第 36 师约 3000 人 13 日晨到浦口，未渡者过半。江宽约 1.1 km（今），英文维基称约 2 km。船数：旁白 L02“几乎没有船”、L36“几条小船”：画 12 条（含门板木筏，推测；旧稿 36 条，对三万人太多）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "晴（推测）；夜里接近冰点（帕奈号幸存者）；傍晚紫金山大火、下关起火"
+   },
+   "anchors": [
+    "p:lm-zhongshan-wharf",
+    "p:lm-zhongshan-wharf"
+   ]
+  },
+  {
+   "id": "s20",
+   "start": "1937-12-12T23:50:00+08:00",
+   "end": "1937-12-13T03:00:00+08:00",
+   "seconds": 11.7667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -5567.6,
+     "z": -4426.8,
+     "dist": 700,
+     "az": 75,
+     "el": 22
+    },
+    {
+     "at": 1,
+     "x": -5507.6,
+     "z": -4406.8,
+     "dist": 900,
+     "az": 80,
+     "el": 24
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月12日",
+    "time": "23:50",
+    "place_zh": "下关江面",
+    "place_en": "The Yangtze at Xiaguan"
+   },
+   "vo": [
+    "L38",
+    "L39"
+   ],
+   "film_start": 197.667,
+   "events": [
+    "ev-1212-crossing"
+   ],
+   "why": "L38 超载的船沉了；L39 月落。故事时间 23:50→03:00（约 1 小时/3.6 秒），L39 开口时是 01:30 前后、月亮正落：话和月亮对上（月亮 01:35 落，月亮的位置和月相由页面算）。机位在东岸看向月亮所在的西南：江面才有月光的银路（11-10 静帧 `x_t_river_moon.png`），是全片最好的一帧夜景。从东岸看，机位在下关码头区火的上风（烟查询：东南方向烟浓度 0.008）。",
+   "section": "night",
+   "see_zh": "约 700-900 米，从东岸（下关）向西看江：月亮在西南低处，月光在江面铺出一条银路，岸上着火的栈桥和候船的人群，对岸浦口的火；L39 月亮在 01:35 落下，银路灭掉，江面只剩两岸的火。",
+   "evidence": [
+    {
+     "id": "ev-1212-crossing",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Battle of Nanking",
+      "中文维基 南京保卫战"
+     ],
+     "notes": "渡船极少，超载船沉没，木筏、门板、澡盆很少渡过；13 日下午日舰封江、从两岸向渡江者开枪。第 36 师约 3000 人 13 日晨到浦口，未渡者过半。江宽约 1.1 km（今），英文维基称约 2 km。船数：旁白 L02“几乎没有船”、L36“几条小船”：画 12 条（含门板木筏，推测；旧稿 36 条，对三万人太多）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "晴（推测）；夜里接近冰点（帕奈号幸存者）；傍晚紫金山大火、下关起火"
+   },
+   "anchors": [
+    "p:lm-zhongshan-wharf",
+    "p:lm-zhongshan-wharf"
+   ]
+  },
+  {
+   "id": "s21",
+   "start": "1937-12-13T03:36:00+08:00",
+   "end": "1937-12-13T04:06:00+08:00",
+   "seconds": 13.4667,
+   "cam": [
+    {
+     "at": 0,
+     "x": 2802.0,
+     "z": 3249.0,
+     "dist": 1500,
+     "az": -30,
+     "el": 30
+    },
+    {
+     "at": 1,
+     "x": 2902.0,
+     "z": 2989.0,
+     "dist": 450,
+     "az": -28,
+     "el": 26
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月13日",
+    "time": "03:36",
+    "place_zh": "光华门",
+    "place_en": "Guanghua Gate"
+   },
+   "vo": [
+    "L40",
+    "L41",
+    "L42"
+   ],
+   "film_start": 209.433,
+   "events": [
+    "ev-1213-9div-guanghua"
+   ],
+   "why": "L40 黑暗（无旁白）；L41 光华门几乎没人；L42 “第一天”。故事时间 03:07→04:11（约 4.5 分钟/秒），让 L41 开口时是 03:30（缺口的人在爬，时间线 03:11-03:29），L42 说“第一天”时钟走到 04:00、DAY 1 就在这个词上出现（hud 自动）。上一版 03:00-06:40 在 L41 时是 04:21、L42 时 06:17：话和钟差了两个多小时。",
+   "section": "night",
+   "see_zh": "黑夜，光华门从西南往东北看：远处紫金山的山火是唯一的光；03:00 起日军小人从缺口爬上城墙，镜头推近到 450 米；04:00 第一天开始（DAY 1 出现）。",
+   "evidence": [
+    {
+     "id": "ev-1213-9div-guanghua",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanjing Massacre",
+      "中文维基 南京保卫战",
+      "英文维基 Battle of Nanking（约 04:00 日军攀上几乎无人的城门）"
+     ],
+     "notes": "路线推测。约 04:00 出自日方记录，日方记录的钟点可能是东京时间（UTC+9），换成当地（UTC+8）要减 1 小时（research/data/weather.json timezone）。这里按当地 03:00 排（旁白 L41 同）。 窗口按纵队真实通过时间重排（推测）：排头走完路径约 40 分钟，纵队长约 3.0 km，一点上看到它通过约 1.9 小时；原窗口 8 小时。起点钟点的证据看事件的 evidence_detail.time（出处或推测），通过时长是算出来的。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "「天气好得不近人情」一说未能核实；间接证据指向晴或少云的冷天"
+   },
+   "anchors": [
+    "p:g-guanghua",
+    "p:g-guanghua"
+   ],
+   "look": {
+    "night_exposure": 3.0
+   }
+  },
+  {
+   "id": "s22",
+   "start": "1937-12-13T12:15:00+08:00",
+   "end": "1937-12-13T13:25:00+08:00",
+   "seconds": 20.1,
+   "cam": [
+    {
+     "at": 0,
+     "x": 2840.0,
+     "z": -1280.0,
+     "dist": 330,
+     "az": 0,
+     "el": 30
+    },
+    {
+     "at": 1,
+     "x": 2936.0,
+     "z": -1392.1,
+     "dist": 1250,
+     "az": 8,
+     "el": 34
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月13日",
+    "time": "12:15",
+    "place_zh": "太平门",
+    "place_en": "Taiping Gate"
+   },
+   "vo": [
+    "L43",
+    "L44"
+   ],
+   "film_start": 222.9,
+   "events": [
+    "ev-1213-taipingmen-massacre",
+    "ev-1213-prisoners-ne",
+    "ev-1213-east-wall-prisoners"
+   ],
+   "why": "L43 太平门约 1300 人被杀；L44 中岛日记“不留俘虏”。19.7 秒（两句连着）。暴力在 500 米外、俯角 32 度、群体。",
+   "section": "day1",
+   "see_zh": "太平门，夹在两座山之间（北在上，330 米起，镜头在门和墙外东北那群被缴械的人中间，两边都在 340 米以内：11-10 实测 520 米时人群没画出来）：门边墙脚下一群被扣住的人（暗处，不近看）；时间跳过，地上只剩暗痕；镜头慢慢升起到约 1250 米，墙外东北一大片被缴械的人在看守下坐着。",
+   "evidence": [
+    {
+     "id": "ev-1213-taipingmen-massacre",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanjing Massacre",
+      "中岛今朝吾 12-13 日记（经中文维基）",
+      "日文维基 南京事件（地雷、汽油、刺刀；1997 年松冈环调查后为人所知）"
+     ],
+     "notes": "人数 1300（英文、日文维基一致）；日期据中岛日记为 12-13 前后。护城河里填满尸体（中文维基）。钟点推测。"
+    },
+    {
+     "id": "ev-1213-prisoners-ne",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "中岛今朝吾 12-13 日记（经中文维基；仙鹤门一带 7000-8000 人，当晚用卡车运走）",
+      "英文维基 Nanjing Massacre"
+     ],
+     "notes": "旁白 L44：「墙外东北一大片被缴械的人，朝仙鹤门（图外）方向」。日记里的 7000-8000 人在仙鹤门（图外）；这里画墙外东北看得见的一部分，位置、人数推测。"
+    },
+    {
+     "id": "ev-1213-east-wall-prisoners",
+     "label": "核实",
+     "detail": {
+      "fact": "推测",
+      "time": "推测",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanjing Massacre（中岛 12-13 日记：不留俘虏）",
+      "中岛今朝吾 12-13 日记（经中文维基）"
+     ],
+     "notes": "旁白 L44/L83：押俘虏沿东墙走向中山门的画面。出处只有日记里的方针；这一队的路线、人数、钟点为推测。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "「天气好得不近人情」一说未能核实；间接证据指向晴或少云的冷天"
+   },
+   "anchors": [
+    [
+     2840,
+     -1280
+    ],
+    "p:x-taipingmen"
+   ]
+  },
+  {
+   "id": "s23",
+   "start": "1937-12-13T17:00:00+08:00",
+   "end": "1937-12-14T06:50:00+08:00",
+   "seconds": 19.5333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -5395.0,
+     "z": -4891.0,
+     "dist": 2800,
+     "az": 135,
+     "el": 30
+    },
+    {
+     "at": 1,
+     "x": -4277.0,
+     "z": -6059.0,
+     "dist": 2200,
+     "az": 135,
+     "el": 32
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月13日",
+    "time": "17:00",
+    "place_zh": "下关—煤炭港江边",
+    "place_en": "Xiaguan to Meitan"
+   },
+   "vo": [
+    "L45",
+    "L46",
+    "L47"
+   ],
+   "film_start": 243.0,
+   "events": [
+    "ev-1213-navy-patrol",
+    "ev-1213-pukou",
+    "ev-1213-xiaguan-massacre"
+   ],
+   "why": "L45 对岸也被占，“陷阱合上”；L46 东京审判：江边机枪扫射；L47 天亮（DAY 2）。机位在东北（幕府山一侧）顺风往西南看江（北不在上，破例）：从东南看机位在下关码头区火的烟下风。",
+   "section": "day1",
+   "see_zh": "江面大景（东北顺风）：黄昏日本炮艇在江上向筏子开火；入夜对岸浦口有了日军的灯火；镜头沿南岸横移到煤炭港：人群被押到水边，闪光（远、风格化），之后岸上只剩暗痕；天亮时江面灰白，岸上有日军纵队。",
+   "evidence": [
+    {
+     "id": "ev-1213-navy-patrol",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（海军第 11 战队 12-13 抵下关，向渡江者开火）",
+      "日文维基 南京攻略戦"
+     ],
+     "notes": "旁白 L45：傍晚炮舰在下关江面闪光（人们看到的是远处的炮口焰）。航迹（沿下关江面来回）推测。"
+    },
+    {
+     "id": "ev-1213-pukou",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "place": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "日文维基 南京攻略戦"
+     ],
+     "notes": "国崎支队 12-13 占浦口，此后驻守（驻守兵力与范围推测）。旁白 L45 的「夜里北岸出现日军的灯火」用这个事件（天黑后一部分人提灯，people 的 lantern 比例）。"
+    },
+    {
+     "id": "ev-1213-xiaguan-massacre",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "推测",
+      "count": "争议"
+     },
+     "sources": [
+      "南京军事法庭判决书屠杀地点表（经中文维基 南京大屠杀）",
+      "英文维基 Nanjing Massacre（第 16 师团在下关附近处决 4000-12000 名俘虏）"
+     ],
+     "notes": "南京审判表：12-13 至 16 日下关 5500 人以上；英文维基：第 16 师团在下关附近处决 4000-12000 人（无日期）。人数各方不一，只作署名记录。旁白 L46（12-13 22:00）要“成组押到水边、枪焰、岸边空了留下暗斑”：峰值（开始倒下）排在 12-13 21:00（推测：国际军事法庭“投降后 72 小时内”，最早的一晚），之后的一天半里逐步倒下，再变成暗斑。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "「天气好得不近人情」一说未能核实；间接证据指向晴或少云的冷天"
+   },
+   "anchors": [
+    "p:x-xiaguan-bank",
+    "p:lm-meitan"
+   ]
+  },
+  {
+   "id": "s24",
+   "start": "1937-12-14T09:00:00+08:00",
+   "end": "1937-12-14T09:40:00+08:00",
+   "seconds": 6.4667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -102.3,
+     "z": -1043.7,
+     "dist": 800,
+     "az": 0,
+     "el": 38
+    },
+    {
+     "at": 1,
+     "x": -198.7,
+     "z": -1310.7,
+     "dist": 600,
+     "az": 4,
+     "el": 40
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月14日",
+    "time": "09:00",
+    "place_zh": "安全区",
+    "place_en": "Safety Zone"
+   },
+   "vo": [
+    "L48"
+   ],
+   "film_start": 262.533,
+   "events": [
+    "ev-1214-zone-search",
+    "ev-1213-zone-crowd-c"
+   ],
+   "why": "L48 第二天搜安全区。",
+   "section": "days2",
+   "see_zh": "约 1500→1100 米：安全区里日军小队一条巷一条巷搜，人群让开；一排排男人被带出收容所的门；安全区界线在画面里。",
+   "evidence": [
+    {
+     "id": "ev-1214-zone-search",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "争议"
+     },
+     "sources": [
+      "日文维基 南京事件（12-14 至 16 日安全区内摘发、处刑约 6500-6700 名，偕行社资料集）",
+      "中文维基（看额头帽箍印、手上老茧）"
+     ],
+     "notes": "第 9 师团扫荡安全区；数字出自日方资料（条目注明需要非一次资料）。押送方向推测为下关江边。"
+    },
+    {
+     "id": "ev-1213-zone-crowd-c",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "中文维基 南京安全区",
+      "Swarthmore"
+     ],
+     "notes": "收容所里 12-17 约 5 万、12-21 近 7 万（Lu 2019，经英文维基），其余住在民房、草坪、防空洞和街上。住满持续到 1-28 日方撤离令之前（hold_until 01-27 12:00：1-28 撤离令、1-30 限 2-04 回家，英文维基 Nanking Safety Zone；撤令之前人数没有记载下降，推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "核实",
+    "note": "暖得像十月（魏特琳）"
+   },
+   "anchors": [
+    "e:ev-1214-zone-search@0.06",
+    "e:ev-1214-zone-search@0.12"
+   ],
+   "hud": {
+    "outline": "safety_zone"
+   }
+  },
+  {
+   "id": "s25",
+   "start": "1937-12-14T10:00:00+08:00",
+   "end": "1937-12-14T10:22:00+08:00",
+   "seconds": 6.0,
+   "cam": [
+    {
+     "at": 0,
+     "x": -398.5,
+     "z": -981.4,
+     "dist": 330,
+     "az": 20,
+     "el": 38
+    },
+    {
+     "at": 1,
+     "x": -398.5,
+     "z": -1001.4,
+     "dist": 270,
+     "az": 22,
+     "el": 40
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月14日",
+    "time": "10:00",
+    "place_zh": "安全区",
+    "place_en": "Safety Zone"
+   },
+   "vo": [
+    "L49"
+   ],
+   "film_start": 269.0,
+   "events": [
+    "ev-1214-zone-search",
+    "ev-1213-camp-univ"
+   ],
+   "why": "L49 看手上的茧杀人。画面只给排和被分开的一队，不近看。",
+   "section": "days2",
+   "see_zh": "约 300 米，收容所的院子（金陵大学一带）：男人一排排站着，有人被拉出队伍；不画手、不画脸（300 米、俯角 40 度）。",
+   "evidence": [
+    {
+     "id": "ev-1214-zone-search",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "争议"
+     },
+     "sources": [
+      "日文维基 南京事件（12-14 至 16 日安全区内摘发、处刑约 6500-6700 名，偕行社资料集）",
+      "中文维基（看额头帽箍印、手上老茧）"
+     ],
+     "notes": "第 9 师团扫荡安全区；数字出自日方资料（条目注明需要非一次资料）。押送方向推测为下关江边。"
+    },
+    {
+     "id": "ev-1213-camp-univ",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone（宿舍 7000、图书馆 3000、蚕桑系 4000、附中 1.1-1.5 万）"
+     ],
+     "notes": null
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "核实",
+    "note": "暖得像十月（魏特琳）"
+   },
+   "anchors": [
+    "p:rc-jinling-univ",
+    "p:rc-jinling-univ"
+   ]
+  },
+  {
+   "id": "s26",
+   "start": "1937-12-14T12:00:00+08:00",
+   "end": "1937-12-14T14:00:00+08:00",
+   "seconds": 9.8333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -1470.0,
+     "z": -7720.0,
+     "dist": 300,
+     "az": 12,
+     "el": 30
+    },
+    {
+     "at": 1,
+     "x": -1470.0,
+     "z": -7720.0,
+     "dist": 250,
+     "az": 14,
+     "el": 28
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月14日",
+    "time": "12:00",
+    "place_zh": "幕府山 上元门",
+    "place_en": "Mufu Mountain"
+   },
+   "vo": [
+    "L50"
+   ],
+   "film_start": 275.0,
+   "events": [
+    "ev-1214-mufushan-held"
+   ],
+   "why": "L50 山田支队清点俘虏 14777 人（日方自己的数）。时间线 12:55Z：同一时刻只有一群（round-up 08-10 点结束，held 09:40 起）。机位离院子中心 ≤ 340 米：11-10 实测，约 400 米以外院子里的人群画不出来、500 米只画近处一角（people 的点数预算按离镜头远近取舍，`previews/director/w5/x_cr_d.png`），300 米里整院坐满（x_mf2）。",
+   "section": "days2",
+   "see_zh": "约 300→250 米（机位到院子中心不超过 340 米）看幕府山下上元门边的学校院子：院子里坐满了人，外面一圈看守；正午低太阳，影子比人长；后面是幕府山的江崖。",
+   "evidence": [
+    {
+     "id": "ev-1214-mufushan-held",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "place": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "日文维基 南京攻略戦（俘虏 14,777 名收容在上元门外的学校）",
+      "中文维基 南京大屠杀"
+     ],
+     "notes": "旁白 L50/L51：一大片坐着的人，外圈一圈守兵。学校位置推测；人数是日方记录的俘虏数（显示时受上限限制）。窗口（wave 4，推测）：09:40 起人进院、10:00 满（ev-1214-mufushan-roundup 的队尾 09:50 前走完、10:00 止，院里不再叠两群人），满员持续到 12-17 14:00（hold_until：山田日记 12-14 院里 14,777 人、12-15 请示、12-17 下午分批押去江边，日文维基南京事件；钟点推测），12-18 08:00 前减完。人群模块现在只有三角形斜坡（高峰 10:00 起线性减到 end）：L50（12-14 12:00）约 98 %，L53（12-15 09:00）约 76 %，L57（12-16 22:00）约 36 %，L58（12-17 06:50）约 27 %；人群模块读 hold_until 之后全是 100 %（到 12-17 14:00 才开始减；那时把 timeline.py 顶上的 PEOPLE_READS_HOLD 改成 True 重跑，窗口收到 12-17 20:00）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "核实",
+    "note": "暖得像十月（魏特琳）"
+   },
+   "anchors": [
+    "e:ev-1214-mufushan-held",
+    "e:ev-1214-mufushan-held"
+   ]
+  },
+  {
+   "id": "s27a",
+   "start": "1937-12-15T07:40:00+08:00",
+   "end": "1937-12-15T07:50:00+08:00",
+   "seconds": 4.9667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -1470.0,
+     "z": -7720.0,
+     "dist": 260.0,
+     "az": 14,
+     "el": 28
+    },
+    {
+     "at": 1,
+     "x": -1480.0,
+     "z": -7720.0,
+     "dist": 292.9,
+     "az": 16.0,
+     "el": 30.0
+    }
+   ],
+   "ease": "linear",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月15日",
+    "time": "07:40",
+    "place_zh": "幕府山",
+    "place_en": "Mufu Mountain"
+   },
+   "vo": [
+    "L52",
+    "L53"
+   ],
+   "film_start": 284.833,
+   "events": [
+    "ev-1214-mufushan-held",
+    "ev-1215-yamada-rider-out",
+    "ev-1215-yamada-rider-back"
+   ],
+   "why": "L52 派人去城里请示；L53 回答是全部杀掉。钟点是示意（日记没写），脚本要求只显示日期：hud 不显示钟点。分两段各 10 分钟（07:40 骑手出院、09:15 回来）：人民区 11-10 14:45Z 的速度表：骑手 1.3 米/秒，故事时间 130 分钟压在 10 秒里（785 倍）他一帧跑 34 米、是一道线；两段各 120 倍，他是走着的。",
+   "section": "days2",
+   "see_zh": "同一机位，第二天早上：一个骑马的人离开院子往城里去，又回来；院子里仍坐满人。",
+   "evidence": [
+    {
+     "id": "ev-1214-mufushan-held",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "place": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "日文维基 南京攻略戦（俘虏 14,777 名收容在上元门外的学校）",
+      "中文维基 南京大屠杀"
+     ],
+     "notes": "旁白 L50/L51：一大片坐着的人，外圈一圈守兵。学校位置推测；人数是日方记录的俘虏数（显示时受上限限制）。窗口（wave 4，推测）：09:40 起人进院、10:00 满（ev-1214-mufushan-roundup 的队尾 09:50 前走完、10:00 止，院里不再叠两群人），满员持续到 12-17 14:00（hold_until：山田日记 12-14 院里 14,777 人、12-15 请示、12-17 下午分批押去江边，日文维基南京事件；钟点推测），12-18 08:00 前减完。人群模块现在只有三角形斜坡（高峰 10:00 起线性减到 end）：L50（12-14 12:00）约 98 %，L53（12-15 09:00）约 76 %，L57（12-16 22:00）约 36 %，L58（12-17 06:50）约 27 %；人群模块读 hold_until 之后全是 100 %（到 12-17 14:00 才开始减；那时把 timeline.py 顶上的 PEOPLE_READS_HOLD 改成 True 重跑，窗口收到 12-17 20:00）。"
+    },
+    {
+     "id": "ev-1215-yamada-rider-out",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "path": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "日文维基 南京事件（山田日记：派人去司令部请示；使者是骑兵少尉）",
+      "中文维基 南京大屠杀"
+     ],
+     "notes": "旁白 L52：一名骑马的军官进城；没有记载车辆和路线，路线推测，钟点只作示意。"
+    },
+    {
+     "id": "ev-1215-yamada-rider-back",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "path": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "日文维基 南京事件（山田日记：答复是全部杀掉）",
+      "中文维基 南京大屠杀"
+     ],
+     "notes": "旁白 L53：他回到俘虏收容的院子。钟点只作示意（出处没写钟点）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "前后几天晴"
+   },
+   "anchors": [
+    [
+     -1470.0,
+     -7720.0
+    ],
+    [
+     -1480.0,
+     -7720.0
+    ]
+   ],
+   "hud": {
+    "clock": false
+   },
+   "step_of": "s27"
+  },
+  {
+   "id": "s27b",
+   "start": "1937-12-15T09:15:00+08:00",
+   "end": "1937-12-15T09:25:00+08:00",
+   "seconds": 4.9667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -1480.0,
+     "z": -7720.0,
+     "dist": 292.9,
+     "az": 16.0,
+     "el": 30.0
+    },
+    {
+     "at": 1,
+     "x": -1490.0,
+     "z": -7720.0,
+     "dist": 330.0,
+     "az": 18,
+     "el": 32
+    }
+   ],
+   "ease": "linear",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月15日",
+    "time": "09:15",
+    "place_zh": "幕府山",
+    "place_en": "Mufu Mountain"
+   },
+   "vo": [
+    "L52",
+    "L53"
+   ],
+   "film_start": 289.8,
+   "events": [
+    "ev-1214-mufushan-held",
+    "ev-1215-yamada-rider-out",
+    "ev-1215-yamada-rider-back"
+   ],
+   "why": "L52 派人去城里请示；L53 回答是全部杀掉。钟点是示意（日记没写），脚本要求只显示日期：hud 不显示钟点。分两段各 10 分钟（07:40 骑手出院、09:15 回来）：人民区 11-10 14:45Z 的速度表：骑手 1.3 米/秒，故事时间 130 分钟压在 10 秒里（785 倍）他一帧跑 34 米、是一道线；两段各 120 倍，他是走着的。",
+   "section": "days2",
+   "see_zh": "同一机位，第二天早上：一个骑马的人离开院子往城里去，又回来；院子里仍坐满人。",
+   "evidence": [
+    {
+     "id": "ev-1214-mufushan-held",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "place": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "日文维基 南京攻略戦（俘虏 14,777 名收容在上元门外的学校）",
+      "中文维基 南京大屠杀"
+     ],
+     "notes": "旁白 L50/L51：一大片坐着的人，外圈一圈守兵。学校位置推测；人数是日方记录的俘虏数（显示时受上限限制）。窗口（wave 4，推测）：09:40 起人进院、10:00 满（ev-1214-mufushan-roundup 的队尾 09:50 前走完、10:00 止，院里不再叠两群人），满员持续到 12-17 14:00（hold_until：山田日记 12-14 院里 14,777 人、12-15 请示、12-17 下午分批押去江边，日文维基南京事件；钟点推测），12-18 08:00 前减完。人群模块现在只有三角形斜坡（高峰 10:00 起线性减到 end）：L50（12-14 12:00）约 98 %，L53（12-15 09:00）约 76 %，L57（12-16 22:00）约 36 %，L58（12-17 06:50）约 27 %；人群模块读 hold_until 之后全是 100 %（到 12-17 14:00 才开始减；那时把 timeline.py 顶上的 PEOPLE_READS_HOLD 改成 True 重跑，窗口收到 12-17 20:00）。"
+    },
+    {
+     "id": "ev-1215-yamada-rider-out",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "path": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "日文维基 南京事件（山田日记：派人去司令部请示；使者是骑兵少尉）",
+      "中文维基 南京大屠杀"
+     ],
+     "notes": "旁白 L52：一名骑马的军官进城；没有记载车辆和路线，路线推测，钟点只作示意。"
+    },
+    {
+     "id": "ev-1215-yamada-rider-back",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "path": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "日文维基 南京事件（山田日记：答复是全部杀掉）",
+      "中文维基 南京大屠杀"
+     ],
+     "notes": "旁白 L53：他回到俘虏收容的院子。钟点只作示意（出处没写钟点）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "前后几天晴"
+   },
+   "anchors": [
+    [
+     -1480.0,
+     -7720.0
+    ],
+    [
+     -1490.0,
+     -7720.0
+    ]
+   ],
+   "hud": {
+    "clock": false
+   },
+   "step_of": "s27"
+  },
+  {
+   "id": "s28",
+   "start": "1937-12-15T13:00:00+08:00",
+   "end": "1937-12-15T13:25:00+08:00",
+   "seconds": 10.3667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -1786.1,
+     "z": 554.4,
+     "dist": 520,
+     "az": 40,
+     "el": 30
+    },
+    {
+     "at": 1,
+     "x": -1816.1,
+     "z": 594.4,
+     "dist": 420,
+     "az": 36,
+     "el": 30
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月15日",
+    "time": "13:00",
+    "place_zh": "汉中门外",
+    "place_en": "Outside Hanzhong Gate"
+   },
+   "vo": [
+    "L54"
+   ],
+   "film_start": 294.767,
+   "events": [
+    "ev-1215-hanzhongmen",
+    "ev-1214-sifabu"
+   ],
+   "why": "L54 汉中门外两千多人被机枪扫射。上一版 L54-L55 是一个 18 秒镜、故事 6.7 小时（1314 倍：一队人一帧走 42 米）；人民区 14:45Z 的速度表要求近景 150 倍以内，所以拆成两镜：L54 用 25 分钟，L55 用伍长德自己的 18 分钟（下一镜）。",
+   "section": "days2",
+   "see_zh": "汉中门和护城河（约 520→420 米）：一长队人被押出城门到河边；闪光，烟（远、风格化）。",
+   "evidence": [
+    {
+     "id": "ev-1215-hanzhongmen",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "争议",
+      "place": "推测",
+      "count": "争议"
+     },
+     "sources": [
+      "南京军事法庭判决书屠杀地点表（经中文维基 南京大屠杀）",
+      "英文维基 Nanking Safety Zone",
+      "gap_fire_damage verify（机枪射杀后焚尸）"
+     ],
+     "notes": "伍长德从这里躲进秦淮河活下来，1946 年到东京审判作证。人数见上条。旁白 L54（12-15 13:00，“那天下午”）要枪焰、L55（18:00）要倒下的暗影：峰值（开始倒下）定在 12-15 13:00（伍长德口径是 12-15 下午），倒下约 3 小时，19:00 前全成暗斑。"
+    },
+    {
+     "id": "ev-1214-sifabu",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "争议",
+      "path": "推测",
+      "count": "争议"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone（贝德士报告口径：12-14 约 400-500 人，含制服警察 100 多、志愿警察 300 多）",
+      "南京军事法庭判决书屠杀地点表（经中文维基 南京大屠杀）（伍长德口径：12-15，2000 余人）"
+     ],
+     "notes": "两种说法日期、人数不同，并列。路线推测。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "前后几天晴"
+   },
+   "anchors": [
+    "p:x-hanzhongmen",
+    "p:x-hanzhongmen"
+   ]
+  },
+  {
+   "id": "s28b",
+   "start": "1937-12-15T19:08:00+08:00",
+   "end": "1937-12-15T19:26:00+08:00",
+   "seconds": 7.9,
+   "cam": [
+    {
+     "at": 0,
+     "x": -1871.5,
+     "z": 596.5,
+     "dist": 330,
+     "az": 30,
+     "el": 30
+    },
+    {
+     "at": 1,
+     "x": -1788.3,
+     "z": 811.1,
+     "dist": 300,
+     "az": 24,
+     "el": 30
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月15日",
+    "time": "19:08",
+    "place_zh": "汉中门外护城河",
+    "place_en": "The moat outside Hanzhong Gate"
+   },
+   "vo": [
+    "L55"
+   ],
+   "film_start": 305.133,
+   "events": [
+    "ev-1215-wu-changde"
+   ],
+   "why": "L55 交警伍长德逃生作证（时间线：19:00-19:40 他走 1.65 公里到水西门一带）。18 分钟压在 7.5 秒里（约 150 倍）。",
+   "section": "days2",
+   "see_zh": "夜，护城河边（约 330→300 米）：一个小人从倒下的人中间滑进护城河，沿河往南走，镜头跟着他。",
+   "evidence": [
+    {
+     "id": "ev-1215-wu-changde",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "path": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "南京军事法庭判决书屠杀地点表（经中文维基 南京大屠杀）",
+      "英文维基 Nanking Safety Zone（伍长德 1946 年在东京审判作证）"
+     ],
+     "notes": "旁白 L55：天黑后他钻进秦淮河，顺河往南走向水西门。人走不进水，这里画他沿护城河岸走（一个人，镜头可以用 people.where 跟着他）。路线与钟点推测。 窗口按纵队真实通过时间重排（推测）：排头走完路径约 23 分钟，纵队长约 0.0 km，一点上看到它通过约 0.0 小时；原窗口 2 小时。起点钟点的证据看事件的 evidence_detail.time（出处或推测），通过时长是算出来的。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "前后几天晴"
+   },
+   "anchors": [
+    "e:ev-1215-wu-changde@0.05",
+    "e:ev-1215-wu-changde@0.2"
+   ]
+  },
+  {
+   "id": "s29",
+   "start": "1937-12-16T20:40:00+08:00",
+   "end": "1937-12-16T22:45:00+08:00",
+   "seconds": 10.9667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -1690.5,
+     "z": -554.4,
+     "dist": 520,
+     "az": 0,
+     "el": 36
+    },
+    {
+     "at": 1,
+     "x": -1690.5,
+     "z": -584.4,
+     "dist": 380,
+     "az": 2,
+     "el": 38
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月16日",
+    "time": "20:40",
+    "place_zh": "金陵女子文理学院",
+    "place_en": "Ginling College"
+   },
+   "vo": [
+    "L56"
+   ],
+   "film_start": 313.033,
+   "events": [
+    "ev-1213-camp-ginling"
+   ],
+   "why": "L56 魏特琳：想不出这一天城里还有什么罪没被犯过。",
+   "section": "days2",
+   "see_zh": "夜，金陵女院（宫殿式屋顶，院子草地挤满人）约 520→380 米：黑着的楼里一扇亮着的窗，22:40 灭了。",
+   "evidence": [
+    {
+     "id": "ev-1213-camp-ginling",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone（12 月 1 万，1-04 约 5000-6000）",
+      "英文维基 Minnie Vautrin"
+     ],
+     "notes": null
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "前后几天晴"
+   },
+   "anchors": [
+    "e:ev-1213-camp-ginling",
+    "e:ev-1213-camp-ginling"
+   ]
+  },
+  {
+   "id": "s30",
+   "start": "1937-12-16T23:00:00+08:00",
+   "end": "1937-12-16T23:24:00+08:00",
+   "seconds": 7.8333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -1359.0,
+     "z": -7775.0,
+     "dist": 520,
+     "az": 6,
+     "el": 28
+    },
+    {
+     "at": 1,
+     "x": -1369.0,
+     "z": -7785.0,
+     "dist": 420,
+     "az": 8,
+     "el": 26
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月16日",
+    "time": "23:00",
+    "place_zh": "幕府山江边",
+    "place_en": "Below Mufu Mountain"
+   },
+   "vo": [
+    "L57"
+   ],
+   "film_start": 324.0,
+   "events": [
+    "ev-1216-mufushan-first-night",
+    "ev-1216-mufushan-batches-first-night",
+    "ev-1214-mufushan-held"
+   ],
+   "why": "L57 此后几夜幕府山下江边的屠杀。时间线 12:55Z：本镜用 ev-1216-mufushan-batches-first-night（22:45-00:15，人被押下去）+ ev-1216-mufushan-first-night（闪光、然后是暗痕），学校院子里还坐着人（ev-1214-mufushan-held）；不放 ev-1215-mufushan、不放 17 日夜的 caoxiexia。",
+   "section": "days2",
+   "see_zh": "夜，幕府山江边（草鞋峡，约 520→420 米）：坐着的人一批批被押到水边，水边闪光（远、风格化）。",
+   "evidence": [
+    {
+     "id": "ev-1216-mufushan-first-night",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "推测",
+      "count": "争议"
+     },
+     "sources": [
+      "日文维基 南京攻略戦（16 日夜约 1000 人被枪杀）",
+      "日文维基 南京事件（16、17 日夜各自到翌日未明，据士兵日记）"
+     ],
+     "notes": "旁白 L57（12-16 22:00）“枪焰沿水边”与 L58（12-17 06:50）“水边一段有暗斑、学校里仍坐满俘虏”：16 日夜这一小批先倒下，留下暗斑；主体是 ev-1216-caoxiexia（17 日夜）。具体钟点、人数取 ja 维基“约 1000”，地点同草鞋峡（推测）。"
+    },
+    {
+     "id": "ev-1216-mufushan-batches-first-night",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "path": "推测",
+      "count": "争议"
+     },
+     "sources": [
+      "日文维基 南京攻略戦（16 日夜约 1000 人被枪杀）",
+      "日文维基 南京事件（16、17 日夜各自到翌日未明，据士兵日记）"
+     ],
+     "notes": "旁白 L57（12-16 夜）“分批押到水边”：人群模块里一支纵队从起点出发后最多约 3 倍自然间距内走完（一个 32 小时的窗口只会在头几个小时有人在走），所以每一夜各给一个短窗口；这一夜放在导播 L57 镜头（22:45 起）里：先头的人 21:00 起已在水边倒下（ev-1216-mufushan-first-night），后面的人一批批还在往下走。钟点、人数推测（ja 维基“约 1000”）。"
+    },
+    {
+     "id": "ev-1214-mufushan-held",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "place": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "日文维基 南京攻略戦（俘虏 14,777 名收容在上元门外的学校）",
+      "中文维基 南京大屠杀"
+     ],
+     "notes": "旁白 L50/L51：一大片坐着的人，外圈一圈守兵。学校位置推测；人数是日方记录的俘虏数（显示时受上限限制）。窗口（wave 4，推测）：09:40 起人进院、10:00 满（ev-1214-mufushan-roundup 的队尾 09:50 前走完、10:00 止，院里不再叠两群人），满员持续到 12-17 14:00（hold_until：山田日记 12-14 院里 14,777 人、12-15 请示、12-17 下午分批押去江边，日文维基南京事件；钟点推测），12-18 08:00 前减完。人群模块现在只有三角形斜坡（高峰 10:00 起线性减到 end）：L50（12-14 12:00）约 98 %，L53（12-15 09:00）约 76 %，L57（12-16 22:00）约 36 %，L58（12-17 06:50）约 27 %；人群模块读 hold_until 之后全是 100 %（到 12-17 14:00 才开始减；那时把 timeline.py 顶上的 PEOPLE_READS_HOLD 改成 True 重跑，窗口收到 12-17 20:00）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "前后几天晴"
+   },
+   "anchors": [
+    "p:x-caoxiexia",
+    "p:x-caoxiexia"
+   ]
+  },
+  {
+   "id": "s31",
+   "start": "1937-12-17T14:26:00+08:00",
+   "end": "1937-12-17T14:32:00+08:00",
+   "seconds": 4.0333,
+   "cam": [
+    {
+     "at": 0,
+     "x": 2266.7,
+     "z": 878.1,
+     "dist": 130,
+     "az": 90,
+     "el": 9
+    },
+    {
+     "at": 1,
+     "x": 2236.7,
+     "z": 878.1,
+     "dist": 105,
+     "az": 90,
+     "el": 8
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月17日",
+    "time": "14:26",
+    "place_zh": "中山东路",
+    "place_en": "Zhongshan East Road"
+   },
+   "vo": [
+    "L58"
+   ],
+   "film_start": 331.833,
+   "events": [
+    "ev-1217-parade"
+   ],
+   "why": "L58 入城式（12-17 13:30 起）。这是列在任务里的“17 日入城式”近景：11-10 静帧 `x_par_c.png`（从东往西看，兵是背影：不拍脸）；`x_par_a.png` 是从西往东看的版本（迎面，不用）。时间线：parade 13:30-16:00，高峰 14:30，一万人的纵队有约 3 公里长，14:30 前后整条路都是人；取 14:26-14:32（6 分钟压在 4 秒里，约 90 倍），纵队才不会一秒钟走出画面。答案段 L86 要“回放”它，前面得先出现过。",
+   "section": "days2",
+   "see_zh": "无旁白：入城式，从中山东路上空 17 米、120 米外向西看：街两边一排排列队的兵，中间的纵队一排排往西走（背影），光秃秃的悬铃木、店面、电线杆；镜头慢慢向前。",
+   "evidence": [
+    {
+     "id": "ev-1217-parade",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "未核实",
+      "path": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "日文维基 南京事件",
+      "英文维基 Iwane Matsui",
+      "Commons 1937 年日本相册图注（部队在中山门城头举枪致敬、大马路两侧列队、将官由松井领头骑马进入国民政府）"
+     ],
+     "notes": "陆军主线：中山门→中山东路→国民政府（相册图注）；钟点 13:30 只见于台湾媒体报道，未读原文（未核实）。陆海军共同入城式；松井、朝香宫、柳川、长谷川清。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "核实",
+    "note": "夜里很冷、有风、枯叶作响；近满月（12-18 02:52 满月）"
+   },
+   "anchors": [
+    "e:ev-1217-parade@0.5",
+    "e:ev-1217-parade@0.5"
+   ],
+   "no_words": true
+  },
+  {
+   "id": "s32",
+   "start": "1937-12-17T19:50:00+08:00",
+   "end": "1937-12-17T23:10:00+08:00",
+   "seconds": 14.7667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -1690.5,
+     "z": -554.4,
+     "dist": 480,
+     "az": 0,
+     "el": 34
+    },
+    {
+     "at": 1,
+     "x": -250.0,
+     "z": -300.0,
+     "dist": 1900,
+     "az": 4,
+     "el": 36
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月17日",
+    "time": "19:50",
+    "place_zh": "金陵女子文理学院",
+    "place_en": "Ginling College"
+   },
+   "vo": [
+    "L60",
+    "L61"
+   ],
+   "film_start": 335.867,
+   "events": [
+    "ev-1213-camp-ginling",
+    "ev-1213-zone-crowd-c"
+   ],
+   "why": "L60 满月夜日军在金陵女院门口扣住魏特琳；L61 东京审判：约两万起强奸。",
+   "section": "days2",
+   "see_zh": "满月下的金陵女院（同前朝向，480 米）：门口一团小人和灯笼，别的灯往街上去；镜头升到约 1900 米，月光下的全城（鼓楼一带），安全区在中间，什么都不动。",
+   "evidence": [
+    {
+     "id": "ev-1213-camp-ginling",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone（12 月 1 万，1-04 约 5000-6000）",
+      "英文维基 Minnie Vautrin"
+     ],
+     "notes": null
+    },
+    {
+     "id": "ev-1213-zone-crowd-c",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "中文维基 南京安全区",
+      "Swarthmore"
+     ],
+     "notes": "收容所里 12-17 约 5 万、12-21 近 7 万（Lu 2019，经英文维基），其余住在民房、草坪、防空洞和街上。住满持续到 1-28 日方撤离令之前（hold_until 01-27 12:00：1-28 撤离令、1-30 限 2-04 回家，英文维基 Nanking Safety Zone；撤令之前人数没有记载下降，推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "核实",
+    "note": "夜里很冷、有风、枯叶作响；近满月（12-18 02:52 满月）"
+   },
+   "anchors": [
+    "e:ev-1213-camp-ginling",
+    [
+     -250,
+     -300
+    ]
+   ]
+  },
+  {
+   "id": "s33",
+   "start": "1937-12-19T09:30:00+08:00",
+   "end": "1937-12-19T14:00:00+08:00",
+   "seconds": 8.7,
+   "cam": [
+    {
+     "at": 0,
+     "x": 407.0,
+     "z": 2763.9,
+     "dist": 600,
+     "az": 0,
+     "el": 32
+    },
+    {
+     "at": 1,
+     "x": 407.0,
+     "z": 2673.9,
+     "dist": 300,
+     "az": 0,
+     "el": 26
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月19日",
+    "time": "09:30",
+    "place_zh": "太平路",
+    "place_en": "Taiping Road"
+   },
+   "vo": [
+    "L62"
+   ],
+   "film_start": 350.633,
+   "events": [
+    "ev-1219-looting-trucks",
+    "ev-1219-looting-south"
+   ],
+   "why": "L62 第七天：抢空商店再放火。",
+   "section": "fire",
+   "see_zh": "约 600→300 米顺着太平路往北看：卡车停在店门口，小人把货搬上车，车开走；空了的店起火，城南一根根烟柱升起来。",
+   "evidence": [
+    {
+     "id": "ev-1219-looting-trucks",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "菲奇日记 12-19/20（经日文维基）",
+      "Smythe, War Damage in the Nanking Area (1938)",
+      "Espy 报告（12-20 夜日军用卡车趁火打劫）"
+     ],
+     "notes": "先抢后烧；路线推测。"
+    },
+    {
+     "id": "ev-1219-looting-south",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "path": "推测"
+     },
+     "sources": [
+      "Smythe, War Damage in the Nanking Area (1938)（全城 63.0% 门牌被抢）",
+      "中文维基 南京大屠杀"
+     ],
+     "notes": "路线推测。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.15,
+    "evidence": "推测",
+    "note": "晴；城内开始成片放火（烟由火区画）"
+   },
+   "anchors": [
+    "e:ev-1219-looting-trucks@0.35",
+    "e:ev-1219-looting-trucks@0.35"
+   ]
+  },
+  {
+   "id": "s34",
+   "start": "1937-12-20T20:00:00+08:00",
+   "end": "1937-12-20T21:00:00+08:00",
+   "seconds": 4.0333,
+   "cam": [
+    {
+     "at": 0,
+     "x": 620.0,
+     "z": 1840.0,
+     "dist": 270,
+     "az": 0,
+     "el": 22
+    },
+    {
+     "at": 1,
+     "x": 620.0,
+     "z": 1900.0,
+     "dist": 120,
+     "az": 0,
+     "el": 14
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月20日",
+    "time": "20:00",
+    "place_zh": "太平路",
+    "place_en": "Taiping Road"
+   },
+   "vo": [
+    "L63"
+   ],
+   "film_start": 359.333,
+   "events": [
+    "ev-1219-looting-trucks"
+   ],
+   "why": "火组 13:20Z：12-20 18:00-20:00 太平路一带有 93-39 栋在烧（(620, 1860) 附近）；近景从 60-300 米起火是按每栋房子画的。不是整条街同时烧：Smythe 太平路 68%，所以中间有没烧的黑口子。",
+   "section": "fire",
+   "see_zh": "无旁白：夜，太平路近景（270→120 米，向北看）：一段段屋子在烧，中间是烧空的黑口子，窗口喷火、火星往上飘。",
+   "evidence": [
+    {
+     "id": "ev-1219-looting-trucks",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "菲奇日记 12-19/20（经日文维基）",
+      "Smythe, War Damage in the Nanking Area (1938)",
+      "Espy 报告（12-20 夜日军用卡车趁火打劫）"
+     ],
+     "notes": "先抢后烧；路线推测。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.15,
+    "evidence": "核实",
+    "note": "晴朗、阳光持续（魏特琳）；城南大火"
+   },
+   "anchors": [
+    [
+     620,
+     1840
+    ],
+    [
+     620,
+     1900
+    ]
+   ],
+   "no_words": true
+  },
+  {
+   "id": "s35",
+   "start": "1937-12-20T21:00:00+08:00",
+   "end": "1937-12-22T14:00:00+08:00",
+   "seconds": 7.7,
+   "cam": [
+    {
+     "at": 0,
+     "x": 407.0,
+     "z": 2713.9,
+     "dist": 1000,
+     "az": 0,
+     "el": 36
+    },
+    {
+     "at": 1,
+     "x": 358.9,
+     "z": 2294.0,
+     "dist": 3800,
+     "az": 0,
+     "el": 32
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月20日",
+    "time": "21:00",
+    "place_zh": "太平路—城南",
+    "place_en": "Taiping Road and the south city"
+   },
+   "vo": [
+    "L65"
+   ],
+   "film_start": 363.367,
+   "events": [
+    "ev-1219-looting-trucks"
+   ],
+   "why": "L65 美国人的调查：城内的火几乎全是日军放的。",
+   "section": "fire",
+   "see_zh": "镜头从太平路升到约 2500-3800 米，故事时间约 6 小时/秒跑过一天半：城南商业街一栋栋接着起火（不是连片火线），安全区黑着。",
+   "evidence": [
+    {
+     "id": "ev-1219-looting-trucks",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "菲奇日记 12-19/20（经日文维基）",
+      "Smythe, War Damage in the Nanking Area (1938)",
+      "Espy 报告（12-20 夜日军用卡车趁火打劫）"
+     ],
+     "notes": "先抢后烧；路线推测。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.15,
+    "evidence": "核实",
+    "note": "晴朗、阳光持续（魏特琳）；城南大火"
+   },
+   "anchors": [
+    "e:ev-1219-looting-trucks@0.35",
+    "p:d-fuzimiao"
+   ]
+  },
+  {
+   "id": "s36",
+   "start": "1937-12-26T09:40:00+08:00",
+   "end": "1937-12-26T10:10:00+08:00",
+   "seconds": 8.5667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -557.2,
+     "z": -731.9,
+     "dist": 300,
+     "az": 0,
+     "el": 38
+    },
+    {
+     "at": 1,
+     "x": -587.2,
+     "z": -701.9,
+     "dist": 270,
+     "az": 2,
+     "el": 38
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月26日",
+    "time": "09:40",
+    "place_zh": "金陵大学",
+    "place_en": "University of Nanking"
+   },
+   "vo": [
+    "L66"
+   ],
+   "film_start": 371.067,
+   "events": [
+    "ev-1226-stages-crowd"
+   ],
+   "why": "L66 登记时许诺站出来的前士兵不杀。上一版 L66-L67 是一个 19 秒镜、故事 8.5 小时；拆成两镜：登记（静着的人群）和押走（下一镜）。",
+   "section": "fire",
+   "see_zh": "约 300→270 米，金陵大学网球场：约 3000 人排成行（11-10 实测：480 米时这群人只是草地上一小块点，300 米才读成人群），一个日本军官对着他们。",
+   "evidence": [
+    {
+     "id": "ev-1226-stages-crowd",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanjing Massacre（贝德士：圣诞节后不久，要前中国士兵出来登记，二百余人被处决）",
+      "VO_SCRIPT_final L66"
+     ],
+     "notes": "旁白 L66：校内网球场前约 3000 人成行站着，一名日军军官面对他们，没有台子。钟点（出处只给日期）与人数（Bates 报告 3000 人）见 VO 稿；位置按旁白稿。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.2,
+    "evidence": "推测",
+    "note": "冰冻、好天气为主"
+   },
+   "anchors": [
+    "p:x-jinling-tennis",
+    "p:x-jinling-tennis"
+   ]
+  },
+  {
+   "id": "s36b",
+   "start": "1937-12-26T16:30:00+08:00",
+   "end": "1937-12-26T17:00:00+08:00",
+   "seconds": 10.4,
+   "cam": [
+    {
+     "at": 0,
+     "x": -557.2,
+     "z": -731.9,
+     "dist": 500,
+     "az": 2,
+     "el": 36
+    },
+    {
+     "at": 1,
+     "x": -807.2,
+     "z": -331.9,
+     "dist": 1500,
+     "az": 2,
+     "el": 38
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月26日",
+    "time": "16:30",
+    "place_zh": "金陵大学",
+    "place_en": "University of Nanking"
+   },
+   "vo": [
+    "L67"
+   ],
+   "film_start": 379.633,
+   "events": [
+    "ev-1226-stages-crowd",
+    "ev-1226-stages-march"
+   ],
+   "why": "L67 两百多人站出来，当夜被杀（画面只到押走）。30 分钟压在 10 秒里（180 倍）。",
+   "section": "fire",
+   "see_zh": "傍晚（16:30-17:00；11-10 静帧 17:20 时太黑）站出来的人被宪兵分两队押往五台山、汉西门外，场子空了；镜头升到约 1500 米。",
+   "evidence": [
+    {
+     "id": "ev-1226-stages-crowd",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanjing Massacre（贝德士：圣诞节后不久，要前中国士兵出来登记，二百余人被处决）",
+      "VO_SCRIPT_final L66"
+     ],
+     "notes": "旁白 L66：校内网球场前约 3000 人成行站着，一名日军军官面对他们，没有台子。钟点（出处只给日期）与人数（Bates 报告 3000 人）见 VO 稿；位置按旁白稿。"
+    },
+    {
+     "id": "ev-1226-stages-march",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "争议",
+      "path": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanjing Massacre（二百余人出来后被处决）",
+      "ja 南京戦（五台山、汉西门外；经 gap_gate_status verify）"
+     ],
+     "notes": "旁白 L67：约 17:00 分两队押走。去向出自日文维基（那一条写作 12-24，此处按旁白放在 12-26 傍晚，两个日期并存：ev-1224-hanxi 是 12-24 的）。路线推测。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.2,
+    "evidence": "推测",
+    "note": "冰冻、好天气为主"
+   },
+   "anchors": [
+    "p:x-jinling-tennis",
+    "p:x-jinling-tennis"
+   ]
+  },
+  {
+   "id": "s37a",
+   "start": "1937-12-27T11:00:00+08:00",
+   "end": "1937-12-27T13:00:00+08:00",
+   "seconds": 1.1667,
+   "cam": [
+    {
+     "at": 0,
+     "x": 358.9,
+     "z": 1394.0,
+     "dist": 3000.0,
+     "az": 0,
+     "el": 40
+    },
+    {
+     "at": 1,
+     "x": 325.6,
+     "z": 1360.7,
+     "dist": 3000.0,
+     "az": 0.0,
+     "el": 40.17
+    }
+   ],
+   "ease": "linear",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月27日",
+    "time": "11:00",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L68"
+   ],
+   "film_start": 390.033,
+   "events": [
+    "ev-1222-burial-yijiang"
+   ],
+   "why": "L68 脚本要 26 天的延时（DAY 14→40）。连续延时 7 秒跑 26 天，昼夜每秒闪近 4 次，所以改成“每隔几天同一时刻拍一张”的分步延时：六小段，天始终是白天。",
+   "section": "fire",
+   "see_zh": "无旁白：约 1950 米看城南到城中，每隔几天中午拍一张：12-27、1-1、1-5、1-9、1-13、1-17，烧掉的房子越来越多，烟柱换了地方；DAY 计数从 15 跳到 36。",
+   "evidence": [
+    {
+     "id": "ev-1222-burial-yijiang",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（红卍字会 12-22 起收埋，城内 1793、城外 41,328 具）",
+      "OSM 纪念碑碑文（1985 年立，中方口径）（挹江门丛葬地：1937-12 至 1938-05 收殓 5100 余具）"
+     ],
+     "notes": "12-22 是红卍字会统计起点；各地点的具体收埋日推测。日军征用了该会的卡车。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.15,
+    "evidence": "核实",
+    "note": "天气好（拉贝致日本大使馆：希望趁好天气运米运煤）"
+   },
+   "anchors": [
+    [
+     358.9,
+     1394.0
+    ],
+    [
+     325.6,
+     1360.7
+    ]
+   ],
+   "step_of": "s37",
+   "no_words": true
+  },
+  {
+   "id": "s37b",
+   "start": "1938-01-01T11:00:00+08:00",
+   "end": "1938-01-01T13:00:00+08:00",
+   "seconds": 1.1667,
+   "cam": [
+    {
+     "at": 0,
+     "x": 325.6,
+     "z": 1360.7,
+     "dist": 3000.0,
+     "az": 0.0,
+     "el": 40.17
+    },
+    {
+     "at": 1,
+     "x": 292.2,
+     "z": 1327.3,
+     "dist": 3000.0,
+     "az": 0.0,
+     "el": 40.33
+    }
+   ],
+   "ease": "linear",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月1日",
+    "time": "11:00",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L68"
+   ],
+   "film_start": 391.2,
+   "events": [
+    "ev-1222-burial-yijiang"
+   ],
+   "why": "L68 脚本要 26 天的延时（DAY 14→40）。连续延时 7 秒跑 26 天，昼夜每秒闪近 4 次，所以改成“每隔几天同一时刻拍一张”的分步延时：六小段，天始终是白天。",
+   "section": "fire",
+   "see_zh": "无旁白：约 1950 米看城南到城中，每隔几天中午拍一张：12-27、1-1、1-5、1-9、1-13、1-17，烧掉的房子越来越多，烟柱换了地方；DAY 计数从 15 跳到 36。",
+   "evidence": [
+    {
+     "id": "ev-1222-burial-yijiang",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（红卍字会 12-22 起收埋，城内 1793、城外 41,328 具）",
+      "OSM 纪念碑碑文（1985 年立，中方口径）（挹江门丛葬地：1937-12 至 1938-05 收殓 5100 余具）"
+     ],
+     "notes": "12-22 是红卍字会统计起点；各地点的具体收埋日推测。日军征用了该会的卡车。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.2,
+    "evidence": "核实",
+    "note": "近乎温和、多晴（魏特琳 1-06 信）；新月"
+   },
+   "anchors": [
+    [
+     325.6,
+     1360.7
+    ],
+    [
+     292.2,
+     1327.3
+    ]
+   ],
+   "step_of": "s37",
+   "no_words": true
+  },
+  {
+   "id": "s37c",
+   "start": "1938-01-05T11:00:00+08:00",
+   "end": "1938-01-05T13:00:00+08:00",
+   "seconds": 1.2,
+   "cam": [
+    {
+     "at": 0,
+     "x": 292.2,
+     "z": 1327.3,
+     "dist": 3000.0,
+     "az": 0.0,
+     "el": 40.33
+    },
+    {
+     "at": 1,
+     "x": 258.9,
+     "z": 1294.0,
+     "dist": 3000.0,
+     "az": 0.0,
+     "el": 40.5
+    }
+   ],
+   "ease": "linear",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月5日",
+    "time": "11:00",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L68"
+   ],
+   "film_start": 392.367,
+   "events": [
+    "ev-1222-burial-yijiang"
+   ],
+   "why": "L68 脚本要 26 天的延时（DAY 14→40）。连续延时 7 秒跑 26 天，昼夜每秒闪近 4 次，所以改成“每隔几天同一时刻拍一张”的分步延时：六小段，天始终是白天。",
+   "section": "fire",
+   "see_zh": "无旁白：约 1950 米看城南到城中，每隔几天中午拍一张：12-27、1-1、1-5、1-9、1-13、1-17，烧掉的房子越来越多，烟柱换了地方；DAY 计数从 15 跳到 36。",
+   "evidence": [
+    {
+     "id": "ev-1222-burial-yijiang",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（红卍字会 12-22 起收埋，城内 1793、城外 41,328 具）",
+      "OSM 纪念碑碑文（1985 年立，中方口径）（挹江门丛葬地：1937-12 至 1938-05 收殓 5100 余具）"
+     ],
+     "notes": "12-22 是红卍字会统计起点；各地点的具体收埋日推测。日军征用了该会的卡车。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.25,
+    "evidence": "核实",
+    "note": "近乎温和、多晴"
+   },
+   "anchors": [
+    [
+     292.2,
+     1327.3
+    ],
+    [
+     258.9,
+     1294.0
+    ]
+   ],
+   "step_of": "s37",
+   "no_words": true
+  },
+  {
+   "id": "s37d",
+   "start": "1938-01-09T11:00:00+08:00",
+   "end": "1938-01-09T13:00:00+08:00",
+   "seconds": 1.1667,
+   "cam": [
+    {
+     "at": 0,
+     "x": 258.9,
+     "z": 1294.0,
+     "dist": 3000.0,
+     "az": 0.0,
+     "el": 40.5
+    },
+    {
+     "at": 1,
+     "x": 225.6,
+     "z": 1260.7,
+     "dist": 3000.0,
+     "az": 0.0,
+     "el": 40.67
+    }
+   ],
+   "ease": "linear",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月9日",
+    "time": "11:00",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L68"
+   ],
+   "film_start": 393.567,
+   "events": [
+    "ev-1222-burial-yijiang"
+   ],
+   "why": "L68 脚本要 26 天的延时（DAY 14→40）。连续延时 7 秒跑 26 天，昼夜每秒闪近 4 次，所以改成“每隔几天同一时刻拍一张”的分步延时：六小段，天始终是白天。",
+   "section": "fire",
+   "see_zh": "无旁白：约 1950 米看城南到城中，每隔几天中午拍一张：12-27、1-1、1-5、1-9、1-13、1-17，烧掉的房子越来越多，烟柱换了地方；DAY 计数从 15 跳到 36。",
+   "evidence": [
+    {
+     "id": "ev-1222-burial-yijiang",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（红卍字会 12-22 起收埋，城内 1793、城外 41,328 具）",
+      "OSM 纪念碑碑文（1985 年立，中方口径）（挹江门丛葬地：1937-12 至 1938-05 收殓 5100 余具）"
+     ],
+     "notes": "12-22 是红卍字会统计起点；各地点的具体收埋日推测。日军征用了该会的卡车。"
+    }
+   ],
+   "weather": {
+    "sky": "haze",
+    "cloud": 0.25,
+    "evidence": "推测",
+    "note": "罗森：放火仍在继续（烟由火区画）"
+   },
+   "anchors": [
+    [
+     258.9,
+     1294.0
+    ],
+    [
+     225.6,
+     1260.7
+    ]
+   ],
+   "step_of": "s37",
+   "no_words": true
+  },
+  {
+   "id": "s37e",
+   "start": "1938-01-13T11:00:00+08:00",
+   "end": "1938-01-13T13:00:00+08:00",
+   "seconds": 1.1667,
+   "cam": [
+    {
+     "at": 0,
+     "x": 225.6,
+     "z": 1260.7,
+     "dist": 3000.0,
+     "az": 0.0,
+     "el": 40.67
+    },
+    {
+     "at": 1,
+     "x": 192.2,
+     "z": 1227.3,
+     "dist": 3000.0,
+     "az": 0.0,
+     "el": 40.83
+    }
+   ],
+   "ease": "linear",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月13日",
+    "time": "11:00",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L68"
+   ],
+   "film_start": 394.733,
+   "events": [
+    "ev-1222-burial-yijiang"
+   ],
+   "why": "L68 脚本要 26 天的延时（DAY 14→40）。连续延时 7 秒跑 26 天，昼夜每秒闪近 4 次，所以改成“每隔几天同一时刻拍一张”的分步延时：六小段，天始终是白天。",
+   "section": "fire",
+   "see_zh": "无旁白：约 1950 米看城南到城中，每隔几天中午拍一张：12-27、1-1、1-5、1-9、1-13、1-17，烧掉的房子越来越多，烟柱换了地方；DAY 计数从 15 跳到 36。",
+   "evidence": [
+    {
+     "id": "ev-1222-burial-yijiang",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（红卍字会 12-22 起收埋，城内 1793、城外 41,328 具）",
+      "OSM 纪念碑碑文（1985 年立，中方口径）（挹江门丛葬地：1937-12 至 1938-05 收殓 5100 余具）"
+     ],
+     "notes": "12-22 是红卍字会统计起点；各地点的具体收埋日推测。日军征用了该会的卡车。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.2,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    [
+     225.6,
+     1260.7
+    ],
+    [
+     192.2,
+     1227.3
+    ]
+   ],
+   "step_of": "s37",
+   "no_words": true
+  },
+  {
+   "id": "s37f",
+   "start": "1938-01-17T11:00:00+08:00",
+   "end": "1938-01-17T13:00:00+08:00",
+   "seconds": 1.1667,
+   "cam": [
+    {
+     "at": 0,
+     "x": 192.2,
+     "z": 1227.3,
+     "dist": 3000.0,
+     "az": 0.0,
+     "el": 40.83
+    },
+    {
+     "at": 1,
+     "x": 158.9,
+     "z": 1194.0,
+     "dist": 3000.0,
+     "az": 0,
+     "el": 41
+    }
+   ],
+   "ease": "linear",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月17日",
+    "time": "11:00",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L68"
+   ],
+   "film_start": 395.9,
+   "events": [
+    "ev-1222-burial-yijiang"
+   ],
+   "why": "L68 脚本要 26 天的延时（DAY 14→40）。连续延时 7 秒跑 26 天，昼夜每秒闪近 4 次，所以改成“每隔几天同一时刻拍一张”的分步延时：六小段，天始终是白天。",
+   "section": "fire",
+   "see_zh": "无旁白：约 1950 米看城南到城中，每隔几天中午拍一张：12-27、1-1、1-5、1-9、1-13、1-17，烧掉的房子越来越多，烟柱换了地方；DAY 计数从 15 跳到 36。",
+   "evidence": [
+    {
+     "id": "ev-1222-burial-yijiang",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（红卍字会 12-22 起收埋，城内 1793、城外 41,328 具）",
+      "OSM 纪念碑碑文（1985 年立，中方口径）（挹江门丛葬地：1937-12 至 1938-05 收殓 5100 余具）"
+     ],
+     "notes": "12-22 是红卍字会统计起点；各地点的具体收埋日推测。日军征用了该会的卡车。"
+    }
+   ],
+   "weather": {
+    "sky": "rain",
+    "cloud": 0.9,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    [
+     192.2,
+     1227.3
+    ],
+    [
+     158.9,
+     1194.0
+    ]
+   ],
+   "step_of": "s37",
+   "no_words": true
+  },
+  {
+   "id": "s38",
+   "start": "1938-01-21T11:00:00+08:00",
+   "end": "1938-01-21T13:00:00+08:00",
+   "seconds": 17.5667,
+   "cam": [
+    {
+     "at": 0,
+     "x": 158.9,
+     "z": 1194.0,
+     "dist": 3000,
+     "az": 0,
+     "el": 41
+    },
+    {
+     "at": 0.45,
+     "x": 58.9,
+     "z": 794.0,
+     "dist": 3100,
+     "az": 0,
+     "el": 42
+    },
+    {
+     "at": 1,
+     "x": -554.0,
+     "z": -354.3,
+     "dist": 1500,
+     "az": 0,
+     "el": 42
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月21日",
+    "time": "11:00",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L69",
+    "L70",
+    "L71"
+   ],
+   "film_start": 397.067,
+   "events": [
+    "ev-1213-zone-crowd-c"
+   ],
+   "why": "L69 火画出一张地图；L70 安全区只烧了 0.6%，全城 13%（画面靠界线）；L71 安全区比别处安全，但从来不安全。",
+   "section": "fire",
+   "see_zh": "第 40 天正午：同一机位停住，烧过的房子集中在城南东角和商业街；然后慢慢推进安全区（到约 1500 米）：完整的灰瓦屋顶，挤满了人，边界线围着。",
+   "evidence": [
+    {
+     "id": "ev-1213-zone-crowd-c",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "中文维基 南京安全区",
+      "Swarthmore"
+     ],
+     "notes": "收容所里 12-17 约 5 万、12-21 近 7 万（Lu 2019，经英文维基），其余住在民房、草坪、防空洞和街上。住满持续到 1-28 日方撤离令之前（hold_until 01-27 12:00：1-28 撤离令、1-30 限 2-04 回家，英文维基 Nanking Safety Zone；撤令之前人数没有记载下降，推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.2,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "p:d-fuzimiao",
+    "p:d-fuzimiao",
+    "p:zone"
+   ],
+   "hud": {
+    "outline": "safety_zone"
+   }
+  },
+  {
+   "id": "s39",
+   "start": "1938-01-22T10:30:00+08:00",
+   "end": "1938-01-22T12:00:00+08:00",
+   "seconds": 13.5333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -725.3,
+     "z": -210.3,
+     "dist": 800,
+     "az": 175,
+     "el": 26
+    },
+    {
+     "at": 1,
+     "x": -725.3,
+     "z": -260.3,
+     "dist": 650,
+     "az": 172,
+     "el": 25
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月22日",
+    "time": "10:30",
+    "place_zh": "美国大使馆",
+    "place_en": "US Embassy"
+   },
+   "vo": [
+    "L72"
+   ],
+   "film_start": 414.633,
+   "events": [
+    "ev-1213-zone-crowd-c"
+   ],
+   "why": "L72 第 41 天，美国外交官阿利森的总结。11-10 静帧：480 米以内使馆只是草地上一块围起来的地、周围是撒开的小人（`w5a_s39_m` 的老机位），所以抬高、让后面的老城入画。使馆周围的院墙和街坊是地面和房子组的事（landmarks 13:06Z 也提了）。向北看全是田，所以机位挪到使馆北面向南看（北不在上，破例）：使馆在前，后面是新街口一带的密集老城。",
+   "section": "count",
+   "see_zh": "约 800→650 米，从北向南看：安全区里的美国大使馆在画面中下，后面是新街口一带的老城：屋顶上的美国旗；南边还在冒烟。",
+   "evidence": [
+    {
+     "id": "ev-1213-zone-crowd-c",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "中文维基 南京安全区",
+      "Swarthmore"
+     ],
+     "notes": "收容所里 12-17 约 5 万、12-21 近 7 万（Lu 2019，经英文维基），其余住在民房、草坪、防空洞和街上。住满持续到 1-28 日方撤离令之前（hold_until 01-27 12:00：1-28 撤离令、1-30 限 2-04 回家，英文维基 Nanking Safety Zone；撤令之前人数没有记载下降，推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "overcast",
+    "cloud": 0.7,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "p:lm-us-embassy",
+    "p:lm-us-embassy"
+   ]
+  },
+  {
+   "id": "s40",
+   "start": "1938-01-23T11:50:00+08:00",
+   "end": "1938-01-23T13:30:00+08:00",
+   "seconds": 15.9,
+   "cam": [
+    {
+     "at": 0,
+     "x": -3588.8,
+     "z": -4479.9,
+     "dist": 400,
+     "az": 52,
+     "el": 26
+    },
+    {
+     "at": 1,
+     "x": -3783.8,
+     "z": -4588.5,
+     "dist": 2100,
+     "az": 44,
+     "el": 33
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月23日",
+    "time": "11:50",
+    "place_zh": "挹江门—下关",
+    "place_en": "Yijiang Gate to Xiaguan"
+   },
+   "vo": [
+    "L74",
+    "L75"
+   ],
+   "film_start": 428.167,
+   "events": [
+    "ev-1222-burial-yijiang",
+    "ev-1222-burial-meitan",
+    "ev-1222-burial-zhongshan-wharf"
+   ],
+   "why": "L74 第 42 天，六个星期；L75 东京审判：二十万以上。",
+   "section": "count",
+   "see_zh": "挹江门外的丛葬地近景（约 400 米）：掩埋队抬着担架、推着车一趟趟来回，土堆在长；镜头升高到 2100 米，看见下关江岸上也有掩埋队。",
+   "evidence": [
+    {
+     "id": "ev-1222-burial-yijiang",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（红卍字会 12-22 起收埋，城内 1793、城外 41,328 具）",
+      "OSM 纪念碑碑文（1985 年立，中方口径）（挹江门丛葬地：1937-12 至 1938-05 收殓 5100 余具）"
+     ],
+     "notes": "12-22 是红卍字会统计起点；各地点的具体收埋日推测。日军征用了该会的卡车。"
+    },
+    {
+     "id": "ev-1222-burial-meitan",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "OSM 纪念碑碑文（1985 年立，中方口径）（红卍字会就地收殓 1772 具）"
+     ],
+     "notes": "日期推测。"
+    },
+    {
+     "id": "ev-1222-burial-zhongshan-wharf",
+     "label": "推测",
+     "detail": {
+      "fact": "推测",
+      "time": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀"
+     ],
+     "notes": "该处由谁、何时收埋未核实，按红卍字会城外收埋推测。"
+    }
+   ],
+   "weather": {
+    "sky": "overcast",
+    "cloud": 0.6,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "p:x-yijiang-mass-grave",
+    "p:g-yijiang"
+   ]
+  },
+  {
+   "id": "s41",
+   "start": "1938-01-23T13:00:00+08:00",
+   "end": "1938-01-23T15:30:00+08:00",
+   "seconds": 17.3667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -122.8,
+     "z": 187.5,
+     "dist": 3300,
+     "az": 0,
+     "el": 34
+    },
+    {
+     "at": 1,
+     "x": -122.8,
+     "z": 187.5,
+     "dist": 3600,
+     "az": 4,
+     "el": 33
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月23日",
+    "time": "13:00",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L76",
+    "L77"
+   ],
+   "film_start": 444.067,
+   "events": [
+    "ev-1213-zone-crowd-c"
+   ],
+   "why": "L76 南京审判三十万以上；L77 各方史家的估计。画面只给全城，数字由旁白和字幕（.srt）说。",
+   "section": "count",
+   "see_zh": "全城大景，慢慢升高。",
+   "evidence": [
+    {
+     "id": "ev-1213-zone-crowd-c",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "中文维基 南京安全区",
+      "Swarthmore"
+     ],
+     "notes": "收容所里 12-17 约 5 万、12-21 近 7 万（Lu 2019，经英文维基），其余住在民房、草坪、防空洞和街上。住满持续到 1-28 日方撤离令之前（hold_until 01-27 12:00：1-28 撤离令、1-30 限 2-04 回家，英文维基 Nanking Safety Zone；撤令之前人数没有记载下降，推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "overcast",
+    "cloud": 0.6,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "p:sq-xinjiekou",
+    "p:sq-xinjiekou"
+   ]
+  },
+  {
+   "id": "s42",
+   "start": "1938-01-24T11:00:00+08:00",
+   "end": "1938-01-24T13:00:00+08:00",
+   "seconds": 8.1333,
+   "cam": [
+    {
+     "at": 0,
+     "x": 1588.8,
+     "z": 1363.3,
+     "dist": 3200,
+     "az": 28,
+     "el": 32
+    },
+    {
+     "at": 1,
+     "x": 1588.8,
+     "z": 1363.3,
+     "dist": 3300,
+     "az": 32,
+     "el": 32
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月24日",
+    "time": "11:00",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L78"
+   ],
+   "film_start": 461.433,
+   "events": [
+    "ev-1213-zone-crowd-c"
+   ],
+   "why": "L78 日本政府：杀人不能否认，人数难定。",
+   "section": "count",
+   "see_zh": "全城，几乎不动（换到城东上空向西北看，和上一镜的从南向北错开，不是同一幅静画）；DAY 43。",
+   "evidence": [
+    {
+     "id": "ev-1213-zone-crowd-c",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "中文维基 南京安全区",
+      "Swarthmore"
+     ],
+     "notes": "收容所里 12-17 约 5 万、12-21 近 7 万（Lu 2019，经英文维基），其余住在民房、草坪、防空洞和街上。住满持续到 1-28 日方撤离令之前（hold_until 01-27 12:00：1-28 撤离令、1-30 限 2-04 回家，英文维基 Nanking Safety Zone；撤令之前人数没有记载下降，推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.3,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "p:d-chengdong",
+    "p:d-chengdong"
+   ]
+  },
+  {
+   "id": "s43a",
+   "start": "1938-01-25T11:30:00+08:00",
+   "end": "1938-01-25T12:30:00+08:00",
+   "seconds": 1.2,
+   "cam": [
+    {
+     "at": 0,
+     "x": -122.8,
+     "z": 387.5,
+     "dist": 3500.0,
+     "az": 5,
+     "el": 34
+    },
+    {
+     "at": 1,
+     "x": -122.8,
+     "z": 387.5,
+     "dist": 3500.0,
+     "az": 6.0,
+     "el": 34.0
+    }
+   ],
+   "ease": "linear",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月25日",
+    "time": "11:30",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L79"
+   ],
+   "film_start": 469.567,
+   "events": [
+    "ev-1213-zone-crowd-c"
+   ],
+   "why": "L79 “计数还在走，因为暴力还在走”。",
+   "section": "count",
+   "see_zh": "同一机位分步：1-25、1-26、1-27 中午各一张，DAY 44、45、46。",
+   "evidence": [
+    {
+     "id": "ev-1213-zone-crowd-c",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "中文维基 南京安全区",
+      "Swarthmore"
+     ],
+     "notes": "收容所里 12-17 约 5 万、12-21 近 7 万（Lu 2019，经英文维基），其余住在民房、草坪、防空洞和街上。住满持续到 1-28 日方撤离令之前（hold_until 01-27 12:00：1-28 撤离令、1-30 限 2-04 回家，英文维基 Nanking Safety Zone；撤令之前人数没有记载下降，推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "overcast",
+    "cloud": 0.7,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    [
+     -122.8,
+     387.5
+    ],
+    [
+     -122.8,
+     387.5
+    ]
+   ],
+   "step_of": "s43"
+  },
+  {
+   "id": "s43b",
+   "start": "1938-01-26T11:30:00+08:00",
+   "end": "1938-01-26T12:30:00+08:00",
+   "seconds": 1.2,
+   "cam": [
+    {
+     "at": 0,
+     "x": -122.8,
+     "z": 387.5,
+     "dist": 3500.0,
+     "az": 6.0,
+     "el": 34.0
+    },
+    {
+     "at": 1,
+     "x": -122.8,
+     "z": 387.5,
+     "dist": 3500.0,
+     "az": 7.0,
+     "el": 34.0
+    }
+   ],
+   "ease": "linear",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月26日",
+    "time": "11:30",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L79"
+   ],
+   "film_start": 470.767,
+   "events": [
+    "ev-1213-zone-crowd-c"
+   ],
+   "why": "L79 “计数还在走，因为暴力还在走”。",
+   "section": "count",
+   "see_zh": "同一机位分步：1-25、1-26、1-27 中午各一张，DAY 44、45、46。",
+   "evidence": [
+    {
+     "id": "ev-1213-zone-crowd-c",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "中文维基 南京安全区",
+      "Swarthmore"
+     ],
+     "notes": "收容所里 12-17 约 5 万、12-21 近 7 万（Lu 2019，经英文维基），其余住在民房、草坪、防空洞和街上。住满持续到 1-28 日方撤离令之前（hold_until 01-27 12:00：1-28 撤离令、1-30 限 2-04 回家，英文维基 Nanking Safety Zone；撤令之前人数没有记载下降，推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.3,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    [
+     -122.8,
+     387.5
+    ],
+    [
+     -122.8,
+     387.5
+    ]
+   ],
+   "step_of": "s43"
+  },
+  {
+   "id": "s43c",
+   "start": "1938-01-27T11:30:00+08:00",
+   "end": "1938-01-27T12:30:00+08:00",
+   "seconds": 1.2,
+   "cam": [
+    {
+     "at": 0,
+     "x": -122.8,
+     "z": 387.5,
+     "dist": 3500.0,
+     "az": 7.0,
+     "el": 34.0
+    },
+    {
+     "at": 1,
+     "x": -122.8,
+     "z": 387.5,
+     "dist": 3500.0,
+     "az": 8,
+     "el": 34
+    }
+   ],
+   "ease": "linear",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月27日",
+    "time": "11:30",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L79"
+   ],
+   "film_start": 471.967,
+   "events": [
+    "ev-1213-zone-crowd-c"
+   ],
+   "why": "L79 “计数还在走，因为暴力还在走”。",
+   "section": "count",
+   "see_zh": "同一机位分步：1-25、1-26、1-27 中午各一张，DAY 44、45、46。",
+   "evidence": [
+    {
+     "id": "ev-1213-zone-crowd-c",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "count": "核实"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone",
+      "中文维基 南京安全区",
+      "Swarthmore"
+     ],
+     "notes": "收容所里 12-17 约 5 万、12-21 近 7 万（Lu 2019，经英文维基），其余住在民房、草坪、防空洞和街上。住满持续到 1-28 日方撤离令之前（hold_until 01-27 12:00：1-28 撤离令、1-30 限 2-04 回家，英文维基 Nanking Safety Zone；撤令之前人数没有记载下降，推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.2,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    [
+     -122.8,
+     387.5
+    ],
+    [
+     -122.8,
+     387.5
+    ]
+   ],
+   "step_of": "s43"
+  },
+  {
+   "id": "s44",
+   "start": "1938-01-28T09:30:00+08:00",
+   "end": "1938-01-28T09:52:00+08:00",
+   "seconds": 4.0,
+   "cam": [
+    {
+     "at": 0,
+     "x": -107.0,
+     "z": 802.3,
+     "dist": 1100,
+     "az": 0,
+     "el": 38
+    },
+    {
+     "at": 1,
+     "x": -103.0,
+     "z": 1558.2,
+     "dist": 1000,
+     "az": 2,
+     "el": 38
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月28日",
+    "time": "09:30",
+    "place_zh": "安全区—城南",
+    "place_en": "From the zone to the south"
+   },
+   "vo": [
+    "L80"
+   ],
+   "film_start": 473.167,
+   "events": [
+    "ev-0128-evict-s",
+    "ev-0128-zone-crowd-d"
+   ],
+   "why": "L80 1 月 28 日收容所被勒令清空。",
+   "section": "count",
+   "see_zh": "无旁白：一小股背着包袱的人从安全区往南走进烧过的街区，安全区里仍挤满了人。",
+   "evidence": [
+    {
+     "id": "ev-0128-evict-s",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone（1-28 撤离令；1-30 限 2 月 4 日前回家，否则强制驱逐；同时禁止区内商业）",
+      "中文维基 南京大屠杀（1 月底日军声称已恢复秩序）"
+     ],
+     "notes": "回家路线推测，终点画到门东烧过的街区里（旁白 L80：他们走进没有屋顶的院子，仍在城墙内；旧稿画到中华门外）；多数人家在城南已被烧或被抢空。"
+    },
+    {
+     "id": "ev-0128-zone-crowd-d",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone"
+     ],
+     "notes": "2-04 限期；2-18 委员会改组，安全区结束（时段外）。本段人数推测。改窗口：旁白 L69-L71（01-21，“挤满人的灰屋顶”）和 L80（01-28，“安全区仍然挤得满满的”）都要一个满的安全区，而人群模块的人群只有三角形斜坡（ev-1213-zone-crowd-c 从 12-14 线性减到 01-27，01-21 只剩 15 %）：这条从 01-05 起升、01-27 12:00 到顶、02-05 减完（限期 2-04），01-21 约 73 %、01-28 09:00 约 89 %，和 c 叠起来全月都不空（推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "haze",
+    "cloud": 0.4,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "e:ev-0128-evict-s@0.2",
+    "e:ev-0128-evict-s@0.35"
+   ],
+   "hud": {
+    "outline": "safety_zone"
+   },
+   "no_words": true
+  },
+  {
+   "id": "s45",
+   "start": "1938-01-31T11:30:00+08:00",
+   "end": "1938-01-31T12:30:00+08:00",
+   "seconds": 7.3333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -122.8,
+     "z": 187.5,
+     "dist": 3300,
+     "az": 0,
+     "el": 34
+    },
+    {
+     "at": 1,
+     "x": -122.8,
+     "z": 187.5,
+     "dist": 3700,
+     "az": 0,
+     "el": 32
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月31日",
+    "time": "11:30",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L81",
+    "L82"
+   ],
+   "film_start": 477.167,
+   "events": [
+    "ev-0128-zone-crowd-d"
+   ],
+   "why": "L81 为什么杀戮没有随战斗停止？L82 数一数日本自己的军官和官员知道什么。",
+   "section": "answer",
+   "see_zh": "第 50 天，全城升高；L82 时计数从 50 倒回 1。",
+   "evidence": [
+    {
+     "id": "ev-0128-zone-crowd-d",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone"
+     ],
+     "notes": "2-04 限期；2-18 委员会改组，安全区结束（时段外）。本段人数推测。改窗口：旁白 L69-L71（01-21，“挤满人的灰屋顶”）和 L80（01-28，“安全区仍然挤得满满的”）都要一个满的安全区，而人群模块的人群只有三角形斜坡（ev-1213-zone-crowd-c 从 12-14 线性减到 01-27，01-21 只剩 15 %）：这条从 01-05 起升、01-27 12:00 到顶、02-05 减完（限期 2-04），01-21 约 73 %、01-28 09:00 约 89 %，和 c 叠起来全月都不空（推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "overcast",
+    "cloud": 0.6,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "p:sq-xinjiekou",
+    "p:sq-xinjiekou"
+   ],
+   "hud": {
+    "day": [
+     {
+      "at": 0,
+      "n": 50
+     },
+     {
+      "at": 0.48,
+      "n": 1,
+      "roll": 1.6
+     }
+    ]
+   }
+  },
+  {
+   "id": "s46",
+   "start": "1937-12-13T13:30:00+08:00",
+   "end": "1937-12-13T14:04:00+08:00",
+   "seconds": 7.6333,
+   "cam": [
+    {
+     "at": 0,
+     "x": 2840.0,
+     "z": -1280.0,
+     "dist": 340,
+     "az": 0,
+     "el": 30
+    },
+    {
+     "at": 1,
+     "x": 2870.0,
+     "z": -1310.0,
+     "dist": 380,
+     "az": 4,
+     "el": 31
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月13日",
+    "time": "13:30",
+    "place_zh": "太平门",
+    "place_en": "Taiping Gate"
+   },
+   "vo": [
+    "L83"
+   ],
+   "film_start": 484.5,
+   "events": [
+    "ev-1213-east-wall-prisoners",
+    "ev-1213-prisoners-ne"
+   ],
+   "why": "L83 中岛日记：不留俘虏。",
+   "section": "answer",
+   "see_zh": "回放第 1 天：太平门（同 L44 的机位），墙外被看守的俘虏。",
+   "evidence": [
+    {
+     "id": "ev-1213-east-wall-prisoners",
+     "label": "核实",
+     "detail": {
+      "fact": "推测",
+      "time": "推测",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanjing Massacre（中岛 12-13 日记：不留俘虏）",
+      "中岛今朝吾 12-13 日记（经中文维基）"
+     ],
+     "notes": "旁白 L44/L83：押俘虏沿东墙走向中山门的画面。出处只有日记里的方针；这一队的路线、人数、钟点为推测。"
+    },
+    {
+     "id": "ev-1213-prisoners-ne",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "中岛今朝吾 12-13 日记（经中文维基；仙鹤门一带 7000-8000 人，当晚用卡车运走）",
+      "英文维基 Nanjing Massacre"
+     ],
+     "notes": "旁白 L44：「墙外东北一大片被缴械的人，朝仙鹤门（图外）方向」。日记里的 7000-8000 人在仙鹤门（图外）；这里画墙外东北看得见的一部分，位置、人数推测。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "推测",
+    "note": "「天气好得不近人情」一说未能核实；间接证据指向晴或少云的冷天"
+   },
+   "anchors": [
+    [
+     2840,
+     -1280
+    ],
+    [
+     2840,
+     -1280
+    ]
+   ]
+  },
+  {
+   "id": "s47",
+   "start": "1937-12-14T13:30:00+08:00",
+   "end": "1937-12-14T14:30:00+08:00",
+   "seconds": 7.6,
+   "cam": [
+    {
+     "at": 0,
+     "x": -102.3,
+     "z": -1043.7,
+     "dist": 800,
+     "az": 0,
+     "el": 38
+    },
+    {
+     "at": 1,
+     "x": -198.7,
+     "z": -1310.7,
+     "dist": 600,
+     "az": 4,
+     "el": 40
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月14日",
+    "time": "13:30",
+    "place_zh": "安全区",
+    "place_en": "Safety Zone"
+   },
+   "vo": [
+    "L84"
+   ],
+   "film_start": 492.133,
+   "events": [
+    "ev-1214-zone-search"
+   ],
+   "why": "L84 日本外交官：军队“决心让南京吃苦头”。",
+   "section": "answer",
+   "see_zh": "回放第 2 天：安全区里一排排男人被带走（同 L48 机位）。",
+   "evidence": [
+    {
+     "id": "ev-1214-zone-search",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "争议"
+     },
+     "sources": [
+      "日文维基 南京事件（12-14 至 16 日安全区内摘发、处刑约 6500-6700 名，偕行社资料集）",
+      "中文维基（看额头帽箍印、手上老茧）"
+     ],
+     "notes": "第 9 师团扫荡安全区；数字出自日方资料（条目注明需要非一次资料）。押送方向推测为下关江边。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "核实",
+    "note": "暖得像十月（魏特琳）"
+   },
+   "anchors": [
+    "e:ev-1214-zone-search@0.06",
+    "e:ev-1214-zone-search@0.12"
+   ],
+   "hud": {
+    "outline": "safety_zone"
+   }
+  },
+  {
+   "id": "s48",
+   "start": "1937-12-15T08:30:00+08:00",
+   "end": "1937-12-15T09:30:00+08:00",
+   "seconds": 7.3667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -1470.0,
+     "z": -7720.0,
+     "dist": 280,
+     "az": 14,
+     "el": 28
+    },
+    {
+     "at": 1,
+     "x": -1480.0,
+     "z": -7720.0,
+     "dist": 260,
+     "az": 15,
+     "el": 27
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月15日",
+    "time": "08:30",
+    "place_zh": "幕府山",
+    "place_en": "Mufu Mountain"
+   },
+   "vo": [
+    "L85"
+   ],
+   "film_start": 499.733,
+   "events": [
+    "ev-1214-mufushan-held"
+   ],
+   "why": "L85 将军请示，回答是全部杀掉。",
+   "section": "answer",
+   "see_zh": "回放第 3 天：幕府山下坐着的俘虏（同 L53 机位）。",
+   "evidence": [
+    {
+     "id": "ev-1214-mufushan-held",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "place": "推测",
+      "count": "核实"
+     },
+     "sources": [
+      "日文维基 南京攻略戦（俘虏 14,777 名收容在上元门外的学校）",
+      "中文维基 南京大屠杀"
+     ],
+     "notes": "旁白 L50/L51：一大片坐着的人，外圈一圈守兵。学校位置推测；人数是日方记录的俘虏数（显示时受上限限制）。窗口（wave 4，推测）：09:40 起人进院、10:00 满（ev-1214-mufushan-roundup 的队尾 09:50 前走完、10:00 止，院里不再叠两群人），满员持续到 12-17 14:00（hold_until：山田日记 12-14 院里 14,777 人、12-15 请示、12-17 下午分批押去江边，日文维基南京事件；钟点推测），12-18 08:00 前减完。人群模块现在只有三角形斜坡（高峰 10:00 起线性减到 end）：L50（12-14 12:00）约 98 %，L53（12-15 09:00）约 76 %，L57（12-16 22:00）约 36 %，L58（12-17 06:50）约 27 %；人群模块读 hold_until 之后全是 100 %（到 12-17 14:00 才开始减；那时把 timeline.py 顶上的 PEOPLE_READS_HOLD 改成 True 重跑，窗口收到 12-17 20:00）。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.12,
+    "evidence": "推测",
+    "note": "前后几天晴"
+   },
+   "anchors": [
+    "e:ev-1214-mufushan-held",
+    "e:ev-1214-mufushan-held"
+   ],
+   "hud": {
+    "clock": false
+   }
+  },
+  {
+   "id": "s49",
+   "start": "1937-12-17T14:26:00+08:00",
+   "end": "1937-12-17T14:34:00+08:00",
+   "seconds": 7.8,
+   "cam": [
+    {
+     "at": 0,
+     "x": 2266.7,
+     "z": 878.1,
+     "dist": 130,
+     "az": 90,
+     "el": 9
+    },
+    {
+     "at": 1,
+     "x": 2236.7,
+     "z": 878.1,
+     "dist": 105,
+     "az": 90,
+     "el": 8
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月17日",
+    "time": "14:26",
+    "place_zh": "中山东路",
+    "place_en": "Zhongshan East Road"
+   },
+   "vo": [
+    "L86"
+   ],
+   "film_start": 507.1,
+   "events": [
+    "ev-1217-parade"
+   ],
+   "why": "L86 约七万兵只配 17 名宪兵。",
+   "section": "answer",
+   "see_zh": "回放第 5 天：入城式（同 L58 机位）。",
+   "evidence": [
+    {
+     "id": "ev-1217-parade",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "未核实",
+      "path": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "日文维基 南京事件",
+      "英文维基 Iwane Matsui",
+      "Commons 1937 年日本相册图注（部队在中山门城头举枪致敬、大马路两侧列队、将官由松井领头骑马进入国民政府）"
+     ],
+     "notes": "陆军主线：中山门→中山东路→国民政府（相册图注）；钟点 13:30 只见于台湾媒体报道，未读原文（未核实）。陆海军共同入城式；松井、朝香宫、柳川、长谷川清。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.1,
+    "evidence": "核实",
+    "note": "夜里很冷、有风、枯叶作响；近满月（12-18 02:52 满月）"
+   },
+   "anchors": [
+    "e:ev-1217-parade@0.5",
+    "e:ev-1217-parade@0.5"
+   ]
+  },
+  {
+   "id": "s50",
+   "start": "1937-12-20T20:00:00+08:00",
+   "end": "1937-12-20T21:00:00+08:00",
+   "seconds": 5.6,
+   "cam": [
+    {
+     "at": 0,
+     "x": 620.0,
+     "z": 1840.0,
+     "dist": 270,
+     "az": 0,
+     "el": 22
+    },
+    {
+     "at": 1,
+     "x": 620.0,
+     "z": 1900.0,
+     "dist": 150,
+     "az": 0,
+     "el": 15
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1937年12月20日",
+    "time": "20:00",
+    "place_zh": "太平路",
+    "place_en": "Taiping Road"
+   },
+   "vo": [
+    "L87"
+   ],
+   "film_start": 514.9,
+   "events": [
+    "ev-1219-looting-trucks"
+   ],
+   "why": "L87 第十军自己的通告承认一百多起强奸。",
+   "section": "answer",
+   "see_zh": "回放第 8 天：夜里烧着的太平路（同 L63 机位）。",
+   "evidence": [
+    {
+     "id": "ev-1219-looting-trucks",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "核实",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "菲奇日记 12-19/20（经日文维基）",
+      "Smythe, War Damage in the Nanking Area (1938)",
+      "Espy 报告（12-20 夜日军用卡车趁火打劫）"
+     ],
+     "notes": "先抢后烧；路线推测。"
+    }
+   ],
+   "weather": {
+    "sky": "clear",
+    "cloud": 0.15,
+    "evidence": "核实",
+    "note": "晴朗、阳光持续（魏特琳）；城南大火"
+   },
+   "anchors": [
+    [
+     620,
+     1840
+    ],
+    [
+     620,
+     1900
+    ]
+   ]
+  },
+  {
+   "id": "s51",
+   "start": "1938-01-31T12:30:00+08:00",
+   "end": "1938-01-31T12:45:00+08:00",
+   "seconds": 13.7667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -122.8,
+     "z": 187.5,
+     "dist": 3700,
+     "az": 0,
+     "el": 32
+    },
+    {
+     "at": 1,
+     "x": -122.8,
+     "z": 187.5,
+     "dist": 3800,
+     "az": 3,
+     "el": 32
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月31日",
+    "time": "12:30",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L88",
+    "L89"
+   ],
+   "film_start": 520.5,
+   "events": [
+    "ev-0128-zone-crowd-d"
+   ],
+   "why": "L88 东京审判：松井知道，没有制止；L89 答案来自记录，多半是他们自己的。",
+   "section": "answer",
+   "see_zh": "回到第 50 天的全城。",
+   "evidence": [
+    {
+     "id": "ev-0128-zone-crowd-d",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone"
+     ],
+     "notes": "2-04 限期；2-18 委员会改组，安全区结束（时段外）。本段人数推测。改窗口：旁白 L69-L71（01-21，“挤满人的灰屋顶”）和 L80（01-28，“安全区仍然挤得满满的”）都要一个满的安全区，而人群模块的人群只有三角形斜坡（ev-1213-zone-crowd-c 从 12-14 线性减到 01-27，01-21 只剩 15 %）：这条从 01-05 起升、01-27 12:00 到顶、02-05 减完（限期 2-04），01-21 约 73 %、01-28 09:00 约 89 %，和 c 叠起来全月都不空（推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "overcast",
+    "cloud": 0.6,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "p:sq-xinjiekou",
+    "p:sq-xinjiekou"
+   ]
+  },
+  {
+   "id": "s52",
+   "start": "1938-01-31T12:45:00+08:00",
+   "end": "1938-01-31T13:00:00+08:00",
+   "seconds": 9.9333,
+   "cam": [
+    {
+     "at": 0,
+     "x": -3233.8,
+     "z": -4388.5,
+     "dist": 1500,
+     "az": 52,
+     "el": 30
+    },
+    {
+     "at": 1,
+     "x": -3588.8,
+     "z": -4479.9,
+     "dist": 480,
+     "az": 56,
+     "el": 22
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月31日",
+    "time": "12:45",
+    "place_zh": "下关江岸",
+    "place_en": "The Xiaguan riverbank"
+   },
+   "vo": [
+    "L90",
+    "L91",
+    "L92"
+   ],
+   "film_start": 534.267,
+   "events": [
+    "ev-1222-burial-yijiang"
+   ],
+   "why": "L90 对一些部队来说杀俘就是政策；L91 指挥的人知道而不制止；L92 静默。",
+   "section": "answer",
+   "see_zh": "挹江门朝向，慢慢推向西北城墙外的江岸（1500→480 米）；停住，静默。",
+   "evidence": [
+    {
+     "id": "ev-1222-burial-yijiang",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "place": "核实",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（红卍字会 12-22 起收埋，城内 1793、城外 41,328 具）",
+      "OSM 纪念碑碑文（1985 年立，中方口径）（挹江门丛葬地：1937-12 至 1938-05 收殓 5100 余具）"
+     ],
+     "notes": "12-22 是红卍字会统计起点；各地点的具体收埋日推测。日军征用了该会的卡车。"
+    }
+   ],
+   "weather": {
+    "sky": "overcast",
+    "cloud": 0.6,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "p:g-yijiang",
+    "p:x-yijiang-mass-grave"
+   ]
+  },
+  {
+   "id": "s53",
+   "start": "1938-01-31T13:00:00+08:00",
+   "end": "1938-01-31T13:40:00+08:00",
+   "seconds": 16.2,
+   "cam": [
+    {
+     "at": 0,
+     "x": 2266.7,
+     "z": 878.1,
+     "dist": 80,
+     "az": 270,
+     "el": 2
+    },
+    {
+     "at": 0.3,
+     "x": 2266.7,
+     "z": 878.1,
+     "dist": 380,
+     "az": 300,
+     "el": 20
+    },
+    {
+     "at": 1,
+     "x": 1619.7,
+     "z": 747.7,
+     "dist": 3500,
+     "az": 363,
+     "el": 33
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月31日",
+    "time": "13:00",
+    "place_zh": "中山东路",
+    "place_en": "Zhongshan East Road"
+   },
+   "vo": [
+    "L93",
+    "L94",
+    "L96"
+   ],
+   "film_start": 544.2,
+   "events": [
+    "ev-0128-zone-crowd-d"
+   ],
+   "why": "L93 松井 1948 年被绞死；L94 朝香宫从未受审；L96 这是日本帝国军队做的，不是今天的日本人。人眼高度是全片唯一一次空街：同一条街 12-17 有入城式的队伍（L58），12-17 的静帧 `x_eye_zs1.png` 和 1-31 的 `x_eye_zs2.png` 对着看：队伍没了。",
+   "section": "blame",
+   "see_zh": "空了的中山东路（入城式的那条路）：从人眼高度（离地约 3 米）向东看这条空街：中间一排光秃秃的悬铃木，两边的店面、电线杆，一个人也没有；镜头升起、转向，慢慢升到全城。",
+   "evidence": [
+    {
+     "id": "ev-0128-zone-crowd-d",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone"
+     ],
+     "notes": "2-04 限期；2-18 委员会改组，安全区结束（时段外）。本段人数推测。改窗口：旁白 L69-L71（01-21，“挤满人的灰屋顶”）和 L80（01-28，“安全区仍然挤得满满的”）都要一个满的安全区，而人群模块的人群只有三角形斜坡（ev-1213-zone-crowd-c 从 12-14 线性减到 01-27，01-21 只剩 15 %）：这条从 01-05 起升、01-27 12:00 到顶、02-05 减完（限期 2-04），01-21 约 73 %、01-28 09:00 约 89 %，和 c 叠起来全月都不空（推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "overcast",
+    "cloud": 0.6,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "e:ev-1217-parade@0.5",
+    "e:ev-1217-parade@0.5",
+    "e:ev-1217-parade@0.6"
+   ]
+  },
+  {
+   "id": "s54",
+   "start": "1938-01-31T13:45:00+08:00",
+   "end": "1938-01-31T14:20:00+08:00",
+   "seconds": 15.4667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -3423.8,
+     "z": -4288.5,
+     "dist": 90,
+     "az": 90,
+     "el": 3
+    },
+    {
+     "at": 0.3,
+     "x": -3593.8,
+     "z": -4288.5,
+     "dist": 290,
+     "az": 64,
+     "el": 16
+    },
+    {
+     "at": 0.5,
+     "x": -3533.8,
+     "z": -4228.5,
+     "dist": 800,
+     "az": 60,
+     "el": 26
+    },
+    {
+     "at": 1,
+     "x": -3133.8,
+     "z": -3838.5,
+     "dist": 3500,
+     "az": 40,
+     "el": 33
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月31日",
+    "time": "13:45",
+    "place_zh": "挹江门",
+    "place_en": "Yijiang Gate"
+   },
+   "vo": [
+    "L97",
+    "L98"
+   ],
+   "film_start": 560.4,
+   "events": [
+    "ev-0131-burial-cart",
+    "ev-1214-yijiang-sentry"
+   ],
+   "why": "L97 回到开场机位（无旁白）；L98 每年 12 月 13 日 10:01 鸣笛。L98 起 DAY 回到 1。开场那夜是从 290 米向下看这条路被人群塞满，结尾白天从地面看它空着、再升到同一个机位：同一个地方两个样子。人眼高度的静帧：`x_eye_yj.png`。",
+   "section": "end",
+   "see_zh": "开场的那座门，白天：先在人眼高度站在中山北路上看向门洞（路上光秃秃的树，门口有岗哨，一队运尸车往门里去），然后镜头升起到开场的机位（290 米、16 度）再一路拉高：下关江岸、江上几条船，全城。",
+   "evidence": [
+    {
+     "id": "ev-0131-burial-cart",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "path": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（红卍字会 12-22 起收埋）"
+     ],
+     "notes": "旁白 L97：开头机位同一处，三个门洞都开着、街上空，一辆收尸车穿过。车数、钟点推测。"
+    },
+    {
+     "id": "ev-1214-yijiang-sentry",
+     "label": "推测",
+     "detail": {
+      "fact": "推测",
+      "time": "推测",
+      "place": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "中文维基 南京大屠杀（城门由日军管制；平民出入限制到 2-25 才解除）",
+      "英文维基 Battle of Nanking（平民出入限制 2-25 解除）"
+     ],
+     "notes": "旁白 L97：开头机位同一处，门洞清开了，一个日军哨位；1 月下旬挹江门的实际状态没有记载（推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "overcast",
+    "cloud": 0.6,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "p:g-yijiang",
+    "p:g-yijiang",
+    "p:g-yijiang",
+    "p:g-yijiang"
+   ],
+   "hud": {
+    "day": [
+     {
+      "at": 0,
+      "n": 50
+     },
+     {
+      "at": 0.33,
+      "n": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "s55",
+   "start": "1938-01-31T14:45:00+08:00",
+   "end": "1938-01-31T15:30:00+08:00",
+   "seconds": 12.7667,
+   "cam": [
+    {
+     "at": 0,
+     "x": -544.4,
+     "z": -2415.7,
+     "dist": 3400,
+     "az": 30,
+     "el": 33
+    },
+    {
+     "at": 1,
+     "x": -3133.8,
+     "z": -3838.5,
+     "dist": 3000,
+     "az": 40,
+     "el": 33
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月31日",
+    "time": "14:45",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L99"
+   ],
+   "film_start": 575.867,
+   "events": [],
+   "why": "L99 幸存者从 1756 人到 20 人。",
+   "section": "end",
+   "see_zh": "镜头在屋顶上空慢慢往西北飘回挹江门。",
+   "evidence": [],
+   "weather": {
+    "sky": "overcast",
+    "cloud": 0.6,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "p:d-chengbei",
+    "p:g-yijiang"
+   ],
+   "hud": {
+    "day": 1,
+    "date": false,
+    "clock": false
+   }
+  },
+  {
+   "id": "s56",
+   "start": "1938-01-31T15:30:00+08:00",
+   "end": "1938-01-31T16:30:00+08:00",
+   "seconds": 17.0333,
+   "cam": [
+    {
+     "at": 0,
+     "x": 177.2,
+     "z": -12.5,
+     "dist": 3700,
+     "az": 12,
+     "el": 32
+    },
+    {
+     "at": 1,
+     "x": 177.2,
+     "z": -12.5,
+     "dist": 3800,
+     "az": 16,
+     "el": 31
+    }
+   ],
+   "ease": "trapezoid",
+   "radius": 3200,
+   "clouds": 0,
+   "caption": {
+    "date_zh": "1938年1月31日",
+    "time": "15:30",
+    "place_zh": "南京",
+    "place_en": "Nanking"
+   },
+   "vo": [
+    "L100",
+    "L101"
+   ],
+   "film_start": 588.633,
+   "events": [
+    "ev-0128-zone-crowd-d"
+   ],
+   "why": "L100 记录和这座城将是仅存的证人；L101 片尾卡 12 秒。",
+   "section": "end",
+   "see_zh": "傍晚斜光里的全城，停住；L101 片尾卡（黑底，左 58%）。",
+   "evidence": [
+    {
+     "id": "ev-0128-zone-crowd-d",
+     "label": "核实",
+     "detail": {
+      "fact": "核实",
+      "time": "推测",
+      "count": "推测"
+     },
+     "sources": [
+      "英文维基 Nanking Safety Zone"
+     ],
+     "notes": "2-04 限期；2-18 委员会改组，安全区结束（时段外）。本段人数推测。改窗口：旁白 L69-L71（01-21，“挤满人的灰屋顶”）和 L80（01-28，“安全区仍然挤得满满的”）都要一个满的安全区，而人群模块的人群只有三角形斜坡（ev-1213-zone-crowd-c 从 12-14 线性减到 01-27，01-21 只剩 15 %）：这条从 01-05 起升、01-27 12:00 到顶、02-05 减完（限期 2-04），01-21 约 73 %、01-28 09:00 约 89 %，和 c 叠起来全月都不空（推测）。"
+    }
+   ],
+   "weather": {
+    "sky": "overcast",
+    "cloud": 0.6,
+    "evidence": "推测",
+    "note": "无逐日记载；按 1991-2020 气候值（1 月约 9 个降水日、3.7 个雪日）排的示意天气（可选）"
+   },
+   "anchors": [
+    "p:sq-xinjiekou",
+    "p:sq-xinjiekou"
+   ],
+   "hud": {
+    "day": 1,
+    "date": false,
+    "clock": false
+   },
+   "cards": [
+    {
+     "kind": "end",
+     "from": 5.04
+    }
+   ]
+  }
+ ]
+}

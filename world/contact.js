@@ -1,0 +1,14 @@
+import{Color as e,LinearFilter as t,MathUtils as n,MeshBasicMaterial as r,OrthographicCamera as i,ShaderMaterial as a,Vector2 as o,WebGLRenderTarget as s}from"../node_modules/three/build/three.core.js";import{shared as c}from"./materials.js";import{FullScreenQuad as l}from"../node_modules/three/examples/jsm/postprocessing/Pass.js";var u=1024,d=e=>(e.userData.ground=!0,e),f=`
+uniform sampler2D map;
+uniform vec2 step;   // one tap's stride, in uv
+varying vec2 vUv;
+void main() {
+  // nine taps of a bell curve
+  float sum = texture2D(map, vUv).r * 0.2270270270;
+  sum += (texture2D(map, vUv + step * 1.0).r + texture2D(map, vUv - step * 1.0).r) * 0.1945945946;
+  sum += (texture2D(map, vUv + step * 2.0).r + texture2D(map, vUv - step * 2.0).r) * 0.1216216216;
+  sum += (texture2D(map, vUv + step * 3.0).r + texture2D(map, vUv - step * 3.0).r) * 0.0540540541;
+  sum += (texture2D(map, vUv + step * 4.0).r + texture2D(map, vUv - step * 4.0).r) * 0.0162162162;
+  gl_FragColor = vec4(sum, sum, sum, 1.0);
+}`,p=class{constructor(n){this.renderer=n;let d=()=>new s(u,u,{depthBuffer:!0,minFilter:t,magFilter:t});this.mask=d(),this.half=d(),this.done=d(),this.camera=new i(-1,1,1,-1,1,6e3),this.camera.up.set(0,0,-1),this.flat=new r({color:16777215,side:2,fog:!1}),this.blur=new l(new a({uniforms:{map:{value:null},step:{value:new o}},vertexShader:`varying vec2 vUv;
+void main() { vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }`,fragmentShader:f,depthTest:!1,depthWrite:!1})),this.softness=.5,this.frame=0,this.black=new e(0,0,0),this.extent=0,c.uContactMap.value=this.done.texture}update(t,r,i,a=[]){if(c.uContact.value<=0||this.frame++%2)return;let o=n.clamp(i.distanceTo(r)*1.5,220,1400),s=220*1.35**Math.ceil(Math.log(o/220)/Math.log(1.35)),l=this.camera;s!==this.extent&&(this.extent=s,l.left=l.bottom=-s,l.right=l.top=s,l.updateProjectionMatrix());let d=2*s/u,f=Math.round(r.x/d)*d,p=Math.round(r.z/d)*d;l.position.set(f,r.y+3e3,p),l.lookAt(f,r.y,p),c.uContactRect.value.set(f,p,s,0);let m=this.renderer,h=[];t.traverse(e=>{e.userData.ground&&e.visible&&(e.visible=!1,h.push(e))});for(let e of a)e&&e.visible&&(e.visible=!1,h.push(e));let g={target:m.getRenderTarget(),shadows:m.shadowMap.autoUpdate,background:t.background,override:t.overrideMaterial,clear:m.getClearColor(new e),alpha:m.getClearAlpha()};m.shadowMap.autoUpdate=!1,t.background=null,t.overrideMaterial=this.flat,m.setRenderTarget(this.mask),m.setClearColor(this.black,1),m.clear(),m.render(t,l),t.overrideMaterial=g.override,t.background=g.background,m.shadowMap.autoUpdate=g.shadows;for(let e of h)e.visible=!0;let _=this.blur.material.uniforms,v=this.softness/4/(2*s);_.map.value=this.mask.texture,_.step.value.set(v,0),m.setRenderTarget(this.half),this.blur.render(m),_.map.value=this.half.texture,_.step.value.set(0,v),m.setRenderTarget(this.done),this.blur.render(m),m.setRenderTarget(g.target),m.setClearColor(g.clear,g.alpha)}};export{p as ContactShadows,d as asGround};

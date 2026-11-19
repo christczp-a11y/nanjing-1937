@@ -1,0 +1,1723 @@
+{
+ "version": 1,
+ "generator": "audit/wave_b/u1/build_events_index.py (package U1, wave B)",
+ "note": "Event index for the one-key jump (mods/events_index.js). Made from audit/events_index_draft.json (39 entries, time order kept; the Rabe entries sit at their own dates). cam = [x, z, dist, az, el] as window.__app.setCam (az 0 = camera south of the point); each camera checked with a still of the live scene at the entry's date and hour (audit/wave_b/ui_shots/events/); cam_from_draft + cam_why where the camera or the place was changed. night = the page's night exposure for the jump (3 as the place menu at night, else 1). scene: ok | partial (+ scene_note_zh: what the scene does not yet show). card_only: a text card, the clock and the view are not moved (D20). Texts Simplified (screen overlay); every number with source and status. D19: no flag emblem is drawn by this feature; the Rabe card tells the fact in words.",
+ "events": [
+  {
+   "id": "ix01-zone-opens",
+   "date": "1937-12-01",
+   "time": "08:00",
+   "title_zh": "安全区开始接收难民",
+   "short_zh": "安全区开放",
+   "place_zh": "南京安全区（新街口以北）",
+   "x": -673,
+   "z": -598,
+   "cam": [
+    -673,
+    -598,
+    2500,
+    0,
+    40
+   ],
+   "night": 1,
+   "text_zh": "11月22日成立、由拉贝任主席的南京安全区国际委员会于12月1日接管区内行政，留城市民开始迁入。安全区约3.86平方公里，四边是中山路、山西路广场、西康路和汉中路。",
+   "numbers": [
+    {
+     "zh": "面积约 3.86 平方公里",
+     "source": "英文维基 Nanking Safety Zone",
+     "status": "核实"
+    }
+   ],
+   "sources": [
+    "英文维基 Nanking Safety Zone"
+   ],
+   "sources_en": [
+    "en wiki Nanking Safety Zone"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "partial",
+   "scene_note_zh": "已画：边界街上的安全区旗（真实大小的小旗和旗杆）、四角的大旗布、15 处收容所的芦席棚（c_zone 数据）、区内按地图空地布置的带围墙别墅（c_zone 数据）。还不对：区里许多别墅前没有街道（宁海路、颐和路、西康路等不在路网里，已请求），别墅院子和空地仍画成田地。旗的样子：1937 年 12 月 6 日委员会致日本大使的信（经美国使馆转交，FRUS 1937 vol III）说，边界用旗标出，旗是白底红十字，十字外围着一个圆圈，表示“区”的意思；四角用同样标志的大布平铺在地上或屋顶上（核实）。信里没有写圆圈的颜色，圈是什么颜色不知道。画面上把圈画成红色，这是推测（英文维基写黑圈，可能是转引，未核实）。",
+   "title_en": "The Safety Zone opens",
+   "text_en": "The International Committee (founded 22 Nov, chaired by John Rabe) takes over the zone's administration on 1 Dec; 3.86 km2 bounded by Zhongshan Rd, Shanxi Rd circle, Xikang Rd and Hanzhong Rd.",
+   "place_draft": "南京安全区（新街口以北）",
+   "timeline_ids": [
+    "ev-1201-zone-crowd-a",
+    "ev-1201-zone-inflow-s",
+    "ev-1201-zone-inflow-e"
+   ]
+  },
+  {
+   "id": "ix02-gates-sealed",
+   "date": "1937-12-04",
+   "time": "07:00",
+   "title_zh": "城门用沙袋和混凝土封死",
+   "short_zh": "城门封闭",
+   "place_zh": "中华门（各城门同）",
+   "x": -319,
+   "z": 3996,
+   "cam": [
+    -339,
+    4212,
+    300,
+    0,
+    20
+   ],
+   "night": 3,
+   "text_zh": "到12月6日，各城门都用约6米厚的沙袋和混凝土封死，城墙上架起机枪阵地。画面所用的07:00是推测。",
+   "numbers": [
+    {
+     "zh": "封门厚约 6 米",
+     "source": "英文维基 Battle of Nanking",
+     "status": "核实"
+    }
+   ],
+   "sources": [
+    "英文维基 Battle of Nanking"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking"
+   ],
+   "status": "核实（日期范围）；07:00 推测",
+   "status_en": "核实 (date range); 07:00 推测",
+   "scene": "ok",
+   "title_en": "The gates are sealed",
+   "text_en": "All gates are closed with about 6 m of sandbags and concrete by 6 Dec; the walls carry machine-gun posts.",
+   "place_draft": "中华门（示例）",
+   "timeline_ids": [
+    "ev-1206-gates-sealed",
+    "ev-1206-gate-yijiang",
+    "ev-1206-gate-zhongshan"
+   ]
+  },
+  {
+   "id": "ix03-pukou-raid",
+   "date": "1937-12-06",
+   "time": "10:00",
+   "title_zh": "日机空袭浦口",
+   "short_zh": "空袭浦口",
+   "place_zh": "浦口（江北）",
+   "x": -6650,
+   "z": -5500,
+   "cam": [
+    -6650,
+    -5500,
+    2000,
+    60,
+    25
+   ],
+   "night": 1,
+   "text_zh": "日机轰炸长江北岸的浦口，日文维基记为死伤三百余人；同日日军第三飞行团轰炸守军主要阵地（中文维基）。浦口这次空袭是陆军还是海军的飞机，出处没有写（未核实）。钟点是推测。",
+   "numbers": [
+    {
+     "zh": "死伤 300 余人",
+     "source": "日文维基 南京攻略戦",
+     "status": "核实（署名数字）"
+    }
+   ],
+   "sources": [
+    "日文维基 南京攻略戦",
+    "中文维基 南京保卫战"
+   ],
+   "sources_en": [
+    "ja wiki 南京攻略戦",
+    "zh wiki 南京保卫战"
+   ],
+   "status": "核实（事件）；钟点推测",
+   "status_en": "核实 (event); clock 推测",
+   "scene": "partial",
+   "title_en": "Air raid on Pukou",
+   "text_en": "Japanese aircraft bomb Pukou across the river; ja wiki gives over 300 killed or wounded. Same day the army's 3rd Air Group bombs the main Chinese positions (zh wiki). Which service flew the Pukou raid is not in the source (未核实).",
+   "place_draft": "浦口（江北）",
+   "timeline_ids": [
+    "ev-1206-pukou-raid",
+    "ev-1206-air-raid"
+   ],
+   "scene_note_zh": "wave C：浦口空袭单独成事件 ev-1206-pukou-raid（10:00-13:00 推测，6 架是显示数，机型未核实、用九六式陆攻替身），弹着落在浦口码头一带（推测）。"
+  },
+  {
+   "id": "ix04-chiang-leaves",
+   "date": "1937-12-07",
+   "time": "04:00",
+   "title_zh": "蒋介石飞离南京",
+   "short_zh": "蒋介石离京",
+   "place_zh": "明故宫机场（推测）",
+   "x": 2456,
+   "z": 1608,
+   "cam": [
+    2456,
+    1608,
+    600,
+    180,
+    30
+   ],
+   "night": 3,
+   "text_zh": "12月7日拂晓前，蒋介石和宋美龄乘飞机离开南京。史料没有写明机场，放在明故宫机场是推测。",
+   "numbers": [],
+   "sources": [
+    "英文维基 Battle of Nanking",
+    "中文维基 南京保卫战"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking",
+    "zh wiki 南京保卫战"
+   ],
+   "status": "核实（事件、时间）；推测（机场）",
+   "status_en": "核实 (event, time); 推测 (airfield)",
+   "scene": "partial",
+   "title_en": "Chiang Kai-shek flies out",
+   "text_en": "Before dawn Chiang and Soong Mei-ling leave by plane; the airfield is not named in the sources (Ming Palace airfield is inferred).",
+   "place_draft": "明故宫机场（推测）",
+   "timeline_ids": [
+    "ev-1207-chiang-leaves"
+   ],
+   "scene_note_zh": "画面没有画出飞机起飞，只标出推测的机场位置。",
+   "cam_from_draft": "2456,1608,800,180,25",
+   "cam_why": "600 m / 仰角 30°：原 800 m / 25° 在凌晨 4 点几乎看不出城"
+  },
+  {
+   "id": "ix05-scorched-earth",
+   "date": "1937-12-07",
+   "time": "19:30",
+   "title_zh": "城外焦土：关厢起火",
+   "short_zh": "城外焦土",
+   "place_zh": "中山门外—孝陵卫",
+   "x": 5264,
+   "z": 1190,
+   "cam": [
+    5264,
+    1190,
+    1800,
+    250,
+    22
+   ],
+   "night": 3,
+   "text_zh": "12月7日傍晚，守军为清出射界，烧毁城墙外的村庄和关厢，中山门外东南整条山谷在烧，村民涌进城内。来源是德丁的报道（经英文维基 Battle of Nanking），烧毁范围是推测。",
+   "numbers": [],
+   "sources": [
+    "英文维基 Battle of Nanking（德丁的报道）"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking (Durdin)"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "ok",
+   "title_en": "Scorched earth: the suburbs burn",
+   "text_en": "Chinese troops burn the villages and suburbs outside the wall to clear fields of fire; villagers flood into the city.",
+   "place_draft": "中华门外",
+   "timeline_ids": [
+    "ev-1207-scorched-out"
+   ],
+   "cam_from_draft": "-319,3995,2000,0,20",
+   "cam_why": "草稿放在中华门外，但场景里中华门外 12-08 09:00 才起火；12-07 傍晚起火的是中山门外—孝陵卫（timeline fire-1207-zhongshanmen-out，出处德丁），地点改到那里"
+  },
+  {
+   "id": "ix06-guanghua-first",
+   "date": "1937-12-09",
+   "time": "06:00",
+   "title_zh": "光华门外首战",
+   "short_zh": "光华门首战",
+   "place_zh": "光华门外",
+   "x": 2902,
+   "z": 2949,
+   "cam": [
+    2842,
+    2989,
+    600,
+    -35,
+    28
+   ],
+   "night": 3,
+   "text_zh": "拂晓，日军第36联队在光华门外与教导总队一个营交火；城门一带遭空袭，中方伤亡百余人，日军两门山炮轰击城门。中方的战车和装甲车是10日傍晚城墙被炸开以后才来增援的（见“光华门城墙被炸开”）。",
+   "numbers": [
+    {
+     "zh": "中方伤亡 100 余人",
+     "source": "英文维基 Battle of Nanking",
+     "status": "核实"
+    }
+   ],
+   "sources": [
+    "英文维基 Battle of Nanking 5.1, 5.4"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking 5.1, 5.4"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "partial",
+   "title_en": "First clash at Guanghua Gate",
+   "text_en": "At dawn the Japanese 36th Regiment meets a Training Division battalion outside the gate; air raids around the gate cause over 100 Chinese casualties; two mountain guns shell the gate. The Chinese tanks and armoured cars come up only after the breach on the evening of 10 Dec (see the breach card).",
+   "place_draft": "光华门外",
+   "timeline_ids": [
+    "ev-1209-guanghua-battle",
+    "ev-1209-guanghua-guns",
+    "ev-1209-guanghua-air",
+    "ev-1209-9div-se"
+   ],
+   "scene_note_zh": "日军一侧不画战车（光华门的日军八九式坦克没有出处，已去掉）。12-09 画了 6 架日军飞机轰炸光华门一带（架数、钟点推测，型号和军种未核实，用九六式陆攻替身）。中方战车在 12-10 傍晚城墙被炸开之后才画出（见“光华门城墙被炸开”）。"
+  },
+  {
+   "id": "ix07-zhonghua-bombing",
+   "date": "1937-12-09",
+   "time": "09:00",
+   "title_zh": "日机密集轰炸中华门",
+   "short_zh": "轰炸中华门",
+   "place_zh": "中华门",
+   "x": -319,
+   "z": 3996,
+   "cam": [
+    -339,
+    4212,
+    800,
+    0,
+    25
+   ],
+   "night": 1,
+   "text_zh": "日本陆军第三飞行团轰炸中华门一带。出处没有写飞机架数和钟点，画面的09:00和12架飞机都是推测。",
+   "numbers": [],
+   "sources": [
+    "中文维基 南京保卫战"
+   ],
+   "sources_en": [
+    "zh wiki 南京保卫战"
+   ],
+   "status": "核实（事件）；推测（钟点、12 架飞机）",
+   "status_en": "核实 (event); 推测 (time, 12 planes)",
+   "scene": "partial",
+   "title_en": "Heavy bombing of Zhonghua Gate",
+   "text_en": "The Japanese army's 3rd Air Group bombs the Zhonghua Gate area; aircraft count and clock not in the source.",
+   "place_draft": "中华门",
+   "timeline_ids": [
+    "ev-1209-zhonghua-bombing"
+   ],
+   "scene_note_zh": "画面里的轰炸机模型是海军九六式陆攻，陆军实际所用机型未核实。"
+  },
+  {
+   "id": "ix08-ultimatum",
+   "date": "1937-12-09",
+   "time": "15:00",
+   "title_zh": "劝降传单与正午期限",
+   "short_zh": "劝降传单",
+   "place_zh": "南京上空；中山门外东哨线",
+   "x": -123,
+   "z": 688,
+   "cam": [
+    -123,
+    688,
+    3000,
+    0,
+    35
+   ],
+   "night": 1,
+   "text_zh": "日机在城市上空投下松井石根的劝降书；日军军官在中山门外的哨线等到10日正午，守军没有答复。",
+   "numbers": [],
+   "sources": [
+    "日文维基 南京攻略戦",
+    "英文维基 Battle of Nanking"
+   ],
+   "sources_en": [
+    "ja wiki 南京攻略戦",
+    "en wiki Battle of Nanking"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "partial",
+   "title_en": "Leaflets and the noon deadline",
+   "text_en": "A plane drops Matsui's surrender demand over the city; Japanese officers wait at a sentry line east of Zhongshan Gate until noon on 10 Dec; no reply comes.",
+   "place_draft": "南京上空；中山门外东哨线",
+   "timeline_ids": [
+    "ev-1209-leaflets",
+    "ev-1210-sentry-line"
+   ],
+   "scene_note_zh": "传单没有画出；哨线只有几个人，在这个全城远景里看不到。"
+  },
+  {
+   "id": "ix11-zijinshan",
+   "date": "1937-12-10",
+   "time": "08:00",
+   "title_zh": "紫金山攻防",
+   "short_zh": "紫金山攻防",
+   "place_zh": "紫金山",
+   "x": 5800,
+   "z": -1600,
+   "cam": [
+    5800,
+    -1600,
+    3000,
+    10,
+    20
+   ],
+   "night": 1,
+   "text_zh": "日军第16师团以炮兵进攻据守紫金山的教导总队；12月9日日军用烟幕和空中轰炸攻老虎洞阵地（英文维基）；第二峰在12日失守，当夜山上起火。前线位置是推测。",
+   "numbers": [
+    {
+     "zh": "教导总队 12,000 余人",
+     "source": "英文维基 Battle of Nanking",
+     "status": "核实"
+    }
+   ],
+   "sources": [
+    "英文维基 Battle of Nanking",
+    "日文维基 南京攻略戦"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking",
+    "ja wiki 南京攻略戦"
+   ],
+   "status": "核实；前线推测",
+   "status_en": "核实; front line 推测",
+   "scene": "partial",
+   "title_en": "The battle for Purple Mountain",
+   "text_en": "The 16th Division attacks the Training Division (12,000+) on Purple Mountain with artillery; on 9 Dec smokescreens and air bombardment hit Old Tiger's Cave (en wiki); the second peak falls on 12 Dec and the mountain burns that night.",
+   "place_draft": "紫金山",
+   "timeline_ids": [
+    "ev-1210-zijinshan",
+    "ev-1204-jiaodao-zijin",
+    "ev-1210-zijinshan-air",
+    "ev-1210-zijinshan-guns"
+   ],
+   "scene_note_zh": "画了：12-09 一段空袭（6 架日军飞机，架数、钟点、落点推测，型号和军种未核实，用九六式陆攻替身；出处只记 12-09 这一天）；日军炮兵在南麓放列（是哪个联队的炮、几门：推测）。烟幕还没有画。",
+   "cam_from_draft": "3986,985,2500,250,15",
+   "cam_why": "草稿的镜头对着中山门、迎着早上的太阳，山不在画面里；改为从南面看山坡（中山陵石阶可见）"
+  },
+  {
+   "id": "ix09-yuhuatai",
+   "date": "1937-12-10",
+   "time": "13:00",
+   "title_zh": "雨花台攻防",
+   "short_zh": "雨花台攻防",
+   "place_zh": "雨花台",
+   "x": -434,
+   "z": 5655,
+   "cam": [
+    -260,
+    5320,
+    720,
+    190,
+    22
+   ],
+   "night": 1,
+   "text_zh": "13:00松井下令总攻后，日军第6、第114师团进攻第88师在雨花台的混凝土碉堡和战壕；据英文维基，雨花台守军大部战死。",
+   "numbers": [
+    {
+     "zh": "画面人数 40,000",
+     "source": "时间轴 ev-1210-assault-yuhuatai",
+     "status": "显示用（推测）"
+    }
+   ],
+   "sources": [
+    "英文维基 Battle of Nanking",
+    "中文维基 南京保卫战"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking",
+    "zh wiki 南京保卫战"
+   ],
+   "status": "核实；画面 40,000 人为显示用（推测）",
+   "status_en": "核实; drawn count 40,000 is display (推测)",
+   "scene": "partial",
+   "title_en": "The battle for Yuhuatai",
+   "text_en": "After Matsui orders the general attack at 13:00, the 6th and 114th Divisions assault the 88th Division's concrete bunkers and trenches; most Yuhuatai defenders are killed (en wiki).",
+   "place_draft": "雨花台",
+   "timeline_ids": [
+    "ev-1210-assault-yuhuatai",
+    "ev-1210-yuhuatai-shelling",
+    "ev-1201-yuhuatai-works"
+   ],
+   "scene_note_zh": "散兵线画得稀薄（SHORTS_PLAN 的记录）。"
+  },
+  {
+   "id": "ix10-guanghua-breach",
+   "date": "1937-12-10",
+   "time": "17:30",
+   "title_zh": "光华门城墙被炸开",
+   "short_zh": "光华门被炸开",
+   "place_zh": "光华门",
+   "x": 2902,
+   "z": 2949,
+   "cam": [
+    2842,
+    2989,
+    600,
+    -35,
+    28
+   ],
+   "night": 3,
+   "text_zh": "日军工兵炸开光华门城墙，第36联队两个中队冲进缺口后被压制在里面；第87师守住城门，直到13日凌晨撤出。日文维基则说城门在10日17:30已被“确保”，两说不一。城墙被炸开以后，第87师和第83军一部带着炮、战车和装甲车赶来增援（英文维基；画面里的车型、数量和钟点是推测）。",
+   "numbers": [],
+   "sources": [
+    "英文维基 Battle of Nanking 5.4",
+    "日文维基 南京攻略戦"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking 5.4",
+    "ja wiki 南京攻略戦"
+   ],
+   "status": "核实（爆破）；争议（12月10日城门是否失守）",
+   "status_en": "核实 (breach); 争议 (whether the gate fell on 12-10)",
+   "scene": "ok",
+   "title_en": "The breach at Guanghua Gate",
+   "text_en": "Japanese engineers blow a hole in the wall; two companies of the 36th Regiment rush in and are pinned in the gap; the 87th Division holds the gate until it withdraws early on 13 Dec. ja wiki instead says the gate was 'secured' at 17:30 on 10 Dec. After the breach the 87th Division and part of the 83rd Corps bring up artillery, tanks and armoured cars (en wiki; type, number and hours drawn are 推测).",
+   "place_draft": "光华门",
+   "timeline_ids": [
+    "ev-1210-guanghua-breach",
+    "ev-1210-east-moat",
+    "ev-1210-guanghua-cn-armour"
+   ]
+  },
+  {
+   "id": "ix12-shangxinhe",
+   "date": "1937-12-11",
+   "time": "07:00",
+   "title_zh": "上新河、水西门：宪兵阻击",
+   "short_zh": "上新河阻击",
+   "place_zh": "上新河",
+   "x": -6007,
+   "z": 2939,
+   "cam": [
+    -6007,
+    2939,
+    900,
+    0,
+    25
+   ],
+   "night": 3,
+   "text_zh": "中国宪兵部队与日军第45联队在上新河激战终日。另一种说法把宪兵的这次阻击放在水西门和清凉山，地点有争议。",
+   "numbers": [],
+   "sources": [
+    "中文维基 南京保卫战",
+    "项目资料 research/data/ chinese_army verify"
+   ],
+   "sources_en": [
+    "zh wiki 南京保卫战",
+    "research chinese_army verify"
+   ],
+   "status": "核实；地点争议",
+   "status_en": "核实; place 争议",
+   "scene": "ok",
+   "title_en": "Military police hold Shangxinhe",
+   "text_en": "Chinese military police fight the Japanese 45th Regiment all day; another account places the MP18 stand at Shuixi Gate and Qingliang Hill.",
+   "place_draft": "上新河",
+   "timeline_ids": [
+    "ev-1211-shangxinhe"
+   ]
+  },
+  {
+   "id": "ix13-yuhuatai-tankettes",
+   "date": "1937-12-12",
+   "time": "06:30",
+   "title_zh": "日军轻装甲车攻雨花台",
+   "short_zh": "轻装甲车攻雨花台",
+   "place_zh": "雨花台—中华门外",
+   "x": -400,
+   "z": 4900,
+   "cam": [
+    -434,
+    5900,
+    800,
+    0,
+    20
+   ],
+   "night": 3,
+   "text_zh": "日军两个独立轻装甲车中队（藤田、井上）以九四式轻装甲车进攻雨花台，并在中华门外缴获汽油200罐。钟点可能是东京时间，车辆数未核实。",
+   "numbers": [
+    {
+     "zh": "缴获汽油 200 罐",
+     "source": "日文维基 南京攻略戦",
+     "status": "核实"
+    }
+   ],
+   "sources": [
+    "日文维基 南京攻略戦"
+   ],
+   "sources_en": [
+    "ja wiki 南京攻略戦"
+   ],
+   "status": "核实；车辆数未核实",
+   "status_en": "核实; vehicle count 未核实",
+   "scene": "partial",
+   "title_en": "Japanese tankettes on Yuhuatai",
+   "text_en": "Two independent light armoured car companies (Fujita, Inoue) attack Yuhuatai with Type 94 tankettes and capture 200 cans of petrol outside Zhonghua Gate. Clock may be Tokyo time.",
+   "place_draft": "雨花台—中华门外",
+   "timeline_ids": [
+    "ev-1212-yuhuatai-tankettes"
+   ],
+   "scene_note_zh": "wave C：ev-1212-yuhuatai-tankettes，日方 07:00 按东京时间换成当地 06:00（推测），画面 06:30；6 辆九四式是显示数（车数未核实），走雨花路上雨花台后停下。缴获的汽油堆还没有画（道具已在 BOARD 请求）。"
+  },
+  {
+   "id": "ix15-zhongshan-wall",
+   "date": "1937-12-12",
+   "time": "10:00",
+   "title_zh": "中山门城墙被炮火打塌",
+   "short_zh": "中山门城墙塌",
+   "place_zh": "中山门",
+   "x": 3986,
+   "z": 985,
+   "cam": [
+    3986,
+    985,
+    700,
+    0,
+    22
+   ],
+   "night": 1,
+   "text_zh": "日军从紫金山第二峰炮击中山门，城墙大段坍塌。缺口的位置是推测。",
+   "numbers": [],
+   "sources": [
+    "英文维基 Battle of Nanking"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking"
+   ],
+   "status": "核实；缺口位置推测",
+   "status_en": "核实; gap position 推测",
+   "scene": "partial",
+   "title_en": "The wall at Zhongshan Gate collapses",
+   "text_en": "From Purple Mountain's second peak Japanese guns fire on Zhongshan Gate and a large part of the wall gives way.",
+   "place_draft": "中山门",
+   "timeline_ids": [
+    "ev-1212-zhongshanmen-shelling",
+    "ev-1212-zhongshan-tankettes"
+   ],
+   "scene_note_zh": "场景里炮击从 10:00 开始，城墙在 15:00 塌开（wall.json breaches zhongshan-s，时刻推测）：时钟在走，可用菜单“更快”看到。"
+  },
+  {
+   "id": "ix14-zhonghua-falls",
+   "date": "1937-12-12",
+   "time": "12:00",
+   "title_zh": "中华门：炮击、轻装甲车、城门失守",
+   "short_zh": "中华门失守",
+   "place_zh": "中华门",
+   "x": -319,
+   "z": 3996,
+   "cam": [
+    -339,
+    4212,
+    300,
+    0,
+    20
+   ],
+   "night": 1,
+   "text_zh": "前一天（12月11日）日军飞机已把中华门前的守军逼进城内（英文维基）。12日日军炮兵和战车轰击中华门，城外街上至少有5辆九四式轻装甲车（照片说明为12:10）；第47联队攻下西侧，第6、第114师团在入夜前占住城门。照片上的钟点可能是东京时间。",
+   "numbers": [
+    {
+     "zh": "至少 5 辆九四式轻装甲车",
+     "source": "朝日新闻 1938 年写真集照片（维基共享资源）",
+     "status": "核实"
+    }
+   ],
+   "sources": [
+    "英文维基 Battle of Nanking",
+    "朝日新闻 1938 年写真集（维基共享资源）",
+    "日文维基 南京攻略戦"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking",
+    "Asahi 1938 photo album (Commons)",
+    "ja wiki 南京攻略戦"
+   ],
+   "status": "核实；12:10/12:20 可能是东京时间",
+   "status_en": "核实; 12:10/12:20 may be Tokyo time",
+   "scene": "ok",
+   "title_en": "Zhonghua Gate falls",
+   "text_en": "The day before (11 Dec) Japanese aircraft had driven the defenders in front of the gate inside (en wiki). On 12 Dec artillery and tank fire on the gate; at least 5 Type 94 tankettes in the street outside (photo, 12:10 caption); the 47th Regiment takes the west side; the 6th and 114th Divisions hold the gate by nightfall.",
+   "place_draft": "中华门",
+   "timeline_ids": [
+    "ev-1212-zhonghua-shelling",
+    "ev-1212-zhonghua-tankettes",
+    "ev-1212-zhonghua-fall",
+    "ev-1212-6div-ridge",
+    "ev-1212-zhonghua-front-air",
+    "ev-1212-zhonghua-regt-guns"
+   ],
+   "scene_note_zh": "ev-1212-zhonghua-front-air 的 id 没改名，但事件已按出处移到 12-11（10:00-13:00，钟点推测）；这张卡的 12 日画面里没有这次空袭。门外放列的炮是哪个联队的、几门，是推测（二手出处）。"
+  },
+  {
+   "id": "ix16-shuixi-tanks",
+   "date": "1937-12-12",
+   "time": "12:00",
+   "title_zh": "水西门：日军战车突击",
+   "short_zh": "水西门战车",
+   "place_zh": "水西门",
+   "x": -1480,
+   "z": 2034,
+   "cam": [
+    -1480,
+    2034,
+    700,
+    0,
+    22
+   ],
+   "night": 1,
+   "text_zh": "中华门以西，日军在“一队坦克”的支援下猛攻水西门（英文维基）。钟点、车型和数量都未核实。",
+   "numbers": [],
+   "sources": [
+    "英文维基 Battle of Nanking"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking"
+   ],
+   "status": "核实（事件）；未核实（钟点、车型、数量）",
+   "status_en": "核实 (event); 未核实 (time, type, count)",
+   "scene": "partial",
+   "title_en": "Tanks at Shuixi Gate",
+   "text_en": "West of Zhonghua Gate the Japanese launch a violent drive on Shuixi Gate 'with the support of a fleet of tanks' (en wiki); type and number not given.",
+   "place_draft": "水西门",
+   "timeline_ids": [
+    "ev-1212-shuixi-tanks"
+   ],
+   "scene_note_zh": "wave C：ev-1212-shuixi-tanks（09:00-17:00 推测）：4 辆九四式只是替身和显示数（型号、数量未核实），沿水西门大街开到门外停下。"
+  },
+  {
+   "id": "ix17-panay",
+   "date": "1937-12-12",
+   "time": "13:27",
+   "title_zh": "帕奈号被炸沉（上游约 28 英里，地图外）",
+   "short_zh": "帕奈号被炸沉",
+   "place_zh": "长江上游约 28 英里（英文维基；模型外）",
+   "x": -5145,
+   "z": 6300,
+   "cam": [
+    -6300,
+    4500,
+    3000,
+    135,
+    25
+   ],
+   "night": 1,
+   "text_zh": "日本海军飞机（3架九六式舰攻、9架九五式舰战）在南京上游约28英里处（英文维基）轰炸、扫射美国炮艇帕奈号，炮艇15:54沉没。事发地在城市模型之外，镜头只是从模型西南边缘望向上游的江面；标签箭头的方向是推测（同一页信息框的坐标离城直线约51公里，和“28英里”对不上）。",
+   "numbers": [
+    {
+     "zh": "美方 3 人死亡",
+     "source": "英文维基 USS Panay incident（经时间轴 ev-1212-panay）",
+     "status": "核实（署名）"
+    }
+   ],
+   "sources": [
+    "英文维基 USS Panay incident",
+    "英文维基 Battle of Nanking"
+   ],
+   "sources_en": [
+    "en wiki USS Panay incident",
+    "en wiki Battle of Nanking"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "partial",
+   "title_en": "USS Panay sunk (about 28 miles upstream, off the map)",
+   "text_en": "Navy aircraft (3 B4Y, 9 A4N) bomb and strafe the US gunboat Panay about 28 miles upstream; it sinks at 15:54; 3 Americans killed (attributed in timeline). The marker sits at the south-west map edge.",
+   "place_draft": "长江上游（模型外）",
+   "timeline_ids": [
+    "ev-1212-panay"
+   ],
+   "scene_note_zh": "事发地在模型外，画面里没有这件事。",
+   "cam_from_draft": "-5667,-5101,6000,200,35",
+   "cam_why": "草稿的 6000 m 超过页面的最远距离 3500 m（会被截断），且对着下关江面（时间轴的点在那里，会误导）；改为模型西南边缘、望向上游"
+  },
+  {
+   "id": "ix18-last-meeting",
+   "date": "1937-12-12",
+   "time": "17:00",
+   "title_zh": "百子亭最后会议，唐生智出走",
+   "short_zh": "最后会议",
+   "place_zh": "百子亭唐公馆",
+   "x": 472,
+   "z": -1663,
+   "cam": [
+    472,
+    -1663,
+    400,
+    0,
+    30
+   ],
+   "night": 3,
+   "text_zh": "17:00以后唐生智在百子亭召开最后一次会议，下达突围命令，随后去煤炭港，当夜乘小火轮渡江。唐公馆的位置是推测。",
+   "numbers": [],
+   "sources": [
+    "英文维基 Battle of Nanking",
+    "中文维基 南京保卫战"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking",
+    "zh wiki 南京保卫战"
+   ],
+   "status": "核实；宅邸位置推测",
+   "status_en": "核实; house position 推测",
+   "scene": "partial",
+   "title_en": "The last meeting; Tang leaves",
+   "text_en": "Tang Shengzhi issues the breakout orders after 17:00 and leaves for Meitan harbour; he crosses by small steamer that night.",
+   "place_draft": "百子亭唐公馆",
+   "timeline_ids": [
+    "ev-1211-tang-order",
+    "ev-1212-final-meeting",
+    "ev-1212-tang-leaves",
+    "ev-1212-tang-crosses"
+   ],
+   "scene_note_zh": "会议本身没有画出（时间轴里是说明条目）；出走的一行人在之后几分钟出发。"
+  },
+  {
+   "id": "ix21-taiping-breakout",
+   "date": "1937-12-12",
+   "time": "20:00",
+   "title_zh": "粤军出太平门突围",
+   "short_zh": "太平门突围",
+   "place_zh": "太平门",
+   "x": 2641,
+   "z": -1120,
+   "cam": [
+    2641,
+    -1120,
+    600,
+    0,
+    25
+   ],
+   "night": 3,
+   "text_zh": "第66军、第83军拆开太平门的沙袋，向东突围，穿过日军的装甲巡逻线。据英文维基，约12,500人中只有3,000至4,000人冲了出去。",
+   "numbers": [
+    {
+     "zh": "约 12,500 人出城，3,000-4,000 人突围成功",
+     "source": "英文维基 Battle of Nanking",
+     "status": "核实"
+    }
+   ],
+   "sources": [
+    "英文维基 Battle of Nanking"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "ok",
+   "title_en": "The Cantonese break out at Taiping Gate",
+   "text_en": "The 66th and 83rd Armies tear down the sandbags and break out east past Japanese armoured patrols; of about 12,500 only 3,000-4,000 get through (en wiki).",
+   "place_draft": "太平门",
+   "timeline_ids": [
+    "ev-1212-taiping-breakout"
+   ]
+  },
+  {
+   "id": "ix19-retreat",
+   "date": "1937-12-12",
+   "time": "20:40",
+   "title_zh": "守军溃退涌向挹江门",
+   "short_zh": "溃退挹江门",
+   "place_zh": "中山北路—挹江门",
+   "x": -3613,
+   "z": -4288,
+   "cam": [
+    -3613,
+    -4288,
+    330,
+    66,
+    20
+   ],
+   "night": 3,
+   "text_zh": "数万军民沿中山北路涌向通往江边的唯一出口挹江门；交通部门前丢满了卡车、大炮和公共汽车（德丁的报道）。画面里的人数是显示用的（推测）。",
+   "numbers": [],
+   "sources": [
+    "英文维基 Battle of Nanking"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking"
+   ],
+   "status": "核实；画面人数为显示用",
+   "status_en": "核实; drawn counts display",
+   "scene": "ok",
+   "title_en": "The garrison streams to Yijiang Gate",
+   "text_en": "Tens of thousands of soldiers and civilians pour north along Zhongshan North Rd toward the only exit to the river; trucks, guns and buses are abandoned outside the Ministry of Communications (Durdin).",
+   "place_draft": "中山北路—挹江门",
+   "timeline_ids": [
+    "ev-1212-retreat-main",
+    "ev-1212-retreat-east",
+    "ev-1212-retreat-south",
+    "ev-1213-discarded"
+   ]
+  },
+  {
+   "id": "ix20-yijiang-crush",
+   "date": "1937-12-12",
+   "time": "21:00",
+   "title_zh": "挹江门：半开的城门与一辆冲出的坦克",
+   "short_zh": "挹江门挤踏",
+   "place_zh": "挹江门",
+   "x": -3634,
+   "z": -4289,
+   "cam": [
+    -3634,
+    -4288,
+    320,
+    50,
+    22
+   ],
+   "night": 3,
+   "text_zh": "挹江门只开半边，守门的第36师督战队没有接到撤退令，向人群开枪；约21:00一辆中国坦克冲向督战队，被手榴弹炸毁。挤踏中的死者，英文维基记为数百人，Smith 记为约一千人，数字有争议。",
+   "numbers": [
+    {
+     "zh": "数百人死于挤踏",
+     "source": "英文维基 Battle of Nanking",
+     "status": "争议（署名）"
+    },
+    {
+     "zh": "约 1,000 人",
+     "source": "Smith（经英文维基 Battle of Nanking）",
+     "status": "争议（署名）"
+    }
+   ],
+   "sources": [
+    "英文维基 Battle of Nanking",
+    "中文维基 南京保卫战"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking",
+    "zh wiki 南京保卫战"
+   ],
+   "status": "核实；死亡人数争议（署名）",
+   "status_en": "核实; death count 争议 (attributed)",
+   "scene": "ok",
+   "title_en": "Yijiang Gate: the crush and the tank",
+   "text_en": "The gate is half open; the 36th Division's barrier troops, without the withdrawal order, fire on the crowd; around 21:00 a Chinese tank charges them and is destroyed by a grenade. Hundreds die in the crush (en wiki; ~1,000 per Smith, attributed).",
+   "place_draft": "挹江门",
+   "timeline_ids": [
+    "ev-1212-yijiang-crush",
+    "ev-1212-shed-uniforms"
+   ]
+  },
+  {
+   "id": "ix22-crossing",
+   "date": "1937-12-12",
+   "time": "23:00",
+   "title_zh": "下关江岸：几万人，没有船",
+   "short_zh": "下关渡江",
+   "place_zh": "下关江边",
+   "x": -5277,
+   "z": -4396,
+   "cam": [
+    -5300,
+    -4350,
+    1700,
+    95,
+    24
+   ],
+   "night": 3,
+   "text_zh": "军民用门板、木板和仅有的几条船渡江，许多人淹死在江中；自带船只的部队（第36师和第88、第156师一部）渡了过去。画面里的人数是显示用的（推测）。",
+   "numbers": [],
+   "sources": [
+    "英文维基 Battle of Nanking",
+    "中文维基 南京保卫战"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking",
+    "zh wiki 南京保卫战"
+   ],
+   "status": "核实；人数为显示用",
+   "status_en": "核实; counts display",
+   "scene": "ok",
+   "title_en": "Xiaguan: tens of thousands, no boats",
+   "text_en": "Soldiers and civilians try to cross the Yangtze on doors, planks and the few boats; units with their own boats (36th, parts of 88th and 156th) get across; many drown.",
+   "place_draft": "下关江边",
+   "timeline_ids": [
+    "ev-1212-crossing",
+    "ev-1212-88div-156div-own-boats",
+    "ev-1212-36div-heji"
+   ]
+  },
+  {
+   "id": "ix23-zhongshan-taken",
+   "date": "1937-12-13",
+   "time": "02:10",
+   "title_zh": "日军先头占中山门",
+   "short_zh": "日军占中山门",
+   "place_zh": "中山门",
+   "x": 3986,
+   "z": 985,
+   "cam": [
+    3986,
+    985,
+    600,
+    0,
+    20
+   ],
+   "night": 3,
+   "text_zh": "拂晓前，日军第16师团先头部队占领中山门。日文维基记为第33联队（03:10，可能是东京时间），《南京战史》（经 ne.jp 引述）记为第19旅团的第9、第20联队，说法不一。",
+   "numbers": [],
+   "sources": [
+    "日文维基 南京攻略戦",
+    "ne.jp/asahi/puff/mdg/nk/Ncp414.html（引《南京战史》）"
+   ],
+   "sources_en": [
+    "ja wiki 南京攻略戦",
+    "ne.jp/asahi/puff/mdg/nk/Ncp414.html (quoting 南京戦史)"
+   ],
+   "status": "核实（事件）；争议（联队）",
+   "status_en": "核实 (event); 争议 (regiment)",
+   "scene": "ok",
+   "title_en": "Japanese vanguard takes Zhongshan Gate",
+   "text_en": "Before dawn the 16th Division's vanguard takes Zhongshan Gate: ja wiki names the 33rd Regiment (03:10, probably Tokyo time); 南京戦史 (via ne.jp) names the 19th Brigade's 9th and 20th Regiments.",
+   "place_draft": "中山门",
+   "timeline_ids": [
+    "ev-1213-33rd-zsm"
+   ]
+  },
+  {
+   "id": "ix24-guanghua-entry",
+   "date": "1937-12-13",
+   "time": "04:00",
+   "title_zh": "第 9 师团从光华门入城，城头升旗",
+   "short_zh": "光华门入城",
+   "place_zh": "光华门",
+   "x": 2902,
+   "z": 2949,
+   "cam": [
+    2902,
+    2949,
+    500,
+    0,
+    22
+   ],
+   "night": 3,
+   "text_zh": "第87师撤出后，日军第9师团从光华门入城；一张照片拍下士兵在城门上升起日章旗、高呼“万岁”。约400名重伤的中国士兵被留在城门一带。",
+   "numbers": [
+    {
+     "zh": "约 400 名重伤员",
+     "source": "英文维基 Battle of Nanking",
+     "status": "核实"
+    }
+   ],
+   "sources": [
+    "英文维基 Battle of Nanking",
+    "项目资料 research/data/ uniforms.json jp_flags"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking",
+    "research uniforms.json jp_flags"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "ok",
+   "title_en": "9th Division enters at Guanghua Gate",
+   "text_en": "After the 87th Division withdraws, the 9th Division enters; a photo shows soldiers raising a Hinomaru on the gate with 'Banzai'. About 400 badly wounded Chinese were left at the gate.",
+   "place_draft": "光华门",
+   "timeline_ids": [
+    "ev-1213-9div-guanghua",
+    "ev-1213-87div-out",
+    "ev-1213-guanghua-wounded"
+   ]
+  },
+  {
+   "id": "ix25-main-entry",
+   "date": "1937-12-13",
+   "time": "07:30",
+   "title_zh": "日军主力与战车从中山门、中华门入城",
+   "short_zh": "日军主力入城",
+   "place_zh": "中山门—中山东路",
+   "x": 3986,
+   "z": 985,
+   "cam": [
+    3700,
+    985,
+    700,
+    270,
+    22
+   ],
+   "night": 1,
+   "text_zh": "日军第16师团战车第1大队（八九式）08:30到达中山门（日方记录，可能是东京时间）；第6、第114师团从中华门向北开进。画面里的人数是显示用的（推测）。",
+   "numbers": [],
+   "sources": [
+    "日文维基 南京攻略戦",
+    "英文维基 Nanjing Massacre"
+   ],
+   "sources_en": [
+    "ja wiki 南京攻略戦",
+    "en wiki Nanjing Massacre"
+   ],
+   "status": "核实；人数为显示用",
+   "status_en": "核实; counts display",
+   "scene": "partial",
+   "title_en": "Main columns and tanks enter the city",
+   "text_en": "The 16th Division's 1st Tank Battalion (Type 89) reaches Zhongshan Gate at 08:30 (Japanese record, perhaps Tokyo time); the 6th and 114th Divisions march north from Zhonghua Gate.",
+   "place_draft": "中山门—中山东路",
+   "timeline_ids": [
+    "ev-1213-16div-zsm",
+    "ev-1213-6div-zhonghua",
+    "ev-1213-16div-taiping"
+   ],
+   "scene_note_zh": "画面画的是八九式坦克；中山门照片上的九四式轻装甲车画在 12 月 12 日攻中山门的那一条里（日期推测为 12 日或 13 日）。"
+  },
+  {
+   "id": "ix28-taipingmen",
+   "date": "1937-12-13",
+   "time": "10:00",
+   "title_zh": "太平门：约 1300 名军民遇害（远景）",
+   "short_zh": "太平门屠杀（远景）",
+   "place_zh": "太平门",
+   "x": 2786,
+   "z": -1142,
+   "cam": [
+    2786,
+    -1142,
+    1500,
+    100,
+    25
+   ],
+   "night": 1,
+   "text_zh": "太平门约1,300名军民被杀害（英文、日文维基一致；日期据中岛今朝吾日记，日文维基记其手段为地雷、汽油和刺刀），护城河后来由掩埋队清理。这里只用远景。",
+   "numbers": [
+    {
+     "zh": "约 1,300 人",
+     "source": "英文维基 Nanjing Massacre；日文维基 南京事件",
+     "status": "核实（署名）"
+    }
+   ],
+   "sources": [
+    "timeline.json 所列出处 (中文维基 南京大屠杀)"
+   ],
+   "sources_en": [
+    "timeline.json sources (zh wiki 南京大屠杀)"
+   ],
+   "status": "核实（署名）",
+   "status_en": "核实 (attributed)",
+   "scene": "ok",
+   "title_en": "Taiping Gate killings (far view)",
+   "text_en": "About 1,300 soldiers and civilians are killed at Taiping Gate (en and ja wiki agree; date from Nakajima's diary; method landmines, petrol, bayonets per ja wiki); the moat is later cleared by burial teams.",
+   "place_draft": "太平门",
+   "timeline_ids": [
+    "ev-1213-taipingmen-massacre",
+    "ev-1213-prisoners-ne",
+    "ev-1213-east-wall-prisoners"
+   ],
+   "cam_from_draft": "2786,-1142,1500,180,25",
+   "cam_why": "草稿从北面看，前景全是玄武湖；改为从城外东面看城门和城墙（仍是 1500 m 远景）"
+  },
+  {
+   "id": "ix37-rabe-house",
+   "date": "1937-12-25",
+   "time": "10:00",
+   "title_zh": "拉贝宅院：防空洞、大旗与六百难民",
+   "short_zh": "拉贝宅院",
+   "place_zh": "小粉桥 1 号",
+   "x": -181,
+   "z": -298,
+   "cam": [
+    -181,
+    -298,
+    300,
+    200,
+    35
+   ],
+   "night": 1,
+   "text_zh": "西门子南京分公司负责人、安全区国际委员会主席约翰·拉贝，在自己的住宅和有围墙的院子里收容难民（1953 年的房产记录：小粉桥 1 号占地约 1905 平方米，院里有两层洋楼、西门子办公室和德语学校等平房、靠南墙的车库）。院中有他自己挖的防空洞，1937 年 9、10 月空袭时约 30 人挤在里面。院里那面旗是纳粹党旗：拉贝 1937 年 9 月 22 日的日记写，院子里撑起一块长 6 米、宽 3 米的帆布，上面画了党旗，用来警告日本轰炸机这里是德国人的住地（德日当时友好）；12 月 12 日的日记写，一些难民把床铺安在“水平悬挂的德国国旗下面”，把那里当作防弹的地方。他也利用自己的党员身份保护难民。院里的人数有出处的几天：12 月 12 日院里和防空洞 100 多人（另有 30 人睡在办公室），12 月 17 日约 200 人，12 月 25 日“600 多人”，1938 年 1 月 4 日 602 人；其间的人数是推测（例如 12 月 13 日画的是约 140 人）。这张卡跳到 12 月 25 日，画的是日记里那天的 600 多人。这约 600 人只是他自家院子里的人数；他任主席的整个安全区庇护了约20万至25万人，常说的“拉贝救了二十多万人”指的是整个安全区。2009 年的电影《拉贝日记》里，空袭时工人们挤到一面撑满工厂大院的巨大卐字旗下躲避，那是电影的画面；日记里的旗是 6×3 米，旗下是少数难民的床铺。场景按日记画：帆布水平撑在竹竿上，离地约 2.3 米（竹竿、高度、位置是推测）；颜色日记没写，按这种旗的通常样子画（红底、白圆、黑色卐字，推测），只作历史记录。",
+   "numbers": [
+    {
+     "zh": "整个安全区庇护约 20 万至 25 万人（委员会全体的功劳，拉贝是主席）",
+     "source": "英文维基 Nanking Safety Zone、John Rabe；中文维基 南京安全区（research safety_zone.json）",
+     "status": "核实（署名估计）"
+    },
+    {
+     "zh": "旗：画有纳粹党旗的帆布，长 6 米、宽 3 米（英文版“20 x 10 英尺”），撑在院子里",
+     "source": "拉贝日记 1937-09-22（中译本《拉贝日记》，英译本 The Good Man of Nanking；audit/wave_d/RABE_FLAG.md）",
+     "status": "核实"
+    },
+    {
+     "zh": "12-12：一些难民把床铺安在水平悬挂的德国国旗下面",
+     "source": "拉贝日记 1937-12-12（中译本）",
+     "status": "核实"
+    },
+    {
+     "zh": "空袭时防空洞里约 28-30 人（1937 年 9-10 月）",
+     "source": "拉贝日记 9-22、10-6（中译本；英译本“30 of us”）",
+     "status": "核实"
+    },
+    {
+     "zh": "12-12：院里和防空洞 100 多人，另 30 人睡在办公室；12-17：院里约 200 人",
+     "source": "拉贝日记 12-12（中译本）；12-17（澎湃新闻引日记）",
+     "status": "核实"
+    },
+    {
+     "zh": "约 600 人（“600 多人”，12-25 日记）",
+     "source": "拉贝日记（经南京纪念馆，research safety_zone.json）",
+     "status": "核实"
+    },
+    {
+     "zh": "宅院占地约 1905 平方米（171.47 平方市丈，1953 年房产记录）",
+     "source": "南京大学校史博物馆《斯园画卷》",
+     "status": "核实（1953 年的数；1937 年同此是推测）"
+    },
+    {
+     "zh": "602 人（1938-01-04）",
+     "source": "英文维基 Nanking Safety Zone",
+     "status": "核实"
+    },
+    {
+     "zh": "约 650 人",
+     "source": "英文维基 John Rabe",
+     "status": "核实"
+    },
+    {
+     "zh": "立旗时间：日记 1937-09-22 已写到（其他文字作 8 月或 9 月 19-20 日）",
+     "source": "拉贝日记英译本 9-22 条；Irish Times；南京纪念馆文字",
+     "status": "核实（日记日期）"
+    }
+   ],
+   "sources": [
+    "拉贝日记（中译本试读，豆瓣；英译本 The Good Man of Nanking 预览）",
+    "南京大学校史博物馆《斯园画卷》",
+    "南京大学拉贝纪念馆网页",
+    "英文维基 John Rabe",
+    "英文维基 John Rabe House",
+    "项目资料 research/data/ safety_zone.json sh_siemens",
+    "电影评论：epd film、critic.de、filmdienst（电影《拉贝日记》2009）",
+    "Irish Times"
+   ],
+   "sources_en": [
+    "Rabe diary (Chinese ed., Douban excerpt; The Good Man of Nanking, preview)",
+    "NJU history museum, 斯园画卷",
+    "NJU Rabe memorial pages",
+    "en wiki John Rabe",
+    "en wiki John Rabe House",
+    "research safety_zone.json sh_siemens",
+    "film reviews: epd film, critic.de, filmdienst (John Rabe, 2009)",
+    "Irish Times"
+   ],
+   "status": "核实（人物；旗 6×3 米、撑在院中、12-12 水平悬挂、作空袭标志；12-12、12-17、12-25、1-04 的人数；1953 年占地 1905 平方米）；推测（日期之间的人数、所示钟点 10:00、竹竿、高度、旗在院中的位置与颜色、院内各屋的位置）",
+   "status_en": "核实 (people; the flag 6 x 3 m, stretched in the garden, hung horizontally on 12 Dec, an air-raid marker; the counts of 12 Dec, 17 Dec, 25 Dec and 4 Jan; the lot 1,905 m2 in 1953); 推测 (counts between the dates, date shown and 10:00, the poles, height, the flag's spot and colours, where the buildings stood in the lot)",
+   "scene": "partial",
+   "title_en": "Rabe's house: the shelter, the flag, 600 refugees",
+   "text_en": "Siemens' Nanjing head John Rabe, chairman of the Safety Zone committee, shelters refugees in his house and walled garden (1,905 m2 in 1953), with his own dugout. His diary (22 Sep 1937): a 6 x 3 m (20 x 10 ft) canvas painted with the Nazi party flag was stretched in the garden as a marker for Japanese bombers; on 12 Dec some refugees put their beds under the horizontally hung flag. Counts: 100+ on 12 Dec, about 200 on 17 Dec, '600 and more' on 25 Dec, 602 on 4 Jan (about 650 in another count); about 140 drawn on 13 Dec (linear between the dates, 推测). The giant flag over a factory yard with workers crouching under it is the 2009 film's image, not the diary's. See audit/wave_d/RABE_FLAG.md.",
+   "place_draft": "小粉桥 1 号",
+   "timeline_ids": [
+    "x-zone-14-rabe (cast.json)"
+   ],
+   "scene_note_zh": "已画（wave D d_rabe 数据装上之后）：约 1905 平方米的围墙院子（面积按 1953 年记录，轮廓推测），院门开在东侧小巷小粉桥上（巷子按今天的走向画，推测）；院里的两层洋楼、北面的西门子办公室、西面的德语学校、靠南墙的车库（有记载；位置和形状推测）；西北角的防空洞（位置推测）和旁边水平撑在六根竹竿上、离地约 2.3 米的 6×3 米党旗帆布（尺寸核实；竹竿、高度、位置推测），人可以站在、睡在帆布下；八座草棚（一座核实，其余推测）；院里的人按日记的日子：12-12 约 100 人，12-17 约 200 人，12-25 起约 600 人（之间线性，推测），12-13 10:00 约 140 人，先站在帆布和防空洞一带和东侧院门边。院子南面的广州路（1945 年地图画有这条街；按今天的线画，推测）。还不对：广州路以外的四周仍是空地和田块：1945 年地图在这里只画了街区的边框，没有房屋，所以没有加房子；空地画成田块是地面那一步的规则，还没改；1945 年地图上这一带有一格一格的街道，还没建。所示钟点 10:00 是推测。"
+  },
+  {
+   "id": "ix27-zone-full",
+   "date": "1937-12-13",
+   "time": "12:00",
+   "title_zh": "安全区：二十多万人",
+   "short_zh": "安全区二十多万人",
+   "place_zh": "南京安全区",
+   "x": -442,
+   "z": 256,
+   "cam": [
+    -442,
+    256,
+    1000,
+    0,
+    36
+   ],
+   "night": 1,
+   "text_zh": "约20万至25万人挤在3.86平方公里的安全区里（各方估计）；收容所12月17日约住5万人、21日近7万人，其余的人住在民房、院子、草坪和街上。",
+   "numbers": [
+    {
+     "zh": "20-25 万人",
+     "source": "英文维基 Nanking Safety Zone",
+     "status": "核实（署名估计）"
+    },
+    {
+     "zh": "收容所约 5 万人（12-17）、近 7 万人（12-21）",
+     "source": "Lu 2019（经英文维基 Nanking Safety Zone）",
+     "status": "核实"
+    }
+   ],
+   "sources": [
+    "英文维基 Nanking Safety Zone",
+    "时间轴注释"
+   ],
+   "sources_en": [
+    "en wiki Nanking Safety Zone",
+    "timeline notes"
+   ],
+   "status": "核实（署名的范围）",
+   "status_en": "核实 (attributed ranges)",
+   "scene": "ok",
+   "title_en": "The Safety Zone: some 200,000 people",
+   "text_en": "About 200,000-250,000 people crowd the 3.86 km2 zone (attributed estimates); the 25-26 shelters hold about 50,000 on 17 Dec and nearly 70,000 on 21 Dec; the rest live in houses, yards, lawns and streets.",
+   "place_draft": "南京安全区",
+   "timeline_ids": [
+    "ev-1213-zone-crowd-c",
+    "ev-1213-camp-ginling",
+    "ev-1213-camp-univ"
+   ]
+  },
+  {
+   "id": "ix26-navy",
+   "date": "1937-12-13",
+   "time": "15:00",
+   "title_zh": "日本海军舰艇到下关江面",
+   "short_zh": "海军到下关",
+   "place_zh": "长江（下关江面）",
+   "x": -5525,
+   "z": -5101,
+   "cam": [
+    -5525,
+    -5101,
+    1500,
+    180,
+    25
+   ],
+   "night": 1,
+   "text_zh": "旗舰安宅号与炮艇、4艘驱逐舰、2艘鱼雷艇和扫雷艇突破到南京江面，向渡江的人群开火；国崎支队占领对岸的浦口。",
+   "numbers": [
+    {
+     "zh": "4 艘驱逐舰、2 艘鱼雷艇",
+     "source": "日文维基 南京攻略戦",
+     "status": "核实"
+    }
+   ],
+   "sources": [
+    "日文维基 南京攻略戦",
+    "英文维基 Battle of Nanking"
+   ],
+   "sources_en": [
+    "ja wiki 南京攻略戦",
+    "en wiki Battle of Nanking"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "ok",
+   "title_en": "The Japanese navy reaches Xiaguan",
+   "text_en": "The flagship Ataka, gunboats, 4 destroyers, 2 torpedo boats and minesweepers break through to Nanjing and fire on people crossing the river. The Kunisaki Detachment holds Pukou on the far bank.",
+   "place_draft": "长江（下关江面）",
+   "timeline_ids": [
+    "ev-1213-navy",
+    "ev-1213-navy-patrol",
+    "ev-1213-pukou-march",
+    "ev-1213-pukou"
+   ],
+   "cam_from_draft": "-5300,-4350,2000,95,25",
+   "cam_why": "草稿镜头从东面看，下关码头区的烟柱挡住整个画面；改为从北面江上顺江看"
+  },
+  {
+   "id": "ix29-xiaguan-massacre",
+   "date": "1937-12-13",
+   "time": "15:00",
+   "title_zh": "下关江边的集体屠杀（远景）",
+   "short_zh": "下关江边屠杀（远景）",
+   "place_zh": "下关江边",
+   "x": -4995,
+   "z": -4891,
+   "cam": [
+    -4995,
+    -4891,
+    1800,
+    120,
+    25
+   ],
+   "night": 1,
+   "text_zh": "从13日起，被俘士兵和被认作士兵的男子连日在下关、煤炭港江边被枪杀。各处人数分别署名，不选边；这里只用远景。",
+   "numbers": [
+    {
+     "zh": "下关 12-13 至 16 日 5,500 人以上",
+     "source": "南京军事法庭判决书屠杀地点表（经中文维基 南京大屠杀）",
+     "status": "核实（署名）"
+    },
+    {
+     "zh": "第 16 师团在下关附近处决 4,000-12,000 人",
+     "source": "英文维基 Nanjing Massacre",
+     "status": "核实（署名）"
+    }
+   ],
+   "sources": [
+    "timeline.json 所列出处"
+   ],
+   "sources_en": [
+    "timeline.json sources"
+   ],
+   "status": "核实（各地点分别署名）",
+   "status_en": "核实 (attributed per site)",
+   "scene": "ok",
+   "title_en": "Mass killings on the Xiaguan bank (far view)",
+   "text_en": "From 13 Dec captured soldiers and men are shot along the Xiaguan and Meitan banks over several days; each site's figure is attributed in the timeline (e.g. Zhongshan wharf, Meitan harbour).",
+   "place_draft": "下关江边",
+   "timeline_ids": [
+    "ev-1213-xiaguan-massacre",
+    "ev-1214-meitan-shangyuan",
+    "ev-1216-zhongshan-wharf",
+    "ev-1217-meitan"
+   ]
+  },
+  {
+   "id": "ix30-zone-search",
+   "date": "1937-12-14",
+   "time": "08:00",
+   "title_zh": "安全区搜捕“前士兵”",
+   "short_zh": "安全区搜捕",
+   "place_zh": "安全区—挹江门",
+   "x": -399,
+   "z": -981,
+   "cam": [
+    -399,
+    -981,
+    700,
+    0,
+    30
+   ],
+   "night": 1,
+   "text_zh": "日军进入安全区搜查，把被认作士兵的男子带走。国际委员会多次书面抗议。",
+   "numbers": [],
+   "sources": [
+    "timeline.json 所列出处",
+    "英文维基 Nanking Safety Zone"
+   ],
+   "sources_en": [
+    "timeline.json sources",
+    "en wiki Nanking Safety Zone"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "ok",
+   "title_en": "Searches for 'former soldiers' in the zone",
+   "text_en": "Japanese units search the zone and take away men judged to be soldiers; the committee protests in writing.",
+   "place_draft": "安全区—挹江门",
+   "timeline_ids": [
+    "ev-1214-zone-search",
+    "ev-1214-sifabu",
+    "ev-1216-dafangxiang",
+    "ev-1216-overseas-roundup",
+    "ev-1217-police"
+   ]
+  },
+  {
+   "id": "ix31-mufushan-held",
+   "date": "1937-12-14",
+   "time": "09:40",
+   "title_zh": "幕府山：一万四千余名俘虏（远景）",
+   "short_zh": "幕府山俘虏（远景）",
+   "place_zh": "上元门外",
+   "x": -1470,
+   "z": -7740,
+   "cam": [
+    -1470,
+    -7720,
+    900,
+    200,
+    25
+   ],
+   "night": 1,
+   "text_zh": "山田支队在上元门外的营地里关押着14,777名俘虏（日方记录）。这里只用远景。",
+   "numbers": [
+    {
+     "zh": "14,777 人",
+     "source": "日方记录（经日文维基 南京攻略戦）",
+     "status": "核实（署名）"
+    }
+   ],
+   "sources": [
+    "日文维基 南京攻略戦",
+    "英文维基 Battle of Nanking"
+   ],
+   "sources_en": [
+    "ja wiki 南京攻略戦",
+    "en wiki Battle of Nanking"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "ok",
+   "title_en": "Mufushan: 14,777 prisoners (far view)",
+   "text_en": "The Yamada Detachment holds 14,777 prisoners (Japanese record) in a compound outside Shangyuan Gate.",
+   "place_draft": "上元门外",
+   "timeline_ids": [
+    "ev-1214-mufushan-roundup",
+    "ev-1214-mufushan-held",
+    "ev-1213-yamada"
+   ]
+  },
+  {
+   "id": "ix38-committee-hq",
+   "date": "1937-12-14",
+   "time": "10:00",
+   "title_zh": "安全区国际委员会总部（宁海路 5 号）",
+   "short_zh": "委员会总部",
+   "place_zh": "宁海路 5 号",
+   "x": -1492,
+   "z": -1819,
+   "cam": [
+    -1492,
+    -1818,
+    300,
+    180,
+    35
+   ],
+   "night": 1,
+   "text_zh": "安全区国际委员会在宁海路5号原张群公馆办公，拉贝称它为“我们的宫殿”。委员会给日本大使馆的抗议信从这里发出（这一句未核实）。",
+   "numbers": [],
+   "sources": [
+    "英文维基 Nanking Safety Zone",
+    "中文维基 马歇尔公馆旧址 (landmarks.json)"
+   ],
+   "sources_en": [
+    "en wiki Nanking Safety Zone",
+    "zh wiki 马歇尔公馆旧址 (landmarks.json)"
+   ],
+   "status": "核实（地点）；推测（所选日期与钟点）",
+   "status_en": "核实 (place); 推测 (date and time chosen)",
+   "scene": "partial",
+   "title_en": "Safety Zone Committee headquarters",
+   "text_en": "The committee works from the former Zhang Qun house at 5 Ninghai Rd, which Rabe called 'our palace'; from here it wrote its protest letters to the Japanese embassy (my general knowledge of the committee's documents, 未核实 in this wave).",
+   "place_draft": "宁海路 5 号",
+   "timeline_ids": [],
+   "scene_note_zh": "别墅在，南院门口立有一面安全区旗。这面旗是推测：没有出处说总部门口有旗（12 月 6 日的信只说边界插旗、四角铺大布，总部在区内）。旗的样子按那封信：白底红十字，十字外围一个圆圈。信里没有写圆圈的颜色，画面上的红圈是推测。门口的人群还没有画（已请求）。places.json 的 lm-ic-hq 位置与此处相差约 590 米（以 landmarks.json 为准）。"
+  },
+  {
+   "id": "ix32-caoxiexia",
+   "date": "1937-12-16",
+   "time": "19:00",
+   "title_zh": "幕府山—草鞋峡江边大屠杀（远景）",
+   "short_zh": "草鞋峡屠杀（远景）",
+   "place_zh": "草鞋峡",
+   "x": -1419,
+   "z": -7935,
+   "cam": [
+    -1419,
+    -7935,
+    1800,
+    200,
+    28
+   ],
+   "night": 3,
+   "text_zh": "16日至17日，幕府山的俘虏被押到江边用机枪射杀。来源互相矛盾，这里列出两说、不选一个数字，只用远景。",
+   "numbers": [
+    {
+     "zh": "幕府山附近 17,000-20,000 人",
+     "source": "英文维基 Battle of Nanking",
+     "status": "争议（署名）"
+    },
+    {
+     "zh": "18 日夜约 57,000 人",
+     "source": "南京军事法庭（单一证人鲁甦）",
+     "status": "争议（署名）"
+    }
+   ],
+   "sources": [
+    "英文维基 Battle of Nanking",
+    "timeline.json 所列出处"
+   ],
+   "sources_en": [
+    "en wiki Battle of Nanking",
+    "timeline.json sources"
+   ],
+   "status": "核实（署名）；人数争议",
+   "status_en": "核实 (attributed); 争议 (numbers)",
+   "scene": "ok",
+   "title_en": "Mufushan and Caoxiexia riverbank massacre (far view)",
+   "text_en": "Over 16-17 Dec the Mufushan prisoners are marched to the riverbank and machine-gunned; en wiki gives 17,000-20,000 near Mufushan; the Nanjing military tribunal gives about 57,000 for the night of 18 Dec (single witness Lu Su, attributed). The sources disagree; no number is chosen.",
+   "place_draft": "草鞋峡",
+   "timeline_ids": [
+    "ev-1216-mufushan-first-night",
+    "ev-1216-mufushan-batches-first-night",
+    "ev-1215-mufushan",
+    "ev-1216-caoxiexia",
+    "ev-1215-yulei"
+   ]
+  },
+  {
+   "id": "ix33-parade",
+   "date": "1937-12-17",
+   "time": "13:30",
+   "title_zh": "日军入城式",
+   "short_zh": "入城式",
+   "place_zh": "中山门—中山东路—国民政府",
+   "x": 2265,
+   "z": 877,
+   "cam": [
+    2265,
+    877,
+    320,
+    285,
+    20
+   ],
+   "night": 1,
+   "text_zh": "松井石根骑马从中山门入城，沿中山东路到国民政府；海军部队在下关登陆，从挹江门进城。开始的钟点未核实。队伍里旗手的多少（陆军约每 60 人一面旭日旗，海军登陆队约每 40 人一面）没有出处，是显示用的推测。",
+   "numbers": [],
+   "sources": [
+    "日文维基 南京事件",
+    "维基共享资源 1937 年写真集说明"
+   ],
+   "sources_en": [
+    "ja wiki 南京事件",
+    "Commons 1937 album captions"
+   ],
+   "status": "核实；钟点未核实",
+   "status_en": "核实; time 未核实",
+   "scene": "ok",
+   "title_en": "The Japanese entry parade",
+   "text_en": "Matsui rides in through Zhongshan Gate along Zhongshan East Rd to the Government compound; navy units land at Xiaguan and enter by Yijiang Gate. The start time is unverified. How many flag bearers march (about one rising-sun flag per 60 men in the army column, one per 40 in the navy landing party) has no source: a display choice, 推测.",
+   "place_draft": "中山门—中山东路—国民政府",
+   "timeline_ids": [
+    "ev-1217-parade",
+    "ev-1217-navy-parade",
+    "ev-1215-16div-ceremony"
+   ]
+  },
+  {
+   "id": "ix34-burning",
+   "date": "1937-12-19",
+   "time": "20:30",
+   "title_zh": "抢掠后整条街放火",
+   "short_zh": "抢掠放火",
+   "place_zh": "太平路—白下路",
+   "x": 650,
+   "z": 2450,
+   "cam": [
+    650,
+    2450,
+    900,
+    20,
+    28
+   ],
+   "night": 3,
+   "text_zh": "卡车车队先把商店搬空，再放火烧掉房屋。1938年史迈士调查统计，太平路的门牌有68.2%被烧毁。",
+   "numbers": [
+    {
+     "zh": "太平路门牌 68.2% 被烧毁",
+     "source": "史迈士 1938 年调查（places.json）",
+     "status": "核实"
+    }
+   ],
+   "sources": [
+    "史迈士 1938 年调查 (places.json)",
+    "timeline.json 所列出处"
+   ],
+   "sources_en": [
+    "Smythe 1938 survey (places.json)",
+    "timeline.json sources"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "ok",
+   "title_en": "Streets looted and burned",
+   "text_en": "Truck convoys empty the shops, then the buildings are set on fire; the 1938 survey found 68.2% of Taiping Rd's numbers burned.",
+   "place_draft": "太平路—白下路",
+   "timeline_ids": [
+    "ev-1219-looting-trucks",
+    "ev-1213-looting",
+    "ev-1219-looting-south"
+   ],
+   "cam_from_draft": "620,1840,600,0,25",
+   "cam_why": "场景里 12-19 晚上烧着的是商业区首批火点（fire-1219-sites，650,2450），太平路要到 12-20 07:00 才起火；草稿镜头正好在火点上方背对它"
+  },
+  {
+   "id": "ix35-burials",
+   "date": "1937-12-22",
+   "time": "08:00",
+   "title_zh": "红卍字会掩埋队收尸（远景）",
+   "short_zh": "红卍字会掩埋（远景）",
+   "place_zh": "挹江门一带",
+   "x": -3589,
+   "z": -4480,
+   "cam": [
+    -3589,
+    -4480,
+    800,
+    0,
+    30
+   ],
+   "night": 1,
+   "text_zh": "从12月22日起，红卍字会、崇善堂和市民组成的掩埋队收殓遇难者；日军征用了红卍字会的卡车和棺木。掩埋队的人数是推测。掩埋队旗上的红色“卍”是红卍字会（佛教慈善团体）的会徽，与纳粹的“卐”无关；旗上图案的画法是推测。",
+   "numbers": [],
+   "sources": [
+    "英文维基 Nanking Safety Zone",
+    "timeline.json 所列出处"
+   ],
+   "sources_en": [
+    "en wiki Nanking Safety Zone",
+    "timeline.json sources"
+   ],
+   "status": "核实；掩埋队人数推测",
+   "status_en": "核实; team sizes 推测",
+   "scene": "ok",
+   "title_en": "Red Swastika burial teams (far view)",
+   "text_en": "From 22 Dec the Red Swastika Society, 崇善堂 and citizens' teams collect and bury the dead; the Japanese requisition the Society's trucks and coffins. The red 卍 on the teams' banners is the emblem of the Red Swastika Society (a Buddhist charity), unrelated to the Nazi symbol; the banner layout drawn is 推测.",
+   "place_draft": "挹江门一带",
+   "timeline_ids": [
+    "ev-1222-burial-yijiang",
+    "ev-1222-burial-shangxinhe",
+    "ev-1222-burial-meitan"
+   ]
+  },
+  {
+   "id": "ix36-shelters-close",
+   "date": "1938-01-28",
+   "time": "09:00",
+   "title_zh": "收容所关闭，难民回城南",
+   "short_zh": "收容所关闭",
+   "place_zh": "新街口—中华路",
+   "x": -303,
+   "z": -23,
+   "cam": [
+    -303,
+    -23,
+    800,
+    0,
+    30
+   ],
+   "night": 1,
+   "text_zh": "日方下令关闭收容所，难民回到城南、城东被烧被抢过的家中。",
+   "numbers": [],
+   "sources": [
+    "timeline.json 所列出处"
+   ],
+   "sources_en": [
+    "timeline.json sources"
+   ],
+   "status": "核实",
+   "status_en": "核实",
+   "scene": "ok",
+   "title_en": "Shelters closed; refugees sent home",
+   "text_en": "The Japanese order the shelters closed and refugees return to burned and looted homes in the south and east.",
+   "place_draft": "新街口—中华路",
+   "timeline_ids": [
+    "ev-0128-evict-s",
+    "ev-0128-evict-e"
+   ]
+  },
+  {
+   "id": "ix39-rabe-leaves",
+   "date": "1938-02-23",
+   "time": "09:00",
+   "title_zh": "拉贝离开南京",
+   "short_zh": "拉贝离开南京",
+   "place_zh": "下关（推测）",
+   "x": -5308,
+   "z": -4347,
+   "cam": [
+    -5308,
+    -4347,
+    600,
+    60,
+    22
+   ],
+   "night": 1,
+   "text_zh": "1938年2月23日拉贝离开南京去上海，4月15日回到柏林。他搭乘的船和码头在读过的史料里没有（下关是推测）。",
+   "numbers": [
+    {
+     "zh": "拉贝估计平民死者 5-6 万",
+     "source": "英文维基 John Rabe",
+     "status": "核实（署名估计，须与各方估计并列）"
+    },
+    {
+     "zh": "各方对遇难总人数的估计（不选边）：东京审判判决“二十万以上”、对松井判决“十万以上”、统计 15.5 万；南京军事法庭 30 万以上；中国政府 30 万；秦郁彦约 4 万；笠原十九司 10 数万以上、近 20 万；史迈士调查城内平民约 1.2 万、郊县 2.687 万；拉贝 5-6 万；日本政府 2007 年答辩书称难以断定。",
+     "source": "timeline.json death_toll_note（各估计的出处见其中）",
+     "status": "核实（署名）"
+    }
+   ],
+   "sources": [
+    "英文维基 John Rabe"
+   ],
+   "sources_en": [
+    "en wiki John Rabe"
+   ],
+   "status": "核实（日期）；推测（地点、钟点）",
+   "status_en": "核实 (date); 推测 (place, time)",
+   "scene": "partial",
+   "title_en": "Rabe leaves Nanjing",
+   "text_en": "Rabe leaves on 23 Feb 1938 for Shanghai and reaches Berlin on 15 Apr. The vessel and the wharf are not in the sources read (推测 Xiaguan).",
+   "place_draft": "下关（推测）",
+   "timeline_ids": [],
+   "scene_note_zh": "此日在本场景的时间轴（止于 1938-01-31）之外：只有文字卡（决定 D20）。",
+   "card_only": true
+  }
+ ]
+}

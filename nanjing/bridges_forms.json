@@ -1,0 +1,873 @@
+{
+  "version": 1,
+  "useRealWidths": true,
+  "note": "Forms of the bridges of Nanjing, December 1937 (wave 3d, bridges area). Joined to public/nanjing/bridges.json by NAME AND POSITION (src/world/nanjing/bridges/table.js): a `named` entry takes the record in `ids` if it lies within 60 m of `at`, else the nearest record within 40 m; unnamed records get a form by rule (C.2 of city/WATER_LOOK_SPEC.md; thresholds in table.js, `rules` here). `additions` are bridges the 1945 sheet's roads did not carry across the water (spec C.1); each stands where the ground says there is water. Every `evidence` string says what is 核实 (read in a source), 推测 (inferred) or 未核实 (nothing found). `form.klass` is the class the walkers' deck reckoning uses (stone_arch | beam | slab): it stays the record's own unless said (see FILM_CONTRACT); `drawArches` changes only what is drawn under the deck. Wave 5 (11-10): `useRealWidths` is true (the people area reads ctx.shared.bridgeRecords); unnamed 1930s road bridges by rule are drawn 23 m wide (`rules.rcDeckMax`, spec C.2: 16-23 m); an entry may carry `bySpan: [{maxSpan, form}]` (the form for the channel's width: the table-C forms are for the narrowed canals); records with no water in public/ortho/nanjing1937/water_map.png are not drawn (`dropDry: false` turns that off, `keepDry` on a form keeps one).",
+  "rules": {
+    "rcDeckMax": 23
+  },
+  "named": [
+    {
+      "name_zh": "中山桥",
+      "ids": [
+        "br024"
+      ],
+      "at": [
+        -4537,
+        -4374
+      ],
+      "form": {
+        "form": "rc",
+        "deck": 22.7,
+        "bay": 14.5,
+        "parapet": "concrete",
+        "lamps": 25
+      },
+      "evidence": "65 x 22.7 m reinforced concrete, built 1928-11-16 to 1929-05-23 (zh.wikipedia 中山桥): 核实. Beam or arch 未核实 (beam on piers every 14.5 m: 推测). Balustrade 1.0 m and lamp standards each 25 m: 推测 (spec C.1). Intact in December 1937. Wave 5: 2.6 m cast-flag footways 0.07 m over a 0.28 m granite kerb, a lighter dusty-tar carriageway, expansion-joint strips over each pier, balusters 0.45 m apart, end pylons, a cornice over the girder faces: all 推测 (no source found for the bridge's balustrade or lamps; a search for 中山桥 惠民河 1929 栏杆 路灯 returned nothing on the Nanjing bridge)."
+    },
+    {
+      "name_zh": "九龙桥",
+      "ids": [
+        "br137"
+      ],
+      "at": [
+        1547,
+        2787
+      ],
+      "form": {
+        "form": "arch",
+        "deck": 12.4,
+        "parapet": "stone",
+        "parapetH": 0.5,
+        "stone": "bluestone"
+      },
+      "states": [
+        {
+          "id": "intact",
+          "until": "1937-12-12T18:00:00+08:00"
+        },
+        {
+          "id": "bombed",
+          "from": "1937-12-12T18:00:00+08:00",
+          "state": {
+            "gapFromSouth": 1
+          }
+        }
+      ],
+      "evidence": "Five-arch stone bridge (无铰五孔石拱桥) 51 x 12.4 m, humped bluestone, parapets 0.5 m (zh.wikipedia 九龙桥 (南京)): 核实. One section was bombed in 1937 (date 未核实; the arch counted second from the south end and the evening of 12 Dec are 推测). Concrete rail is 1949+: not drawn."
+    },
+    {
+      "name_zh": "镇淮桥",
+      "ids": [
+        "br146"
+      ],
+      "at": [
+        -265,
+        3800
+      ],
+      "form": {
+        "form": "arch",
+        "drawArches": 2,
+        "deck": 13,
+        "parapet": "stone",
+        "parapetH": 0.6,
+        "stone": "bluestone"
+      },
+      "evidence": "Two stone arches before 1949, just north of the 中华门 barbican (zh.wikipedia 镇淮桥): 核实. Deck 12-14 m: 推测 (26.2 m is the 1960 bridge). The deck stays level at the record's beam crown (so the walkers' reckoning holds), the two arches are drawn under it: 推测. No 牌楼 (1937 未核实). Wave 5 fallback: if the water build leaves no record within 40 m of `at` (it did at 14:33Z: the canal there is dashed in the new water), the bridge is drawn from `fallback` (the old record's place and direction, a span of 26 m: 推测, the spec's 20-30 m for these canals).",
+      "fallback": {
+        "x": -264.9,
+        "z": 3800.4,
+        "ux": 0.9398,
+        "uz": -0.3417,
+        "span": 26,
+        "deck": 24.4,
+        "water": 4.5,
+        "kind": "beam",
+        "arches": 2,
+        "road": "中华路"
+      }
+    },
+    {
+      "name_zh": "文德桥",
+      "ids": [
+        "br138"
+      ],
+      "at": [
+        452,
+        3138
+      ],
+      "form": {
+        "form": "beam",
+        "deck": 7,
+        "bay": 9,
+        "pierW": 1.4,
+        "girders": "timber",
+        "parapet": "stone",
+        "parapetH": 0.55
+      },
+      "evidence": "Exists (K, csdata1937: 47 m from the record). Low level bridge 20-25 x 6-8 m on stone abutments and one or two piers, timber or stone beams, low plain parapet: 推测 (two secondary sources disagree: 1931 rebuild vs timber on stone piers). The model's channel is 88 m (real: about 20 m): the bridge spans what the water is and gets piers every 9 m; it follows the channel when the water area narrows it. Wave 5: a channel of 40 m or less (the spec says 35; the new water there is 34-37 m) (the narrowed canal: spec C.1) gets the low level bridge, 20-25 m on stone abutments and 1-2 piers (bay 9 m); a channel that stays wider gets a timber trestle (the spec's fallback, 推测).",
+      "bySpan": [
+        {
+          "maxSpan": 40,
+          "form": {
+            "form": "beam",
+            "bay": 9,
+            "pierW": 1.4,
+            "girders": "timber",
+            "parapet": "stone",
+            "parapetH": 0.55
+          }
+        },
+        {
+          "maxSpan": 1000000000.0,
+          "form": {
+            "form": "trestle",
+            "bay": 8,
+            "parapet": "timber"
+          }
+        }
+      ]
+    },
+    {
+      "name_zh": "武定桥",
+      "ids": [
+        "br140"
+      ],
+      "at": [
+        109,
+        3327
+      ],
+      "form": {
+        "form": "arch",
+        "archSpan": 24,
+        "deck": 6,
+        "parapet": "stone",
+        "parapetH": 0.55,
+        "stone": "bluestone"
+      },
+      "evidence": "Exists (K). A single low segmental stone arch 25-30 x 6 m (spec C.1, 推测): drawn as arches of about 24 m under the record's level deck because the model's channel is 54 m. Wave 5: a channel of 34 m or less gets the spec's single low segmental arch (25-30 m x 6 m; low because the deck is level at the record's beam crown, so the rise is what fits under it); a wider one two arches of about 24 m. Wave 5 fallback: if the water build leaves no record within 40 m of `at` (it did at 14:33Z: the canal there is dashed in the new water), the bridge is drawn from `fallback` (the old record's place and direction, a span of 28 m: 推测, the spec's 20-30 m for these canals).",
+      "bySpan": [
+        {
+          "maxSpan": 34,
+          "form": {
+            "form": "arch",
+            "drawArches": 1,
+            "archSpan": 0,
+            "deck": 6,
+            "parapet": "stone",
+            "parapetH": 0.55
+          }
+        },
+        {
+          "maxSpan": 1000000000.0,
+          "form": {
+            "form": "arch",
+            "archSpan": 24
+          }
+        }
+      ],
+      "fallback": {
+        "x": 109.2,
+        "z": 3326.9,
+        "ux": -0.5812,
+        "uz": 0.8137,
+        "span": 28,
+        "deck": 12,
+        "water": 4.5,
+        "kind": "beam",
+        "arches": 3
+      }
+    },
+    {
+      "name_zh": "内桥",
+      "ids": [
+        "br129"
+      ],
+      "at": [
+        75,
+        2233
+      ],
+      "form": {
+        "form": "arch",
+        "drawArches": 3,
+        "deck": 9.5,
+        "parapet": "stone",
+        "parapetH": 0.6,
+        "stone": "bluestone"
+      },
+      "states": [
+        {
+          "id": "before",
+          "until": "1937-12-19T00:00:00+08:00"
+        },
+        {
+          "id": "burned",
+          "from": "1937-12-19T00:00:00+08:00",
+          "state": {
+            "tint": 0.72
+          }
+        }
+      ],
+      "evidence": "Ming stone arch, three arches, deck 8-10 m (zh.wikipedia 内桥: Ming, listed 1992 核实; arches and width 推测). Soot from 19 Dec (burned zone, 推测: stone does not burn, so it is darkened, not changed). Wave 5 fallback: if the water build leaves no record within 40 m of `at` (it did at 14:33Z: the canal there is dashed in the new water), the bridge is drawn from `fallback` (the old record's place and direction, a span of 28 m: 推测, the spec's 20-30 m for these canals).",
+      "fallback": {
+        "x": 75.1,
+        "z": 2232.6,
+        "ux": 0.9983,
+        "uz": 0.0577,
+        "span": 28,
+        "deck": 24.4,
+        "water": 11.8,
+        "kind": "beam",
+        "arches": 2,
+        "road": "中华路"
+      }
+    },
+    {
+      "name_zh": "淮清桥",
+      "ids": [
+        "br135"
+      ],
+      "at": [
+        925,
+        2698
+      ],
+      "form": {
+        "form": "arch",
+        "drawArches": 3,
+        "deck": 7,
+        "parapet": "stone",
+        "parapetH": 0.55,
+        "stone": "bluestone"
+      },
+      "evidence": "Name 核实 (S, K: 89 m); the record's OSM name 桃叶桥 is not in K. Stone arch, three arches: 推测."
+    },
+    {
+      "name_zh": "上浮桥",
+      "ids": [
+        "br136"
+      ],
+      "at": [
+        -667,
+        2761
+      ],
+      "form": {
+        "form": "beam",
+        "deck": 6,
+        "bay": 7,
+        "girders": "timber",
+        "parapet": "timber"
+      },
+      "evidence": "Name 核实 (K, 38 m). Low timber beam on stone piers about 6 m wide: 推测 ('floating bridge' is a name, not a form).",
+      "bySpan": [
+        {
+          "maxSpan": 30,
+          "form": {
+            "form": "beam",
+            "bay": 8,
+            "girders": "timber",
+            "parapet": "timber"
+          }
+        }
+      ]
+    },
+    {
+      "name_zh": "下浮桥",
+      "ids": [
+        "br132"
+      ],
+      "at": [
+        -1152,
+        2305
+      ],
+      "form": {
+        "form": "beam",
+        "deck": 6,
+        "bay": 7,
+        "girders": "timber",
+        "parapet": "timber"
+      },
+      "evidence": "Name 核实 (K, 56 m). Low timber beam on stone piers: 推测.",
+      "bySpan": [
+        {
+          "maxSpan": 30,
+          "form": {
+            "form": "beam",
+            "bay": 8,
+            "girders": "timber",
+            "parapet": "timber"
+          }
+        }
+      ]
+    },
+    {
+      "name_zh": "长干桥",
+      "ids": [
+        "br147"
+      ],
+      "at": [
+        -330,
+        4045
+      ],
+      "form": {
+        "form": "beam",
+        "klass": "beam",
+        "deck": 8,
+        "bay": 12,
+        "pierW": 1.6,
+        "girders": "stone",
+        "parapet": "stone",
+        "parapetH": 0.5,
+        "stone": "bluestone"
+      },
+      "states": [
+        {
+          "id": "intact",
+          "until": "1937-12-12T12:00:00+08:00"
+        },
+        {
+          "id": "shelled",
+          "from": "1937-12-12T12:00:00+08:00",
+          "state": {
+            "tint": 0.8,
+            "holes": 3
+          }
+        }
+      ],
+      "evidence": "Place 核实 (zh.wikipedia: outside 中华门). Level stone girders on stone piers, 77 x 8 m: 推测 (the record's 7-arch hump would block the gate road). CLASS CHANGE stone_arch to beam (level deck) is announced on the board. Shelled 12-13 Dec: shown as soot only (damage 未核实). Wave 5: from 12 Dec 12:00 three stretches of parapet are knocked out and the stones lie on the deck (shell hits: 推测, where and how many)."
+    },
+    {
+      "name_zh": "金川门桥",
+      "ids": [
+        "br017"
+      ],
+      "at": [
+        -2549,
+        -4645
+      ],
+      "form": {
+        "form": "arch",
+        "deck": 12,
+        "parapet": "stone"
+      },
+      "evidence": "Existence 核实 (gate); form 未核实: gate moat bridge by rule (stone arch)."
+    },
+    {
+      "name_zh": "大中桥",
+      "ids": [
+        "br133"
+      ],
+      "at": [
+        1562,
+        2445
+      ],
+      "form": {
+        "form": "beam",
+        "deck": 6,
+        "bay": 7,
+        "girders": "timber",
+        "parapet": "timber"
+      },
+      "evidence": "Existence 核实 (zh.wikipedia coordinate (1462,2377), K 121 m); form 未核实: timber beam by rule. Wave 5 fallback: if the water build leaves no record within 40 m of `at` (it did at 14:33Z: the canal there is dashed in the new water), the bridge is drawn from `fallback` (the old record's place and direction, a span of 30 m: 推测, the spec's 20-30 m for these canals).",
+      "fallback": {
+        "x": 1562.5,
+        "z": 2444.9,
+        "ux": 0.0995,
+        "uz": 0.995,
+        "span": 30,
+        "deck": 6,
+        "water": 6,
+        "kind": "beam",
+        "arches": 3
+      }
+    }
+  ],
+  "unname": [
+    {
+      "id": "br145",
+      "at": [
+        -350,
+        3780
+      ],
+      "why": "镇淮桥 is br146 (11 m from K); the second OSM pairing is not a second 镇淮桥 (spec C.1)"
+    }
+  ],
+  "names": [
+    {
+      "id": "br104",
+      "name_zh": "逸仙桥",
+      "at": [
+        1870,
+        845
+      ]
+    },
+    {
+      "id": "br074",
+      "name_zh": "北门桥",
+      "at": [
+        320,
+        -213
+      ]
+    },
+    {
+      "id": "br080",
+      "name_zh": "珍珠桥",
+      "at": [
+        960,
+        -77
+      ]
+    },
+    {
+      "id": "br070",
+      "name_zh": "文昌桥",
+      "at": [
+        1090,
+        -589
+      ]
+    },
+    {
+      "id": "br101",
+      "name_zh": "汉中门桥",
+      "at": [
+        -1910,
+        659
+      ]
+    },
+    {
+      "id": "br099",
+      "name_zh": "石城桥",
+      "at": [
+        -2070,
+        507
+      ]
+    },
+    {
+      "id": "br127",
+      "name_zh": "洋桥",
+      "at": [
+        -1368,
+        2188
+      ]
+    },
+    {
+      "id": "br116",
+      "name_zh": "白虎桥",
+      "at": [
+        2583,
+        1788
+      ]
+    },
+    {
+      "id": "br086",
+      "name_zh": "竺桥",
+      "at": [
+        1950,
+        245
+      ]
+    },
+    {
+      "id": "br066",
+      "name_zh": "土桥",
+      "at": [
+        1168,
+        -929
+      ]
+    },
+    {
+      "id": "br032",
+      "name_zh": "广河桥",
+      "at": [
+        -1860,
+        -3722
+      ]
+    },
+    {
+      "id": "br131",
+      "name_zh": "四象桥",
+      "at": [
+        422,
+        2260
+      ]
+    },
+    {
+      "id": "br110",
+      "name_zh": "内五龙桥",
+      "at": [
+        3118,
+        1098
+      ]
+    },
+    {
+      "id": "br113",
+      "name_zh": "九板桥",
+      "at": [
+        3422,
+        1486
+      ]
+    },
+    {
+      "id": "br117",
+      "name_zh": "青龙桥",
+      "at": [
+        3606,
+        1830
+      ]
+    },
+    {
+      "id": "br115",
+      "name_zh": "伦巷桥",
+      "at": [
+        -956,
+        1780
+      ]
+    },
+    {
+      "id": "br035",
+      "name_zh": "石桥",
+      "at": [
+        -954,
+        -3655
+      ]
+    },
+    {
+      "id": "br143",
+      "name_zh": "中和桥",
+      "at": [
+        2480,
+        3692
+      ]
+    }
+  ],
+  "additions": [
+    {
+      "key": "shengping",
+      "name_zh": "升平桥",
+      "x": 355,
+      "z": 1999,
+      "ux": 1,
+      "uz": 0,
+      "span": 40,
+      "deck": 5,
+      "water": 11.98,
+      "form": {
+        "form": "arch",
+        "arches": 5,
+        "deck": 5,
+        "parapet": "stone",
+        "crownAbove": 3.7
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "wawa",
+      "name_zh": "娃娃桥",
+      "x": 495,
+      "z": 1905,
+      "ux": 0,
+      "uz": -1,
+      "span": 50,
+      "deck": 5,
+      "water": 11.98,
+      "form": {
+        "form": "arch",
+        "arches": 5,
+        "deck": 5,
+        "parapet": "stone",
+        "crownAbove": 3.7
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "dashi",
+      "name_zh": "大石桥",
+      "x": -2405,
+      "z": -4000,
+      "ux": 0.9397,
+      "uz": 0.342,
+      "span": 30,
+      "deck": 4.4,
+      "water": 8.5,
+      "form": {
+        "form": "arch",
+        "arches": 3,
+        "deck": 4.4,
+        "parapet": "stone",
+        "crownAbove": 3.3
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "tianjin",
+      "name_zh": "天津桥",
+      "x": 1620,
+      "z": 860,
+      "ux": 0.866,
+      "uz": -0.5,
+      "span": 10,
+      "deck": 3.6,
+      "water": 16.24,
+      "form": {
+        "form": "arch",
+        "arches": 1,
+        "deck": 3.6,
+        "parapet": "stone",
+        "crownAbove": 2.8
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "xiaoxin",
+      "name_zh": "小心桥",
+      "x": 744,
+      "z": 3805,
+      "ux": 0,
+      "uz": -1,
+      "span": 20,
+      "deck": 4.4,
+      "water": 9,
+      "form": {
+        "form": "arch",
+        "arches": 3,
+        "deck": 4.4,
+        "parapet": "stone",
+        "crownAbove": 3.3
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "yinshui",
+      "name_zh": "引水桥",
+      "x": 2475,
+      "z": -890,
+      "ux": 0,
+      "uz": -1,
+      "span": 10,
+      "deck": 3.6,
+      "water": 10.84,
+      "form": {
+        "form": "arch",
+        "arches": 1,
+        "deck": 3.6,
+        "parapet": "stone",
+        "crownAbove": 2.8
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "zhanggong",
+      "name_zh": "张公桥",
+      "x": -1345,
+      "z": 1465,
+      "ux": 0.9962,
+      "uz": 0.0872,
+      "span": 22,
+      "deck": 4.4,
+      "water": 10.19,
+      "form": {
+        "form": "arch",
+        "arches": 3,
+        "deck": 4.4,
+        "parapet": "stone",
+        "crownAbove": 3.3
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "wenxing",
+      "name_zh": "文星桥",
+      "x": -1125,
+      "z": 1615,
+      "ux": 0.5,
+      "uz": 0.866,
+      "span": 22,
+      "deck": 4.4,
+      "water": 10.19,
+      "form": {
+        "form": "arch",
+        "arches": 3,
+        "deck": 4.4,
+        "parapet": "stone",
+        "crownAbove": 3.3
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "wangxian",
+      "name_zh": "望仙桥",
+      "x": -1198.7,
+      "z": 1542.3,
+      "ux": 0.9063,
+      "uz": 0.4226,
+      "span": 28,
+      "deck": 4.4,
+      "water": 10.19,
+      "form": {
+        "form": "arch",
+        "arches": 3,
+        "deck": 4.4,
+        "parapet": "stone",
+        "crownAbove": 3.3
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "tiechuang",
+      "name_zh": "铁窗桥",
+      "x": -1525,
+      "z": 1395,
+      "ux": 0.9962,
+      "uz": 0.0872,
+      "span": 22,
+      "deck": 4.4,
+      "water": 10.19,
+      "form": {
+        "form": "arch",
+        "arches": 3,
+        "deck": 4.4,
+        "parapet": "stone",
+        "crownAbove": 3.3
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "shuang",
+      "name_zh": "双桥",
+      "x": 3165,
+      "z": 1780,
+      "ux": 0.9962,
+      "uz": 0.0872,
+      "span": 22,
+      "deck": 4.4,
+      "water": 9.67,
+      "form": {
+        "form": "arch",
+        "arches": 3,
+        "deck": 4.4,
+        "parapet": "stone",
+        "crownAbove": 3.3
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "tongxin",
+      "name_zh": "铜心管桥",
+      "x": 3740,
+      "z": 1835,
+      "ux": 0.9397,
+      "uz": -0.342,
+      "span": 30,
+      "deck": 4.4,
+      "water": 11.12,
+      "form": {
+        "form": "arch",
+        "arches": 3,
+        "deck": 4.4,
+        "parapet": "stone",
+        "crownAbove": 3.3
+      },
+      "evidence": "Name 核实 (csdata1937 place-name layer: a name existed near here, error median 60 m); place 推测 (the shortest crossing of the water nearest the K point); form 未核实 (placeholder by rule C.2). Moved 0 m from the K point."
+    },
+    {
+      "key": "huimin",
+      "name_zh": "惠民桥",
+      "x": -4158,
+      "z": -4869.7,
+      "ux": 0.1736,
+      "uz": -0.9848,
+      "span": 66,
+      "deck": 6,
+      "water": 9.21,
+      "form": {
+        "form": "beam",
+        "deck": 6,
+        "bay": 9,
+        "girders": "stone",
+        "parapet": "stone",
+        "parapetH": 0.55
+      },
+      "evidence": "Name 核实 (K, places.json); Bristol He01-055 (c.1900) shows the OLD 惠民桥, not 1937's form; stone-piered beam placeholder: 未核实"
+    },
+    {
+      "key": "baota",
+      "name_zh": "宝塔桥",
+      "x": -3355.9,
+      "z": -6344.5,
+      "ux": 0.5,
+      "uz": 0.866,
+      "span": 36,
+      "deck": 6,
+      "water": 7.13,
+      "form": {
+        "form": "arch",
+        "arches": 3,
+        "deck": 6,
+        "parapet": "stone"
+      },
+      "evidence": "Name 核实 (K, places.json, 258 m from lm-baotaqiao); br004 (-3690,-6634) stays unnamed; stone arch placeholder: 未核实"
+    },
+    {
+      "key": "saihong",
+      "name_zh": "赛虹桥",
+      "x": -1940,
+      "z": 3800,
+      "ux": 0.866,
+      "uz": 0.5,
+      "span": 126,
+      "deck": 5,
+      "water": 2.06,
+      "form": {
+        "form": "trestle",
+        "deck": 5,
+        "bay": 6,
+        "parapet": "timber"
+      },
+      "evidence": "Name 核实 (K: the moat is 132 m wide there, spec C.1 \"long beam\"); long timber trestle: 未核实"
+    },
+    {
+      "key": "ferry-trestle",
+      "keep": true,
+      "name_zh": "铁路轮渡栈桥",
+      "x": -4515.3,
+      "z": -5936.2,
+      "ux": -0.3829,
+      "uz": 0.9238,
+      "span": 187.13,
+      "deck": 6.2,
+      "water": 1.7,
+      "form": {
+        "form": "truss",
+        "deck": 6.2,
+        "freeEnd": 1,
+        "crownAbove": 3,
+        "bay": 46,
+        "pierW": 3,
+        "parapet": "none",
+        "trussH": 5.2
+      },
+      "evidence": "4-span through steel truss 187.13 x 6.2 m (14.44 m at the river end), 17.1 m apron (Nanjinger, zh.wikipedia: 核实 secondary, not re-read); the place is 推测 (the shore nearest lm-ferry-pier-s); the river end stands in the water on a pontoon (推测); no ferry (the river had left the line: 未核实)"
+    },
+    {
+      "key": "kuijiao",
+      "name_zh": "夔脚桥",
+      "x": 2902,
+      "z": 3050,
+      "ux": 1,
+      "uz": 0,
+      "span": 120,
+      "deck": 8,
+      "water": 7,
+      "form": {
+        "form": "beam",
+        "deck": 8,
+        "bay": 14,
+        "girders": "timber",
+        "parapet": "timber"
+      },
+      "evidence": "Name 核实 (zh.wikipedia 光华门). Beam on piers every 14 m, 8 m deck: 推测 (the project's \"1 span 6-8 m\" is unsourced). Needs the earth dam (2840..2960 x 2950..3060) opened by the water area: skipped by the page until the ground there is water. Wave 5: on the landed water the moat is open from z 2990 to 3110 (water 7.0, banks 9-10 m high at z 2980 and 3120), so the bridge stands bank to bank at centre (2902, 3050), span 120 m (waterlevels, 15:08Z), and replaces the record at (2902, 3005) / 100 m that starts 35 m over land.",
+      "claim": 60,
+      "override": {
+        "x": 2902,
+        "z": 3050,
+        "span": 120
+      }
+    }
+  ]
+}
