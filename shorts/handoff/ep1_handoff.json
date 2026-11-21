@@ -1,0 +1,102 @@
+[
+ {
+  "id": "ep1_1-1",
+  "out_at_s": 39.4,
+  "back_at_s": 56.4,
+  "note": "Whole city, river, mountain, south hill in frame. 12-06 10:00. People flowing in the city.",
+  "out": {
+   "centre_x": 300.6728308707534,
+   "centre_z": 200.3694638030829,
+   "view_width_m": 2777.357827639522,
+   "view_height_m": 4937.525026914705,
+   "bearing_up_deg": 0,
+   "centre_sits_at_screen_y": 0.44
+  },
+  "back": {
+   "centre_x": -0.00003030496386414061,
+   "centre_z": 399.9999898983454,
+   "view_width_m": 15500.000054641216,
+   "bearing_up_deg": 0
+  }
+ },
+ {
+  "id": "ep1_1-2",
+  "out_at_s": 56.4,
+  "back_at_s": 65.9,
+  "note": "Low flight along the west side of the wall from the south gate, climb over the NW corner, look out over the river (river reveal on \"Behind it is the river\" 60.5 s).",
+  "out": {
+   "centre_x": 0,
+   "centre_z": 400,
+   "view_width_m": 15500.000013567711,
+   "view_height_m": 27555.55557967593,
+   "bearing_up_deg": 0,
+   "centre_sits_at_screen_y": 0.44
+  },
+  "back": {
+   "centre_x": -599.9999885401734,
+   "centre_z": 200.0000038199422,
+   "view_width_m": 16499.99998236844,
+   "bearing_up_deg": 0
+  }
+ },
+ {
+  "id": "ep1_1-3",
+  "out_at_s": 65.9,
+  "back_at_s": 79.6,
+  "note": "Dawn over the whole city, 12-07 05:00. Background for the two cards.",
+  "out": {
+   "centre_x": -599.9999656585779,
+   "centre_z": 200.0000114471407,
+   "view_width_m": 16499.99994716388,
+   "view_height_m": 29333.333239402455,
+   "bearing_up_deg": 0,
+   "centre_sits_at_screen_y": 0.44
+  },
+  "back": {
+   "centre_x": 0.000001851520797597257,
+   "centre_z": 400.0000018515208,
+   "view_width_m": 15500.000019801524,
+   "bearing_up_deg": 0
+  }
+ },
+ {
+  "id": "ep1_1-4",
+  "out_at_s": 79.6,
+  "back_at_s": 96,
+  "note": "Defenders on the wall; gates X-ed as of 12-06 on \"walls up the gates\" 91.5 s; ferries leave Xiaguan on \"sends the ferries upriver\" 93.3 s (overlay tag: FERRIES SENT UPRIVER, DEC 9). No running date on screen in this shot.",
+  "out": {
+   "centre_x": -0.000010112852237398329,
+   "centre_z": 399.99999662904924,
+   "view_width_m": 15500.000018233926,
+   "view_height_m": 27555.555587971423,
+   "bearing_up_deg": 0,
+   "centre_sits_at_screen_y": 0.44
+  },
+  "back": {
+   "centre_x": 199.999982495211,
+   "centre_z": 599.9999876436783,
+   "view_width_m": 17500.000021001084,
+   "bearing_up_deg": 0
+  }
+ },
+ {
+  "id": "ep1_1-5",
+  "out_at_s": 96,
+  "back_at_s": 112,
+  "note": "Outer line breaks 12-08 (96–100 s); three red columns reach the wall E / SE / S by 12-09 morning (101.9 s \"seventy thousand\"); pan NW to the river on \"fourth side\" 106.8 s.",
+  "out": {
+   "centre_x": 199.99999763983735,
+   "centre_z": 599.9999976398374,
+   "view_width_m": 17499.9999778507,
+   "view_height_m": 31111.11107173458,
+   "bearing_up_deg": 0,
+   "centre_sits_at_screen_y": 0.44
+  },
+  "back": {
+   "centre_x": -1500,
+   "centre_z": -600,
+   "view_width_m": 19000,
+   "bearing_up_deg": 0
+  }
+ }
+]
