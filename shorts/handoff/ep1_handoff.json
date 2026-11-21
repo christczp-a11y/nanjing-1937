@@ -5,10 +5,10 @@
   "back_at_s": 56.4,
   "note": "Whole city, river, mountain, south hill in frame. 12-06 10:00. People flowing in the city.",
   "out": {
-   "centre_x": 300.6728308707534,
-   "centre_z": 200.3694638030829,
-   "view_width_m": 2777.357827639522,
-   "view_height_m": 4937.525026914705,
+   "centre_x": 0.00005846843123435974,
+   "centre_z": 400.0000236472333,
+   "view_width_m": 17000.00287344299,
+   "view_height_m": 30222.227330565318,
    "bearing_up_deg": 0,
    "centre_sits_at_screen_y": 0.44
   },
@@ -27,8 +27,8 @@
   "out": {
    "centre_x": 0,
    "centre_z": 400,
-   "view_width_m": 15500.000013567711,
-   "view_height_m": 27555.55557967593,
+   "view_width_m": 15500.00001347221,
+   "view_height_m": 27555.555579506152,
    "bearing_up_deg": 0,
    "centre_sits_at_screen_y": 0.44
   },
@@ -82,7 +82,7 @@
  {
   "id": "ep1_1-5",
   "out_at_s": 96,
-  "back_at_s": 112,
+  "back_at_s": 114,
   "note": "Outer line breaks 12-08 (96–100 s); three red columns reach the wall E / SE / S by 12-09 morning (101.9 s \"seventy thousand\"); pan NW to the river on \"fourth side\" 106.8 s.",
   "out": {
    "centre_x": 199.99999763983735,
@@ -93,9 +93,9 @@
    "centre_sits_at_screen_y": 0.44
   },
   "back": {
-   "centre_x": -1500,
-   "centre_z": -600,
-   "view_width_m": 19000,
+   "centre_x": -1600,
+   "centre_z": -650,
+   "view_width_m": 19400,
    "bearing_up_deg": 0
   }
  }
