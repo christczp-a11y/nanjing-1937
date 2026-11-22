@@ -1,0 +1,1309 @@
+{
+ "voice": "Max - Elearning and Documentary",
+ "voice_id": "Gfpl8Yo74Is0W6cPUWWT",
+ "model": "eleven_multilingual_v2",
+ "text": "On December the thirteenth, 1937, the battle for Nanjing was over. For the people still inside, the worst six weeks were about to begin.\n\nThe day before, twenty-eight miles upriver, Japanese planes had sunk an American gunboat. That made the front pages. What was happening in the city took three more days to get out.\n\nSoldiers who could not escape threw away their uniforms. The army went looking for them. It checked men's hands. Calluses meant a rifle. The men it picked were tied together, walked to the river, and shot.\n\nAt one place on the bank the army counted its prisoners. Fourteen thousand, seven hundred and seventy-seven. They were machine-gunned over three nights.\n\nIn the west of the city, about twenty foreigners had drawn a line and called it a safety zone. A quarter of a million people got inside it. The man in charge was a member of the Nazi Party. It was safer. It was not safe. A court later counted twenty thousand rapes in the first month.\n\nThere were seventy thousand soldiers in the city. The army gave them seventeen military policemen.\n\nOn the seventeenth the Japanese commander rode in for his victory parade.\n\nOn the nineteenth his army began to burn the city. A third of it.\n\nThe people who buried the dead counted a hundred and fifty-five thousand bodies. A court in Tokyo found that more than two hundred thousand people were murdered. A court in Nanjing found more than three hundred thousand.\n\nThe commander was hanged in 1948. The wall is still there.",
+ "duration": 107.414,
+ "words": [
+  {
+   "word": "On",
+   "start": 0.0,
+   "end": 0.151
+  },
+  {
+   "word": "December",
+   "start": 0.209,
+   "end": 0.615
+  },
+  {
+   "word": "the",
+   "start": 0.673,
+   "end": 0.743
+  },
+  {
+   "word": "thirteenth,",
+   "start": 0.801,
+   "end": 1.405
+  },
+  {
+   "word": "1937,",
+   "start": 1.44,
+   "end": 2.682
+  },
+  {
+   "word": "the",
+   "start": 2.856,
+   "end": 2.961
+  },
+  {
+   "word": "battle",
+   "start": 3.042,
+   "end": 3.367
+  },
+  {
+   "word": "for",
+   "start": 3.402,
+   "end": 3.506
+  },
+  {
+   "word": "Nanjing",
+   "start": 3.564,
+   "end": 4.087
+  },
+  {
+   "word": "was",
+   "start": 4.156,
+   "end": 4.296
+  },
+  {
+   "word": "over.",
+   "start": 4.365,
+   "end": 4.969
+  },
+  {
+   "word": "For",
+   "start": 5.352,
+   "end": 5.503
+  },
+  {
+   "word": "the",
+   "start": 5.538,
+   "end": 5.608
+  },
+  {
+   "word": "people",
+   "start": 5.654,
+   "end": 5.956
+  },
+  {
+   "word": "still",
+   "start": 5.991,
+   "end": 6.211
+  },
+  {
+   "word": "inside,",
+   "start": 6.269,
+   "end": 6.896
+  },
+  {
+   "word": "the",
+   "start": 7.024,
+   "end": 7.14
+  },
+  {
+   "word": "worst",
+   "start": 7.233,
+   "end": 7.593
+  },
+  {
+   "word": "six",
+   "start": 7.709,
+   "end": 7.976
+  },
+  {
+   "word": "weeks",
+   "start": 8.046,
+   "end": 8.359
+  },
+  {
+   "word": "were",
+   "start": 8.417,
+   "end": 8.58
+  },
+  {
+   "word": "about",
+   "start": 8.615,
+   "end": 8.87
+  },
+  {
+   "word": "to",
+   "start": 8.905,
+   "end": 8.963
+  },
+  {
+   "word": "begin.",
+   "start": 9.033,
+   "end": 9.671
+  },
+  {
+   "word": "The",
+   "start": 10.786,
+   "end": 10.913
+  },
+  {
+   "word": "day",
+   "start": 10.971,
+   "end": 11.111
+  },
+  {
+   "word": "before,",
+   "start": 11.169,
+   "end": 11.749
+  },
+  {
+   "word": "twenty-eight",
+   "start": 11.923,
+   "end": 12.481
+  },
+  {
+   "word": "miles",
+   "start": 12.539,
+   "end": 12.887
+  },
+  {
+   "word": "upriver,",
+   "start": 12.945,
+   "end": 13.595
+  },
+  {
+   "word": "Japanese",
+   "start": 13.804,
+   "end": 14.373
+  },
+  {
+   "word": "planes",
+   "start": 14.42,
+   "end": 14.849
+  },
+  {
+   "word": "had",
+   "start": 14.919,
+   "end": 15.047
+  },
+  {
+   "word": "sunk",
+   "start": 15.105,
+   "end": 15.372
+  },
+  {
+   "word": "an",
+   "start": 15.43,
+   "end": 15.488
+  },
+  {
+   "word": "American",
+   "start": 15.534,
+   "end": 16.08
+  },
+  {
+   "word": "gunboat.",
+   "start": 16.138,
+   "end": 16.776
+  },
+  {
+   "word": "That",
+   "start": 17.287,
+   "end": 17.496
+  },
+  {
+   "word": "made",
+   "start": 17.554,
+   "end": 17.775
+  },
+  {
+   "word": "the",
+   "start": 17.809,
+   "end": 17.879
+  },
+  {
+   "word": "front",
+   "start": 17.925,
+   "end": 18.146
+  },
+  {
+   "word": "pages.",
+   "start": 18.204,
+   "end": 18.889
+  },
+  {
+   "word": "What",
+   "start": 19.586,
+   "end": 19.771
+  },
+  {
+   "word": "was",
+   "start": 19.818,
+   "end": 19.934
+  },
+  {
+   "word": "happening",
+   "start": 20.004,
+   "end": 20.375
+  },
+  {
+   "word": "in",
+   "start": 20.422,
+   "end": 20.48
+  },
+  {
+   "word": "the",
+   "start": 20.515,
+   "end": 20.584
+  },
+  {
+   "word": "city",
+   "start": 20.631,
+   "end": 20.956
+  },
+  {
+   "word": "took",
+   "start": 21.107,
+   "end": 21.339
+  },
+  {
+   "word": "three",
+   "start": 21.397,
+   "end": 21.652
+  },
+  {
+   "word": "more",
+   "start": 21.699,
+   "end": 21.896
+  },
+  {
+   "word": "days",
+   "start": 21.943,
+   "end": 22.233
+  },
+  {
+   "word": "to",
+   "start": 22.291,
+   "end": 22.36
+  },
+  {
+   "word": "get",
+   "start": 22.419,
+   "end": 22.569
+  },
+  {
+   "word": "out.",
+   "start": 22.628,
+   "end": 23.092
+  },
+  {
+   "word": "Soldiers",
+   "start": 23.905,
+   "end": 24.427
+  },
+  {
+   "word": "who",
+   "start": 24.474,
+   "end": 24.566
+  },
+  {
+   "word": "could",
+   "start": 24.601,
+   "end": 24.752
+  },
+  {
+   "word": "not",
+   "start": 24.799,
+   "end": 24.961
+  },
+  {
+   "word": "escape",
+   "start": 25.008,
+   "end": 25.507
+  },
+  {
+   "word": "threw",
+   "start": 25.565,
+   "end": 25.843
+  },
+  {
+   "word": "away",
+   "start": 25.902,
+   "end": 26.122
+  },
+  {
+   "word": "their",
+   "start": 26.18,
+   "end": 26.343
+  },
+  {
+   "word": "uniforms.",
+   "start": 26.412,
+   "end": 27.283
+  },
+  {
+   "word": "The",
+   "start": 27.666,
+   "end": 27.794
+  },
+  {
+   "word": "army",
+   "start": 27.875,
+   "end": 28.177
+  },
+  {
+   "word": "went",
+   "start": 28.247,
+   "end": 28.409
+  },
+  {
+   "word": "looking",
+   "start": 28.456,
+   "end": 28.711
+  },
+  {
+   "word": "for",
+   "start": 28.769,
+   "end": 28.874
+  },
+  {
+   "word": "them.",
+   "start": 28.909,
+   "end": 29.292
+  },
+  {
+   "word": "It",
+   "start": 29.733,
+   "end": 29.884
+  },
+  {
+   "word": "checked",
+   "start": 29.942,
+   "end": 30.255
+  },
+  {
+   "word": "men's",
+   "start": 30.325,
+   "end": 30.627
+  },
+  {
+   "word": "hands.",
+   "start": 30.685,
+   "end": 31.312
+  },
+  {
+   "word": "Calluses",
+   "start": 31.695,
+   "end": 32.38
+  },
+  {
+   "word": "meant",
+   "start": 32.531,
+   "end": 32.74
+  },
+  {
+   "word": "a",
+   "start": 32.786,
+   "end": 32.809
+  },
+  {
+   "word": "rifle.",
+   "start": 32.879,
+   "end": 33.448
+  },
+  {
+   "word": "The",
+   "start": 34.144,
+   "end": 34.272
+  },
+  {
+   "word": "men",
+   "start": 34.342,
+   "end": 34.481
+  },
+  {
+   "word": "it",
+   "start": 34.527,
+   "end": 34.609
+  },
+  {
+   "word": "picked",
+   "start": 34.655,
+   "end": 34.922
+  },
+  {
+   "word": "were",
+   "start": 34.957,
+   "end": 35.108
+  },
+  {
+   "word": "tied",
+   "start": 35.143,
+   "end": 35.41
+  },
+  {
+   "word": "together,",
+   "start": 35.445,
+   "end": 36.037
+  },
+  {
+   "word": "walked",
+   "start": 36.211,
+   "end": 36.536
+  },
+  {
+   "word": "to",
+   "start": 36.559,
+   "end": 36.617
+  },
+  {
+   "word": "the",
+   "start": 36.687,
+   "end": 36.757
+  },
+  {
+   "word": "river,",
+   "start": 36.815,
+   "end": 37.302
+  },
+  {
+   "word": "and",
+   "start": 37.476,
+   "end": 37.65
+  },
+  {
+   "word": "shot.",
+   "start": 37.732,
+   "end": 38.312
+  },
+  {
+   "word": "At",
+   "start": 39.427,
+   "end": 39.566
+  },
+  {
+   "word": "one",
+   "start": 39.636,
+   "end": 39.787
+  },
+  {
+   "word": "place",
+   "start": 39.822,
+   "end": 40.065
+  },
+  {
+   "word": "on",
+   "start": 40.1,
+   "end": 40.17
+  },
+  {
+   "word": "the",
+   "start": 40.205,
+   "end": 40.274
+  },
+  {
+   "word": "bank",
+   "start": 40.321,
+   "end": 40.623
+  },
+  {
+   "word": "the",
+   "start": 40.739,
+   "end": 40.855
+  },
+  {
+   "word": "army",
+   "start": 40.936,
+   "end": 41.215
+  },
+  {
+   "word": "counted",
+   "start": 41.296,
+   "end": 41.644
+  },
+  {
+   "word": "its",
+   "start": 41.691,
+   "end": 41.807
+  },
+  {
+   "word": "prisoners.",
+   "start": 41.853,
+   "end": 42.585
+  },
+  {
+   "word": "Fourteen",
+   "start": 43.026,
+   "end": 43.502
+  },
+  {
+   "word": "thousand,",
+   "start": 43.56,
+   "end": 44.198
+  },
+  {
+   "word": "seven",
+   "start": 44.373,
+   "end": 44.686
+  },
+  {
+   "word": "hundred",
+   "start": 44.744,
+   "end": 45.092
+  },
+  {
+   "word": "and",
+   "start": 45.162,
+   "end": 45.301
+  },
+  {
+   "word": "seventy-seven.",
+   "start": 45.394,
+   "end": 46.404
+  },
+  {
+   "word": "They",
+   "start": 46.915,
+   "end": 47.089
+  },
+  {
+   "word": "were",
+   "start": 47.124,
+   "end": 47.264
+  },
+  {
+   "word": "machine-gunned",
+   "start": 47.31,
+   "end": 48.146
+  },
+  {
+   "word": "over",
+   "start": 48.262,
+   "end": 48.517
+  },
+  {
+   "word": "three",
+   "start": 48.61,
+   "end": 48.912
+  },
+  {
+   "word": "nights.",
+   "start": 48.982,
+   "end": 49.655
+  },
+  {
+   "word": "In",
+   "start": 50.77,
+   "end": 50.897
+  },
+  {
+   "word": "the",
+   "start": 50.944,
+   "end": 51.013
+  },
+  {
+   "word": "west",
+   "start": 51.06,
+   "end": 51.28
+  },
+  {
+   "word": "of",
+   "start": 51.327,
+   "end": 51.385
+  },
+  {
+   "word": "the",
+   "start": 51.443,
+   "end": 51.512
+  },
+  {
+   "word": "city,",
+   "start": 51.559,
+   "end": 52.012
+  },
+  {
+   "word": "about",
+   "start": 52.163,
+   "end": 52.499
+  },
+  {
+   "word": "twenty",
+   "start": 52.546,
+   "end": 52.917
+  },
+  {
+   "word": "foreigners",
+   "start": 52.987,
+   "end": 53.486
+  },
+  {
+   "word": "had",
+   "start": 53.544,
+   "end": 53.66
+  },
+  {
+   "word": "drawn",
+   "start": 53.707,
+   "end": 53.985
+  },
+  {
+   "word": "a",
+   "start": 54.02,
+   "end": 54.055
+  },
+  {
+   "word": "line",
+   "start": 54.113,
+   "end": 54.473
+  },
+  {
+   "word": "and",
+   "start": 54.531,
+   "end": 54.694
+  },
+  {
+   "word": "called",
+   "start": 54.786,
+   "end": 55.123
+  },
+  {
+   "word": "it",
+   "start": 55.17,
+   "end": 55.274
+  },
+  {
+   "word": "a",
+   "start": 55.332,
+   "end": 55.402
+  },
+  {
+   "word": "safety",
+   "start": 55.518,
+   "end": 55.913
+  },
+  {
+   "word": "zone.",
+   "start": 55.982,
+   "end": 56.54
+  },
+  {
+   "word": "A",
+   "start": 56.923,
+   "end": 57.004
+  },
+  {
+   "word": "quarter",
+   "start": 57.12,
+   "end": 57.492
+  },
+  {
+   "word": "of",
+   "start": 57.55,
+   "end": 57.608
+  },
+  {
+   "word": "a",
+   "start": 57.666,
+   "end": 57.689
+  },
+  {
+   "word": "million",
+   "start": 57.77,
+   "end": 58.165
+  },
+  {
+   "word": "people",
+   "start": 58.235,
+   "end": 58.571
+  },
+  {
+   "word": "got",
+   "start": 58.618,
+   "end": 58.804
+  },
+  {
+   "word": "inside",
+   "start": 58.85,
+   "end": 59.256
+  },
+  {
+   "word": "it.",
+   "start": 59.291,
+   "end": 59.616
+  },
+  {
+   "word": "The",
+   "start": 60.127,
+   "end": 60.243
+  },
+  {
+   "word": "man",
+   "start": 60.313,
+   "end": 60.522
+  },
+  {
+   "word": "in",
+   "start": 60.58,
+   "end": 60.649
+  },
+  {
+   "word": "charge",
+   "start": 60.719,
+   "end": 61.195
+  },
+  {
+   "word": "was",
+   "start": 61.242,
+   "end": 61.404
+  },
+  {
+   "word": "a",
+   "start": 61.462,
+   "end": 61.485
+  },
+  {
+   "word": "member",
+   "start": 61.555,
+   "end": 61.834
+  },
+  {
+   "word": "of",
+   "start": 61.903,
+   "end": 61.973
+  },
+  {
+   "word": "the",
+   "start": 62.019,
+   "end": 62.089
+  },
+  {
+   "word": "Nazi",
+   "start": 62.159,
+   "end": 62.542
+  },
+  {
+   "word": "Party.",
+   "start": 62.6,
+   "end": 63.157
+  },
+  {
+   "word": "It",
+   "start": 63.54,
+   "end": 63.691
+  },
+  {
+   "word": "was",
+   "start": 63.749,
+   "end": 63.877
+  },
+  {
+   "word": "safer.",
+   "start": 63.935,
+   "end": 64.504
+  },
+  {
+   "word": "It",
+   "start": 64.887,
+   "end": 65.026
+  },
+  {
+   "word": "was",
+   "start": 65.085,
+   "end": 65.224
+  },
+  {
+   "word": "not",
+   "start": 65.317,
+   "end": 65.561
+  },
+  {
+   "word": "safe.",
+   "start": 65.653,
+   "end": 66.257
+  },
+  {
+   "word": "A",
+   "start": 67.557,
+   "end": 67.639
+  },
+  {
+   "word": "court",
+   "start": 67.732,
+   "end": 67.987
+  },
+  {
+   "word": "later",
+   "start": 68.057,
+   "end": 68.324
+  },
+  {
+   "word": "counted",
+   "start": 68.405,
+   "end": 68.765
+  },
+  {
+   "word": "twenty",
+   "start": 68.811,
+   "end": 69.183
+  },
+  {
+   "word": "thousand",
+   "start": 69.241,
+   "end": 69.694
+  },
+  {
+   "word": "rapes",
+   "start": 69.775,
+   "end": 70.181
+  },
+  {
+   "word": "in",
+   "start": 70.274,
+   "end": 70.39
+  },
+  {
+   "word": "the",
+   "start": 70.437,
+   "end": 70.507
+  },
+  {
+   "word": "first",
+   "start": 70.553,
+   "end": 70.808
+  },
+  {
+   "word": "month.",
+   "start": 70.89,
+   "end": 71.366
+  },
+  {
+   "word": "There",
+   "start": 71.876,
+   "end": 72.074
+  },
+  {
+   "word": "were",
+   "start": 72.109,
+   "end": 72.248
+  },
+  {
+   "word": "seventy",
+   "start": 72.294,
+   "end": 72.701
+  },
+  {
+   "word": "thousand",
+   "start": 72.759,
+   "end": 73.212
+  },
+  {
+   "word": "soldiers",
+   "start": 73.293,
+   "end": 73.757
+  },
+  {
+   "word": "in",
+   "start": 73.804,
+   "end": 73.862
+  },
+  {
+   "word": "the",
+   "start": 73.908,
+   "end": 73.978
+  },
+  {
+   "word": "city.",
+   "start": 74.024,
+   "end": 74.489
+  },
+  {
+   "word": "The",
+   "start": 74.93,
+   "end": 75.058
+  },
+  {
+   "word": "army",
+   "start": 75.139,
+   "end": 75.452
+  },
+  {
+   "word": "gave",
+   "start": 75.522,
+   "end": 75.777
+  },
+  {
+   "word": "them",
+   "start": 75.824,
+   "end": 75.998
+  },
+  {
+   "word": "seventeen",
+   "start": 76.126,
+   "end": 76.729
+  },
+  {
+   "word": "military",
+   "start": 76.811,
+   "end": 77.333
+  },
+  {
+   "word": "policemen.",
+   "start": 77.391,
+   "end": 78.157
+  },
+  {
+   "word": "On",
+   "start": 78.761,
+   "end": 78.935
+  },
+  {
+   "word": "the",
+   "start": 78.97,
+   "end": 79.04
+  },
+  {
+   "word": "seventeenth",
+   "start": 79.098,
+   "end": 79.783
+  },
+  {
+   "word": "the",
+   "start": 79.992,
+   "end": 80.12
+  },
+  {
+   "word": "Japanese",
+   "start": 80.189,
+   "end": 80.735
+  },
+  {
+   "word": "commander",
+   "start": 80.77,
+   "end": 81.211
+  },
+  {
+   "word": "rode",
+   "start": 81.292,
+   "end": 81.536
+  },
+  {
+   "word": "in",
+   "start": 81.571,
+   "end": 81.687
+  },
+  {
+   "word": "for",
+   "start": 81.768,
+   "end": 81.884
+  },
+  {
+   "word": "his",
+   "start": 81.942,
+   "end": 82.058
+  },
+  {
+   "word": "victory",
+   "start": 82.128,
+   "end": 82.534
+  },
+  {
+   "word": "parade.",
+   "start": 82.592,
+   "end": 83.231
+  },
+  {
+   "word": "On",
+   "start": 83.742,
+   "end": 83.916
+  },
+  {
+   "word": "the",
+   "start": 83.962,
+   "end": 84.032
+  },
+  {
+   "word": "nineteenth",
+   "start": 84.102,
+   "end": 84.671
+  },
+  {
+   "word": "his",
+   "start": 84.88,
+   "end": 85.054
+  },
+  {
+   "word": "army",
+   "start": 85.123,
+   "end": 85.46
+  },
+  {
+   "word": "began",
+   "start": 85.53,
+   "end": 85.855
+  },
+  {
+   "word": "to",
+   "start": 85.925,
+   "end": 85.994
+  },
+  {
+   "word": "burn",
+   "start": 86.11,
+   "end": 86.493
+  },
+  {
+   "word": "the",
+   "start": 86.551,
+   "end": 86.633
+  },
+  {
+   "word": "city.",
+   "start": 86.691,
+   "end": 87.19
+  },
+  {
+   "word": "A",
+   "start": 87.794,
+   "end": 87.91
+  },
+  {
+   "word": "third",
+   "start": 88.003,
+   "end": 88.27
+  },
+  {
+   "word": "of",
+   "start": 88.316,
+   "end": 88.374
+  },
+  {
+   "word": "it.",
+   "start": 88.432,
+   "end": 88.746
+  },
+  {
+   "word": "The",
+   "start": 89.257,
+   "end": 89.373
+  },
+  {
+   "word": "people",
+   "start": 89.431,
+   "end": 89.709
+  },
+  {
+   "word": "who",
+   "start": 89.733,
+   "end": 89.837
+  },
+  {
+   "word": "buried",
+   "start": 89.907,
+   "end": 90.278
+  },
+  {
+   "word": "the",
+   "start": 90.313,
+   "end": 90.383
+  },
+  {
+   "word": "dead",
+   "start": 90.441,
+   "end": 90.754
+  },
+  {
+   "word": "counted",
+   "start": 90.928,
+   "end": 91.312
+  },
+  {
+   "word": "a",
+   "start": 91.346,
+   "end": 91.37
+  },
+  {
+   "word": "hundred",
+   "start": 91.451,
+   "end": 91.753
+  },
+  {
+   "word": "and",
+   "start": 91.788,
+   "end": 91.857
+  },
+  {
+   "word": "fifty-five",
+   "start": 91.915,
+   "end": 92.484
+  },
+  {
+   "word": "thousand",
+   "start": 92.531,
+   "end": 92.96
+  },
+  {
+   "word": "bodies.",
+   "start": 93.041,
+   "end": 93.657
+  },
+  {
+   "word": "A",
+   "start": 94.098,
+   "end": 94.179
+  },
+  {
+   "word": "court",
+   "start": 94.272,
+   "end": 94.493
+  },
+  {
+   "word": "in",
+   "start": 94.539,
+   "end": 94.597
+  },
+  {
+   "word": "Tokyo",
+   "start": 94.667,
+   "end": 95.166
+  },
+  {
+   "word": "found",
+   "start": 95.317,
+   "end": 95.561
+  },
+  {
+   "word": "that",
+   "start": 95.607,
+   "end": 95.735
+  },
+  {
+   "word": "more",
+   "start": 95.816,
+   "end": 96.014
+  },
+  {
+   "word": "than",
+   "start": 96.048,
+   "end": 96.199
+  },
+  {
+   "word": "two",
+   "start": 96.269,
+   "end": 96.466
+  },
+  {
+   "word": "hundred",
+   "start": 96.548,
+   "end": 96.861
+  },
+  {
+   "word": "thousand",
+   "start": 96.908,
+   "end": 97.349
+  },
+  {
+   "word": "people",
+   "start": 97.418,
+   "end": 97.72
+  },
+  {
+   "word": "were",
+   "start": 97.755,
+   "end": 97.906
+  },
+  {
+   "word": "murdered.",
+   "start": 97.941,
+   "end": 98.452
+  },
+  {
+   "word": "A",
+   "start": 98.963,
+   "end": 99.055
+  },
+  {
+   "word": "court",
+   "start": 99.148,
+   "end": 99.38
+  },
+  {
+   "word": "in",
+   "start": 99.438,
+   "end": 99.496
+  },
+  {
+   "word": "Nanjing",
+   "start": 99.554,
+   "end": 100.077
+  },
+  {
+   "word": "found",
+   "start": 100.193,
+   "end": 100.46
+  },
+  {
+   "word": "more",
+   "start": 100.553,
+   "end": 100.762
+  },
+  {
+   "word": "than",
+   "start": 100.808,
+   "end": 100.959
+  },
+  {
+   "word": "three",
+   "start": 101.052,
+   "end": 101.342
+  },
+  {
+   "word": "hundred",
+   "start": 101.4,
+   "end": 101.714
+  },
+  {
+   "word": "thousand.",
+   "start": 101.76,
+   "end": 102.41
+  },
+  {
+   "word": "The",
+   "start": 103.014,
+   "end": 103.13
+  },
+  {
+   "word": "commander",
+   "start": 103.188,
+   "end": 103.583
+  },
+  {
+   "word": "was",
+   "start": 103.641,
+   "end": 103.757
+  },
+  {
+   "word": "hanged",
+   "start": 103.827,
+   "end": 104.117
+  },
+  {
+   "word": "in",
+   "start": 104.163,
+   "end": 104.221
+  },
+  {
+   "word": "1948.",
+   "start": 104.279,
+   "end": 105.336
+  },
+  {
+   "word": "The",
+   "start": 105.94,
+   "end": 106.056
+  },
+  {
+   "word": "wall",
+   "start": 106.114,
+   "end": 106.381
+  },
+  {
+   "word": "is",
+   "start": 106.451,
+   "end": 106.543
+  },
+  {
+   "word": "still",
+   "start": 106.578,
+   "end": 106.787
+  },
+  {
+   "word": "there.",
+   "start": 106.845,
+   "end": 107.414
+  }
+ ]
+}
