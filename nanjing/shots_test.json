@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "fps": 30,
+  "size": [
+    1920,
+    1080
+  ],
+  "note": "Test shots for the film renderer (tools/nanjing/film.mjs): t01-t03 a city overview, a close street and a medium shot with clouds; t04 a night shot with a fire and a crowd (the director's s18 camera: Xiaguan riverfront); t05 a clean plate (hud: false) for checking the frame furniture; t06 the story crossing the fall of the city with the title card and the DAY counter; t07 the end card. The captions say they are tests; nothing in them is a historical claim. Draw the sentences with --sentences.",
+  "shots": [
+    {
+      "id": "t01-overview",
+      "start": "1937-12-13T06:30:00+08:00",
+      "end": "1937-12-13T10:30:00+08:00",
+      "seconds": 8,
+      "cam": [
+        {
+          "at": 0,
+          "x": 0,
+          "z": 800,
+          "dist": 2600,
+          "az": 200,
+          "el": 36
+        },
+        {
+          "at": 1,
+          "x": 0,
+          "z": 700,
+          "dist": 2300,
+          "az": 214,
+          "el": 34
+        }
+      ],
+      "ease": "trapezoid",
+      "radius": 3000,
+      "clouds": 0,
+      "caption": {
+        "date_zh": "1937年12月13日",
+        "time": "06:30",
+        "place_zh": "南京城",
+        "place_en": "Nanking",
+        "line_zh": "清晨，全城俯瞰（测试镜头）",
+        "line_en": "Dawn over the city (test shot)"
+      },
+      "events": [],
+      "why": "renderer test: high overview, slow orbit and push, dawn time-lapse"
+    },
+    {
+      "id": "t02-street",
+      "start": "1937-12-13T14:00:00+08:00",
+      "end": "1937-12-13T14:40:00+08:00",
+      "seconds": 6,
+      "cam": [
+        {
+          "at": 0,
+          "x": -151,
+          "z": 954,
+          "dist": 260,
+          "az": 20,
+          "el": 28
+        },
+        {
+          "at": 1,
+          "x": -151,
+          "z": 930,
+          "dist": 200,
+          "az": 34,
+          "el": 24
+        }
+      ],
+      "ease": "trapezoid",
+      "radius": 900,
+      "clouds": 0,
+      "caption": {
+        "date_zh": "1937年12月13日",
+        "time": "14:00",
+        "place_zh": "新街口",
+        "place_en": "Xinjiekou",
+        "line_zh": "午后，新街口街面（测试镜头）",
+        "line_en": "Afternoon at Xinjiekou (test shot)"
+      },
+      "events": [],
+      "why": "renderer test: close street, low push-in"
+    },
+    {
+      "id": "t03-gate",
+      "start": "1937-12-13T16:00:00+08:00",
+      "end": "1937-12-13T17:30:00+08:00",
+      "seconds": 6,
+      "cam": [
+        {
+          "at": 0,
+          "x": -332,
+          "z": 3916,
+          "dist": 820,
+          "az": 160,
+          "el": 31
+        },
+        {
+          "at": 0.5,
+          "x": -332,
+          "z": 3900,
+          "dist": 740,
+          "az": 150,
+          "el": 30
+        },
+        {
+          "at": 1,
+          "x": -320,
+          "z": 3880,
+          "dist": 700,
+          "az": 136,
+          "el": 29
+        }
+      ],
+      "ease": "trapezoid",
+      "radius": 1500,
+      "clouds": 0.3,
+      "caption": {
+        "date_zh": "1937年12月13日",
+        "time": "16:00",
+        "place_zh": "中华门",
+        "place_en": "Zhonghua Gate",
+        "line_zh": "傍晚，中华门一带（测试镜头）",
+        "line_en": "Dusk around the Zhonghua Gate (test shot)"
+      },
+      "events": [],
+      "why": "renderer test: medium shot, three camera keys, clouds on, sunset"
+    },
+    {
+      "id": "t04-night-fire",
+      "start": "1937-12-13T00:40:00+08:00",
+      "end": "1937-12-13T02:40:00+08:00",
+      "seconds": 6,
+      "cam": [
+        {
+          "at": 0,
+          "x": -5070.4,
+          "z": -4874.4,
+          "dist": 2500,
+          "az": 50,
+          "el": 33
+        },
+        {
+          "at": 1,
+          "x": -5170.4,
+          "z": -4974.4,
+          "dist": 2200,
+          "az": 42,
+          "el": 32
+        }
+      ],
+      "ease": "trapezoid",
+      "radius": 2400,
+      "clouds": 0,
+      "caption": {
+        "date_zh": "1937年12月13日",
+        "time": "00:40",
+        "place_zh": "下关江边",
+        "place_en": "Xiaguan riverfront",
+        "line_zh": "夜，下关江边（测试镜头）",
+        "line_en": "Night on the Xiaguan riverfront (test shot)"
+      },
+      "events": [
+        "ev-1212-crossing"
+      ],
+      "why": "renderer test: night, fires and crowds in frame, the heaviest kind of shot"
+    },
+    {
+      "id": "t05-plate",
+      "start": "1937-12-13T14:00:00+08:00",
+      "end": "1937-12-13T14:00:00+08:00",
+      "seconds": 0.1,
+      "cam": [
+        {
+          "at": 0,
+          "x": -151,
+          "z": 954,
+          "dist": 260,
+          "az": 20,
+          "el": 28
+        }
+      ],
+      "ease": "linear",
+      "radius": 900,
+      "clouds": 0,
+      "hud": false,
+      "caption": {
+        "place_zh": "新街口",
+        "place_en": "Xinjiekou"
+      },
+      "events": [],
+      "why": "a clean plate: no frame furniture, for backgrounds of hud_test.mjs"
+    },
+    {
+      "id": "t06-fall-title",
+      "start": "1937-12-13T03:00:00+08:00",
+      "end": "1937-12-13T07:00:00+08:00",
+      "seconds": 8,
+      "cam": [
+        {
+          "at": 0,
+          "x": 0,
+          "z": 800,
+          "dist": 2600,
+          "az": 200,
+          "el": 36
+        },
+        {
+          "at": 1,
+          "x": 0,
+          "z": 700,
+          "dist": 2300,
+          "az": 214,
+          "el": 34
+        }
+      ],
+      "ease": "trapezoid",
+      "radius": 3000,
+      "clouds": 0,
+      "caption": {
+        "place_zh": "南京城",
+        "place_en": "Nanjing"
+      },
+      "cards": [
+        {
+          "kind": "title",
+          "from": 1.0,
+          "to": 6.0
+        }
+      ],
+      "events": [],
+      "why": "renderer test: story time crosses the fall of the city (04:00) so the DAY counter fades in by itself; the title card over it"
+    },
+    {
+      "id": "t07-end",
+      "start": "1938-01-31T15:00:00+08:00",
+      "end": "1938-01-31T15:00:30+08:00",
+      "seconds": 14,
+      "cam": [
+        {
+          "at": 0,
+          "x": 0,
+          "z": 800,
+          "dist": 2600,
+          "az": 200,
+          "el": 36
+        },
+        {
+          "at": 1,
+          "x": 0,
+          "z": 700,
+          "dist": 2500,
+          "az": 205,
+          "el": 35
+        }
+      ],
+      "ease": "linear",
+      "radius": 3000,
+      "clouds": 0,
+      "hud": {
+        "day": 1
+      },
+      "caption": {
+        "place_zh": "南京城",
+        "place_en": "Nanjing"
+      },
+      "cards": [
+        {
+          "kind": "end",
+          "from": 0
+        }
+      ],
+      "events": [],
+      "why": "renderer test: the end card over the closing shot, the counter back at DAY 1"
+    }
+  ]
+}

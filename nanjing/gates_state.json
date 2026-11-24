@@ -1,0 +1,1084 @@
+{
+ "version": 1,
+ "frame": "real",
+ "tz": "+08:00",
+ "generated": "2026-11-21T03:03Z",
+ "about": "Wave G1 DATA (item 2.4): the state of every city gate in the model and of the Xiaguan boats by time, with status (核实 / 推测 / 未核实 / 争议) and source on every interval. Intervals are contiguous: { from, to, state, status, source, note? } with from inclusive and to exclusive, local time (+08:00), from 1937-12-01T00:00 to 1938-01-31T23:59. Gate states and times come from timeline.json gates (timeline.py) and wall.json; where they disagree the row says so in note and the top-level conflicts list. Nothing here is drawn by this file: it is read by the overlay (mods/battles_overlay.js).",
+ "states": {
+  "open": {
+   "exit": true,
+   "display": "open",
+   "mark": "green ring",
+   "text": "In use."
+  },
+  "half_open": {
+   "exit": true,
+   "display": "half-open",
+   "mark": "half ring (green)",
+   "text": "Only half of the gate is passable."
+  },
+  "narrow": {
+   "exit": true,
+   "display": "half-open",
+   "mark": "half ring (green), as half_open",
+   "text": "A narrow lane kept through the sandbags."
+  },
+  "sealed": {
+   "exit": false,
+   "display": "sealed",
+   "mark": "cross",
+   "text": "Blocked with sandbags and concrete."
+  },
+  "breached": {
+   "exit": false,
+   "display": "sealed",
+   "mark": "cross (the wall beside or at the gate is broken, the gate is still held)",
+   "text": "Wall broken at or beside the gate; still Chinese-held."
+  },
+  "taken": {
+   "exit": false,
+   "display": "taken",
+   "mark": "vermilion",
+   "text": "Held by the Japanese army (from the first hour it is taken; stays so to the end)."
+  },
+  "closed_long": {
+   "exit": false,
+   "display": "closed",
+   "mark": "small grey dot, no cross",
+   "text": "Bricked up long before 1937: never an exit, not counted."
+  },
+  "water_arch": {
+   "exit": false,
+   "display": "water arch",
+   "mark": "none",
+   "text": "Arch over a stream in the wall; not a gate people use."
+  }
+ },
+ "counter": {
+  "label_en": "Exits open",
+  "label_zh": "开放的出口",
+  "rule": "N = number of entries of gates[] (not water_gates) whose state at the story time has states[state].exit = true (open, half_open, narrow). Water arches and closed_long gates are never counted.",
+  "note": "The scene's wickets (Tongji, Shuixi: a 1.38 m way, 推测) are NOT counted; see the two gates' note."
+ },
+ "sealing_window": {
+  "from": "1937-12-04T07:00:00+08:00",
+  "to": "1937-12-06T18:00:00+08:00",
+  "status": "核实 (the event); per-gate days 推测",
+  "source": "timeline ev-1206-gates-sealed (英文维基 Battle of Nanking: by December 6 all gates blocked); the model flips every gate at 12-05 18:00",
+  "note": "Inside this window the gates are being sealed but the table (like the wall.json of the scene) still has the usable ones open until 12-05 18:00, so the counter reads 19 at 12-05 12:00. The overlay may print \"Gates being sealed\" instead of N inside the window."
+ },
+ "siege": {
+  "day1": "1937-12-09T00:00:00+08:00",
+  "fall_at": "1937-12-13T04:00:00+08:00",
+  "rule": "Before 12-09 00:00 local: show the date only. From 12-09 00:00 to 12-13 04:00: \"Day n of the siege\", n = calendar day since 12-09 (12-09 = Day 1, 12-12 = Day 4, 12-13 before 04:00 = Day 5). From 12-13 04:00 (hud.js FALL): \"The city has fallen\" and the hud DAY counter (DAY 1 = 12-13).",
+  "status": "推测 (the choice of day 1)",
+  "source": "Day 1 = 12-09: timeline ev-1209-guanghua-battle (first clash at the gate at dawn, 核实) and ev-1209-leaflets (the surrender ultimatum is dropped, 核实). The word \"siege\" and the start day are this table's choice, not a source's."
+ },
+ "boats_rule": "Draw one boat icon at xiaguan-ferries.at (中山码头, x/z given): coloured while its state is present, grey while removed. xiaguan-small-craft (icon false) may be drawn as a smaller second icon at the Xiaguan piers; xiaguan-train-ferry is never drawn (gone since before the attack).",
+ "gates": [
+  {
+   "id": "g-zhonghua",
+   "wall_id": "zhonghua",
+   "places_id": "g-zhonghua",
+   "name_zh": "中华门",
+   "name_en": "Zhonghua Gate",
+   "hint_en": "South Gate",
+   "x": -319.3,
+   "z": 3995.7,
+   "kind": "castle",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-12T17:00:00+08:00",
+     "state": "sealed",
+     "status": "核实",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick); wall.json leaves a narrow gap in the sandbags (推测)"
+    },
+    {
+     "from": "1937-12-12T17:00:00+08:00",
+     "to": "1937-12-12T18:56:00+08:00",
+     "state": "breached",
+     "status": "核实",
+     "source": "英文维基 Battle of Nanking (about 17:00 a section of the wall collapses)"
+    },
+    {
+     "from": "1937-12-12T18:56:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (the gate is lost in the evening); audit/wave_f/research/OOB.md 3.1 (入夜中华门失守). No source prints the hour (英文维基: \"by nightfall\"); it is the bake bs-1212-zhonghua's: the Chinese gate-top garrison is gone by 18:24, the Japanese hold the gate top from 18:56 (fixer 11-20: was 20:00 and 核实; one gate state with the picture, R-037)"
+    }
+   ],
+   "note": "DISAGREEMENT: wall.json (what the scene draws) lifts the sandbag plug at 12-12 12:10, five hours before this table breaches the gate (17:00, en wiki). 12:10 is the printed hour of the Asahi photo of the demolition at the gate (OOB jp-059; the same photo is captioned 中山门 elsewhere; local time may be 11:10 if the printed hour is Tokyo time). The first Japanese on the wall (47th Regt, west of the gate) is printed 12:20 (OOB jp-019): on the wall, not through the gate. The table follows en wiki and timeline.json gates (R-037, one gate state). The Japanese clear the plug 12-13 06:00 (timeline, 推测); the state stays taken."
+  },
+  {
+   "id": "g-guanghua",
+   "wall_id": "guanghua",
+   "places_id": "g-guanghua",
+   "name_zh": "光华门",
+   "name_en": "Guanghua Gate",
+   "hint_en": "Southeast Gate",
+   "x": 2902,
+   "z": 2949,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-10T17:00:00+08:00",
+     "state": "sealed",
+     "status": "核实",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick)"
+    },
+    {
+     "from": "1937-12-10T17:00:00+08:00",
+     "to": "1937-12-13T03:00:00+08:00",
+     "state": "breached",
+     "status": "核实",
+     "source": "中文维基 光华门; 英文维基 Battle of Nanking (17:00 sappers blow the ruined wall at the south-east corner)"
+    },
+    {
+     "from": "1937-12-13T03:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "核实",
+     "source": "英文维基 Battle of Nanking (the Japanese climb the almost empty gate about 04:00 Japanese time, about 03:00 local)"
+    }
+   ],
+   "note": "\"breached\" means a gap in the wall beside the gate while the gate is still held. wall.json: the defenders plug the gap with sandbags 12-10 22:00 to 12-12 14:00 (推测) and it is broken again 12-12. OOB jp-025: \"more than ten\" Japanese held the gap until 13 Dec. The 87th Div leaves about 02:00 on 12-13 (en wiki). Two readings: ja wiki says the Japanese \"secured\" the gate at 17:30 on 12-10, en wiki that the fight goes on to 13 Dec; the timeline and this table follow en wiki."
+  },
+  {
+   "id": "g-zhongshan",
+   "wall_id": "zhongshan",
+   "places_id": "g-zhongshan",
+   "name_zh": "中山门",
+   "name_en": "Zhongshan Gate",
+   "hint_en": "East Gate",
+   "x": 3986.5,
+   "z": 985.5,
+   "kind": "arch3",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-12T15:00:00+08:00",
+     "state": "sealed",
+     "status": "核实",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick)"
+    },
+    {
+     "from": "1937-12-12T15:00:00+08:00",
+     "to": "1937-12-13T02:20:00+08:00",
+     "state": "breached",
+     "status": "核实",
+     "source": "英文维基 Battle of Nanking (a large section of wall gives way under the 16th Division guns on Purple Mountain); the hour 15:00 is wall.json 推测"
+    },
+    {
+     "from": "1937-12-13T02:20:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "核实",
+     "source": "日文维基 南京攻略戦 (33rd Regt takes the gate; printed 03:10 may be Tokyo time, about 02:10 local; timeline uses 02:20)"
+    }
+   ],
+   "note": "ja wiki also has Japanese tanks at the gate on 12-13 08:30 (printed). wall.json lifts the plug at 12-13 05:00; the state stays taken. The breach is 40 m wide at 230 m from the gate (wall.json breaches, size and place 推测)."
+  },
+  {
+   "id": "g-taiping",
+   "wall_id": "taiping",
+   "places_id": "g-taiping",
+   "name_zh": "太平门",
+   "name_en": "Taiping Gate",
+   "hint_en": "Northeast Gate (Taiping)",
+   "x": 2640.6,
+   "z": -1119.6,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-12T20:30:00+08:00",
+     "state": "sealed",
+     "status": "核实",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick)"
+    },
+    {
+     "from": "1937-12-12T20:30:00+08:00",
+     "to": "1937-12-13T08:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "中文维基 南京保卫战 (Cantonese troops, the 66th and 83rd Corps, clear the sandbags from about 20:00 and go out about 21:00); audit/wave_f/research/OOB.md 3.6 (F27: blocked by troops at dusk; open and empty about two hours after the last troops) (fixer 11-20: 推测, was 核实: zh wiki prints two hours that disagree, 20时许 and 九时许, and not when the sandbags were cleared; 20:30 is this table's reading of the two)"
+    },
+    {
+     "from": "1937-12-13T08:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "中文维基 南京保卫战 (part of the 16th Division enters by Taiping Gate); the hour 推测; OOB 3.6: a company commander processes about 1,300 men there on 13 Dec (diary, 未核实)"
+    }
+   ],
+   "note": "The only gate the defenders opened themselves. 12,500 started the break-out, 3,000 to 4,000 got out (en wiki, 核实; T'an 7,000 + 5,500). Timeline event ev-1212-taiping-breakout 20:00 to 00:10 leaves east, not north."
+  },
+  {
+   "id": "g-yijiang",
+   "wall_id": "yijiang",
+   "places_id": "g-yijiang",
+   "name_zh": "挹江门",
+   "name_en": "Yijiang Gate",
+   "hint_en": "North Gate (to the docks)",
+   "x": -3633.8,
+   "z": -4288.5,
+   "kind": "arch3",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows). Civilians leave through it for the ferries until 12-09 (ev-1201-leave-flow, 核实 as an event; route 推测)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-12T18:00:00+08:00",
+     "state": "narrow",
+     "status": "核实",
+     "source": "ja 挹江門事件 (as cited by timeline.json gates; not re-opened in G1) (important gates keep a narrow lane); 英文维基 Battle of Nanking"
+    },
+    {
+     "from": "1937-12-12T18:00:00+08:00",
+     "to": "1937-12-13T14:00:00+08:00",
+     "state": "half_open",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (only half of the gate is open on the night of 12 Dec); timeline.json gates (fixer 11-20: 推测, was 核实: the half-open gate is attested, the hour 18:00 is printed by no source cited)"
+    },
+    {
+     "from": "1937-12-13T14:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (the Japanese reach Xiaguan in the afternoon; hour 推测); audit/wave_f/research/OOB.md 3.7: Japanese at the gate on the night of 12 Dec is NOT attested"
+    }
+   ],
+   "note": "SOURCES DISAGREE on what the opening was: (1) en wiki: only half the gate open; (2) 石怀瑜 2003 memoir (未核实, as relayed in research/stories_1120/retreat_night.md B): the gate was \"blocked dead, no way out\", the 36th Division blocked it (the author does not believe that); (3) 阿垅 《南京》 (via wall.json): each arch half sandbagged. wall.json draws arches 0 and 2 plugged and the middle arch open until 12-14 12:00. The width of the opening, who held it (36th Div barrier troops, 未核实) and whether they fired (no original source found) are 未核实: this table says half-open and nothing more. Chinese commanders: Song orders his units out by 金川门 at 21:30 (OOB raw_fights_north_river#6/#7). The crowd crush and the one tank at about 21:00 (OOB T13, side not stated) belong to the events (ev-1212-yijiang-crush), not to this table."
+  },
+  {
+   "id": "g-jinchuan",
+   "wall_id": "jinchuan",
+   "places_id": "g-jinchuan",
+   "name_zh": "金川门",
+   "name_en": "Jinchuan Gate",
+   "hint_en": "Jinchuan Gate (north wall)",
+   "x": -2498.5,
+   "z": -4381.6,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-12T21:30:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-12T21:30:00+08:00",
+     "to": "1937-12-13T15:00:00+08:00",
+     "state": "narrow",
+     "status": "推测",
+     "source": "中文维基 南京保卫战 (the 36th Division is ordered out of the city through Jinchuan Gate on 12 Dec 21:30); audit/wave_f/research/OOB.md raw_fights_north_river#6, #7; wall.json opens it at 21:30 (fixer 11-20: 推测, was 核实: only the order is attested, no source says the gate was passable then)"
+    },
+    {
+     "from": "1937-12-13T15:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测)"
+    }
+   ],
+   "note": "timeline.json gates gives narrow from 22:00 (\"wall.json 22:00\"), but wall.json's seal window ends 21:30, the hour of the order. This table uses 21:30 (what the scene draws). An order is not proof the lane was clear at that minute (推测). A water gate stands beside it (wall.json water-14006)."
+  },
+  {
+   "id": "g-heping",
+   "wall_id": "heping",
+   "places_id": "g-heping",
+   "name_zh": "和平门（神策门）",
+   "name_en": "Heping Gate (Shence Gate)",
+   "hint_en": "Heping Gate (north wall)",
+   "x": 188.7,
+   "z": -4513.8,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T15:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-13T15:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测)"
+    }
+   ],
+   "note": "places.json: part of the 108th Brigade stood guard here on the night of 12 Dec (no source named there)."
+  },
+  {
+   "id": "g-xuanwu",
+   "wall_id": "xuanwu",
+   "places_id": "g-xuanwu",
+   "name_zh": "玄武门",
+   "name_en": "Xuanwu Gate",
+   "hint_en": "Xuanwu Gate (lake side)",
+   "x": 242.3,
+   "z": -2515.1,
+   "kind": "arch3",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T12:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-13T12:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测)"
+    }
+   ]
+  },
+  {
+   "id": "g-tongji",
+   "wall_id": "tongji",
+   "places_id": "g-tongji",
+   "name_zh": "通济门",
+   "name_en": "Tongji Gate",
+   "hint_en": "Tongji Gate (south-east)",
+   "x": 1579.3,
+   "z": 2679.8,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T08:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-13T08:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测)"
+    }
+   ],
+   "wicket": {
+    "width_m": 1.38,
+    "from": "1937-12-05T18:00:00+08:00",
+    "to": "1937-12-14T12:00:00+08:00",
+    "status": "推测",
+    "source": "city/public/nanjing/wall.json passages: \"a narrow way kept open through the sandbags (推测: villagers came in by it on Dec 7-9, timeline ev-1207-scorched-out)\""
+   },
+   "note": "DISAGREEMENT: wall.json draws a 1.38 m way through the sandbags (fill 0.75) and the people mod lets villagers through on 12-07 to 12-09; timeline.json gates says sealed (推测). This table says sealed with a wicket and does NOT count it as an exit. If the viewer sees people go in at a gate marked with a cross, this is why; the fix belongs in wall.json or the event, not here (R-037)."
+  },
+  {
+   "id": "g-wuding",
+   "wall_id": "wuding",
+   "places_id": "g-wuding",
+   "name_zh": "武定门",
+   "name_en": "Wuding Gate",
+   "hint_en": "Wuding Gate (south)",
+   "x": 1030.2,
+   "z": 3715.3,
+   "kind": "pailou",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T08:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-13T08:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测); OOB: 3rd Div 68th Regt at 武定门 / 通济门 is 未核实 (jp-009)"
+    }
+   ]
+  },
+  {
+   "id": "g-yuhua",
+   "wall_id": "yuhua",
+   "places_id": "g-yuhua",
+   "name_zh": "雨花门",
+   "name_en": "Yuhua Gate",
+   "hint_en": "Yuhua Gate (south)",
+   "x": 696.1,
+   "z": 4455.4,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T06:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-13T06:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测)"
+    }
+   ]
+  },
+  {
+   "id": "g-shuixi",
+   "wall_id": "shuixi",
+   "places_id": "g-shuixi",
+   "name_zh": "水西门",
+   "name_en": "Shuixi Gate",
+   "hint_en": "Shuixi Gate (west)",
+   "x": -1480.5,
+   "z": 2034.3,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T10:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-13T10:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测: the 6th Division sweeps the south-west of the city); OOB 3.5: the hour of the fall of 水西门 is not attested"
+    }
+   ],
+   "wicket": {
+    "width_m": 1.38,
+    "from": "1937-12-05T18:00:00+08:00",
+    "to": "1937-12-16T12:00:00+08:00",
+    "status": "推测",
+    "source": "city/public/nanjing/wall.json passages: \"a narrow way kept open through the sandbags (推测: the 58th Division came in by it on Dec 8, zh.wikipedia 南京保卫战)\""
+   },
+   "note": "DISAGREEMENT, same as Tongji Gate: wall.json draws a 1.38 m way, timeline.json gates says sealed. Tanks attack it on 12-12 (en wiki; OOB jp-023, number 未核实)."
+  },
+  {
+   "id": "g-shicheng",
+   "wall_id": "shicheng",
+   "places_id": "g-shicheng",
+   "name_zh": "石城门（汉西门）",
+   "name_en": "Shicheng Gate (Hanxi Gate)",
+   "hint_en": "Shicheng Gate (west)",
+   "x": -1780.6,
+   "z": 787.2,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T10:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-13T10:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测)"
+    }
+   ]
+  },
+  {
+   "id": "g-hanzhong",
+   "wall_id": "hanzhong",
+   "places_id": "g-hanzhong",
+   "name_zh": "汉中门",
+   "name_en": "Hanzhong Gate",
+   "hint_en": "Hanzhong Gate (west)",
+   "x": -1829,
+   "z": 621,
+   "kind": "arch3",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T10:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-13T10:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测); the killings on 12-14 and 12-15 are outside the gate (timeline note)"
+    }
+   ]
+  },
+  {
+   "id": "g-caochang",
+   "wall_id": "caochang",
+   "places_id": "g-caochang",
+   "name_zh": "草场门",
+   "name_en": "Caochang Gate",
+   "hint_en": "Caochang Gate (west wall)",
+   "x": -3100.1,
+   "z": -1116.1,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T12:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-13T12:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测)"
+    }
+   ]
+  },
+  {
+   "id": "g-xinmin",
+   "wall_id": "xinmin",
+   "places_id": "g-xinmin",
+   "name_zh": "新民门",
+   "name_en": "Xinmin Gate",
+   "hint_en": "Xinmin Gate (north wall)",
+   "x": -2951.6,
+   "z": -4663.3,
+   "kind": "pailou",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T15:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (verify: sealed or only a narrow lane, 推测 either way; the timeline takes sealed)"
+    },
+    {
+     "from": "1937-12-13T15:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测)"
+    }
+   ]
+  },
+  {
+   "id": "g-xingzhong",
+   "wall_id": "xingzhong",
+   "places_id": "g-xingzhong",
+   "name_zh": "兴中门（仪凤门）",
+   "name_en": "Xingzhong Gate (Yifeng Gate)",
+   "hint_en": "Xingzhong Gate (river corner)",
+   "x": -3559,
+   "z": -4844,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T15:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-13T15:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测)"
+    }
+   ],
+   "note": "timeline note: on the night of 12 Dec the Mayor Xiao Shanling fights pursuers outside this gate (推测; his place of death is 未核实 in research/stories_1120/retreat_night.md)."
+  },
+  {
+   "id": "g-xiaobei",
+   "wall_id": "xiaobei",
+   "places_id": "g-xiaobei",
+   "name_zh": "小北门",
+   "name_en": "Xiaobei Gate",
+   "hint_en": "Xiaobei Gate (north wall)",
+   "x": -1451.5,
+   "z": -4667.5,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "推测",
+     "source": "Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T15:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (by December 6 all gates blocked with sandbags and concrete, about 6 m thick) (this gate: 推测 in the timeline)"
+    },
+    {
+     "from": "1937-12-13T15:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测)"
+    }
+   ]
+  },
+  {
+   "id": "g-zhongyang",
+   "wall_id": "zhongyang",
+   "places_id": "g-zhongyang",
+   "name_zh": "中央门",
+   "name_en": "Zhongyang Gate",
+   "hint_en": "Zhongyang Gate (north wall)",
+   "x": -118.6,
+   "z": -4498.3,
+   "kind": "ming",
+   "counts_as_exit_gate": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-05T18:00:00+08:00",
+     "state": "open",
+     "status": "未核实",
+     "source": "timeline.py / places.json: that Zhongyang Gate was open in Dec 1937 is 未证实 (gates.json); the model treats it as one road opening in the wall. Inferred: the sealing is an event (timeline ev-1206-gates-sealed, 12-04 07:00 to 12-06 18:00, per-gate days 推测) and 英文维基 Battle of Nanking says all gates were blocked by 12-06, so before it they were in use. The model flips every gate at 12-05 18:00 (timeline.py SEAL0, wall.json seal windows)."
+    },
+    {
+     "from": "1937-12-05T18:00:00+08:00",
+     "to": "1937-12-13T15:00:00+08:00",
+     "state": "sealed",
+     "status": "推测",
+     "source": "英文维基 Battle of Nanking (treated as a road opening that is blocked; 推测)"
+    },
+    {
+     "from": "1937-12-13T15:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "taken",
+     "status": "推测",
+     "source": "timeline.json gates (推测)"
+    }
+   ],
+   "exists_status": "未核实"
+  },
+  {
+   "id": "g-qingliang",
+   "wall_id": "qingliang",
+   "places_id": "g-qingliang",
+   "name_zh": "清凉门",
+   "name_en": "Qingliang Gate",
+   "hint_en": "Qingliang Gate (closed for good)",
+   "x": -2624.3,
+   "z": 54.3,
+   "kind": "sealed",
+   "counts_as_exit_gate": false,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "closed_long",
+     "status": "推测",
+     "source": "中文维基 南京城墙 (blocked since early Qing); wall.json \"sealed\" type"
+    }
+   ]
+  },
+  {
+   "id": "g-dinghuai",
+   "wall_id": "dinghuai",
+   "places_id": "g-dinghuai",
+   "name_zh": "定淮门",
+   "name_en": "Dinghuai Gate",
+   "hint_en": "Dinghuai Gate (closed for good)",
+   "x": -3561.6,
+   "z": -2334.2,
+   "kind": "sealed",
+   "counts_as_exit_gate": false,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "closed_long",
+     "status": "推测",
+     "source": "gates.json (abandoned 1842/43 when its river silted up); wall.json \"sealed\" type"
+    }
+   ]
+  },
+  {
+   "id": "g-zhongfu",
+   "wall_id": "zhongfu",
+   "places_id": "g-zhongfu",
+   "name_zh": "钟阜门",
+   "name_en": "Zhongfu Gate",
+   "hint_en": "Zhongfu Gate (closed for good)",
+   "x": -3080.5,
+   "z": -4978.6,
+   "kind": "sealed",
+   "counts_as_exit_gate": false,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "closed_long",
+     "status": "推测",
+     "source": "gates.json (bricked up under 成化 1465-87 and never reopened); wall.json \"sealed\" type"
+    }
+   ]
+  }
+ ],
+ "water_gates": [
+  {
+   "id": "xishuiguan",
+   "name_zh": "西水关",
+   "name_en": "West water gate",
+   "x": -1503,
+   "z": 2106,
+   "counts_as_exit_gate": false,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "water_arch",
+     "status": "推测",
+     "source": "中文维基 南京城墙 (the water gate by 三山门 where the inner Qinhuai leaves the city); arches 推测"
+    }
+   ]
+  },
+  {
+   "id": "water-3842",
+   "name_zh": "水关",
+   "name_en": "Water gate (west wall, Xiaoqing river)",
+   "x": -1504.62,
+   "z": 1402.82,
+   "counts_as_exit_gate": false,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "water_arch",
+     "status": "推测",
+     "source": "wall.json: where the 1945 water passes the wall line; arches 推测"
+    }
+   ]
+  },
+  {
+   "id": "water-14006",
+   "name_zh": "水关（金川门旁）",
+   "name_en": "Water gate beside Jinchuan Gate",
+   "x": -2551.56,
+   "z": -4329.91,
+   "counts_as_exit_gate": false,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "water_arch",
+     "status": "推测",
+     "source": "wall.json: the 金川河 water gate beside 金川门 (zh wiki 南京城墙); arches 推测"
+    }
+   ]
+  },
+  {
+   "id": "dongshuiguan",
+   "name_zh": "东水关",
+   "name_en": "East water gate",
+   "x": 1316.28,
+   "z": 2781.05,
+   "counts_as_exit_gate": false,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "water_arch",
+     "status": "推测",
+     "source": "wall.json (OSM 东水关遗址; zh wiki 南京城墙): where the Qinhuai enters the walled city south of 通济门"
+    }
+   ]
+  }
+ ],
+ "boats": [
+  {
+   "id": "xiaguan-ferries",
+   "name_zh": "下关渡轮（过江客轮）",
+   "name_en": "Xiaguan ferries (the river steamers)",
+   "x": -5307.6,
+   "z": -4346.8,
+   "at": "lm-zhongshan-wharf (中山码头)",
+   "icon": true,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-09T18:00:00+08:00",
+     "state": "present",
+     "status": "推测",
+     "control": "free",
+     "source": "timeline ev-1201-leave-city (title: citizens leave by ferry from Xiaguan to Pukou; en wiki Population of Nanjing, Ma Chaojun letter of 11-23); the number and the boats are 推测. NOTE the scene never draws a ferry: its crossing is by sampans and junks (cast.json note, sim_history_before.md B4)."
+    },
+    {
+     "from": "1937-12-09T18:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "removed",
+     "status": "核实",
+     "control": "sent away",
+     "source": "英文维基 Battle of Nanking (about 12-10 Tang has the 36th Division hold the Xiaguan docks and moves the larger vessels to Hankou); 中文二手 搜狐《南京保卫战国军两大败笔》(withdraws all the ferries on the river, 36th Division keeps the docks; no source given); research/stories_1120/retreat_night.md A. The original order is NOT found. SHORTLIST.md and timeline notes: 12-09.",
+     "note": "DATE DISAGREES: 12-09 (Chinese sources: all vessels handed to the transport command, 宋希濂 commands the river gendarmes; 未核实) against about 12-10 (en wiki). The table takes 12-09 18:00, the end of ev-1201-leave-city. \"Burned\" (焚毁) is in one comment piece with no source: not used. Narration L36: \"Tang had sent the big ferries away and taken control of the rest\"."
+    }
+   ]
+  },
+  {
+   "id": "xiaguan-small-craft",
+   "name_zh": "下关小火轮与民船（木船、舢板、驳船）",
+   "name_en": "Xiaguan small steamers and native boats (junks, sampans, lighters)",
+   "x": -4948.8,
+   "z": -5100.8,
+   "at": "lm-xiaguan-wharves (下关码头群)",
+   "icon": false,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1937-12-09T18:00:00+08:00",
+     "state": "present",
+     "status": "推测",
+     "control": "free",
+     "source": "streets_build.py 4b (moored lighters, anchorage and sampans at the Xiaguan piers: 推测 throughout, no source gives a vessel of the waterfront before the fall); cast.json ev-1201-leave-city (men with luggage cross by sampans and junks)"
+    },
+    {
+     "from": "1937-12-09T18:00:00+08:00",
+     "to": "1937-12-12T20:00:00+08:00",
+     "state": "present",
+     "status": "核实",
+     "control": "guarded",
+     "source": "英文维基 Battle of Nanking and 搜狐 (the vessels are gathered and the 36th Division guards the docks; no private crossing); research/stories_1120/retreat_night.md A (未核实: 12-12 evening only a few small steamers and 200 to 300 native boats are left at the Xiaguan bank, and units fight for them; Tang keeps one small steamer for himself)",
+     "note": "That boats were gathered and guarded is 核实 (two sources, order not found); how many were left is 未核实 and there is no reliable number. Shown as present but not free."
+    },
+    {
+     "from": "1937-12-12T20:00:00+08:00",
+     "to": "1937-12-13T14:00:00+08:00",
+     "state": "present",
+     "status": "核实",
+     "control": "seized by the crowd",
+     "source": "timeline ev-1212-crossing, ev-1212-tang-crosses, ev-1212-36div-heji, ev-1212-88div-156div-own-boats; audit/wave_f/research/OOB.md 2f (74th Corps own small steamer about 5,000 crossed; 36th Div HQ two launches and 15 civilian boats at Heji; Tang's small steamer from Meitan about 20:30; 2nd Army about 20 hired vessels, place not stated; \"almost no boats at Xiaguan\")",
+     "note": "Boats exist but are far too few; overloaded boats sink midway (en wiki, 核实). Counts in the scene (12 + 8 + 6 + 2) are display numbers (推测)."
+    },
+    {
+     "from": "1937-12-13T14:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "gone",
+     "status": "推测",
+     "control": "Japanese navy",
+     "source": "timeline ev-1213-navy (12:00 to 17:00), ev-1213-navy-patrol (17:00 on: ships fire on crossers); audit/wave_f/research/OOB.md 3.7 (fleet at Xiaguan about 14:00, jp-082); en wiki Japanese gunboat Hozu (attacks Chinese boats and rafts on 12-13; single source)",
+     "note": "CONFLICT WITH THE SCENE: streets.json draws 82 moored lighters, sampans and covered boats in the Xiaguan waterfront box (x -6200..-3800, z -6300..-3900): 50 of them vanish between 12-12 16:06 and 12-13 02:24, the other 32 stay for ever (t1 = never). This table says gone from 12-13 14:00. Not changed here (not a G1 DATA file); see G1_DATA_DONE.md."
+    }
+   ]
+  },
+  {
+   "id": "xiaguan-train-ferry",
+   "name_zh": "长江号铁路轮渡",
+   "name_en": "Yangtze train ferry (Changjiang)",
+   "x": -4079.9,
+   "z": -5954.7,
+   "at": "lm-ferry-pier-s (铁路轮渡南岸栈桥, Meitan)",
+   "icon": false,
+   "intervals": [
+    {
+     "from": "1937-12-01T00:00:00+08:00",
+     "to": "1938-01-31T23:59:00+08:00",
+     "state": "gone",
+     "status": "核实",
+     "source": "research/NANJING1937_SPEC.md line 1103: the ferry 长江号 left before the Japanese attack on Nanjing (later scuttled near Shipai, Yichang); in December 1937 only the pier is there. research/build_reports/sim_history_before.md B4.",
+     "note": "places.json lm-ferry-pier-s says \"sunk before the war\"; the spec says \"left before the attack, scuttled later at Shipai\". They differ on when it sank; both agree it is not at Xiaguan in December 1937. Never draw it."
+    }
+   ]
+  }
+ ],
+ "conflicts": [
+  {
+   "id": "C1",
+   "what": "Zhonghua Gate: wall.json lifts the plug at 12-12 12:10; the table and timeline breach it at 17:00.",
+   "chosen": "17:00 (en wiki)",
+   "where_to_fix": "wall.json seal window and passages.shut for zhonghua (not G1 DATA files)"
+  },
+  {
+   "id": "C2",
+   "what": "Tongji and Shuixi: wall.json draws a 1.38 m way through the plug (推测); timeline.json gates says sealed (推测).",
+   "chosen": "sealed + wicket, not an exit",
+   "where_to_fix": "wall.json passages (narrow) or the timeline gates rows"
+  },
+  {
+   "id": "C3",
+   "what": "Jinchuan Gate: timeline.json gates narrow from 22:00; wall.json seal ends 21:30 (the order's hour).",
+   "chosen": "21:30 (what the scene draws)",
+   "where_to_fix": "timeline.py G rows (22:00) if 22:00 is wanted"
+  },
+  {
+   "id": "C4",
+   "what": "Yijiang Gate: en wiki \"half open\"; 石怀瑜 memoir \"blocked dead\" (未核实); 阿垅 \"each arch half sandbagged\" (via wall.json); wall.json plugs arches 0 and 2.",
+   "chosen": "half_open from 12-12 18:00, narrow before",
+   "where_to_fix": "none: the sources disagree; width unknown"
+  },
+  {
+   "id": "C5",
+   "what": "Ferries: sent away 12-09 (Chinese sources) or about 12-10 (en wiki).",
+   "chosen": "12-09 18:00",
+   "where_to_fix": "none: original order not found"
+  },
+  {
+   "id": "C6",
+   "what": "Small boats at the Xiaguan piers: streets.json has 82 of them in the Xiaguan waterfront box (x -6200..-3800, z -6300..-3900): 32 stay for ever, 50 go between 12-12 16:06 and 12-13 02:24 (all moored since 12-01, t0 never); this table says gone from 12-13 14:00; and one 未核实 source says 200 to 300 native boats were there on 12-12 evening.",
+   "chosen": "present to 12-13 14:00, then gone",
+   "where_to_fix": "city/tools/nanjing/streets_build.py section 4b (vanish())"
+  },
+  {
+   "id": "C7",
+   "what": "Guanghua Gate: ja wiki says secured by the Japanese 12-10 17:30; en wiki says the fight lasts to 13 Dec.",
+   "chosen": "breached 12-10 17:00, taken 12-13 03:00 (en wiki)",
+   "where_to_fix": "none"
+  }
+ ]
+}

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>南京 1937</title>
+    <style>html,body{background:#0c1220;height:100%;margin:0;overflow:hidden}canvas{display:block}#hud{color:#e8ecf2;pointer-events:none;white-space:pre;background:#0a0e16a8;border-radius:6px;max-width:340px;padding:10px 12px;font:12px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;position:fixed;top:12px;left:12px}#credits{color:#ffffffbf;text-shadow:0 1px 2px #000;font:11px system-ui,sans-serif;position:fixed;bottom:6px;right:8px}#mode{cursor:pointer;background:#cfd6dc 50%/cover no-repeat;border:2px solid #fff;border-radius:12px;width:68px;height:68px;padding:0;transition:box-shadow .12s;position:fixed;bottom:12px;left:12px;box-shadow:0 2px 8px #00000073}#mode.live{background:0 0!important}#mode:hover{box-shadow:0 0 0 2px #ffffff8c,0 3px 12px #0009}#mode:active{border-color:#d6e4ff}#loader{z-index:100000;color:#f4f8ff;background:radial-gradient(at 50% 60%,#1a1140 0%,#0a0d1c 55%,#05060c 100%);flex-direction:column;justify-content:center;align-items:center;gap:18px;font-family:Yu Gothic,Meiryo,Hiragino Kaku Gothic ProN,system-ui,sans-serif;transition:opacity .7s;display:flex;position:fixed;inset:0}#loader.done{opacity:0;pointer-events:none}#loader .jp{letter-spacing:.6em;color:#22e6ff;text-shadow:0 0 12px #22e6ff;font-size:15px}#loader .city{letter-spacing:.04em;text-shadow:0 0 18px #ff3d9a,0 0 46px #ff3d9a;font-size:clamp(34px,6vw,68px);font-weight:800}#loader .bar{background:#ffffff1f;border-radius:2px;width:min(420px,60vw);height:4px;overflow:hidden}#loader .fill{background:linear-gradient(90deg,#22e6ff,#ff3d9a);width:0%;height:100%;transition:width .25s;box-shadow:0 0 12px #ff3d9a}#loader .step{color:#f4f8ff99;min-height:1.4em;font:12px ui-monospace,SFMono-Regular,Consolas,monospace}#loader.nj{color:#e9e9e6;background:#000;gap:22px;font-family:Songti SC,SimSun,Noto Serif CJK SC,Source Han Serif SC,serif}#loader.nj .jp{letter-spacing:.5em;color:#f2f2ef;text-shadow:none;margin-right:-.5em;font-size:clamp(44px,9vw,112px);font-weight:700}#loader.nj .city{letter-spacing:.7em;color:#9a9a96;text-shadow:none;margin-right:-.7em;font-family:Georgia,Times New Roman,serif;font-size:clamp(13px,1.6vw,20px);font-weight:400}#loader.nj .bar{background:#2c2c2c;border-radius:0;width:min(300px,46vw);height:1px}#loader.nj .fill{box-shadow:none;background:#e9e9e6}#loader.nj .step{color:#5f5f5c;letter-spacing:.2em}#loader .bar{position:relative}#loader .bar:after{content:"";background:linear-gradient(90deg,#0000,#ffffff59,#0000);width:30%;animation:1.6s linear infinite njsheen;position:absolute;top:0;bottom:0;left:0}@keyframes njsheen{0%{transform:translate(-100%)}to{transform:translate(340%)}}#loader.done .bar:after{animation:none}#njmenu{z-index:9000;box-sizing:border-box;background:#000000b8;border:1px solid #3a3a3a;flex-direction:column;gap:2px;max-height:calc(100vh - 28px);padding:10px 10px 8px;font-family:Microsoft YaHei,PingFang SC,system-ui,sans-serif;display:none;position:fixed;top:14px;left:14px;overflow-y:auto}#njmenu b{letter-spacing:.35em;color:#e9e9e6;border-bottom:1px solid #3a3a3a;margin-bottom:4px;padding:0 4px 6px;font:700 13px Songti SC,SimSun,serif}#njmenu button{all:unset;cursor:pointer;color:#cfcfcb;white-space:nowrap;padding:5px 8px;font-size:13px}#njmenu button:hover,#njmenu button.on{color:#000;background:#e9e9e6}#njmenu small{color:#77777a;padding:6px 8px 0;font-size:11px}</style>
+    <script type="module" crossorigin src="./_virtual/_vite/modulepreload-polyfill.js"></script>
+    <script type="module" crossorigin src="./_virtual/_vite/preload-helper.js"></script>
+    <script type="module" crossorigin src="./boot.js"></script>
+  </head>
+  <body>
+    <div id="loader">
+      <div class="jp">南京</div>
+      <div class="city"></div>
+      <div class="bar"><div class="fill"></div></div>
+      <div class="step">正在启动…</div>
+    </div>
+    <script>
+      // The city's name goes on the loading screen before anything else runs, so it never changes under the eye.
+      // The Nanjing parts ask for their data as /nanjing/x.json: on a host that serves the site under a path (GitHub
+      // Pages) that is read from the page's own folder instead.
+      // (wave B) &njdata=<set> shows a trial data set (city/data/sets/<set>/, audit/wave_b/CONTRACT.md) instead of the live data: the
+      // run-time jsons (nanjing/), the tiles (tiles/nanjing1937/, tiles/areas.json), the ortho maps (ortho/nanjing1937/) and the fire's
+      // houses.bin. window.__njMap(url) is the one mapping: fetch goes through it here, three.js loaders through
+      // DefaultLoadingManager.setURLModifier (main.js), the tile worker through the streamer's base (main.js). No njdata: as before.
+      (function () {
+        var S = new URLSearchParams(location.search).get('njdata');
+        if (S && !/^[A-Za-z0-9_]+$/.test(S)) S = null;
+        var dir = location.pathname.replace(/[^/]*$/, '');
+        function map(u) {
+          var s = typeof u === 'string' ? u : u instanceof URL ? u.href : null;
+          if (s === null) return u;
+          if (!S) return typeof u === 'string' && s.indexOf('/nanjing/') === 0 ? s.slice(1) : u;
+          if (s.indexOf('/nanjing/') === 0) s = s.slice(1);
+          var a; try { a = new URL(s, location.href); } catch (e) { return s; }
+          if (a.origin !== location.origin || a.pathname.indexOf(dir) !== 0) return s;
+          var r = a.pathname.slice(dir.length), m = null;
+          if (/^(nanjing\/|tiles\/nanjing1937\/|ortho\/nanjing1937\/)/.test(r) || r === 'tiles/areas.json') m = r;
+          else if (/(^|\/)world\/nanjing\/fire\/houses\.bin$/.test(r)) m = 'fire/houses.bin';
+          return m ? dir + 'data/sets/' + S + '/' + m + a.search : s;
+        }
+        window.__njData = S;
+        window.__njMap = map;
+        var f = window.fetch;
+        // (load 11-17) While the page loads (until __app.complete; main.js then sets keep = false), every data file of this
+        // site (.json .bin .png .jpg, not the city tiles) is downloaded ONCE: the parts that ask for the same file (the
+        // timeline: 7 times, the wall: 4, terrain.bin, houses.bin, ...) share it, each getting its own Response. The bytes
+        // are counted as they arrive, for the loading screen (window.__njLoad.files: { key, done, total, end }). total:
+        // Content-Length, or for a gzipped answer the file's own size from the server's nginx ETag ("mtime-size", as
+        // GitHub Pages sends it), else unknown (null).
+        var LOAD = window.__njLoad = { keep: true, cache: new Map(), files: [] };
+        function totalOf(r) {
+          var enc = r.headers.get('content-encoding'), len = Number(r.headers.get('content-length'));
+          if (!enc || enc === 'identity') return len > 0 ? len : null;
+          var m = /-([0-9a-f]+)"$/.exec(r.headers.get('etag') || '');
+          return m ? parseInt(m[1], 16) : null;
+        }
+        function read(key, r) {
+          var head = { status: r.status, statusText: r.statusText, headers: r.headers };
+          if (!r.ok || !r.body) return r.arrayBuffer().then(function (b) { head.body = b; return head; });
+          var file = { key: key, done: 0, total: totalOf(r), t0: performance.now(), end: null }, parts = [];
+          LOAD.files.push(file);
+          var rd = r.body.getReader();
+          function pump() {
+            return rd.read().then(function (x) {
+              if (x.done) {
+                var all = new Uint8Array(file.done), o = 0;
+                for (var i = 0; i < parts.length; i++) { all.set(parts[i], o); o += parts[i].length; }
+                file.end = performance.now(); head.body = all; return head;
+              }
+              parts.push(x.value); file.done += x.value.length; return pump();
+            });
+          }
+          return pump().catch(function (e) { file.end = performance.now(); throw e; });
+        }
+        window.fetch = function (u, o) {
+          var m = typeof u === 'string' || u instanceof URL ? map(u) : u;
+          if (LOAD.keep && (typeof m === 'string' || m instanceof URL) && (!o || !o.method || o.method === 'GET')) {
+            var a = null; try { a = new URL(m, location.href); } catch (e) { a = null; }
+            if (a && a.origin === location.origin && /\.(json|bin|png|jpg)$/.test(a.pathname) && !/\/t_-?\d+_-?\d+(_s)?\.(bin|jpg)$/.test(a.pathname) && !/\/terrain\.bin$/.test(a.pathname)) { // (pass 2: terrain.bin has one reader and comes after the first picture: not copied into the cache)
+              var key = a.pathname, hit = LOAD.cache.get(key);
+              if (!hit) {
+                hit = f.call(window, m).then(function (r) { return read(key, r); });
+                LOAD.cache.set(key, hit);
+                hit.catch(function () { LOAD.cache.delete(key); });
+              }
+              var p = hit.then(function (c) { return new Response(c.body, { status: c.status, statusText: c.statusText, headers: c.headers }); });
+              var sig = o && o.signal;
+              if (!sig) return p;
+              return new Promise(function (ok, no) {
+                var abort = function () { no(new DOMException('The operation was aborted.', 'AbortError')); };
+                if (sig.aborted) return abort();
+                sig.addEventListener('abort', abort, { once: true });
+                p.then(ok, no);
+              });
+            }
+          }
+          return f.call(this, m, o);
+        };
+      })();
+      (function () {
+        // (Nanjing 1937 is the only city compiled here: the bare address opens it)
+        if (!new URLSearchParams(location.search).get('area')) { location.replace(location.pathname + '?area=nanjing1937'); return; }
+        var id = new URLSearchParams(location.search).get('area') || 'nanjing1937', name = null;
+        try { name = localStorage.getItem('nanjing-1937:name:' + id); } catch (e) {}
+        document.querySelector('#loader .city').textContent = name || id.charAt(0).toUpperCase() + id.slice(1);
+        if (id.indexOf('nanjing') === 0) {
+          document.getElementById('loader').className = 'nj';
+          document.title = '南京 1937';
+          document.querySelector('#loader .jp').textContent = '南京';
+          document.querySelector('#loader .city').textContent = 'DECEMBER 1937';
+        }
+      })();
+    </script>
+    <style>body.film #njmenu{display:none!important}</style>
+    <div id="njmenu"></div>
+    <script>
+      // Nanjing 1937: one page, a menu of places (camera x, z, distance, azimuth, elevation; day; hour; night exposure)
+      (function () {
+        if ((new URLSearchParams(location.search).get('area') || '').indexOf('nanjing') !== 0) return;
+        // (wave G1: the last two are the film's home cameras, numbers as city/public/nanjing/cams.json; they stand LAST because tools/fps/*.js click
+        // the places by index (data-i). The 6th field is the tile radius the page loads round the target while it stands there: smaller than the
+        // film's 9500 so a click does not load the whole city)
+        var P = [
+          ['全城 · 12月9日 正午', [300, -500, 3000, 200, 32], '1937-12-09', 12, 1],
+          ['中华门 · 12月12日 中午', [-339, 4212, 300, 0, 20], '1937-12-12', 12.4, 1],
+          ['中华门 · 12月12日 12:25 沿护城河', [-430, 3995, 260, 250, 25], '1937-12-12', 12.416667, 1],
+          ['中华门 · 12月12日 12:25 远景', [-319, 4100, 1500, 0, 25], '1937-12-12', 12.416667, 1],
+          ['中华门 · 12月12日 09:30 郊区', [-345, 4230, 220, 0, 14], '1937-12-12', 9.5, 1],
+          ['中华门 · 12月12日 16:55 缺口', [-451, 3990, 200, 12, 13], '1937-12-12', 16.916667, 2],
+          ['挹江门 · 12月12日 夜', [-3633, -4288, 200, 72, 18], '1937-12-12', 21, 3],
+          ['下关江岸 · 12月12日 夜', [-5277, -4396, 170, 62, 10], '1937-12-12', 22.5, 3],
+          ['幕府山 · 12月14日', [-1470, -7720, 300, 12, 30], '1937-12-14', 12, 1],
+          ['入城式 · 12月17日', [2235, 877, 105, 90, 8], '1937-12-17', 14.5, 1],
+          ['高空全景 · 12月9日（横屏 home）', [200, 2300, 9500, 0, 50], '1937-12-09', 12, 1, 6500],
+          ['高空全景 · 12月9日（竖屏 home_v）', [700, 2500, 20500, 0, 50], '1937-12-09', 12, 1, 6500]
+        ];
+        var m = document.getElementById('njmenu'), h = '<b>南京 1937</b>';
+        for (var i = 0; i < P.length; i++) h += '<button data-i="' + i + '">' + P[i][0] + '</button>';
+        h += '<div style="display:flex;gap:2px;border-top:1px solid #3a3a3a;margin-top:4px;padding-top:4px"><button data-s="0">暂停</button><button data-s="0.0167" class="on">实时</button><button data-s="1">快</button><button data-s="10">更快</button></div>';
+        h += '<button data-d="1" title="移动时降低清晰度，停下 0.25 秒后恢复">流畅模式：关</button>';
+        function speed(s) { var a = window.__app; if (!a) return; a.clockTime.live = false; a.clockTime.play = s > 0; if (s > 0) a.clockTime.speed = s; var q = m.querySelectorAll('button[data-s]'); for (var k = 0; k < q.length; k++) q[k].className = +q[k].getAttribute('data-s') === s ? 'on' : ''; }
+        m.addEventListener('click', function (e) { var s = e.target.getAttribute && e.target.getAttribute('data-s'); if (s != null) speed(+s); });
+        m.addEventListener('click', function (e) { var a = window.__app; if (!a || !a.dynRes || !e.target.getAttribute || e.target.getAttribute('data-d') == null) return; a.dynRes.on = !a.dynRes.on; e.target.textContent = '流畅模式：' + (a.dynRes.on ? '开' : '关'); e.target.className = a.dynRes.on ? 'on' : ''; });
+        m.innerHTML = h + '<small>左键拖动 · 右键转向 · 滚轮缩放 · WASD 移动 · H 隐藏</small>';
+        m.addEventListener('click', function (e) {
+          var i = e.target.getAttribute && e.target.getAttribute('data-i'), a = window.__app;
+          if (i == null || !a) return;
+          var p = P[+i];
+          a.setDay(p[2]); a.clockTime.live = false; a.clockTime.hour = p[3]; a.env.nightBrightness = p[4];
+          // (wave G1) a high preset: the hand controls stop at 3500 m and the tiles are those within 900 m, so both are raised while it stands, and put back at the next preset
+          var c = a.controls, st = a.streamer;
+          if (p[5]) { if (a.__njHome == null) a.__njHome = { max: c.maxDistance, radius: st.radius }; c.maxDistance = Math.max(c.maxDistance, p[1][2] * 1.15); st.radius = p[5]; }
+          else if (a.__njHome != null) { c.maxDistance = a.__njHome.max; st.radius = a.__njHome.radius; a.__njHome = null; }
+          a.setCam.apply(null, p[1]); speed(0.0167);
+          var b = m.querySelectorAll('button[data-i]'); for (var k = 0; k < b.length; k++) b[k].className = k === +i ? 'on' : '';
+        });
+        addEventListener('keydown', function (e) { if (e.code === 'KeyH' && !(document.activeElement && document.activeElement.tagName === 'INPUT')) m.style.display = m.style.display === 'none' ? 'flex' : 'none'; });
+        var t = setInterval(function () { if (window.__app && window.__app.setCam) { clearInterval(t); m.style.display = 'flex'; speed(0.0167); } }, 500);
+      })();
+    </script>
+    <!-- the info panel: hidden until asked for (control panel: info panel) -->
+    <div id="hud" style="display: none">loading…</div>
+    <button id="mode" type="button" aria-label="Switch between the photorealistic city and the abstract model"></button>
+    <div id="credits"></div>
+    <script>
+      // The atmosphere works out its tables (the sky's colours, the light on the clouds) in the browser's idle
+      // time, of which a busy page — the whole city loaded, clouds on — has none: the sky would stay dull and the
+      // clouds dark for as long as it is busy. Idle work is given a deadline, so that it is done all the same.
+      // (Here, before the modules: the library takes hold of the function when it is loaded.)
+      if (window.requestIdleCallback) {
+        const idle = window.requestIdleCallback.bind(window);
+        window.requestIdleCallback = (callback, options) => idle(callback, { timeout: 30, ...options });
+      }
+    </script>
+  </body>
+</html>

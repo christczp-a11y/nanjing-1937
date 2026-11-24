@@ -1,0 +1,877 @@
+{
+ "version": 1,
+ "about": "English functional place labels for the top-down view (wave G1, item 2.5; written by CAM, drawn by OV in mods/battles_overlay.js). Plain words for viewers who have never heard of Nanjing; the Chinese name goes small under the English in --lang en (zh_hant = Traditional, as all Chinese on screen: tools/nanjing/film/trad.js). Positions are the gazetteer places.json's (same ref), so status/src are the gazetteer's: 核实 = position checked in the source, 推测 = inferred. The English names are our own functional names, not historical ones. Gate names: the film texts (BS_EN) call 水西门 the West Gate and 挹江门 the river gate; the plan's North Gate to the river is 挹江门 (it stands at the north-west corner of the wall, not in the north: the gates in the north wall are labelled in pinyin, mid view only).",
+ "frame": "scene metres; x east, z south (as places.json); the label is drawn at the ground point (x, z)",
+ "views": {
+  "home": "camera distance >= 7000 m (cams.json home / home_v)",
+  "mid": "1500 m <= camera distance < 7000 m",
+  "close": "camera distance < 1500 m (the 300 m and 1,500 m South Gate stills)"
+ },
+ "fields": {
+  "id": "stable key",
+  "ref": "places.json id of the point",
+  "zh": "name as in places.json (Simplified)",
+  "zh_hant": "the same in Traditional",
+  "en": "the functional English name",
+  "kind": "places.json kind",
+  "size": "L (regions: river, mountain, heights) / M (gates and districts) / S (small): font size step",
+  "prio": "1 = always drawn when the camera distance is in dist_m (drop marks before these); 2 = drop when it would overlap a prio-1 label or a mark; 3 = drop first",
+  "views": "names of the views that show it (home, mid, close; see views above)",
+  "dist_m": "[min, max) camera distance in metres at which it is drawn (the numeric form of views)",
+  "side": "preferred side of the label from its point: above | below | left | right (a hint: the layer may flip it to avoid a mark)",
+  "x": "scene x (m)",
+  "z": "scene z (m)",
+  "status": "核实 / 推测 of the position",
+  "src": "where the position comes from",
+  "note": "what it is"
+ },
+ "labels": [
+  {
+   "id": "river",
+   "ref": "w-yangtze",
+   "zh": "长江",
+   "zh_hant": "長江",
+   "en": "Yangtze River",
+   "kind": "river",
+   "size": "L",
+   "prio": 1,
+   "views": [
+    "home",
+    "mid"
+   ],
+   "dist_m": [
+    1500,
+    100000
+   ],
+   "side": "left",
+   "x": -5666.5,
+   "z": -5100.8,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)",
+   "note": "the river behind the city"
+  },
+  {
+   "id": "docks",
+   "ref": "lm-zhongshan-wharf",
+   "zh": "中山码头",
+   "zh_hant": "中山碼頭",
+   "en": "Xiaguan Docks",
+   "kind": "wharf",
+   "size": "M",
+   "prio": 1,
+   "views": [
+    "home",
+    "mid"
+   ],
+   "dist_m": [
+    1500,
+    100000
+   ],
+   "side": "left",
+   "x": -5307.6,
+   "z": -4346.8,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置); 中文维基《中山码头》",
+   "note": "the ferries and the crossing; Zhongshan Wharf, the main landing"
+  },
+  {
+   "id": "purple-mountain",
+   "ref": "h-zijinshan",
+   "zh": "紫金山",
+   "zh_hant": "紫金山",
+   "en": "Purple Mountain",
+   "kind": "hill",
+   "size": "L",
+   "prio": 1,
+   "views": [
+    "home",
+    "mid"
+   ],
+   "dist_m": [
+    1500,
+    100000
+   ],
+   "side": "above",
+   "x": 6327.6,
+   "z": -2217.8,
+   "status": "核实",
+   "src": "chinese_army verify",
+   "note": "high ground east of the city"
+  },
+  {
+   "id": "southern-heights",
+   "ref": "h-yuhuatai",
+   "zh": "雨花台",
+   "zh_hant": "雨花臺",
+   "en": "Southern Heights",
+   "kind": "hill",
+   "size": "L",
+   "prio": 1,
+   "views": [
+    "home",
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    100000
+   ],
+   "side": "below",
+   "x": -434.4,
+   "z": 5655.3,
+   "status": "核实",
+   "src": "terrain_water verify",
+   "note": "Yuhuatai, the ridge south of the South Gate"
+  },
+  {
+   "id": "south-gate",
+   "ref": "g-zhonghua",
+   "zh": "中华门",
+   "zh_hant": "中華門",
+   "en": "South Gate",
+   "kind": "gate",
+   "size": "M",
+   "prio": 1,
+   "views": [
+    "home",
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    100000
+   ],
+   "side": "below",
+   "x": -319.3,
+   "z": 3995.7,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置); 中文维基《中华门》",
+   "note": "Zhonghua Gate"
+  },
+  {
+   "id": "southeast-gate",
+   "ref": "g-guanghua",
+   "zh": "光华门",
+   "zh_hant": "光華門",
+   "en": "Southeast Gate",
+   "kind": "gate",
+   "size": "M",
+   "prio": 1,
+   "views": [
+    "home",
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    100000
+   ],
+   "side": "right",
+   "x": 2902,
+   "z": 2949,
+   "status": "推测",
+   "src": "gap_gate_status verify（御道街南端）",
+   "note": "Guanghua Gate"
+  },
+  {
+   "id": "east-gate",
+   "ref": "g-zhongshan",
+   "zh": "中山门",
+   "zh_hant": "中山門",
+   "en": "East Gate",
+   "kind": "gate",
+   "size": "M",
+   "prio": 1,
+   "views": [
+    "home",
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    100000
+   ],
+   "side": "right",
+   "x": 3986.5,
+   "z": 985.5,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)",
+   "note": "Zhongshan Gate (the gate under Purple Mountain)"
+  },
+  {
+   "id": "north-gate",
+   "ref": "g-yijiang",
+   "zh": "挹江门",
+   "zh_hant": "挹江門",
+   "en": "North Gate",
+   "kind": "gate",
+   "size": "M",
+   "prio": 1,
+   "views": [
+    "home",
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    100000
+   ],
+   "side": "left",
+   "x": -3633.8,
+   "z": -4288.5,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)",
+   "note": "Yijiang Gate, the gate to the docks (the plan calls it the North Gate to the river; it stands at the north-west corner of the wall)"
+  },
+  {
+   "id": "west-gate",
+   "ref": "g-shuixi",
+   "zh": "水西门",
+   "zh_hant": "水西門",
+   "en": "West Gate",
+   "kind": "gate",
+   "size": "M",
+   "prio": 2,
+   "views": [
+    "home",
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    100000
+   ],
+   "side": "left",
+   "x": -1480.5,
+   "z": 2034.3,
+   "status": "推测",
+   "src": "verify 稿（水西门一带）+ 墙区量的现存城墙（OSM 437649421，z=2000 处 x≈-1580）",
+   "note": "Shuixi Gate (the film texts call it the West Gate)"
+  },
+  {
+   "id": "taiping-gate",
+   "ref": "g-taiping",
+   "zh": "太平门",
+   "zh_hant": "太平門",
+   "en": "Taiping Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 2,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "right",
+   "x": 2640.6,
+   "z": -1119.6,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)（今门为 2014 年重建）",
+   "note": "north-east; the breakout of 12 Dec went out here"
+  },
+  {
+   "id": "tongji-gate",
+   "ref": "g-tongji",
+   "zh": "通济门",
+   "zh_hant": "通濟門",
+   "en": "Tongji Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "right",
+   "x": 1579.3,
+   "z": 2679.8,
+   "status": "推测",
+   "src": "verify 稿（通济门站一带）",
+   "note": "south-east"
+  },
+  {
+   "id": "wuding-gate",
+   "ref": "g-wuding",
+   "zh": "武定门",
+   "zh_hant": "武定門",
+   "en": "Wuding Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "below",
+   "x": 1030.2,
+   "z": 3715.3,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)",
+   "note": "south"
+  },
+  {
+   "id": "yuhua-gate",
+   "ref": "g-yuhua",
+   "zh": "雨花门",
+   "zh_hant": "雨花門",
+   "en": "Yuhua Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "below",
+   "x": 696.1,
+   "z": 4455.4,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置); 中文维基《南京城墙》",
+   "note": "south; opened 1936 for the railway"
+  },
+  {
+   "id": "hanzhong-gate",
+   "ref": "g-hanzhong",
+   "zh": "汉中门",
+   "zh_hant": "漢中門",
+   "en": "Hanzhong Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "left",
+   "x": -1829,
+   "z": 621,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)（汉中门站）",
+   "note": "west"
+  },
+  {
+   "id": "qingliang-gate",
+   "ref": "g-qingliang",
+   "zh": "清凉门",
+   "zh_hant": "清涼門",
+   "en": "Qingliang Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "left",
+   "x": -2624.3,
+   "z": 54.3,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)",
+   "note": "west"
+  },
+  {
+   "id": "caochang-gate",
+   "ref": "g-caochang",
+   "zh": "草场门",
+   "zh_hant": "草場門",
+   "en": "Caochang Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "left",
+   "x": -3100.1,
+   "z": -1116.1,
+   "status": "推测",
+   "src": "verify 稿（草场门大桥东头）",
+   "note": "west"
+  },
+  {
+   "id": "dinghuai-gate",
+   "ref": "g-dinghuai",
+   "zh": "定淮门",
+   "zh_hant": "定淮門",
+   "en": "Dinghuai Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "left",
+   "x": -3561.6,
+   "z": -2334.2,
+   "status": "推测",
+   "src": "gates.json（研究汇总）",
+   "note": "north-west, on the river side"
+  },
+  {
+   "id": "xingzhong-gate",
+   "ref": "g-xingzhong",
+   "zh": "兴中门",
+   "zh_hant": "興中門",
+   "en": "Xingzhong Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "left",
+   "x": -3559,
+   "z": -4844,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)（2006 年复建位置）",
+   "note": "north-west, next to the North Gate (Yifeng Gate before 1927)"
+  },
+  {
+   "id": "zhongyang-gate",
+   "ref": "g-zhongyang",
+   "zh": "中央门",
+   "zh_hant": "中央門",
+   "en": "Zhongyang Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "above",
+   "x": -118.6,
+   "z": -4498.3,
+   "status": "推测",
+   "src": "gates.json（研究汇总）",
+   "note": "north"
+  },
+  {
+   "id": "heping-gate",
+   "ref": "g-heping",
+   "zh": "和平门",
+   "zh_hant": "和平門",
+   "en": "Heping Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "above",
+   "x": 188.7,
+   "z": -4513.8,
+   "status": "核实",
+   "src": "Wikidata / 中文维基《神策门》",
+   "note": "north (Shence Gate)"
+  },
+  {
+   "id": "xuanwu-gate",
+   "ref": "g-xuanwu",
+   "zh": "玄武门",
+   "zh_hant": "玄武門",
+   "en": "Xuanwu Gate",
+   "kind": "gate",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "above",
+   "x": 242.3,
+   "z": -2515.1,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)",
+   "note": "north, by the lake"
+  },
+  {
+   "id": "safety-zone",
+   "ref": "zone",
+   "zh": "南京安全区",
+   "zh_hant": "南京安全區",
+   "en": "Safety Zone",
+   "kind": "zone",
+   "size": "M",
+   "prio": 2,
+   "views": [
+    "home",
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    100000
+   ],
+   "side": "above",
+   "x": -1158.2,
+   "z": -722.2,
+   "status": "核实",
+   "src": "FRUS 1937 vol III doc 776（1937-11-22 电报四至）; 英文维基 Nanking Safety Zone",
+   "note": "the refuge zone of the foreigners' committee (centre of its outline)"
+  },
+  {
+   "id": "lion-hill",
+   "ref": "h-shizishan",
+   "zh": "狮子山",
+   "zh_hant": "獅子山",
+   "en": "Lion Hill",
+   "kind": "hill",
+   "size": "S",
+   "prio": 2,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "above",
+   "x": -3484.9,
+   "z": -5167.4,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)",
+   "note": "the fort hill above the North Gate"
+  },
+  {
+   "id": "xuanwu-lake",
+   "ref": "w-xuanwu",
+   "zh": "玄武湖",
+   "zh_hant": "玄武湖",
+   "en": "Xuanwu Lake",
+   "kind": "lake",
+   "size": "M",
+   "prio": 2,
+   "views": [
+    "home",
+    "mid"
+   ],
+   "dist_m": [
+    1500,
+    100000
+   ],
+   "side": "above",
+   "x": 1086.1,
+   "z": -2750,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)",
+   "note": "the big lake inside the north-east wall"
+  },
+  {
+   "id": "mufu-mountain",
+   "ref": "h-mufushan",
+   "zh": "幕府山",
+   "zh_hant": "幕府山",
+   "en": "Mufu Mountain",
+   "kind": "hill",
+   "size": "M",
+   "prio": 3,
+   "views": [
+    "home",
+    "mid"
+   ],
+   "dist_m": [
+    1500,
+    100000
+   ],
+   "side": "above",
+   "x": 1208.9,
+   "z": -8538.4,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)",
+   "note": "north bank hills; far north of the frame at the home view"
+  },
+  {
+   "id": "pukou",
+   "ref": "lm-pukou-pier",
+   "zh": "浦口码头",
+   "zh_hant": "浦口碼頭",
+   "en": "Pukou",
+   "kind": "wharf",
+   "size": "M",
+   "prio": 2,
+   "views": [
+    "home",
+    "mid"
+   ],
+   "dist_m": [
+    1500,
+    100000
+   ],
+   "side": "left",
+   "x": -6567,
+   "z": -5269,
+   "status": "推测",
+   "src": "1945 年美军地图（Pukow Wharf Sta., T.P.R. ferry）",
+   "note": "the railway ferry pier on the far bank; position 推测 (1945 US map)"
+  },
+  {
+   "id": "ferry-pier",
+   "ref": "lm-ferry-pier-s",
+   "zh": "铁路轮渡南岸栈桥",
+   "zh_hant": "鐵路輪渡南岸棧橋",
+   "en": "Train-ferry pier",
+   "kind": "wharf",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "left",
+   "x": -4079.9,
+   "z": -5954.7,
+   "status": "核实",
+   "src": "gap_xiaguan verify",
+   "note": "south-bank pier of the railway ferry"
+  },
+  {
+   "id": "meitan",
+   "ref": "lm-meitan",
+   "zh": "煤炭港",
+   "zh_hant": "煤炭港",
+   "en": "Meitan Harbour",
+   "kind": "wharf",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "left",
+   "x": -4151,
+   "z": -6225,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)",
+   "note": "north of the docks"
+  },
+  {
+   "id": "xiaguan-station",
+   "ref": "lm-xiaguan-station",
+   "zh": "下关车站",
+   "zh_hant": "下關車站",
+   "en": "Xiaguan Station",
+   "kind": "station",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "right",
+   "x": -4126.2,
+   "z": -5340.4,
+   "status": "核实",
+   "src": "中文维基《南京西站》; OpenStreetMap (今日位置)",
+   "note": "the railway terminus at the docks"
+  },
+  {
+   "id": "qingliang-hill",
+   "ref": "h-qingliang",
+   "zh": "清凉山",
+   "zh_hant": "清涼山",
+   "en": "Qingliang Hill",
+   "kind": "hill",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "left",
+   "x": -2285.5,
+   "z": -277.2,
+   "status": "核实",
+   "src": "OpenStreetMap (今日位置)",
+   "note": "west part of the city"
+  },
+  {
+   "id": "mausoleum",
+   "ref": "lm-sun-mausoleum",
+   "zh": "中山陵",
+   "zh_hant": "中山陵",
+   "en": "Sun Yat-sen Mausoleum",
+   "kind": "landmark",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "below",
+   "x": 6450.4,
+   "z": -1596.8,
+   "status": "核实",
+   "src": "英文维基《Sun Yat-sen Mausoleum》",
+   "note": "on Purple Mountain"
+  },
+  {
+   "id": "airfield",
+   "ref": "lm-airfield",
+   "zh": "明故宫机场",
+   "zh_hant": "明故宮機場",
+   "en": "Airfield",
+   "kind": "airfield",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "below",
+   "x": 2455.5,
+   "z": 1607.9,
+   "status": "推测",
+   "src": "中文维基《明故宫机场》",
+   "note": "Ming Palace airfield, in the south-east; position 推测"
+  },
+  {
+   "id": "drum-tower",
+   "ref": "lm-gulou",
+   "zh": "鼓楼",
+   "zh_hant": "鼓樓",
+   "en": "Drum Tower",
+   "kind": "landmark",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "above",
+   "x": -292.8,
+   "z": -1186.5,
+   "status": "核实",
+   "src": "中文维基《南京鼓楼》",
+   "note": "in the middle of the city"
+  },
+  {
+   "id": "city-centre",
+   "ref": "sq-xinjiekou",
+   "zh": "新街口广场",
+   "zh_hant": "新街口廣場",
+   "en": "City centre",
+   "kind": "square",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "below",
+   "x": -122.8,
+   "z": 687.5,
+   "status": "核实",
+   "src": "中文维基《新街口》; OpenStreetMap (今日位置)",
+   "note": "Xinjiekou Circle, the main crossing"
+  },
+  {
+   "id": "confucius-temple",
+   "ref": "lm-fuzimiao",
+   "zh": "夫子庙",
+   "zh_hant": "夫子廟",
+   "en": "Confucius Temple",
+   "kind": "landmark",
+   "size": "S",
+   "prio": 3,
+   "views": [
+    "mid",
+    "close"
+   ],
+   "dist_m": [
+    0,
+    7000
+   ],
+   "side": "below",
+   "x": 441,
+   "z": 3007.3,
+   "status": "核实",
+   "src": "中文维基《南京夫子庙》",
+   "note": "Fuzimiao, the old south quarter"
+  }
+ ]
+}

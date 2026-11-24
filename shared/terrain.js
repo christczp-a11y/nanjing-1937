@@ -1,0 +1,1 @@
+function e(e,t,n){let r=Math.min(Math.max((t-e.x0)/e.step,0),e.w-1.001),i=Math.min(Math.max((n-e.z0)/e.step,0),e.h-1.001),a=Math.floor(r),o=Math.floor(i),s=r-a,c=i-o,l=e.data,u=e.w;return(l[o*u+a]*(1-s)+l[o*u+a+1]*s)*(1-c)+(l[(o+1)*u+a]*(1-s)+l[(o+1)*u+a+1]*s)*c}export{e as sampleGrid};

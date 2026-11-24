@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "bakes": [
+    {
+      "id": "bs-1212-zhonghua",
+      "file": "bs-1212-zhonghua.json",
+      "t0": "1937-12-12T05:30:00+08:00",
+      "t1": "1937-12-13T06:00:00+08:00",
+      "bounds": [
+        -1300,
+        3460,
+        700,
+        5700
+      ],
+      "replaces": [
+        "ev-1212-zhonghua-fall",
+        "ev-1212-zhonghua-shelling",
+        "ev-1212-zhonghua-regt-guns",
+        "ev-1212-zhonghua-tankettes",
+        "ev-1212-6div-ridge",
+        "ev-1212-yuhuatai-tankettes"
+      ],
+      "own": {
+        "box": [
+          -900,
+          3780,
+          300,
+          5280
+        ],
+        "keep": [
+          "ev-1212-retreat-south"
+        ]
+      },
+      "live": true
+    },
+    {
+      "id": "bs-1208-zijinshan",
+      "file": "bs-zijinshan_1208.json",
+      "t0": "1937-12-08T07:30:00+08:00",
+      "t1": "1937-12-13T03:00:00+08:00",
+      "bounds": [
+        3900,
+        -3500,
+        7000,
+        -600
+      ],
+      "replaces": [
+        "ev-1210-zijinshan",
+        "ev-1210-zijinshan-guns",
+        "ev-1210-zijinshan-air",
+        "ev-1212-zhongshanmen-shelling"
+      ],
+      "own": {
+        "box": [
+          4300,
+          -3000,
+          6900,
+          -1000
+        ],
+        "keep": []
+      },
+      "live": true
+    },
+    {
+      "id": "bs-1210-yuhuatai",
+      "file": "bs-yuhuatai_1210.json",
+      "t0": "1937-12-10T11:30:00+08:00",
+      "t1": "1937-12-12T14:00:00+08:00",
+      "bounds": [
+        -2000,
+        5000,
+        1300,
+        7000
+      ],
+      "replaces": [
+        "ev-1210-assault-yuhuatai",
+        "ev-1210-yuhuatai-shelling",
+        "ev-1212-yuhuatai-tankettes",
+        "ev-1212-6div-ridge"
+      ],
+      "own": {
+        "box": [
+          -1600,
+          5290,
+          900,
+          6500
+        ],
+        "keep": [
+          "ev-1201-yuhuatai-works"
+        ],
+        "clips": []
+      },
+      "live": true
+    },
+    {
+      "id": "bs-1210-zhongshan",
+      "file": "bs-zhongshan_1210.json",
+      "t0": "1937-12-10T09:30:00+08:00",
+      "t1": "1937-12-13T06:30:00+08:00",
+      "bounds": [
+        3300,
+        -100,
+        5900,
+        2700
+      ],
+      "replaces": [
+        "ev-1210-sentry-line",
+        "ev-1210-east-moat",
+        "ev-1212-zhongshanmen-shelling",
+        "ev-1212-zhongshan-tankettes",
+        "ev-1213-33rd-zsm"
+      ],
+      "own": {
+        "box": [
+          3700,
+          150,
+          5400,
+          2250
+        ],
+        "keep": [
+          "ev-1213-16div-zsm"
+        ],
+        "clips": [
+          "ev-1201-zone-inflow-e"
+        ]
+      },
+      "live": true
+    },
+    {
+      "id": "bs-1212-taiping",
+      "file": "bs-taiping_1212.json",
+      "t0": "1937-12-12T17:30:00+08:00",
+      "t1": "1937-12-13T03:00:00+08:00",
+      "bounds": [
+        2000,
+        -2300,
+        3900,
+        -600
+      ],
+      "replaces": [
+        "ev-1212-taiping-breakout"
+      ],
+      "own": {
+        "box": [
+          2150,
+          -2150,
+          3700,
+          -700
+        ],
+        "keep": []
+      },
+      "live": true
+    },
+    {
+      "id": "bs-1209-guanghua",
+      "file": "bs-guanghua_1209.json",
+      "t0": "1937-12-09T04:30:00+08:00",
+      "t1": "1937-12-13T07:00:00+08:00",
+      "bounds": [
+        2000,
+        2200,
+        4200,
+        4600
+      ],
+      "replaces": [
+        "ev-1209-9div-se",
+        "ev-1209-guanghua-battle",
+        "ev-1209-guanghua-guns",
+        "ev-1209-guanghua-air",
+        "ev-1210-guanghua-breach",
+        "ev-1210-guanghua-cn-armour",
+        "ev-1213-guanghua-wounded",
+        "ev-1213-9div-guanghua"
+      ],
+      "own": {
+        "box": [
+          2300,
+          2450,
+          3700,
+          4300
+        ],
+        "keep": [],
+        "clips": [
+          "ev-1213-87div-out",
+          "ev-1212-retreat-east"
+        ]
+      },
+      "live": true
+    }
+  ]
+}

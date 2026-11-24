@@ -1,0 +1,386 @@
+{
+ "version": 1,
+ "sample_rate": 48000,
+ "generations": 15,
+ "samples": {
+  "rifle_1": {
+   "class": "rifle",
+   "file": "rifle_1.ogg",
+   "alt": "rifle_1.mp3",
+   "prompt": "A single bolt-action rifle shot, a light 6.5 mm military rifle of the 1930s, sharp crack then immediate silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music.",
+   "seconds_asked": 1.5,
+   "seconds": 0.673,
+   "date": "2026-11-20",
+   "peak_db_before": -0.3,
+   "peak_db": -3.0,
+   "rms_db": -25.4,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)"
+  },
+  "rifle_2": {
+   "class": "rifle",
+   "file": "rifle_2.ogg",
+   "alt": "rifle_2.mp3",
+   "prompt": "A single bolt-action rifle shot, a heavier 7.92 mm Mauser-type rifle, sharp bang then immediate silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music.",
+   "seconds_asked": 1.5,
+   "seconds": 0.655,
+   "date": "2026-11-20",
+   "peak_db_before": 1.5,
+   "peak_db": -3.0,
+   "rms_db": -26.8,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)"
+  },
+  "rifle_3": {
+   "class": "rifle",
+   "file": "rifle_3.ogg",
+   "alt": "rifle_3.mp3",
+   "prompt": "A single rifle shot from a 1930s infantry rifle, short hard crack, then immediate silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music.",
+   "seconds_asked": 1.5,
+   "seconds": 0.672,
+   "date": "2026-11-20",
+   "peak_db_before": 0.0,
+   "peak_db": -3.0,
+   "rms_db": -26.7,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)"
+  },
+  "lmg_1": {
+   "class": "lmg",
+   "file": "lmg_1.ogg",
+   "alt": "lmg_1.mp3",
+   "prompt": "A light machine gun firing one short burst of about six rounds, rapid but distinct shots, then silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music.",
+   "seconds_asked": 2.5,
+   "seconds": 1.537,
+   "date": "2026-11-20",
+   "peak_db_before": 1.7,
+   "peak_db": -3.0,
+   "rms_db": -27.0,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)",
+   "slices": [
+    [
+     0.0134,
+     0.0924
+    ],
+    [
+     0.0924,
+     0.1762
+    ],
+    [
+     0.1762,
+     0.2675
+    ],
+    [
+     0.2675,
+     0.4552
+    ],
+    [
+     0.4552,
+     0.5516
+    ],
+    [
+     0.5516,
+     0.6362
+    ],
+    [
+     0.6362,
+     0.8362
+    ]
+   ],
+   "slices_by": "onsets"
+  },
+  "lmg_2": {
+   "class": "lmg",
+   "file": "lmg_2.ogg",
+   "alt": "lmg_2.mp3",
+   "prompt": "A 1930s light machine gun firing one short burst of six or seven rounds, rapid distinct shots, then silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music.",
+   "seconds_asked": 2.5,
+   "seconds": 2.2,
+   "date": "2026-11-20",
+   "peak_db_before": 1.9,
+   "peak_db": -3.0,
+   "rms_db": -29.3,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)",
+   "slices": [
+    [
+     0.0009,
+     0.0782
+    ],
+    [
+     0.0782,
+     0.1736
+    ],
+    [
+     0.1736,
+     0.2494
+    ],
+    [
+     0.2494,
+     0.3462
+    ],
+    [
+     0.3462,
+     0.5462
+    ]
+   ],
+   "slices_by": "onsets"
+  },
+  "hmg_1": {
+   "class": "hmg",
+   "file": "hmg_1.ogg",
+   "alt": "hmg_1.mp3",
+   "prompt": "A heavy water-cooled machine gun firing one steady burst of about six rounds at a slow cyclic rate, heavy report, then silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music.",
+   "seconds_asked": 3.0,
+   "seconds": 1.907,
+   "date": "2026-11-20",
+   "peak_db_before": 2.0,
+   "peak_db": -3.0,
+   "rms_db": -17.4,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)",
+   "slices": [
+    [
+     0.0957,
+     0.2299
+    ],
+    [
+     0.2299,
+     0.3273
+    ],
+    [
+     0.3273,
+     0.4063
+    ],
+    [
+     0.4063,
+     0.487
+    ],
+    [
+     0.487,
+     0.6699
+    ],
+    [
+     0.6699,
+     0.8031
+    ],
+    [
+     0.8031,
+     0.93
+    ],
+    [
+     0.93,
+     1.0507
+    ],
+    [
+     1.0507,
+     1.1287
+    ],
+    [
+     1.1287,
+     1.2671
+    ],
+    [
+     1.2671,
+     1.39
+    ],
+    [
+     1.39,
+     1.4605
+    ],
+    [
+     1.4605,
+     1.5431
+    ],
+    [
+     1.5431,
+     1.7431
+    ]
+   ],
+   "slices_by": "onsets"
+  },
+  "hmg_2": {
+   "class": "hmg",
+   "file": "hmg_2.ogg",
+   "alt": "hmg_2.mp3",
+   "prompt": "A heavy Maxim-type machine gun firing one steady burst of about seven rounds, deep mechanical hammering, then silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music.",
+   "seconds_asked": 3.0,
+   "seconds": 2.6,
+   "date": "2026-11-20",
+   "peak_db_before": 1.5,
+   "peak_db": -3.0,
+   "rms_db": -23.4,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)",
+   "slices": [
+    [
+     0.0197,
+     0.0953
+    ],
+    [
+     0.0953,
+     0.1755
+    ],
+    [
+     0.1755,
+     0.2517
+    ],
+    [
+     0.2517,
+     0.3347
+    ],
+    [
+     0.3347,
+     0.4072
+    ],
+    [
+     0.4072,
+     0.4829
+    ],
+    [
+     0.4829,
+     0.5755
+    ],
+    [
+     0.5755,
+     0.7708
+    ],
+    [
+     0.7708,
+     0.8585
+    ],
+    [
+     0.8585,
+     0.9391
+    ],
+    [
+     0.9391,
+     1.1391
+    ],
+    [
+     1.1466,
+     1.2544
+    ],
+    [
+     1.2544,
+     1.345
+    ],
+    [
+     1.345,
+     1.545
+    ]
+   ],
+   "slices_by": "onsets"
+  },
+  "gun_1": {
+   "class": "gun",
+   "file": "gun_1.ogg",
+   "alt": "gun_1.mp3",
+   "prompt": "A 75 mm field gun firing a single shot, recorded from 30 metres, sharp heavy bang with a short low thump and breech sound, then silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music.",
+   "seconds_asked": 3.0,
+   "seconds": 1.536,
+   "date": "2026-11-20",
+   "peak_db_before": 0.4,
+   "peak_db": -3.0,
+   "rms_db": -28.9,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)"
+  },
+  "gun_2": {
+   "class": "gun",
+   "file": "gun_2.ogg",
+   "alt": "gun_2.mp3",
+   "prompt": "A 75 mm mountain gun firing once, heavy flat bang with a deep thump, then silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music.",
+   "seconds_asked": 3.0,
+   "seconds": 1.208,
+   "date": "2026-11-20",
+   "peak_db_before": 1.9,
+   "peak_db": -3.0,
+   "rms_db": -26.7,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)"
+  },
+  "shell_1": {
+   "class": "shell",
+   "file": "shell_1.ogg",
+   "alt": "shell_1.mp3",
+   "prompt": "A single artillery shell flying in, a rising rush and whistle that grows louder and then stops abruptly, no explosion, outdoors, no voices, no music.",
+   "seconds_asked": 2.0,
+   "seconds": 1.536,
+   "date": "2026-11-20",
+   "peak_db_before": -0.2,
+   "peak_db": -3.0,
+   "rms_db": -20.2,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)"
+  },
+  "shell_2": {
+   "class": "shell",
+   "file": "shell_2.ogg",
+   "alt": "shell_2.mp3",
+   "prompt": "An artillery shell falling toward the listener, a tearing rush with a short rising whistle that ends suddenly, no explosion, outdoors, no voices, no music.",
+   "seconds_asked": 2.0,
+   "seconds": 1.143,
+   "date": "2026-11-20",
+   "peak_db_before": 1.6,
+   "peak_db": -3.0,
+   "rms_db": -19.3,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)"
+  },
+  "burst_1": {
+   "class": "burst",
+   "file": "burst_1.ogg",
+   "alt": "burst_1.mp3",
+   "prompt": "A high-explosive artillery shell exploding on bare earth, one sharp blast with a deep thump, falling earth and debris, then silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music, no screams.",
+   "seconds_asked": 3.5,
+   "seconds": 2.36,
+   "date": "2026-11-20",
+   "peak_db_before": -1.6,
+   "peak_db": -3.0,
+   "rms_db": -18.0,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)"
+  },
+  "burst_2": {
+   "class": "burst",
+   "file": "burst_2.ogg",
+   "alt": "burst_2.mp3",
+   "prompt": "A heavy shell exploding on hard ground, a violent blast with a low boom and clods of earth raining down, then silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music, no screams.",
+   "seconds_asked": 3.5,
+   "seconds": 2.794,
+   "date": "2026-11-20",
+   "peak_db_before": -0.7,
+   "peak_db": -3.0,
+   "rms_db": -21.9,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)"
+  },
+  "burst_3": {
+   "class": "burst",
+   "file": "burst_3.ogg",
+   "alt": "burst_3.mp3",
+   "prompt": "A small high-explosive shell bursting on the ground, a sharp loud crack with a short thump and flying dirt, then silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music, no screams.",
+   "seconds_asked": 3.5,
+   "seconds": 1.304,
+   "date": "2026-11-20",
+   "peak_db_before": 0.3,
+   "peak_db": -3.0,
+   "rms_db": -28.9,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)"
+  },
+  "masonry_1": {
+   "class": "masonry",
+   "file": "masonry_1.ogg",
+   "alt": "masonry_1.mp3",
+   "prompt": "A shell hitting a brick wall, a dull heavy crack of impact then bricks and rubble falling and clattering, then silence, recorded outdoors in an open field, close microphone, completely dry, no echo, no reverb, no room, no voices, no music, no screams.",
+   "seconds_asked": 3.0,
+   "seconds": 2.407,
+   "date": "2026-11-20",
+   "peak_db_before": 0.7,
+   "peak_db": -3.0,
+   "rms_db": -36.1,
+   "generator": "ElevenLabs sound-effects eleven_text_to_sound_v3 (mp3_44100_192)"
+  },
+  "wind_loop": {
+   "class": "wind",
+   "file": "wind_loop.ogg",
+   "alt": "wind_loop.mp3",
+   "prompt": "cut from audio/ambience/wind.mp3 (ElevenLabs v2 bed, 6.0-17.5 s, 1.5 s crossfaded seam)",
+   "seconds": 10.0,
+   "date": "2026-11-20",
+   "peak_db_before": -16.0,
+   "peak_db": -3.0,
+   "generator": "cut from an existing ElevenLabs bed (no new generation)",
+   "loop": true
+  }
+ }
+}
