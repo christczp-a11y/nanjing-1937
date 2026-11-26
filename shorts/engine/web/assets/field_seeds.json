@@ -1,0 +1,322 @@
+{
+ "big": [
+  [
+   "Shanghai",
+   121.47,
+   31.23,
+   "11-12 00:00",
+   "S digest"
+  ],
+  [
+   "Shanghai north (Zhabei/Baoshan front, held since Aug-Oct)",
+   121.45,
+   31.33,
+   "10-27 00:00",
+   "推测 (Zhabei fell 26-27 Oct)"
+  ],
+  [
+   "Jinshanwei landing",
+   121.35,
+   30.72,
+   "11-05 12:00",
+   "推测 (well-known date, not in digest)"
+  ],
+  [
+   "Kunshan",
+   120.98,
+   31.38,
+   "11-15 00:00",
+   "推测"
+  ],
+  [
+   "Jiaxing",
+   120.75,
+   30.75,
+   "11-19 00:00",
+   "推测"
+  ],
+  [
+   "Suzhou",
+   120.62,
+   31.3,
+   "11-19 12:00",
+   "推测"
+  ],
+  [
+   "Changshu",
+   120.75,
+   31.65,
+   "11-19 12:00",
+   "推测"
+  ],
+  [
+   "Huzhou",
+   120.09,
+   30.87,
+   "11-24 12:00",
+   "推测"
+  ],
+  [
+   "Wuxi",
+   120.3,
+   31.57,
+   "11-26 00:00",
+   "推测"
+  ],
+  [
+   "Changzhou",
+   119.95,
+   31.78,
+   "11-29 12:00",
+   "推测"
+  ],
+  [
+   "Guangde",
+   119.42,
+   30.89,
+   "11-30 12:00",
+   "推测"
+  ],
+  [
+   "Jiangyin",
+   120.27,
+   31.91,
+   "12-01 12:00",
+   "推测 (digest: Chinese pull back from Jiangyin 1 Dec)"
+  ],
+  [
+   "Danyang",
+   119.58,
+   32.0,
+   "12-02 12:00",
+   "S digest"
+  ],
+  [
+   "Liyang",
+   119.48,
+   31.42,
+   "12-01 00:00",
+   "推测"
+  ],
+  [
+   "Jurong",
+   119.17,
+   31.95,
+   "12-04 12:00",
+   "S digest (3-5 Dec)"
+  ],
+  [
+   "Lishui",
+   119.02,
+   31.65,
+   "12-05 12:00",
+   "推测"
+  ],
+  [
+   "Chunhua",
+   118.93,
+   31.93,
+   "12-08 00:00",
+   "S digest"
+  ],
+  [
+   "Tangshan",
+   119.05,
+   32.06,
+   "12-08 00:00",
+   "S digest"
+  ],
+  [
+   "Zhenjiang",
+   119.45,
+   32.2,
+   "12-08 12:00",
+   "推测"
+  ],
+  [
+   "Xuancheng",
+   118.75,
+   30.95,
+   "12-08 00:00",
+   "推测"
+  ],
+  [
+   "Wuhu",
+   118.38,
+   31.33,
+   "12-10 00:00",
+   "推测"
+  ],
+  [
+   "Nanjing",
+   118.78,
+   32.05,
+   "12-13 08:00",
+   "S digest"
+  ]
+ ],
+ "city": [
+  [
+   "SE approach (Chunhua road)",
+   11500,
+   21500,
+   "12-07 00:00",
+   0.28,
+   false,
+   "S digest: Chunhua broken 8 Dec (frame edge, timing 推测)"
+  ],
+  [
+   "E approach (Tangshan road)",
+   11800,
+   -500,
+   "12-08 00:00",
+   0.12,
+   false,
+   "S digest: Tangshan 8 Dec"
+  ],
+  [
+   "S approach (Niushoushan)",
+   -1500,
+   21500,
+   "12-08 00:00",
+   0.27,
+   false,
+   "S digest: Jiangjunshan/Niushoushan given up night 9 Dec"
+  ],
+  [
+   "NE approach (Qixia)",
+   11800,
+   -12000,
+   "12-10 12:00",
+   0.1,
+   false,
+   "推测"
+  ],
+  [
+   "Guanghua Gate outside",
+   3050,
+   3100,
+   "12-10 17:00",
+   0.05,
+   false,
+   "S digest: breach 10 Dec"
+  ],
+  [
+   "Purple Mountain",
+   6328,
+   -2218,
+   "12-12 18:00",
+   0.1,
+   false,
+   "S digest: second peak 12 Dec"
+  ],
+  [
+   "Yuhuatai",
+   -434,
+   5655,
+   "12-12 12:00",
+   0.15,
+   false,
+   "S digest: overrun noon 12 Dec"
+  ],
+  [
+   "Zhonghua Gate outside",
+   -320,
+   4100,
+   "12-12 17:00",
+   0.2,
+   false,
+   "S digest"
+  ],
+  [
+   "Zhongshan Gate outside",
+   4450,
+   1000,
+   "12-12 15:00",
+   0.1,
+   false,
+   "S digest"
+  ],
+  [
+   "Shangxinhe",
+   -5525,
+   2473,
+   "12-13 08:00",
+   0.3,
+   false,
+   "推测 (MPs held 11-12 Dec)"
+  ],
+  [
+   "Xiaguan",
+   -4000,
+   -4700,
+   "12-13 14:00",
+   0.4,
+   false,
+   "推测 (16th Div reached Xiaguan 13 Dec)"
+  ],
+  [
+   "Mufushan",
+   1209,
+   -8538,
+   "12-14 08:00",
+   0.4,
+   false,
+   "S digest"
+  ],
+  [
+   "Zhongshan Gate inside",
+   3850,
+   985,
+   "12-13 03:00",
+   0.45,
+   true,
+   "S digest (~03:10, JP time?)"
+  ],
+  [
+   "Guanghua Gate inside",
+   2800,
+   2850,
+   "12-13 04:00",
+   0.45,
+   true,
+   "S digest"
+  ],
+  [
+   "Zhonghua Gate inside",
+   -293,
+   3872,
+   "12-13 06:00",
+   0.45,
+   true,
+   "S digest"
+  ],
+  [
+   "Taiping Gate inside",
+   2550,
+   -1100,
+   "12-13 08:00",
+   0.45,
+   true,
+   "S digest (16th Div entered 13 Dec)"
+  ],
+  [
+   "Shuixi Gate inside",
+   -1367,
+   2090,
+   "12-13 10:00",
+   0.45,
+   true,
+   "推测"
+  ],
+  [
+   "Pukou (north bank)",
+   -6650,
+   -5500,
+   "12-14 10:00",
+   0.5,
+   false,
+   "推测"
+  ]
+ ]
+}

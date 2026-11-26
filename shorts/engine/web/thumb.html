@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Bebas;src:url(fonts/bebas-neue-latin-400-normal.woff2)}
+@font-face{font-family:Mont;font-weight:900;src:url(fonts/montserrat-latin-900-normal.woff2)}
+@font-face{font-family:Mont;font-weight:800;src:url(fonts/montserrat-latin-800-normal.woff2)}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
+.bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(var(--z,1.12));filter:saturate(1.25) contrast(1.08)}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 52%,transparent 38%,rgba(0,0,0,.72) 100%),linear-gradient(rgba(0,0,0,.55),transparent 30%,transparent 72%,rgba(0,0,0,.7))}
+.t{position:absolute;left:0;right:0;text-align:center;font-family:Bebas;color:#fff;letter-spacing:2px;text-shadow:0 8px 0 rgba(0,0,0,.55),0 0 40px rgba(0,0,0,.6)}
+.box{display:inline-block;background:#d8452b;padding:6px 36px 0;transform:rotate(-2deg);box-shadow:0 14px 0 rgba(0,0,0,.45)}
+.y{color:#ffd84a}
+.tag{position:absolute;left:0;right:0;text-align:center;font-family:Mont;font-weight:900;font-size:44px;color:#fff;letter-spacing:3px;text-shadow:0 4px 0 #000}
+.tag span{background:#111;padding:12px 26px;border:3px solid #fff}
+.lbl{position:absolute;font-family:Mont;font-weight:900;color:#fff;font-size:46px;text-shadow:0 4px 0 #000,0 0 18px #000;letter-spacing:2px}
+.jp{color:#ff9b7f}.cn{color:#a9c9ff}
+.face{position:absolute;width:250px;height:250px;border-radius:50%;border:8px solid #4d86ec;background-size:cover;background-position:center 25%;filter:grayscale(1) contrast(1.2);box-shadow:0 12px 0 rgba(0,0,0,.5)}
+.pol{position:absolute;background:#f4f1ea;padding:16px 16px 60px;box-shadow:0 20px 40px rgba(0,0,0,.6)}
+.pol img{display:block;width:100%;filter:grayscale(1) contrast(1.15)}
+.pol div{position:absolute;bottom:14px;left:16px;font:800 26px Mont;color:#222}
+</style></head><body><script>
+const q=new URLSearchParams(location.search), ep=q.get('ep');
+const H={
+'1':`<div class="bg" style="background-image:url(../out/ep2_clean_1s.jpg);--z:1.0"></div><div class="vig"></div>
+<div class="t" style="top:150px;font-size:250px;line-height:.9">NO WAY<br><span class="box">OUT</span></div>
+<div class="lbl jp" style="left:600px;top:1330px">JAPAN<br>ON 3 SIDES</div>
+<div class="lbl cn" style="left:40px;top:1160px;transform:rotate(-62deg);transform-origin:left">THE RIVER · NO BRIDGE</div>
+<div class="face" style="left:330px;top:1290px;background-image:url(photos/tang_c1935.jpg)"></div>
+<div class="lbl" style="left:270px;top:1560px;font-size:34px">HE LOCKED THE GATES</div>
+<div class="tag" style="top:1690px"><span>NANJING 1937 · PART 1</span></div>`,
+'2':`<div class="bg" style="background-image:url(../out/ep2_clean_76s.jpg);--z:1.15;background-position:40% center"></div><div class="vig"></div>
+<div class="t" style="top:130px;font-size:200px;line-height:.92">HE ESCAPED.<br><span class="box">THEY DIDN'T.</span></div>
+<div class="pol" style="left:520px;top:1020px;width:440px;transform:rotate(4deg)"><img src="photos/ep2_zhonghua_blast_dec12.jpg"><div>12 DEC 1937</div></div>
+<div class="t" style="top:1080px;left:60px;right:auto;text-align:left;font-size:150px;line-height:.9"><span class="cn">3,000</span><br><span style="font-size:90px">↓</span><br><span class="y">300</span></div>
+<div class="tag" style="top:1690px"><span>NANJING 1937 · PART 2</span></div>`};
+document.body.insertAdjacentHTML('beforeend',H[ep]);
+</script></body></html>

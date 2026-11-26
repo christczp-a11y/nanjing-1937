@@ -1,0 +1,1224 @@
+{
+ "voice": "Max - Elearning and Documentary",
+ "voice_id": "Gfpl8Yo74Is0W6cPUWWT",
+ "model": "eleven_multilingual_v2",
+ "text": "On December the ninth, 1937, Japanese planes dropped a letter on the Chinese capital. Surrender by noon tomorrow. Nobody answered.\n\nAt one o'clock, seventy thousand men attacked a wall built in the fourteenth century.\n\nIn the south-east, engineers blew a hole in a gate. Two companies ran in and could not get out. One of them lost eighty of its eighty-eight men.\n\nIn the east, the attackers were ordered not to shell one side of the mountain, because the tomb of modern China's founder was on it. They took the mountain ridge by ridge instead. Then they turned their guns on the wall below.\n\nIn the south, forty thousand men needed two days to take one hill. Almost nobody on it came down.\n\nOn the twelfth, the wall broke.\n\nAt five that afternoon the general ordered his army out. Break through the enemy, the order said. Twelve and a half thousand men tried it, in the dark. Three or four thousand got through.\n\nEveryone else ran for the river gate. It was half blocked, and its guards had not been told. They opened fire.\n\nThe general crossed that night in a steamboat. There were no boats for anyone else. One division reached the water with three thousand men. Three hundred lived.\n\nJapan counted its own dead for the whole battle. One thousand five hundred and fifty-eight.\n\nFor the Chinese army there is no agreed number at all.\n\nAt dawn, the Japanese walked in.",
+ "duration": 100.124,
+ "words": [
+  {
+   "word": "On",
+   "start": 0.0,
+   "end": 0.151
+  },
+  {
+   "word": "December",
+   "start": 0.197,
+   "end": 0.604
+  },
+  {
+   "word": "the",
+   "start": 0.662,
+   "end": 0.731
+  },
+  {
+   "word": "ninth,",
+   "start": 0.789,
+   "end": 1.231
+  },
+  {
+   "word": "1937,",
+   "start": 1.3,
+   "end": 2.508
+  },
+  {
+   "word": "Japanese",
+   "start": 2.786,
+   "end": 3.344
+  },
+  {
+   "word": "planes",
+   "start": 3.39,
+   "end": 3.773
+  },
+  {
+   "word": "dropped",
+   "start": 3.855,
+   "end": 4.191
+  },
+  {
+   "word": "a",
+   "start": 4.226,
+   "end": 4.249
+  },
+  {
+   "word": "letter",
+   "start": 4.319,
+   "end": 4.563
+  },
+  {
+   "word": "on",
+   "start": 4.632,
+   "end": 4.702
+  },
+  {
+   "word": "the",
+   "start": 4.748,
+   "end": 4.818
+  },
+  {
+   "word": "Chinese",
+   "start": 4.865,
+   "end": 5.329
+  },
+  {
+   "word": "capital.",
+   "start": 5.364,
+   "end": 5.968
+  },
+  {
+   "word": "Surrender",
+   "start": 6.351,
+   "end": 6.896
+  },
+  {
+   "word": "by",
+   "start": 7.012,
+   "end": 7.198
+  },
+  {
+   "word": "noon",
+   "start": 7.314,
+   "end": 7.558
+  },
+  {
+   "word": "tomorrow.",
+   "start": 7.628,
+   "end": 8.336
+  },
+  {
+   "word": "Nobody",
+   "start": 9.288,
+   "end": 9.741
+  },
+  {
+   "word": "answered.",
+   "start": 9.799,
+   "end": 10.426
+  },
+  {
+   "word": "At",
+   "start": 10.937,
+   "end": 11.076
+  },
+  {
+   "word": "one",
+   "start": 11.146,
+   "end": 11.285
+  },
+  {
+   "word": "o'clock,",
+   "start": 11.32,
+   "end": 11.877
+  },
+  {
+   "word": "seventy",
+   "start": 12.028,
+   "end": 12.434
+  },
+  {
+   "word": "thousand",
+   "start": 12.492,
+   "end": 12.945
+  },
+  {
+   "word": "men",
+   "start": 13.026,
+   "end": 13.282
+  },
+  {
+   "word": "attacked",
+   "start": 13.433,
+   "end": 13.897
+  },
+  {
+   "word": "a",
+   "start": 13.944,
+   "end": 13.967
+  },
+  {
+   "word": "wall",
+   "start": 14.025,
+   "end": 14.362
+  },
+  {
+   "word": "built",
+   "start": 14.536,
+   "end": 14.814
+  },
+  {
+   "word": "in",
+   "start": 14.861,
+   "end": 14.919
+  },
+  {
+   "word": "the",
+   "start": 14.954,
+   "end": 15.023
+  },
+  {
+   "word": "fourteenth",
+   "start": 15.105,
+   "end": 15.65
+  },
+  {
+   "word": "century.",
+   "start": 15.708,
+   "end": 16.382
+  },
+  {
+   "word": "In",
+   "start": 16.893,
+   "end": 17.032
+  },
+  {
+   "word": "the",
+   "start": 17.067,
+   "end": 17.136
+  },
+  {
+   "word": "south-east,",
+   "start": 17.182,
+   "end": 17.96
+  },
+  {
+   "word": "engineers",
+   "start": 18.134,
+   "end": 18.785
+  },
+  {
+   "word": "blew",
+   "start": 18.854,
+   "end": 19.075
+  },
+  {
+   "word": "a",
+   "start": 19.133,
+   "end": 19.156
+  },
+  {
+   "word": "hole",
+   "start": 19.214,
+   "end": 19.481
+  },
+  {
+   "word": "in",
+   "start": 19.516,
+   "end": 19.586
+  },
+  {
+   "word": "a",
+   "start": 19.632,
+   "end": 19.655
+  },
+  {
+   "word": "gate.",
+   "start": 19.713,
+   "end": 20.236
+  },
+  {
+   "word": "Two",
+   "start": 20.84,
+   "end": 21.037
+  },
+  {
+   "word": "companies",
+   "start": 21.107,
+   "end": 21.583
+  },
+  {
+   "word": "ran",
+   "start": 21.664,
+   "end": 21.908
+  },
+  {
+   "word": "in",
+   "start": 21.977,
+   "end": 22.186
+  },
+  {
+   "word": "and",
+   "start": 22.337,
+   "end": 22.511
+  },
+  {
+   "word": "could",
+   "start": 22.569,
+   "end": 22.744
+  },
+  {
+   "word": "not",
+   "start": 22.79,
+   "end": 22.953
+  },
+  {
+   "word": "get",
+   "start": 23.011,
+   "end": 23.173
+  },
+  {
+   "word": "out.",
+   "start": 23.22,
+   "end": 23.638
+  },
+  {
+   "word": "One",
+   "start": 24.241,
+   "end": 24.427
+  },
+  {
+   "word": "of",
+   "start": 24.462,
+   "end": 24.532
+  },
+  {
+   "word": "them",
+   "start": 24.59,
+   "end": 24.741
+  },
+  {
+   "word": "lost",
+   "start": 24.857,
+   "end": 25.193
+  },
+  {
+   "word": "eighty",
+   "start": 25.309,
+   "end": 25.611
+  },
+  {
+   "word": "of",
+   "start": 25.669,
+   "end": 25.727
+  },
+  {
+   "word": "its",
+   "start": 25.785,
+   "end": 25.913
+  },
+  {
+   "word": "eighty-eight",
+   "start": 25.983,
+   "end": 26.447
+  },
+  {
+   "word": "men.",
+   "start": 26.517,
+   "end": 27.028
+  },
+  {
+   "word": "In",
+   "start": 27.724,
+   "end": 27.864
+  },
+  {
+   "word": "the",
+   "start": 27.91,
+   "end": 27.98
+  },
+  {
+   "word": "east,",
+   "start": 28.061,
+   "end": 28.525
+  },
+  {
+   "word": "the",
+   "start": 28.676,
+   "end": 28.792
+  },
+  {
+   "word": "attackers",
+   "start": 28.85,
+   "end": 29.326
+  },
+  {
+   "word": "were",
+   "start": 29.361,
+   "end": 29.512
+  },
+  {
+   "word": "ordered",
+   "start": 29.559,
+   "end": 29.895
+  },
+  {
+   "word": "not",
+   "start": 29.977,
+   "end": 30.244
+  },
+  {
+   "word": "to",
+   "start": 30.29,
+   "end": 30.36
+  },
+  {
+   "word": "shell",
+   "start": 30.429,
+   "end": 30.708
+  },
+  {
+   "word": "one",
+   "start": 30.801,
+   "end": 31.022
+  },
+  {
+   "word": "side",
+   "start": 31.068,
+   "end": 31.312
+  },
+  {
+   "word": "of",
+   "start": 31.335,
+   "end": 31.393
+  },
+  {
+   "word": "the",
+   "start": 31.439,
+   "end": 31.509
+  },
+  {
+   "word": "mountain,",
+   "start": 31.544,
+   "end": 32.136
+  },
+  {
+   "word": "because",
+   "start": 32.345,
+   "end": 32.693
+  },
+  {
+   "word": "the",
+   "start": 32.728,
+   "end": 32.798
+  },
+  {
+   "word": "tomb",
+   "start": 32.868,
+   "end": 33.158
+  },
+  {
+   "word": "of",
+   "start": 33.216,
+   "end": 33.286
+  },
+  {
+   "word": "modern",
+   "start": 33.402,
+   "end": 33.75
+  },
+  {
+   "word": "China's",
+   "start": 33.808,
+   "end": 34.203
+  },
+  {
+   "word": "founder",
+   "start": 34.261,
+   "end": 34.621
+  },
+  {
+   "word": "was",
+   "start": 34.691,
+   "end": 34.818
+  },
+  {
+   "word": "on",
+   "start": 34.888,
+   "end": 35.004
+  },
+  {
+   "word": "it.",
+   "start": 35.062,
+   "end": 35.376
+  },
+  {
+   "word": "They",
+   "start": 35.817,
+   "end": 35.991
+  },
+  {
+   "word": "took",
+   "start": 36.049,
+   "end": 36.223
+  },
+  {
+   "word": "the",
+   "start": 36.27,
+   "end": 36.339
+  },
+  {
+   "word": "mountain",
+   "start": 36.421,
+   "end": 36.769
+  },
+  {
+   "word": "ridge",
+   "start": 36.838,
+   "end": 37.082
+  },
+  {
+   "word": "by",
+   "start": 37.129,
+   "end": 37.268
+  },
+  {
+   "word": "ridge",
+   "start": 37.361,
+   "end": 37.64
+  },
+  {
+   "word": "instead.",
+   "start": 37.674,
+   "end": 38.383
+  },
+  {
+   "word": "Then",
+   "start": 38.824,
+   "end": 39.16
+  },
+  {
+   "word": "they",
+   "start": 39.242,
+   "end": 39.416
+  },
+  {
+   "word": "turned",
+   "start": 39.462,
+   "end": 39.741
+  },
+  {
+   "word": "their",
+   "start": 39.787,
+   "end": 39.95
+  },
+  {
+   "word": "guns",
+   "start": 40.008,
+   "end": 40.345
+  },
+  {
+   "word": "on",
+   "start": 40.414,
+   "end": 40.496
+  },
+  {
+   "word": "the",
+   "start": 40.542,
+   "end": 40.612
+  },
+  {
+   "word": "wall",
+   "start": 40.658,
+   "end": 40.879
+  },
+  {
+   "word": "below.",
+   "start": 40.937,
+   "end": 41.564
+  },
+  {
+   "word": "In",
+   "start": 42.075,
+   "end": 42.214
+  },
+  {
+   "word": "the",
+   "start": 42.26,
+   "end": 42.33
+  },
+  {
+   "word": "south,",
+   "start": 42.388,
+   "end": 42.887
+  },
+  {
+   "word": "forty",
+   "start": 43.003,
+   "end": 43.34
+  },
+  {
+   "word": "thousand",
+   "start": 43.398,
+   "end": 43.828
+  },
+  {
+   "word": "men",
+   "start": 43.909,
+   "end": 44.199
+  },
+  {
+   "word": "needed",
+   "start": 44.35,
+   "end": 44.687
+  },
+  {
+   "word": "two",
+   "start": 44.745,
+   "end": 44.931
+  },
+  {
+   "word": "days",
+   "start": 45.0,
+   "end": 45.325
+  },
+  {
+   "word": "to",
+   "start": 45.395,
+   "end": 45.465
+  },
+  {
+   "word": "take",
+   "start": 45.534,
+   "end": 45.79
+  },
+  {
+   "word": "one",
+   "start": 45.848,
+   "end": 46.092
+  },
+  {
+   "word": "hill.",
+   "start": 46.138,
+   "end": 46.579
+  },
+  {
+   "word": "Almost",
+   "start": 47.09,
+   "end": 47.566
+  },
+  {
+   "word": "nobody",
+   "start": 47.74,
+   "end": 48.17
+  },
+  {
+   "word": "on",
+   "start": 48.239,
+   "end": 48.356
+  },
+  {
+   "word": "it",
+   "start": 48.414,
+   "end": 48.507
+  },
+  {
+   "word": "came",
+   "start": 48.565,
+   "end": 48.785
+  },
+  {
+   "word": "down.",
+   "start": 48.831,
+   "end": 49.354
+  },
+  {
+   "word": "On",
+   "start": 49.957,
+   "end": 50.132
+  },
+  {
+   "word": "the",
+   "start": 50.166,
+   "end": 50.236
+  },
+  {
+   "word": "twelfth,",
+   "start": 50.283,
+   "end": 50.898
+  },
+  {
+   "word": "the",
+   "start": 51.014,
+   "end": 51.13
+  },
+  {
+   "word": "wall",
+   "start": 51.188,
+   "end": 51.467
+  },
+  {
+   "word": "broke.",
+   "start": 51.548,
+   "end": 52.105
+  },
+  {
+   "word": "At",
+   "start": 52.546,
+   "end": 52.709
+  },
+  {
+   "word": "five",
+   "start": 52.767,
+   "end": 53.046
+  },
+  {
+   "word": "that",
+   "start": 53.081,
+   "end": 53.22
+  },
+  {
+   "word": "afternoon",
+   "start": 53.266,
+   "end": 53.858
+  },
+  {
+   "word": "the",
+   "start": 54.009,
+   "end": 54.149
+  },
+  {
+   "word": "general",
+   "start": 54.218,
+   "end": 54.59
+  },
+  {
+   "word": "ordered",
+   "start": 54.671,
+   "end": 54.985
+  },
+  {
+   "word": "his",
+   "start": 55.008,
+   "end": 55.124
+  },
+  {
+   "word": "army",
+   "start": 55.17,
+   "end": 55.403
+  },
+  {
+   "word": "out.",
+   "start": 55.484,
+   "end": 55.913
+  },
+  {
+   "word": "Break",
+   "start": 56.726,
+   "end": 57.005
+  },
+  {
+   "word": "through",
+   "start": 57.051,
+   "end": 57.283
+  },
+  {
+   "word": "the",
+   "start": 57.307,
+   "end": 57.376
+  },
+  {
+   "word": "enemy,",
+   "start": 57.446,
+   "end": 57.933
+  },
+  {
+   "word": "the",
+   "start": 58.317,
+   "end": 58.433
+  },
+  {
+   "word": "order",
+   "start": 58.502,
+   "end": 58.746
+  },
+  {
+   "word": "said.",
+   "start": 58.816,
+   "end": 59.28
+  },
+  {
+   "word": "Twelve",
+   "start": 59.884,
+   "end": 60.302
+  },
+  {
+   "word": "and",
+   "start": 60.325,
+   "end": 60.418
+  },
+  {
+   "word": "a",
+   "start": 60.476,
+   "end": 60.499
+  },
+  {
+   "word": "half",
+   "start": 60.581,
+   "end": 60.755
+  },
+  {
+   "word": "thousand",
+   "start": 60.813,
+   "end": 61.242
+  },
+  {
+   "word": "men",
+   "start": 61.324,
+   "end": 61.521
+  },
+  {
+   "word": "tried",
+   "start": 61.591,
+   "end": 61.904
+  },
+  {
+   "word": "it,",
+   "start": 61.951,
+   "end": 62.171
+  },
+  {
+   "word": "in",
+   "start": 62.252,
+   "end": 62.392
+  },
+  {
+   "word": "the",
+   "start": 62.45,
+   "end": 62.519
+  },
+  {
+   "word": "dark.",
+   "start": 62.566,
+   "end": 63.077
+  },
+  {
+   "word": "Three",
+   "start": 63.68,
+   "end": 64.029
+  },
+  {
+   "word": "or",
+   "start": 64.098,
+   "end": 64.238
+  },
+  {
+   "word": "four",
+   "start": 64.319,
+   "end": 64.574
+  },
+  {
+   "word": "thousand",
+   "start": 64.644,
+   "end": 65.166
+  },
+  {
+   "word": "got",
+   "start": 65.248,
+   "end": 65.48
+  },
+  {
+   "word": "through.",
+   "start": 65.526,
+   "end": 66.072
+  },
+  {
+   "word": "Everyone",
+   "start": 67.372,
+   "end": 67.825
+  },
+  {
+   "word": "else",
+   "start": 67.872,
+   "end": 68.185
+  },
+  {
+   "word": "ran",
+   "start": 68.278,
+   "end": 68.545
+  },
+  {
+   "word": "for",
+   "start": 68.615,
+   "end": 68.719
+  },
+  {
+   "word": "the",
+   "start": 68.766,
+   "end": 68.835
+  },
+  {
+   "word": "river",
+   "start": 68.893,
+   "end": 69.126
+  },
+  {
+   "word": "gate.",
+   "start": 69.184,
+   "end": 69.648
+  },
+  {
+   "word": "It",
+   "start": 69.973,
+   "end": 70.112
+  },
+  {
+   "word": "was",
+   "start": 70.159,
+   "end": 70.287
+  },
+  {
+   "word": "half",
+   "start": 70.356,
+   "end": 70.554
+  },
+  {
+   "word": "blocked,",
+   "start": 70.623,
+   "end": 71.192
+  },
+  {
+   "word": "and",
+   "start": 71.343,
+   "end": 71.482
+  },
+  {
+   "word": "its",
+   "start": 71.552,
+   "end": 71.68
+  },
+  {
+   "word": "guards",
+   "start": 71.726,
+   "end": 72.086
+  },
+  {
+   "word": "had",
+   "start": 72.133,
+   "end": 72.225
+  },
+  {
+   "word": "not",
+   "start": 72.283,
+   "end": 72.423
+  },
+  {
+   "word": "been",
+   "start": 72.469,
+   "end": 72.62
+  },
+  {
+   "word": "told.",
+   "start": 72.667,
+   "end": 73.177
+  },
+  {
+   "word": "They",
+   "start": 73.619,
+   "end": 73.793
+  },
+  {
+   "word": "opened",
+   "start": 73.851,
+   "end": 74.141
+  },
+  {
+   "word": "fire.",
+   "start": 74.199,
+   "end": 74.745
+  },
+  {
+   "word": "The",
+   "start": 75.186,
+   "end": 75.314
+  },
+  {
+   "word": "general",
+   "start": 75.383,
+   "end": 75.72
+  },
+  {
+   "word": "crossed",
+   "start": 75.801,
+   "end": 76.15
+  },
+  {
+   "word": "that",
+   "start": 76.196,
+   "end": 76.359
+  },
+  {
+   "word": "night",
+   "start": 76.44,
+   "end": 76.649
+  },
+  {
+   "word": "in",
+   "start": 76.695,
+   "end": 76.753
+  },
+  {
+   "word": "a",
+   "start": 76.8,
+   "end": 76.823
+  },
+  {
+   "word": "steamboat.",
+   "start": 76.881,
+   "end": 77.566
+  },
+  {
+   "word": "There",
+   "start": 77.949,
+   "end": 78.135
+  },
+  {
+   "word": "were",
+   "start": 78.158,
+   "end": 78.286
+  },
+  {
+   "word": "no",
+   "start": 78.332,
+   "end": 78.425
+  },
+  {
+   "word": "boats",
+   "start": 78.506,
+   "end": 78.843
+  },
+  {
+   "word": "for",
+   "start": 78.901,
+   "end": 79.04
+  },
+  {
+   "word": "anyone",
+   "start": 79.122,
+   "end": 79.493
+  },
+  {
+   "word": "else.",
+   "start": 79.528,
+   "end": 79.969
+  },
+  {
+   "word": "One",
+   "start": 80.48,
+   "end": 80.712
+  },
+  {
+   "word": "division",
+   "start": 80.747,
+   "end": 81.153
+  },
+  {
+   "word": "reached",
+   "start": 81.235,
+   "end": 81.513
+  },
+  {
+   "word": "the",
+   "start": 81.548,
+   "end": 81.618
+  },
+  {
+   "word": "water",
+   "start": 81.676,
+   "end": 82.001
+  },
+  {
+   "word": "with",
+   "start": 82.117,
+   "end": 82.326
+  },
+  {
+   "word": "three",
+   "start": 82.396,
+   "end": 82.698
+  },
+  {
+   "word": "thousand",
+   "start": 82.756,
+   "end": 83.267
+  },
+  {
+   "word": "men.",
+   "start": 83.348,
+   "end": 83.824
+  },
+  {
+   "word": "Three",
+   "start": 84.335,
+   "end": 84.648
+  },
+  {
+   "word": "hundred",
+   "start": 84.706,
+   "end": 85.066
+  },
+  {
+   "word": "lived.",
+   "start": 85.136,
+   "end": 85.693
+  },
+  {
+   "word": "Japan",
+   "start": 86.645,
+   "end": 87.086
+  },
+  {
+   "word": "counted",
+   "start": 87.179,
+   "end": 87.527
+  },
+  {
+   "word": "its",
+   "start": 87.574,
+   "end": 87.702
+  },
+  {
+   "word": "own",
+   "start": 87.771,
+   "end": 88.003
+  },
+  {
+   "word": "dead",
+   "start": 88.073,
+   "end": 88.34
+  },
+  {
+   "word": "for",
+   "start": 88.41,
+   "end": 88.526
+  },
+  {
+   "word": "the",
+   "start": 88.572,
+   "end": 88.642
+  },
+  {
+   "word": "whole",
+   "start": 88.712,
+   "end": 88.967
+  },
+  {
+   "word": "battle.",
+   "start": 89.013,
+   "end": 89.559
+  },
+  {
+   "word": "One",
+   "start": 90.07,
+   "end": 90.325
+  },
+  {
+   "word": "thousand",
+   "start": 90.36,
+   "end": 90.848
+  },
+  {
+   "word": "five",
+   "start": 90.964,
+   "end": 91.266
+  },
+  {
+   "word": "hundred",
+   "start": 91.301,
+   "end": 91.579
+  },
+  {
+   "word": "and",
+   "start": 91.602,
+   "end": 91.672
+  },
+  {
+   "word": "fifty-eight.",
+   "start": 91.73,
+   "end": 92.508
+  },
+  {
+   "word": "For",
+   "start": 93.46,
+   "end": 93.599
+  },
+  {
+   "word": "the",
+   "start": 93.646,
+   "end": 93.716
+  },
+  {
+   "word": "Chinese",
+   "start": 93.762,
+   "end": 94.226
+  },
+  {
+   "word": "army",
+   "start": 94.261,
+   "end": 94.586
+  },
+  {
+   "word": "there",
+   "start": 94.737,
+   "end": 94.946
+  },
+  {
+   "word": "is",
+   "start": 94.993,
+   "end": 95.062
+  },
+  {
+   "word": "no",
+   "start": 95.144,
+   "end": 95.283
+  },
+  {
+   "word": "agreed",
+   "start": 95.364,
+   "end": 95.701
+  },
+  {
+   "word": "number",
+   "start": 95.759,
+   "end": 96.026
+  },
+  {
+   "word": "at",
+   "start": 96.084,
+   "end": 96.165
+  },
+  {
+   "word": "all.",
+   "start": 96.212,
+   "end": 96.688
+  },
+  {
+   "word": "At",
+   "start": 97.64,
+   "end": 97.802
+  },
+  {
+   "word": "dawn,",
+   "start": 97.86,
+   "end": 98.325
+  },
+  {
+   "word": "the",
+   "start": 98.441,
+   "end": 98.557
+  },
+  {
+   "word": "Japanese",
+   "start": 98.627,
+   "end": 99.219
+  },
+  {
+   "word": "walked",
+   "start": 99.265,
+   "end": 99.544
+  },
+  {
+   "word": "in.",
+   "start": 99.602,
+   "end": 100.124
+  }
+ ]
+}

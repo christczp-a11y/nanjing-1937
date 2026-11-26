@@ -1,0 +1,1319 @@
+{
+ "voice": "Max - Elearning and Documentary",
+ "voice_id": "Gfpl8Yo74Is0W6cPUWWT",
+ "model": "eleven_multilingual_v2",
+ "text": "In November 1937, a Chinese general promised to live or die with his capital. Less than four weeks later the capital was gone, and he was on the other side of the river. This is how Nanjing became a trap.\n\nIt starts two hundred miles away, in Shanghai. For three months China throws its best divisions into that city. In November the line breaks.\n\nThe Japanese army was sent to take Shanghai. Its commanders do not stop there. A hundred and sixty thousand men chase the retreat west, up the Yangtze, toward the capital.\n\nNanjing has been China's capital for ten years. That spring the city counted one million and nineteen thousand people. By December most of those who could leave have left. Somewhere between a quarter and half a million are still inside.\n\nAround them is a wall thirty-five kilometres long. Behind it is the river. A kilometre of water, and no bridge.\n\nMost of China's generals want to give the city up and save the army. Chiang Kai-shek refuses. He moves the government inland, and gives the city to the one general who says it can be held.\n\nThat general has between seventy and a hundred and fifty thousand men. Nobody agrees on the number. Half of them are recruits. So he takes away their way out. He walls up the gates. He sends the ferries upriver.\n\nOn December the eighth, the last line outside the city breaks. By the next morning seventy thousand Japanese soldiers are at the wall, on three sides.\n\nOn the fourth side is the river.",
+ "duration": 108.762,
+ "words": [
+  {
+   "word": "In",
+   "start": 0.0,
+   "end": 0.151
+  },
+  {
+   "word": "November",
+   "start": 0.221,
+   "end": 0.685
+  },
+  {
+   "word": "1937,",
+   "start": 0.766,
+   "end": 1.974
+  },
+  {
+   "word": "a",
+   "start": 2.148,
+   "end": 2.218
+  },
+  {
+   "word": "Chinese",
+   "start": 2.334,
+   "end": 2.891
+  },
+  {
+   "word": "general",
+   "start": 2.937,
+   "end": 3.309
+  },
+  {
+   "word": "promised",
+   "start": 3.39,
+   "end": 3.855
+  },
+  {
+   "word": "to",
+   "start": 3.936,
+   "end": 4.04
+  },
+  {
+   "word": "live",
+   "start": 4.156,
+   "end": 4.47
+  },
+  {
+   "word": "or",
+   "start": 4.528,
+   "end": 4.69
+  },
+  {
+   "word": "die",
+   "start": 4.772,
+   "end": 5.074
+  },
+  {
+   "word": "with",
+   "start": 5.132,
+   "end": 5.306
+  },
+  {
+   "word": "his",
+   "start": 5.352,
+   "end": 5.457
+  },
+  {
+   "word": "capital.",
+   "start": 5.526,
+   "end": 6.165
+  },
+  {
+   "word": "Less",
+   "start": 6.769,
+   "end": 7.024
+  },
+  {
+   "word": "than",
+   "start": 7.07,
+   "end": 7.221
+  },
+  {
+   "word": "four",
+   "start": 7.303,
+   "end": 7.535
+  },
+  {
+   "word": "weeks",
+   "start": 7.605,
+   "end": 7.848
+  },
+  {
+   "word": "later",
+   "start": 7.918,
+   "end": 8.22
+  },
+  {
+   "word": "the",
+   "start": 8.371,
+   "end": 8.487
+  },
+  {
+   "word": "capital",
+   "start": 8.557,
+   "end": 8.963
+  },
+  {
+   "word": "was",
+   "start": 9.033,
+   "end": 9.16
+  },
+  {
+   "word": "gone,",
+   "start": 9.23,
+   "end": 9.741
+  },
+  {
+   "word": "and",
+   "start": 9.985,
+   "end": 10.17
+  },
+  {
+   "word": "he",
+   "start": 10.24,
+   "end": 10.321
+  },
+  {
+   "word": "was",
+   "start": 10.391,
+   "end": 10.519
+  },
+  {
+   "word": "on",
+   "start": 10.588,
+   "end": 10.67
+  },
+  {
+   "word": "the",
+   "start": 10.704,
+   "end": 10.774
+  },
+  {
+   "word": "other",
+   "start": 10.844,
+   "end": 11.029
+  },
+  {
+   "word": "side",
+   "start": 11.099,
+   "end": 11.389
+  },
+  {
+   "word": "of",
+   "start": 11.413,
+   "end": 11.471
+  },
+  {
+   "word": "the",
+   "start": 11.529,
+   "end": 11.598
+  },
+  {
+   "word": "river.",
+   "start": 11.656,
+   "end": 12.144
+  },
+  {
+   "word": "This",
+   "start": 13.096,
+   "end": 13.421
+  },
+  {
+   "word": "is",
+   "start": 13.502,
+   "end": 13.665
+  },
+  {
+   "word": "how",
+   "start": 13.723,
+   "end": 13.851
+  },
+  {
+   "word": "Nanjing",
+   "start": 13.932,
+   "end": 14.443
+  },
+  {
+   "word": "became",
+   "start": 14.512,
+   "end": 14.849
+  },
+  {
+   "word": "a",
+   "start": 14.872,
+   "end": 14.907
+  },
+  {
+   "word": "trap.",
+   "start": 14.954,
+   "end": 15.499
+  },
+  {
+   "word": "It",
+   "start": 16.103,
+   "end": 16.254
+  },
+  {
+   "word": "starts",
+   "start": 16.312,
+   "end": 16.672
+  },
+  {
+   "word": "two",
+   "start": 16.753,
+   "end": 16.927
+  },
+  {
+   "word": "hundred",
+   "start": 16.997,
+   "end": 17.287
+  },
+  {
+   "word": "miles",
+   "start": 17.345,
+   "end": 17.636
+  },
+  {
+   "word": "away,",
+   "start": 17.682,
+   "end": 18.158
+  },
+  {
+   "word": "in",
+   "start": 18.239,
+   "end": 18.379
+  },
+  {
+   "word": "Shanghai.",
+   "start": 18.437,
+   "end": 19.284
+  },
+  {
+   "word": "For",
+   "start": 19.795,
+   "end": 19.969
+  },
+  {
+   "word": "three",
+   "start": 20.05,
+   "end": 20.317
+  },
+  {
+   "word": "months",
+   "start": 20.387,
+   "end": 20.782
+  },
+  {
+   "word": "China",
+   "start": 20.898,
+   "end": 21.269
+  },
+  {
+   "word": "throws",
+   "start": 21.327,
+   "end": 21.676
+  },
+  {
+   "word": "its",
+   "start": 21.745,
+   "end": 21.896
+  },
+  {
+   "word": "best",
+   "start": 22.012,
+   "end": 22.314
+  },
+  {
+   "word": "divisions",
+   "start": 22.372,
+   "end": 22.953
+  },
+  {
+   "word": "into",
+   "start": 23.034,
+   "end": 23.255
+  },
+  {
+   "word": "that",
+   "start": 23.324,
+   "end": 23.487
+  },
+  {
+   "word": "city.",
+   "start": 23.568,
+   "end": 24.102
+  },
+  {
+   "word": "In",
+   "start": 24.613,
+   "end": 24.764
+  },
+  {
+   "word": "November",
+   "start": 24.834,
+   "end": 25.333
+  },
+  {
+   "word": "the",
+   "start": 25.507,
+   "end": 25.646
+  },
+  {
+   "word": "line",
+   "start": 25.716,
+   "end": 25.995
+  },
+  {
+   "word": "breaks.",
+   "start": 26.041,
+   "end": 26.668
+  },
+  {
+   "word": "The",
+   "start": 27.109,
+   "end": 27.225
+  },
+  {
+   "word": "Japanese",
+   "start": 27.307,
+   "end": 27.841
+  },
+  {
+   "word": "army",
+   "start": 27.876,
+   "end": 28.143
+  },
+  {
+   "word": "was",
+   "start": 28.201,
+   "end": 28.328
+  },
+  {
+   "word": "sent",
+   "start": 28.375,
+   "end": 28.584
+  },
+  {
+   "word": "to",
+   "start": 28.63,
+   "end": 28.688
+  },
+  {
+   "word": "take",
+   "start": 28.746,
+   "end": 28.944
+  },
+  {
+   "word": "Shanghai.",
+   "start": 28.978,
+   "end": 29.78
+  },
+  {
+   "word": "Its",
+   "start": 30.105,
+   "end": 30.325
+  },
+  {
+   "word": "commanders",
+   "start": 30.383,
+   "end": 30.917
+  },
+  {
+   "word": "do",
+   "start": 30.975,
+   "end": 31.057
+  },
+  {
+   "word": "not",
+   "start": 31.138,
+   "end": 31.289
+  },
+  {
+   "word": "stop",
+   "start": 31.347,
+   "end": 31.614
+  },
+  {
+   "word": "there.",
+   "start": 31.672,
+   "end": 32.125
+  },
+  {
+   "word": "A",
+   "start": 32.821,
+   "end": 32.903
+  },
+  {
+   "word": "hundred",
+   "start": 33.019,
+   "end": 33.344
+  },
+  {
+   "word": "and",
+   "start": 33.379,
+   "end": 33.46
+  },
+  {
+   "word": "sixty",
+   "start": 33.541,
+   "end": 33.878
+  },
+  {
+   "word": "thousand",
+   "start": 33.924,
+   "end": 34.365
+  },
+  {
+   "word": "men",
+   "start": 34.446,
+   "end": 34.771
+  },
+  {
+   "word": "chase",
+   "start": 34.922,
+   "end": 35.271
+  },
+  {
+   "word": "the",
+   "start": 35.305,
+   "end": 35.375
+  },
+  {
+   "word": "retreat",
+   "start": 35.433,
+   "end": 35.781
+  },
+  {
+   "word": "west,",
+   "start": 35.851,
+   "end": 36.42
+  },
+  {
+   "word": "up",
+   "start": 36.571,
+   "end": 36.757
+  },
+  {
+   "word": "the",
+   "start": 36.826,
+   "end": 36.908
+  },
+  {
+   "word": "Yangtze,",
+   "start": 36.966,
+   "end": 37.639
+  },
+  {
+   "word": "toward",
+   "start": 37.813,
+   "end": 38.092
+  },
+  {
+   "word": "the",
+   "start": 38.127,
+   "end": 38.196
+  },
+  {
+   "word": "capital.",
+   "start": 38.231,
+   "end": 38.881
+  },
+  {
+   "word": "Nanjing",
+   "start": 39.833,
+   "end": 40.356
+  },
+  {
+   "word": "has",
+   "start": 40.425,
+   "end": 40.542
+  },
+  {
+   "word": "been",
+   "start": 40.6,
+   "end": 40.774
+  },
+  {
+   "word": "China's",
+   "start": 40.832,
+   "end": 41.261
+  },
+  {
+   "word": "capital",
+   "start": 41.319,
+   "end": 41.714
+  },
+  {
+   "word": "for",
+   "start": 41.784,
+   "end": 41.923
+  },
+  {
+   "word": "ten",
+   "start": 42.004,
+   "end": 42.271
+  },
+  {
+   "word": "years.",
+   "start": 42.353,
+   "end": 42.933
+  },
+  {
+   "word": "That",
+   "start": 43.537,
+   "end": 43.769
+  },
+  {
+   "word": "spring",
+   "start": 43.839,
+   "end": 44.222
+  },
+  {
+   "word": "the",
+   "start": 44.292,
+   "end": 44.384
+  },
+  {
+   "word": "city",
+   "start": 44.442,
+   "end": 44.686
+  },
+  {
+   "word": "counted",
+   "start": 44.756,
+   "end": 45.127
+  },
+  {
+   "word": "one",
+   "start": 45.22,
+   "end": 45.464
+  },
+  {
+   "word": "million",
+   "start": 45.534,
+   "end": 45.94
+  },
+  {
+   "word": "and",
+   "start": 46.021,
+   "end": 46.161
+  },
+  {
+   "word": "nineteen",
+   "start": 46.277,
+   "end": 46.764
+  },
+  {
+   "word": "thousand",
+   "start": 46.823,
+   "end": 47.275
+  },
+  {
+   "word": "people.",
+   "start": 47.345,
+   "end": 47.891
+  },
+  {
+   "word": "By",
+   "start": 48.494,
+   "end": 48.657
+  },
+  {
+   "word": "December",
+   "start": 48.715,
+   "end": 49.226
+  },
+  {
+   "word": "most",
+   "start": 49.435,
+   "end": 49.702
+  },
+  {
+   "word": "of",
+   "start": 49.76,
+   "end": 49.818
+  },
+  {
+   "word": "those",
+   "start": 49.888,
+   "end": 50.166
+  },
+  {
+   "word": "who",
+   "start": 50.189,
+   "end": 50.294
+  },
+  {
+   "word": "could",
+   "start": 50.34,
+   "end": 50.48
+  },
+  {
+   "word": "leave",
+   "start": 50.538,
+   "end": 50.805
+  },
+  {
+   "word": "have",
+   "start": 50.84,
+   "end": 50.968
+  },
+  {
+   "word": "left.",
+   "start": 51.014,
+   "end": 51.536
+  },
+  {
+   "word": "Somewhere",
+   "start": 52.349,
+   "end": 52.79
+  },
+  {
+   "word": "between",
+   "start": 52.837,
+   "end": 53.255
+  },
+  {
+   "word": "a",
+   "start": 53.324,
+   "end": 53.382
+  },
+  {
+   "word": "quarter",
+   "start": 53.464,
+   "end": 53.847
+  },
+  {
+   "word": "and",
+   "start": 53.916,
+   "end": 54.044
+  },
+  {
+   "word": "half",
+   "start": 54.125,
+   "end": 54.311
+  },
+  {
+   "word": "a",
+   "start": 54.369,
+   "end": 54.392
+  },
+  {
+   "word": "million",
+   "start": 54.451,
+   "end": 54.857
+  },
+  {
+   "word": "are",
+   "start": 54.938,
+   "end": 55.112
+  },
+  {
+   "word": "still",
+   "start": 55.147,
+   "end": 55.379
+  },
+  {
+   "word": "inside.",
+   "start": 55.437,
+   "end": 56.18
+  },
+  {
+   "word": "Around",
+   "start": 56.68,
+   "end": 57.086
+  },
+  {
+   "word": "them",
+   "start": 57.156,
+   "end": 57.341
+  },
+  {
+   "word": "is",
+   "start": 57.458,
+   "end": 57.62
+  },
+  {
+   "word": "a",
+   "start": 57.678,
+   "end": 57.713
+  },
+  {
+   "word": "wall",
+   "start": 57.771,
+   "end": 58.154
+  },
+  {
+   "word": "thirty-five",
+   "start": 58.328,
+   "end": 58.955
+  },
+  {
+   "word": "kilometres",
+   "start": 58.99,
+   "end": 59.547
+  },
+  {
+   "word": "long.",
+   "start": 59.617,
+   "end": 60.116
+  },
+  {
+   "word": "Behind",
+   "start": 60.546,
+   "end": 60.952
+  },
+  {
+   "word": "it",
+   "start": 61.022,
+   "end": 61.126
+  },
+  {
+   "word": "is",
+   "start": 61.242,
+   "end": 61.417
+  },
+  {
+   "word": "the",
+   "start": 61.475,
+   "end": 61.544
+  },
+  {
+   "word": "river.",
+   "start": 61.602,
+   "end": 62.113
+  },
+  {
+   "word": "A",
+   "start": 62.485,
+   "end": 62.578
+  },
+  {
+   "word": "kilometre",
+   "start": 62.659,
+   "end": 63.216
+  },
+  {
+   "word": "of",
+   "start": 63.274,
+   "end": 63.344
+  },
+  {
+   "word": "water,",
+   "start": 63.425,
+   "end": 63.971
+  },
+  {
+   "word": "and",
+   "start": 64.11,
+   "end": 64.319
+  },
+  {
+   "word": "no",
+   "start": 64.435,
+   "end": 64.563
+  },
+  {
+   "word": "bridge.",
+   "start": 64.632,
+   "end": 65.259
+  },
+  {
+   "word": "Most",
+   "start": 66.061,
+   "end": 66.316
+  },
+  {
+   "word": "of",
+   "start": 66.374,
+   "end": 66.42
+  },
+  {
+   "word": "China's",
+   "start": 66.49,
+   "end": 66.885
+  },
+  {
+   "word": "generals",
+   "start": 66.943,
+   "end": 67.384
+  },
+  {
+   "word": "want",
+   "start": 67.454,
+   "end": 67.651
+  },
+  {
+   "word": "to",
+   "start": 67.698,
+   "end": 67.744
+  },
+  {
+   "word": "give",
+   "start": 67.802,
+   "end": 67.976
+  },
+  {
+   "word": "the",
+   "start": 68.023,
+   "end": 68.093
+  },
+  {
+   "word": "city",
+   "start": 68.139,
+   "end": 68.394
+  },
+  {
+   "word": "up",
+   "start": 68.476,
+   "end": 68.673
+  },
+  {
+   "word": "and",
+   "start": 68.754,
+   "end": 68.928
+  },
+  {
+   "word": "save",
+   "start": 69.01,
+   "end": 69.3
+  },
+  {
+   "word": "the",
+   "start": 69.335,
+   "end": 69.404
+  },
+  {
+   "word": "army.",
+   "start": 69.474,
+   "end": 70.008
+  },
+  {
+   "word": "Chiang",
+   "start": 70.821,
+   "end": 71.134
+  },
+  {
+   "word": "Kai-shek",
+   "start": 71.204,
+   "end": 71.819
+  },
+  {
+   "word": "refuses.",
+   "start": 71.97,
+   "end": 72.818
+  },
+  {
+   "word": "He",
+   "start": 73.259,
+   "end": 73.387
+  },
+  {
+   "word": "moves",
+   "start": 73.456,
+   "end": 73.747
+  },
+  {
+   "word": "the",
+   "start": 73.793,
+   "end": 73.863
+  },
+  {
+   "word": "government",
+   "start": 73.909,
+   "end": 74.327
+  },
+  {
+   "word": "inland,",
+   "start": 74.397,
+   "end": 75.059
+  },
+  {
+   "word": "and",
+   "start": 75.209,
+   "end": 75.372
+  },
+  {
+   "word": "gives",
+   "start": 75.453,
+   "end": 75.709
+  },
+  {
+   "word": "the",
+   "start": 75.778,
+   "end": 75.86
+  },
+  {
+   "word": "city",
+   "start": 75.906,
+   "end": 76.208
+  },
+  {
+   "word": "to",
+   "start": 76.324,
+   "end": 76.44
+  },
+  {
+   "word": "the",
+   "start": 76.498,
+   "end": 76.568
+  },
+  {
+   "word": "one",
+   "start": 76.649,
+   "end": 76.846
+  },
+  {
+   "word": "general",
+   "start": 76.893,
+   "end": 77.253
+  },
+  {
+   "word": "who",
+   "start": 77.311,
+   "end": 77.427
+  },
+  {
+   "word": "says",
+   "start": 77.497,
+   "end": 77.822
+  },
+  {
+   "word": "it",
+   "start": 77.915,
+   "end": 78.042
+  },
+  {
+   "word": "can",
+   "start": 78.089,
+   "end": 78.24
+  },
+  {
+   "word": "be",
+   "start": 78.298,
+   "end": 78.391
+  },
+  {
+   "word": "held.",
+   "start": 78.449,
+   "end": 78.948
+  },
+  {
+   "word": "That",
+   "start": 79.761,
+   "end": 79.993
+  },
+  {
+   "word": "general",
+   "start": 80.062,
+   "end": 80.457
+  },
+  {
+   "word": "has",
+   "start": 80.538,
+   "end": 80.713
+  },
+  {
+   "word": "between",
+   "start": 80.782,
+   "end": 81.154
+  },
+  {
+   "word": "seventy",
+   "start": 81.27,
+   "end": 81.792
+  },
+  {
+   "word": "and",
+   "start": 81.874,
+   "end": 82.036
+  },
+  {
+   "word": "a",
+   "start": 82.094,
+   "end": 82.117
+  },
+  {
+   "word": "hundred",
+   "start": 82.21,
+   "end": 82.547
+  },
+  {
+   "word": "and",
+   "start": 82.582,
+   "end": 82.651
+  },
+  {
+   "word": "fifty",
+   "start": 82.744,
+   "end": 83.046
+  },
+  {
+   "word": "thousand",
+   "start": 83.093,
+   "end": 83.522
+  },
+  {
+   "word": "men.",
+   "start": 83.603,
+   "end": 84.103
+  },
+  {
+   "word": "Nobody",
+   "start": 84.915,
+   "end": 85.38
+  },
+  {
+   "word": "agrees",
+   "start": 85.438,
+   "end": 85.868
+  },
+  {
+   "word": "on",
+   "start": 85.937,
+   "end": 86.077
+  },
+  {
+   "word": "the",
+   "start": 86.123,
+   "end": 86.193
+  },
+  {
+   "word": "number.",
+   "start": 86.251,
+   "end": 86.796
+  },
+  {
+   "word": "Half",
+   "start": 87.307,
+   "end": 87.574
+  },
+  {
+   "word": "of",
+   "start": 87.632,
+   "end": 87.69
+  },
+  {
+   "word": "them",
+   "start": 87.748,
+   "end": 87.899
+  },
+  {
+   "word": "are",
+   "start": 87.981,
+   "end": 88.178
+  },
+  {
+   "word": "recruits.",
+   "start": 88.236,
+   "end": 88.968
+  },
+  {
+   "word": "So",
+   "start": 89.409,
+   "end": 89.548
+  },
+  {
+   "word": "he",
+   "start": 89.629,
+   "end": 89.687
+  },
+  {
+   "word": "takes",
+   "start": 89.745,
+   "end": 89.989
+  },
+  {
+   "word": "away",
+   "start": 90.036,
+   "end": 90.245
+  },
+  {
+   "word": "their",
+   "start": 90.291,
+   "end": 90.442
+  },
+  {
+   "word": "way",
+   "start": 90.488,
+   "end": 90.628
+  },
+  {
+   "word": "out.",
+   "start": 90.697,
+   "end": 91.115
+  },
+  {
+   "word": "He",
+   "start": 91.499,
+   "end": 91.626
+  },
+  {
+   "word": "walls",
+   "start": 91.696,
+   "end": 92.044
+  },
+  {
+   "word": "up",
+   "start": 92.102,
+   "end": 92.218
+  },
+  {
+   "word": "the",
+   "start": 92.288,
+   "end": 92.358
+  },
+  {
+   "word": "gates.",
+   "start": 92.404,
+   "end": 92.95
+  },
+  {
+   "word": "He",
+   "start": 93.275,
+   "end": 93.403
+  },
+  {
+   "word": "sends",
+   "start": 93.472,
+   "end": 93.786
+  },
+  {
+   "word": "the",
+   "start": 93.844,
+   "end": 93.913
+  },
+  {
+   "word": "ferries",
+   "start": 93.96,
+   "end": 94.366
+  },
+  {
+   "word": "upriver.",
+   "start": 94.459,
+   "end": 95.225
+  },
+  {
+   "word": "On",
+   "start": 96.34,
+   "end": 96.502
+  },
+  {
+   "word": "December",
+   "start": 96.56,
+   "end": 96.967
+  },
+  {
+   "word": "the",
+   "start": 97.025,
+   "end": 97.095
+  },
+  {
+   "word": "eighth,",
+   "start": 97.164,
+   "end": 97.582
+  },
+  {
+   "word": "the",
+   "start": 97.733,
+   "end": 97.849
+  },
+  {
+   "word": "last",
+   "start": 97.919,
+   "end": 98.221
+  },
+  {
+   "word": "line",
+   "start": 98.302,
+   "end": 98.592
+  },
+  {
+   "word": "outside",
+   "start": 98.639,
+   "end": 99.068
+  },
+  {
+   "word": "the",
+   "start": 99.103,
+   "end": 99.173
+  },
+  {
+   "word": "city",
+   "start": 99.219,
+   "end": 99.451
+  },
+  {
+   "word": "breaks.",
+   "start": 99.521,
+   "end": 100.125
+  },
+  {
+   "word": "By",
+   "start": 100.636,
+   "end": 100.798
+  },
+  {
+   "word": "the",
+   "start": 100.845,
+   "end": 100.914
+  },
+  {
+   "word": "next",
+   "start": 100.984,
+   "end": 101.204
+  },
+  {
+   "word": "morning",
+   "start": 101.297,
+   "end": 101.646
+  },
+  {
+   "word": "seventy",
+   "start": 101.855,
+   "end": 102.295
+  },
+  {
+   "word": "thousand",
+   "start": 102.353,
+   "end": 102.795
+  },
+  {
+   "word": "Japanese",
+   "start": 102.864,
+   "end": 103.387
+  },
+  {
+   "word": "soldiers",
+   "start": 103.422,
+   "end": 103.921
+  },
+  {
+   "word": "are",
+   "start": 103.979,
+   "end": 104.141
+  },
+  {
+   "word": "at",
+   "start": 104.176,
+   "end": 104.281
+  },
+  {
+   "word": "the",
+   "start": 104.327,
+   "end": 104.397
+  },
+  {
+   "word": "wall,",
+   "start": 104.455,
+   "end": 104.931
+  },
+  {
+   "word": "on",
+   "start": 105.047,
+   "end": 105.221
+  },
+  {
+   "word": "three",
+   "start": 105.279,
+   "end": 105.523
+  },
+  {
+   "word": "sides.",
+   "start": 105.581,
+   "end": 106.243
+  },
+  {
+   "word": "On",
+   "start": 106.754,
+   "end": 106.905
+  },
+  {
+   "word": "the",
+   "start": 106.939,
+   "end": 107.009
+  },
+  {
+   "word": "fourth",
+   "start": 107.067,
+   "end": 107.334
+  },
+  {
+   "word": "side",
+   "start": 107.404,
+   "end": 107.752
+  },
+  {
+   "word": "is",
+   "start": 107.81,
+   "end": 107.973
+  },
+  {
+   "word": "the",
+   "start": 108.031,
+   "end": 108.1
+  },
+  {
+   "word": "river.",
+   "start": 108.158,
+   "end": 108.762
+  }
+ ]
+}

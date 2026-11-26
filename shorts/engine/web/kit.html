@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:"Inter Display";font-weight:500;src:url(fonts/InterDisplay-Medium.otf)}
+@font-face{font-family:"Inter Display";font-weight:600;src:url(fonts/InterDisplay-SemiBold.otf)}
+@font-face{font-family:"Inter Display";font-weight:700 800;src:url(fonts/InterDisplay-Bold.otf)}
+@font-face{font-family:"Inter Display";font-weight:900;src:url(fonts/InterDisplay-Black.otf)}
+@font-face{font-family:"Bebas";font-weight:400;src:url(fonts/bebas-neue-latin-400-normal.woff2)}
+@font-face{font-family:"Mont";font-weight:600;src:url(fonts/montserrat-latin-600-normal.woff2)}
+@font-face{font-family:"Mont";font-weight:700;src:url(fonts/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:"Mont";font-weight:800;src:url(fonts/montserrat-latin-800-normal.woff2)}
+@font-face{font-family:"Mont";font-weight:900;src:url(fonts/montserrat-latin-900-normal.woff2)}
+@font-face{font-family:"Oswald";font-weight:500;src:url(fonts/oswald-latin-500-normal.woff2)}
+@font-face{font-family:"Oswald";font-weight:700;src:url(fonts/oswald-latin-700-normal.woff2)}
+
+</style></head><body><script type="module">
+import { pawn, nato, ctag, drawArrow2, txt, COL } from './engine.js';
+await document.fonts.load('400 40px Bebas'); await document.fonts.load('900 40px Mont'); await document.fonts.load('900 40px "Inter Display"');
+const out = {};
+const mk = (name, w, h, fn) => { const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d'); fn(g, w, h); out[name] = c.toDataURL('image/png'); };
+for (const side of ['cn', 'jp']) {
+  mk(`pawn_${side}`, 120, 160, g => pawn(g, 60, 110, { side, s: 2 }));
+  mk(`pawn_${side}_dead`, 120, 160, g => pawn(g, 60, 110, { side, s: 2, dead: 1 }));
+  for (const kind of ['inf', 'armor', 'mech', 'art']) for (const ech of ['XX', 'XXX', 'XXXX'])
+    mk(`nato_${side}_${kind}_${ech.length}x`, 220, 180, g => nato(g, 110, 90, { side, kind, ech, s: 3 }));
+}
+for (const [st, bg, fg, edge] of [['red', '#d8312a', '#fff', 1], ['blue', '#2457c5', '#fff', 1], ['dark', '#101215', '#fff', 0], ['light', '#f7f4ee', '#14161a', 0]])
+  mk(`tag_${st}`, 1080, 120, g => ctag(g, 'SAMPLE TAG TEXT', 540, 60, { bg, fg, size: 56, edge: !!edge }));
+for (const side of ['cn', 'jp']) mk(`arrow_${side}`, 1080, 400, g => drawArrow2(g, [[80, 320], [380, 240], [700, 220], [980, 110]], 52, side === 'jp' ? COL.jp : COL.cn, 1, { chev: 0 }));
+window.kit = out; window.ready = true;
+</script></body></html>

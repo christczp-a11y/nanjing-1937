@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Nanjing map</title>
+<style>
+@font-face{font-family:"Inter Display";font-weight:500;src:url(fonts/InterDisplay-Medium.otf)}
+@font-face{font-family:"Inter Display";font-weight:600;src:url(fonts/InterDisplay-SemiBold.otf)}
+@font-face{font-family:"Inter Display";font-weight:700 800;src:url(fonts/InterDisplay-Bold.otf)}
+@font-face{font-family:"Inter Display";font-weight:900;src:url(fonts/InterDisplay-Black.otf)}
+@font-face{font-family:"Bebas";font-weight:400;src:url(fonts/bebas-neue-latin-400-normal.woff2)}
+@font-face{font-family:"Mont";font-weight:600;src:url(fonts/montserrat-latin-600-normal.woff2)}
+@font-face{font-family:"Mont";font-weight:700;src:url(fonts/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:"Mont";font-weight:800;src:url(fonts/montserrat-latin-800-normal.woff2)}
+@font-face{font-family:"Mont";font-weight:900;src:url(fonts/montserrat-latin-900-normal.woff2)}
+@font-face{font-family:"Oswald";font-weight:500;src:url(fonts/oswald-latin-500-normal.woff2)}
+@font-face{font-family:"Oswald";font-weight:700;src:url(fonts/oswald-latin-700-normal.woff2)}
+html,body{margin:0;background:#111;color:#ddd;font:14px sans-serif}
+canvas{display:block;height:96vh;margin:1vh auto;aspect-ratio:9/16}
+#ui{position:fixed;left:8px;top:8px;display:flex;flex-direction:column;gap:6px}
+body.render #ui{display:none} body.render canvas{height:auto;margin:0}
+</style></head><body>
+<div id="ui"><div><button id="play">play/pause</button> <span id="tt"></span></div><input id="seek" type="range" min="0" max="120" step="0.05" value="0" style="width:300px">
+<div>?ep=1|2|3 &amp;debug=1 &amp;handoff=1</div></div>
+<canvas id="c"></canvas>
+<script type="module">
+import { loadAssets, MapFilm, setSize } from './engine.js';
+const q = new URLSearchParams(location.search); const ep = q.get('ep') || '1';
+if (q.get('render')) document.body.classList.add('render');
+const mod = await import(`./episodes/ep${ep}.js?v=${Date.now()}`); const E = mod.default;
+if (E.size) setSize(...E.size); E.debug = !!q.get('debug'); if (q.get('handoff')) E.showHandoff = true; if (q.get('overlay')) E.overlay = true; if (q.get('nocap')) E.noCaptions = true; if (q.get('clean')) E.clean = true;
+if (E.vo) { try { E.words = (await (await fetch(`vo/${E.vo}_words.json`)).json()).words; } catch (e) { console.log('no words', e); } }
+await loadAssets(); const film = new MapFilm(document.getElementById('c'), E); await film.preload();
+window.film = film; window.duration = E.duration; window.draw = async t => { await film.ensure(t); film.draw(t); }; window.handoffs = () => film.handoffs();
+const seek = document.getElementById('seek'); seek.max = E.duration; let playing = false, t0 = 0, base = 0;
+function frame(ts) { if (playing) { const t = base + (ts - t0) / 1000; seek.value = t; if (t > E.duration) playing = false; } const t = +seek.value; film.ensure(t); film.draw(t); document.getElementById('tt').textContent = t.toFixed(2) + 's'; requestAnimationFrame(frame); }
+document.getElementById('play').onclick = () => { playing = !playing; t0 = performance.now(); base = +seek.value; };
+if (!q.get('render')) requestAnimationFrame(frame); else film.draw(0);
+window.ready = true;
+</script></body></html>
